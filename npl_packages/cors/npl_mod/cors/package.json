@@ -1,0 +1,13 @@
+{
+  "name": "cors",
+  "version": "0.0.1",
+  "main": "./cors.lua",
+  "description": "基于express的跨域请求中间件",
+  "author": {
+    "name": "CaoYongfeng",
+    "email": "me@caoyongfeng.com"
+  },
+  "dependencies": {
+
+  }
+}

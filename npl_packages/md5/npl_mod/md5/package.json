@@ -1,0 +1,13 @@
+{
+  "name": "md5",
+  "version": "0.0.1",
+  "main": "./md5.lua",
+  "description": "md5 for NPL",
+  "author": {
+    "name": "CaoYongfeng",
+    "email": "me@caoyongfeng.com"
+  },
+  "dependencies": {
+    "common": "*"
+  }
+}

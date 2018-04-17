@@ -1,0 +1,13 @@
+{
+  "name": "mime",
+  "version": "0.0.1",
+  "main": "./mime.lua",
+  "description": "npl mime types",
+  "author": {
+    "name": "CaoYongfeng",
+    "email": "me@caoyongfeng.com"
+  },
+  "dependencies": {
+
+  }
+}

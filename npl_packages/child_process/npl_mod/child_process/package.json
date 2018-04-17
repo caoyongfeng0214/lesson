@@ -1,0 +1,13 @@
+{
+  "name": "child_process",
+  "version": "0.0.1",
+  "main": "./child_process.lua",
+  "description": "",
+  "author": {
+    "name": "CaoYongfeng",
+    "email": "me@caoyongfeng.com"
+  },
+  "dependencies": {
+
+  }
+}

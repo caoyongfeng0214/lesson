@@ -1,0 +1,13 @@
+{
+  "name": "common",
+  "version": "0.0.1",
+  "main": "./common.lua",
+  "description": "",
+  "author": {
+    "name": "CaoYongfeng",
+    "email": "me@caoyongfeng.com"
+  },
+  "dependencies": {
+
+  }
+}

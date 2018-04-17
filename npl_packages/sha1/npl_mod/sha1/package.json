@@ -1,0 +1,13 @@
+{
+  "name": "sha1",
+  "version": "0.0.1",
+  "main": "./sha1.lua",
+  "description": "sha1 for NPL",
+  "author": {
+    "name": "CaoYongfeng",
+    "email": "me@caoyongfeng.com"
+  },
+  "dependencies": {
+    "common": "*"
+  }
+}

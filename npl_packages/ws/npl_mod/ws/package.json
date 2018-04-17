@@ -1,0 +1,13 @@
+{
+  "name": "ws",
+  "version": "0.0.1",
+  "main": "./ws.lua",
+  "description": "基于express的WebSocket包",
+  "author": {
+    "name": "CaoYongfeng",
+    "email": "me@caoyongfeng.com"
+  },
+  "dependencies": {
+
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "mysql",
+  "version": "0.0.1",
+  "main": "./mysql.lua",
+  "description": "mysql provider",
+  "author": {
+    "name": "CaoYongfeng",
+    "email": "me@caoyongfeng.com"
+  },
+  "dependencies": {
+    "common": "*"
+  }
+}

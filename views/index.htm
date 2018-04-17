@@ -1,0 +1,48 @@
+﻿{{< layout}}
+
+{{+ content}}
+    <h1>Express for NPL</h1>
+    <p>
+	    <a href="https://github.com/caoyongfeng0214/nplexpress" target="_blank">Express for NPL 文档</a>
+    </p>
+    <p>
+	    <a href="https://github.com/caoyongfeng0214/npllustache" target="_blank">lustache for NPL 文档</a>
+    </p>
+    <p>
+	    <a href="/news/{{id}}">一个测试链接</a>
+    </p>
+    <p>
+        <a href="/user">输出JSON的示例</a>
+    </p>
+    <p>
+        <input type="file" id="f"/>
+        <button id="btnUpload">上传</button>
+        <br />
+        上传后文件的地址为：<span id="spanUploadResult"></span>
+    </p>
+    <script type="text/javascript">
+        var btnUpload = document.getElementById('btnUpload'),
+            f = document.getElementById('f'),
+            spanUploadResult = document.getElementById('spanUploadResult');
+        btnUpload.addEventListener('click', function () {
+            spanUploadResult.innerHTML = '';
+            var file = f.files[0];
+            if (file) {
+                var fd = new FormData();
+                fd.append('f', file);
+                var xhr = new XMLHttpRequest();
+                xhr.open('POST', '/upload');
+                xhr.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        var re = JSON.parse(this.responseText);
+                        var aLink = document.createElement('a');
+                        aLink.target = '_blank';
+                        aLink.innerText = aLink.href = '/uploads/' + re.filename;
+                        spanUploadResult.appendChild(aLink);
+                    }
+                };
+                xhr.send(fd);
+            }
+        }, false);
+    </script>
+{{/}}

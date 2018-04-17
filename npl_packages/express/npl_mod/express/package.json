@@ -1,0 +1,14 @@
+{
+  "name": "express",
+  "version": "0.0.1",
+  "main": "./express.npl",
+  "description": "a web framework for npl",
+  "author": {
+    "name": "CaoYongfeng",
+    "email": "me@caoyongfeng.com"
+  },
+  "dependencies": {
+    "mime": "*",
+    "common": "*"
+  }
+}

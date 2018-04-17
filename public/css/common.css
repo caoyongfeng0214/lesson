@@ -1,0 +1,28 @@
+.displayFlex {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+}
+.notselect {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 15px;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+.header {
+  background-color: #009587;
+  padding: 10px 5px;
+  color: white;
+}
+.content {
+  padding: 10px 6px;
+}

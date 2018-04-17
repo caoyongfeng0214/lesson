@@ -1,0 +1,32 @@
+{
+  "name": "lesson",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "npls ./bin/www.lua"
+  },
+  "description": "lesson project",
+  "author": {
+    "name": "CaoYongfeng",
+    "email": "me@caoyongfeng.com"
+  },
+  "dependencies": {
+    "express": "*",
+    "lustache": "*",
+    "cors": "*",
+    "mysql": "*"
+  },
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-less": "^3.3.2",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0",
+    "gulp-chmod": "^2.0.0",
+    "pump": "^1.0.2",
+    "through-gulp": "^0.5.0",
+    "tree-kill": "^1.1.0"
+  }
+}
