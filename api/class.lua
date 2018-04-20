@@ -1,0 +1,154 @@
+local express = NPL.load('express')
+local classroom = NPL.load('../object/classroom')
+local classBll = NPL.load('../bll/class')
+local router = express.Router:new()
+
+local ROOM_ID_MIN = 100000000
+local ROOM_ID_MAX = 999999999
+
+-- 开始上课
+router:get('/begin', function(req, res, next)
+    print('t ->', __rts__:GetName())
+    -- TODO: 检查该 keepwork 账户是否拥有开课权限
+    local classId = math.random(ROOM_ID_MIN, ROOM_ID_MAX) .. '' -- 9 位随机数
+    local p = req.query
+    local lessNo = p.lessNo
+    local lessonUrl = p.lessonUrl
+    local username = p.username
+    local rq = rq(p, {'lessNo', 'lessonUrl', 'username'}, res)
+	if(not rq) then return end
+    -- TODO: check classId 的唯一性
+    local room = classroom:new({
+        classId = classId,
+        teacher = username, -- TODO: 更换为当前登录用户
+        lessNo = lessNo,
+        lessonUrl = lessonUrl 
+    })
+    classroom.classROOMs[classId] = room
+    classroom.USERs[username] = {
+        username = username,
+        classId = classId
+    }
+    local rs = {
+        err = 0,
+        data = room
+    } 
+    res:send(rs)
+end)
+
+-- 进入课堂
+router:get('/enter', function(req, res, next)
+    print('t ->', __rts__:GetName())
+    local rs = {}
+    local p = req.query
+    local username = p.username -- TODO: 更换为当前登录用户, 添加用户头像
+    local classId = p.classId
+    local studentNo = p.studentNo
+    local rq = rq(p, {'username', 'classId', 'studentNo'}, res)
+	if(not rq) then return end
+    local room = classroom.getClassRoom(classId)
+    if( room and room.state == 0 ) then -- 进行中的课堂
+        local user = {
+            username = username,
+            studentNo = studentNo
+        }
+        room:enter( user )
+        classroom.USERs[username] = user
+        rs = {
+            err = 0,
+            data = room
+        }
+    else
+        -- 不存在该教室
+        rs = {
+            err = 200,
+            msg = 'classroom not found.'
+        }
+    end
+    res:send(rs)
+end)
+
+-- 提交答题卡
+router:get('/replay', function(req, res, next)
+    print('t ->', __rts__:GetName())
+    local rs = {}
+    local p = req.query
+    local username = p.username -- TODO: 更换为当前登录用户
+    local answerSheet = p.answerSheet
+    local rq = rq(p, {'username', 'answerSheet'}, res)
+    if(not rq) then return end
+    local user = classroom.USERs[username]
+    if( user ) then
+        -- 教室里的学员
+        local room = classroom.classROOMs[user.classId]
+        if(room and room.state == 0) then
+            room:commitAnswer(user, answerSheet)
+            rs = {
+                err = 0,
+                data = room
+            }
+        else
+            rs = {
+                err = 201,
+                msg = 'class is finish.'
+            }
+        end
+    else
+        -- TODO: 自学的学员， 生成一个 RecordId 返回，这边带 Id 请求则为更新，不带 Id 请求则为新的自学
+
+    end
+    res:send(rs)
+end)
+
+-- 获取学员答题情况
+router:get('/performance', function(req, res, next)
+    print('t ->', __rts__:GetName())
+    local rs = {}
+    local p = req.query
+    local username = p.username -- TODO: 更换为当前登录用户
+    local rq = rq(p, {'username'}, res)
+    if(not rq) then return end
+    local user = classroom.USERs[username]
+    if( user ) then
+        local room = classroom.classROOMs[user.classId]
+        local performance = room:getStudentPerformance( user )
+        if(performance == nil) then
+            rs = {
+                err = 400,
+                msg = 'not allow user.'
+            }
+        else
+            rs = {
+                err = 0,
+                data = performance
+            }
+        end
+    else
+        -- 非法操作
+        rs = {
+            err = 400,
+            msg = 'not allow user.'
+        }
+    end
+    res:send(rs)
+end)
+
+-- 结束课堂
+router:get('/finish', function(req, res, next)
+    print('t ->', __rts__:GetName())
+    local rs = {}
+    local p = req.query
+    local username = p.username -- TODO: 更换为当前登录用户
+    local rq = rq(p, {'username'}, res)
+    if(not rq) then return end
+    local user = classroom.USERs[username]
+    if( user ) then
+        local room = classroom.classROOMs[user.classId]
+        -- TODO: 保存 TestRecord 到 DB
+        local result = room:finish()
+    else
+
+    end
+end)
+
+NPL.export(router);

@@ -22,6 +22,14 @@ app:use(express.static('public'));
 app:use(express.session());
 
 
+-- ***********************************************************************
+-- ****** API ******
+-- ***********************************************************************
+
+-- ------ 用户 -----------------------------------------------------------
+local class = NPL.load('./api/class');
+app:use('/api/class', class);
+
 local router_news = NPL.load('./routes/news');
 app:use('/news/:id', router_news);
 
