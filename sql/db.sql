@@ -60,4 +60,33 @@ CREATE TABLE `testrecord` (
   `emptyCount` int(11) DEFAULT NULL COMMENT '未作答题数',
   `finishTime` datetime DEFAULT NULL COMMENT '完成时间',
   PRIMARY KEY (`sn`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+DROP TABLE IF EXISTS `seq`;
+CREATE TABLE `seq` (
+  `name` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '序列名',
+  `val` int(11) DEFAULT NULL COMMENT '当前值',
+  `step` tinyint(4) NOT NULL DEFAULT '1' COMMENT '步长'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+# 序列函数
+DELIMITER $$
+CREATE
+    /*[DEFINER = { user | CURRENT_USER }]*/
+    FUNCTION `lesson`.`nextval`(seq_name VARCHAR(50))
+    RETURNS INTEGER
+    /*LANGUAGE SQL
+    | [NOT] DETERMINISTIC
+    | { CONTAINS SQL | NO SQL | READS SQL DATA | MODIFIES SQL DATA }
+    | SQL SECURITY { DEFINER | INVOKER }
+    | COMMENT 'string'*/
+    BEGIN
+	UPDATE seq
+          SET val = val + step 
+	WHERE NAME = seq_name; 
+	RETURN (SELECT val FROM seq WHERE `name` = seq_name); 
+    END$$
+DELIMITER ;
+
+# 课程序列
+INSERT INTO `seq` (`name`, `val`) VALUES ('classSeq', '100000'); 
