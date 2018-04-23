@@ -1,0 +1,288 @@
+2018-04-23 15:57:50|9016|NPL Runtime started
+NPL bin dir: D:\cover\cover\ParaCraftSDK-master\NPLRuntime\win\bin\
+WorkingDir: D:\GitClone\lesson
+WritablePath: D:/GitClone/lesson/
+OS information:
+OS version:Microsoft  (build 9200), 64-bit
+Number of processors:4
+Processor type:586
+TotalPhysicalMemory:8312676
+FreePhysicalMemory:3020300
+
+ParaEngine Root Dir is D:/GitClone/lesson/
+./packages dir: D:\cover\cover\ParaCraftSDK-master\NPLRuntime\win\packages\
+Archive: D:\cover\cover\ParaCraftSDK-master\NPLRuntime\win\packages\main_mobile_res.pkg is opened and read 613 entries
+Archive: D:\cover\cover\ParaCraftSDK-master\NPLRuntime\win\packages\main150727.pkg is opened and read 2665 entries
+Archive: D:\cover\cover\ParaCraftSDK-master\NPLRuntime\win\packages\main.pkg is opened and read 7536 entries
+main loop: bin/www.npl 
+CAssetManifest loaded 0 files
+CAsyncLoader QueueID:0(Local) has 1 worker threads
+CAsyncLoader QueueID:1(Asset) has 2 worker threads
+CAsyncLoader QueueID:2(Web) has 1 worker threads
+CAsyncLoader QueueID:3(Asset_BigFile) has 1 worker threads
+CAsyncLoader QueueID:4(AudioFile) has 1 worker threads
+CAsyncLoader is started with 1 IO thread and 6 worker threads
+Plug-in loaded: D:\cover\cover\ParaCraftSDK-master\NPLRuntime\win\bin\PhysicsBT.dll version: 1 
+font Tahoma;12;bold is created 
+font Tahoma;12;norm is created 
+(main) state is now running in a separate thread. It is more responsive now. 
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+2018-04-23 15:57:50|main|info|DomainSpecificLanguage|NPL language extension loaded
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+ffi loaded shared lib: C
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+2018-04-23 15:57:51|worker_34|info|DomainSpecificLanguage|NPL language extension loaded
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+ffi loaded shared lib: C
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+2018-04-23 15:57:51|worker_40|info|DomainSpecificLanguage|NPL language extension loaded
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+ffi loaded shared lib: C
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+NPL server 0.1 is listening on 0.0.0.0:3000
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+TCPKeepAlive: false
+AppKeepAlive: false
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+IdleTimeout: true
+IdleTimeoutPeriod: 120000
+UseCompression(incoming): false
+CompressionLevel: -1
+CompressionThreshold: 204800
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+2018-04-23 15:57:51|worker_15|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-23 15:57:51|worker_35|info|DomainSpecificLanguage|2018-04-23 15:57:51|worker_14|info|DomainSpecificLanguage|NPL language extension loadedNPL language extension loaded
+
+2018-04-23 15:57:51|worker_36|info|DomainSpecificLanguage|NPL language extension loaded
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+2018-04-23 15:57:51|worker_1|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-23 15:57:51|worker_6|info|DomainSpecificLanguage|NPL language extension loaded
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+2018-04-23 15:57:51|worker_49|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-23 15:57:51|worker_41|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-23 15:57:51|worker_43|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-23 15:57:51|worker_9|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-23 15:57:51|worker_31|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-23 15:57:51|worker_24|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-23 15:57:51|worker_10|info|DomainSpecificLanguage|NPL language extension loaded
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+2018-04-23 15:57:51|worker_23|info|DomainSpecificLanguage|NPL language extension loaded
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+2018-04-23 15:57:51|worker_2|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-23 15:57:51|worker_3|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-23 15:57:51|worker_20|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-23 15:57:51|worker_7|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-23 15:57:51|worker_5|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-23 15:57:51|worker_33|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-23 15:57:51|worker_27|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-23 15:57:51|worker_22|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-23 15:57:51|worker_26|info|DomainSpecificLanguage|NPL language extension loaded
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+2018-04-23 15:57:51|worker_28|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-23 15:57:51|worker_18|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-23 15:57:51|worker_4|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-23 15:57:51|worker_30|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-23 15:57:51|worker_38|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-23 15:57:51|worker_25|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-23 15:57:51|worker_8|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-23 15:57:51|worker_16|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-23 15:57:51|worker_32|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-23 15:57:51|worker_39|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-23 15:57:51|worker_47|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-23 15:57:51|worker_48|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-23 15:57:51|worker_19|info|DomainSpecificLanguage|NPL language extension loaded
+NPL max pending incoming connections allowed is 1000
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+2018-04-23 15:57:51|worker_13|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-23 15:57:51|worker_42|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-23 15:57:51|worker_11|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-23 15:57:51|worker_44|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-23 15:57:51|worker_37|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-23 15:57:51|worker_50|info|DomainSpecificLanguage|NPL language extension loaded
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+2018-04-23 15:57:51|worker_12|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-23 15:57:51|worker_46|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-23 15:57:51|worker_21|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-23 15:57:51|worker_17|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-23 15:57:51|worker_29|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-23 15:57:51|worker_45|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-23 15:57:54|9328|incoming connection (127.0.0.1/55748) is established and assigned a temporary id (~1). 
+t ->	worker_1
+t ->	worker_1
+2018-04-23 15:58:16|9328|incoming connection (127.0.0.1/55778) is established and assigned a temporary id (~2). 
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+2018-04-23 15:59:00|9328|incoming connection (127.0.0.1/55843) is established and assigned a temporary id (~3). 
+2018-04-23 15:59:00|9328|incoming connection (127.0.0.1/55844) is established and assigned a temporary id (~4). 
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-04-23 15:59:45|9328|connection closed (127.0.0.1/55844) with id (~4). 
+2018-04-23 15:59:45|9328|incoming connection (127.0.0.1/55911) is established and assigned a temporary id (~5). 
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+2018-04-23 16:00:01|9328|connection time out (127.0.0.1/55748) with id (~1). 
+2018-04-23 16:00:01|9328|connection closed (127.0.0.1/55748) with id (~1). 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-04-23 16:00:18|9328|connection closed (127.0.0.1/55911) with id (~5). 
+2018-04-23 16:00:18|9328|incoming connection (10.27.26.21/55964) is established and assigned a temporary id (~6). 
+2018-04-23 16:00:18|9328|incoming connection (10.27.26.21/55965) is established and assigned a temporary id (~7). 
+t ->	worker_1
+2018-04-23 16:00:22|9328|incoming connection (10.27.26.21/55973) is established and assigned a temporary id (~8). 
+2018-04-23 16:00:22|9328|incoming connection (10.27.26.21/55974) is established and assigned a temporary id (~9). 
+t ->	worker_1
+2018-04-23 16:00:47|9328|connection time out (127.0.0.1/55778) with id (~2). 
+2018-04-23 16:00:47|9328|connection closed (127.0.0.1/55778) with id (~2). 
+2018-04-23 16:01:49|9328|connection time out (127.0.0.1/55843) with id (~3). 
+2018-04-23 16:01:49|9328|connection closed (127.0.0.1/55843) with id (~3). 
+2018-04-23 16:02:19|9328|connection time out (10.27.26.21/55965) with id (~7). 
+2018-04-23 16:02:19|9328|connection closed (10.27.26.21/55965) with id (~7). 
+2018-04-23 16:02:23|9328|connection time out (10.27.26.21/55974) with id (~9). 
+2018-04-23 16:02:23|9328|connection time out (10.27.26.21/55973) with id (~8). 
+2018-04-23 16:02:23|9328|connection time out (10.27.26.21/55964) with id (~6). 
+2018-04-23 16:02:23|9328|connection closed (10.27.26.21/55974) with id (~9). 
+2018-04-23 16:02:23|9328|connection closed (10.27.26.21/55973) with id (~8). 
+2018-04-23 16:02:23|9328|connection closed (10.27.26.21/55964) with id (~6). 
