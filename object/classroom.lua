@@ -1,5 +1,6 @@
 NPL.load("(gl)script/ide/commonlib.lua")
 NPL.load("(gl)script/ide/Json.lua")
+local express = NPL.load('express')
 
 local classroom = {}
 
@@ -30,14 +31,25 @@ end
 function classroom:enter( user )
     local stu = self.students[user.username]
     -- 教师在教室创建的时候就需要传入了。
-    if( stu == nil and user.username ~= teacher ) then
+    if( stu == nil and user.username ~= self.teacher ) then
         user.loginTime = os.time()
         user.classId = self.classId
-        self.students[user.username] = user
+        local obj = {room = self, user = user}
+        classroom._setStudent(obj)
+        -- self.students[user.username] = user
+        express.handler.shareData('_setStudent', obj);
         -- TODO: 初始化该学生的答题卡
         
     else
         -- 学员已经进来过该教室
+    end
+end
+
+classroom._setStudent = function( obj ) 
+    local _room = obj.room
+    local _user = obj.user
+    if( _room and _user) then
+        _room.students[_user.username] = _user
     end
 end
 
