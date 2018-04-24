@@ -3,32 +3,43 @@ local classroom = NPL.load('../object/classroom')
 local classBll = NPL.load('../bll/class')
 local router = express.Router:new()
 
-local ROOM_ID_MIN = 100000000
-local ROOM_ID_MAX = 999999999
+local ROOM_ID_MIN = 100
+local ROOM_ID_MAX = 999
 
 -- 开始上课
 router:get('/begin', function(req, res, next)
     print('t ->', __rts__:GetName())
-    -- TODO: 检查该 keepwork 账户是否拥有开课权限
-    local classId = math.random(ROOM_ID_MIN, ROOM_ID_MAX) .. '' -- 9 位随机数
+    -- TODO: 检查该 keepwork 账户是否拥有开课权限, 检查该导师是否存在未 finish 的课程
+    -- classId => 6 位自增长 + 3 为随机数
+    local seq = classBll.nextSeq()
+    local classId = '' .. seq.val .. math.random(ROOM_ID_MIN, ROOM_ID_MAX)  -- 3 位随机数
     local p = req.query
-    local lessNo = p.lessNo
+    local lessonNo = p.lessonNo
     local lessonUrl = p.lessonUrl
+    local lessonTitle = p.lessonTitle
+    local lessonCover = p.lessonCover
+    local lessonVedio = p.lessonVedio
+    local goals = p.goals
     local username = p.username
-    local rq = rq(p, {'lessNo', 'lessonUrl', 'username'}, res)
+
+    local rq = rq(p, {'lessonNo', 'lessonUrl', 'username', 'lessonTitle', 'lessonCover', 'lessonVedio' }, res)
 	if(not rq) then return end
-    -- TODO: check classId 的唯一性
     local room = classroom:new({
         classId = classId,
         teacher = username, -- TODO: 更换为当前登录用户
-        lessNo = lessNo,
+        lessonNo = lessonNo,
         lessonUrl = lessonUrl 
     })
-    classroom.classROOMs[classId] = room
-    classroom.USERs[username] = {
-        username = username,
-        classId = classId
-    }
+    room:begin({
+        classId = classId,
+        teacher = username,
+        lessonUrl = lessonUrl,
+        lessonTitle = lessonTitle,
+        lessonCover = lessonCover,
+        lessonVedio = lessonVedio,
+        goals = goals
+    })
+    
     local rs = {
         err = 0,
         data = room
@@ -47,6 +58,7 @@ router:get('/enter', function(req, res, next)
     local rq = rq(p, {'username', 'classId', 'studentNo'}, res)
 	if(not rq) then return end
     local room = classroom.getClassRoom(classId)
+
     if( room and room.state == 0 ) then -- 进行中的课堂
         local user = {
             username = username,
@@ -95,7 +107,7 @@ router:get('/replay', function(req, res, next)
         end
     else
         -- TODO: 自学的学员， 生成一个 RecordId 返回，这边带 Id 请求则为更新，不带 Id 请求则为新的自学
-
+        
     end
     res:send(rs)
 end)
@@ -145,7 +157,7 @@ router:get('/finish', function(req, res, next)
     if( user ) then
         local room = classroom.classROOMs[user.classId]
         -- TODO: 保存 TestRecord 到 DB
-        local result = room:finish()
+        local result = room:finish( user )
     else
 
     end
