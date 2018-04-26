@@ -9,7 +9,7 @@ testrecord.save = function( testrecord, cn )
 end
 
 testrecord.update = function( testrecord, cn )
-    return db.updateById(tbl, testrecord, cn)
+    return db.updateBySn(tbl, testrecord, cn)
 end
 
 NPL.export(testrecord)

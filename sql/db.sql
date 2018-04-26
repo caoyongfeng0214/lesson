@@ -18,11 +18,12 @@ CREATE TABLE `class` (
   `classId` int(9) DEFAULT NULL COMMENT 'CLASS_ID',
   `teacher` varchar(128) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '教师用户名',
   `lessonUrl` varchar(256) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '课程页面URL',
+  `lessonNo` varchar(128) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '课程序号',
   `lessonTitle` varchar(256) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '课程页面标题',
   `lessonCover` varchar(512) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '课程封面地址',
   `lessonVedio` varchar(512) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '课程视频地址',
   `goals` varchar(512) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '课程目标',
-  `startTime` datetime DEFAULT NULL COMMENT '课程开始时间',
+  `startTime` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '课程开始时间',
   `finishTime` datetime DEFAULT NULL COMMENT '课程结束时间',
   `summary` text COLLATE utf8_unicode_ci COMMENT '课程总结 JSON 格式',
   `state` tinyint(4) NOT NULL DEFAULT '0' COMMENT '状态 0.start 1.finish',
@@ -52,6 +53,12 @@ CREATE TABLE `testrecord` (
   `username` varchar(128) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '用户名',
   `classSn` int(11) DEFAULT NULL COMMENT '课程序号',
   `classId` varchar(9) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'CLASS_ID',
+  `lessonUrl` varchar(512) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '课程页面URL',
+  `lessonTitle` varchar(256) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '课程页面标题',
+  `lessonCover` varchar(256) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '课程封面地址',
+  `goals` varchar(512) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '课程目标',
+  `lessonNo` varchar(256) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '课程序号',
+  `lessonPerformance` varchar(2048) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '内容总结',
   `beginTime` datetime DEFAULT NULL COMMENT '开始时间',
   `answerSheet` text COLLATE utf8_unicode_ci COMMENT '答题卡 JSON 格式',
   `totalScore` int(11) DEFAULT NULL COMMENT '总得分',
@@ -59,7 +66,8 @@ CREATE TABLE `testrecord` (
   `wrongCount` int(11) DEFAULT NULL COMMENT '答错题数',
   `emptyCount` int(11) DEFAULT NULL COMMENT '未作答题数',
   `finishTime` datetime DEFAULT NULL COMMENT '完成时间',
-  PRIMARY KEY (`sn`)
+  PRIMARY KEY (`sn`),
+  UNIQUE KEY `username` (`username`,`classId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 DROP TABLE IF EXISTS `seq`;

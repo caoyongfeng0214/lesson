@@ -15,7 +15,7 @@ class.save = function( class, cn )
 end
 
 class.update = function( class, cn )
-    return db.updateById(tbl, class, cn)
+    return db.updateBySn(tbl, class, cn)
 end
 
 NPL.export(class)

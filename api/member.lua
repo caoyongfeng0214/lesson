@@ -12,6 +12,7 @@ router:get('/auth', function(req, res, next)
     local p = req.query
     local username = p.username
     local rq = rq(p, {'username'}, res)
+    if(not rq) then return end
     local where = {}
     where.username = username
     local member = memberBll.get(where)
@@ -29,4 +30,4 @@ router:get('/auth', function(req, res, next)
     res:send(rs)
 end)
 
-NPL.export(router);
+NPL.export(router)
