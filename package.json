@@ -5,15 +5,9 @@
     "start": "npls ./bin/www.lua"
   },
   "description": "lesson project",
-  "author": {
-    "name": "CaoYongfeng",
-    "email": "me@caoyongfeng.com"
-  },
+  "author": "CaoYongfeng <me@caoyongfeng.com>",
   "dependencies": {
-    "express": "*",
-    "lustache": "*",
-    "cors": "*",
-    "mysql": "*"
+    
   },
   "devDependencies": {
     "del": "^3.0.0",
@@ -28,5 +22,15 @@
     "pump": "^1.0.2",
     "through-gulp": "^0.5.0",
     "tree-kill": "^1.1.0"
-  }
+  },
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caoyongfeng0214/lesson.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caoyongfeng0214/lesson/issues"
+  },
+  "homepage": "https://github.com/caoyongfeng0214/lesson#readme"
 }

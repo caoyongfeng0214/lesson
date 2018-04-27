@@ -1,19 +1,96 @@
 ﻿@import 'lib';
+* {
+    .boxSizing;
+}
+html {
+    height:100%;
+}
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    background-color: #fbfbfb;
+}
+a {
+    color: @themeColor;
+    text-decoration: none;
+}
+em {
+    font-style: normal;
+}
 
-body
-{
-    margin:0px;
-    padding:0px;
-    font-size:15px;
-    font-family:Roboto, Helvetica, Arial, sans-serif;
+img {
+    border: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
 }
 
 .header {
-    background-color:#009587;
-    padding:10px 5px;
-    color:white;
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    z-index:99;
+    height: 60px;
+    line-height: 50px;
+    border-bottom: 1px solid #BFBFBF;
+    background-color: #fbfbfb;;
+    color: #101010;
+    .nav-bar {
+        max-width: 1140px;
+        margin: 0 auto;
+        position: relative;
+        .menu {
+            .displayFlex;
+            .flexJustifyContent(center);
+            padding-top:6px;
+            list-style: none;
+            >a {
+                margin: 0 4.5%;
+                color: #101010;
+                font-size: 16px;
+                &.current {
+                    color: @themeColor;
+                    border-bottom: 4px solid @themeColor;
+                }
+                &:hover {
+                    color: @themeColor;
+                }
+            }
+        }
+        .to-download {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 2;
+            padding: 0 12px;
+            height: 40px;
+            line-height: 40px;
+            border: 1px solid rgba(64, 158, 254, 1);
+            .borderRadius(4px);
+            color: #409EFE;
+            font-size: 12px;
+
+            i {
+                padding-left: 3px;
+                font-size: 24px;
+                vertical-align: middle;
+            }
+        }
+    }
 }
 
-.content {
-    padding:10px 6px;
+.main {
+    padding-top: 60px;
+    height: 100%;
 }
