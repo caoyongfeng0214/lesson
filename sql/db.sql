@@ -66,6 +66,7 @@ CREATE TABLE `testrecord` (
   `wrongCount` int(11) DEFAULT NULL COMMENT '答错题数',
   `emptyCount` int(11) DEFAULT NULL COMMENT '未作答题数',
   `finishTime` datetime DEFAULT NULL COMMENT '完成时间',
+  `duration` int(11) NOT NULL DEFAULT '0' COMMENT '学习时长（分钟数）',
   PRIMARY KEY (`sn`),
   UNIQUE KEY `username` (`username`,`classId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;

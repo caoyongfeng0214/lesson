@@ -53,7 +53,8 @@ function classroom:enter( user )
             goals = self.goals,
             lessonNo = self.lessonNo,
             classId = self.classId,
-            classSn = self.classSn
+            classSn = self.classSn,
+            lessonPerformance = self.lessonPerformance
         }
         local num, lastId = recordBll.save(record)
         if(lastId) then 

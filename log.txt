@@ -1,4 +1,4 @@
-2018-04-27 16:34:47|13480|NPL Runtime started
+2018-04-27 20:12:09|15788|NPL Runtime started
 NPL bin dir: D:\cover\cover\ParaCraftSDK-master\NPLRuntime\win\bin\
 WorkingDir: D:\GitClone\lesson
 WritablePath: D:/GitClone/lesson/
@@ -7,7 +7,7 @@ OS version:Microsoft  (build 9200), 64-bit
 Number of processors:4
 Processor type:586
 TotalPhysicalMemory:8312676
-FreePhysicalMemory:1833916
+FreePhysicalMemory:1858724
 
 ParaEngine Root Dir is D:/GitClone/lesson/
 ./packages dir: D:\cover\cover\ParaCraftSDK-master\NPLRuntime\win\packages\
@@ -29,57 +29,57 @@ font Tahoma;12;norm is created
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
 ffi loaded shared lib: C
-2018-04-27 16:34:47|main|info|DomainSpecificLanguage|NPL language extension loaded
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ffi loaded shared lib: C
-ffi loaded shared lib: C
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-ffi loaded shared lib: C
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ffi loaded shared lib: C
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ffi loaded shared lib: C
-ffi loaded shared lib: C
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ffi loaded shared lib: C
-ffi loaded shared lib: C
+2018-04-27 20:12:09|main|info|DomainSpecificLanguage|NPL language extension loaded
 NPL server 0.1 is listening on 0.0.0.0:3000
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
 ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 TCPKeepAlive: false
 AppKeepAlive: false
 IdleTimeout: true
 IdleTimeoutPeriod: 120000
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
 UseCompression(incoming): false
 CompressionLevel: -1
 CompressionThreshold: 204800
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
 ffi loaded shared lib: C
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
 NPL max pending incoming connections allowed is 1000
-2018-04-27 16:34:47|worker_10|info|DomainSpecificLanguage|NPL language extension loaded
-2018-04-27 16:34:47|worker_6|info|DomainSpecificLanguage|NPL language extension loaded
-2018-04-27 16:34:47|worker_5|info|DomainSpecificLanguage|NPL language extension loaded
-2018-04-27 16:34:47|worker_9|info|DomainSpecificLanguage|NPL language extension loaded
-2018-04-27 16:34:47|worker_3|info|DomainSpecificLanguage|NPL language extension loaded
-2018-04-27 16:34:47|worker_7|info|DomainSpecificLanguage|NPL language extension loaded
-2018-04-27 16:34:47|worker_1|info|DomainSpecificLanguage|NPL language extension loaded
-2018-04-27 16:34:47|worker_8|info|DomainSpecificLanguage|NPL language extension loaded
-2018-04-27 16:34:47|worker_2|info|DomainSpecificLanguage|NPL language extension loaded
-2018-04-27 16:34:47|worker_4|info|DomainSpecificLanguage|NPL language extension loaded
-2018-04-27 16:34:48|9940|incoming connection (127.0.0.1/50848) is established and assigned a temporary id (~1). 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+2018-04-27 20:12:09|worker_4|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-27 20:12:09|worker_9|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-27 20:12:09|worker_3|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-27 20:12:09|worker_5|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-27 20:12:09|worker_6|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-27 20:12:09|worker_8|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-27 20:12:09|worker_1|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-27 20:12:09|worker_7|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-27 20:12:09|worker_2|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-27 20:12:09|worker_10|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-27 20:12:11|6692|incoming connection (127.0.0.1/56175) is established and assigned a temporary id (~1). 
 t ->	worker_1
 t ->	worker_1
 t ->	worker_1
@@ -109,272 +109,10 @@ t ->	worker_1
 t ->	worker_1
 t ->	worker_1
 t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-2018-04-27 16:45:38|9940|incoming connection (127.0.0.1/52134) is established and assigned a temporary id (~2). 
-t ->	worker_1
-echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'isyang'"
-t ->	worker_1
-echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'isyang'"
-t ->	worker_1
-echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'isyang'"
-t ->	worker_1
-echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'isyang'"
-t ->	worker_1
-echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
-t ->	worker_1
-echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
-t ->	worker_1
-echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-network: handle_read stopped, asio msg: End of file. Connection will be closed 
-2018-04-27 16:46:00|9940|connection closed (127.0.0.1/52134) with id (~2). 
-network: handle_read stopped, asio msg: End of file. Connection will be closed 
-2018-04-27 16:46:00|9940|connection closed (127.0.0.1/50848) with id (~1). 
-2018-04-27 16:46:05|9940|incoming connection (127.0.0.1/52184) is established and assigned a temporary id (~3). 
-t ->	worker_1
-t ->	worker_1
-network: handle_read stopped, asio msg: End of file. Connection will be closed 
-2018-04-27 16:46:06|9940|connection closed (127.0.0.1/52184) with id (~3). 
-2018-04-27 16:46:09|9940|incoming connection (127.0.0.1/52197) is established and assigned a temporary id (~4). 
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-2018-04-27 16:46:46|9940|incoming connection (127.0.0.1/52267) is established and assigned a temporary id (~5). 
-t ->	worker_1
-echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'isyang'"
-t ->	worker_1
-echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'isyang'"
-t ->	worker_1
-echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'isyang'"
-t ->	worker_1
-echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'isyang'"
-t ->	worker_1
-echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
-t ->	worker_1
-echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
-t ->	worker_1
-echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'isyang'"
-t ->	worker_1
-echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
-t ->	worker_1
-echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
-t ->	worker_1
-2018-04-27 16:47:00|9940|incoming connection (127.0.0.1/52323) is established and assigned a temporary id (~6). 
+2018-04-27 20:13:32|6692|incoming connection (127.0.0.1/56306) is established and assigned a temporary id (~2). 
 t ->	worker_2
-echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'isyang'"
-echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'isyang'"
-t ->	worker_1
-echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'isyang'"
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
 t ->	worker_1
 echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
 t ->	worker_1
@@ -382,6 +120,11 @@ t ->	worker_1
 t ->	worker_1
 t ->	worker_1
 t ->	worker_1
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
+t ->	worker_1
+t ->	worker_1
+echo:"SELECT nextval(\"classSeq\") val"
+echo:"insert into class (startTime,lessonPerformance,lessonTitle,teacher,goals,lessonUrl,lessonCover,lessonNo,classId) values (\"2018-04-27 20:13:48\",\"lessonGet 212121323131313\",\"lesson title\",\"keep\",\"lesson goals\",\"/keep/12211519639786370/test1\",\"/static/img/stitching.79a76b9.png\",\"1\",\"100104814\")"
 t ->	worker_1
 t ->	worker_1
 t ->	worker_1
@@ -389,3 +132,158 @@ t ->	worker_1
 t ->	worker_1
 t ->	worker_1
 t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+2018-04-27 20:14:14|6692|incoming connection (127.0.0.1/56385) is established and assigned a temporary id (~3). 
+t ->	worker_1
+2018-04-27 20:14:14|6692|incoming connection (127.0.0.1/56386) is established and assigned a temporary id (~4). 
+2018-04-27 20:14:14|6692|incoming connection (127.0.0.1/56388) is established and assigned a temporary id (~5). 
+t ->	worker_3
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'work'"
+t ->	worker_2
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'work'"
+echo:"insert into testrecord (lessonCover,lessonPerformance,lessonTitle,goals,lessonUrl,username,lessonNo,classId) values (\"/static/img/stitching.79a76b9.png\",\"lessonGet 212121323131313\",\"lesson title\",\"lesson goals\",\"/keep/12211519639786370/test1\",\"work\",\"1\",\"100104814\")"
+echo:echo:"insert into testrecord (lessonCover,lessonPerformance,lessonTitle,goals,lessonUrl,username,lessonNo,classId) values (\"/static/img/stitching.79a76b9.png\",\"lessonGet 212121323131313\",\"lesson title\",\"lesson goals\",\"/keep/12211519639786370/test1\",\"work\",\"1\",\"100104814\")""SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'work'"
+
+echo:"insert into testrecord (lessonCover,lessonPerformance,lessonTitle,goals,lessonUrl,username,lessonNo,classId) values (\"/static/img/stitching.79a76b9.png\",\"lessonGet 212121323131313\",\"lesson title\",\"lesson goals\",\"/keep/12211519639786370/test1\",\"work\",\"1\",\"100104814\")"
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+echo:"update testrecord set totalScore = \"11\" , finishTime = \"2018-04-27 20:14:31\" , emptyCount = \"2\" , answerSheet = \"[{\\\"quizzId\\\":\\\"FA54D00A\\\",\\\"quizzScore\\\":\\\"11\\\",\\\"trueFlag\\\":true,\\\"myAnswer\\\":\\\"A\\\"},{\\\"quizzId\\\":\\\"39AF35DC\\\",\\\"quizzScore\\\":\\\"5\\\"},{\\\"quizzId\\\":\\\"CFEF9B19\\\",\\\"quizzScore\\\":\\\"7\\\"}]\" , rightCount = \"1\" , wrongCount = \"0\" where sn = '189'"
+t ->	worker_1
+t ->	worker_1
+echo:"update testrecord set totalScore = \"11\" , finishTime = \"2018-04-27 20:14:33\" , emptyCount = \"1\" , answerSheet = \"[{\\\"quizzId\\\":\\\"FA54D00A\\\",\\\"quizzScore\\\":\\\"11\\\",\\\"trueFlag\\\":true,\\\"myAnswer\\\":\\\"A\\\"},{\\\"quizzId\\\":\\\"39AF35DC\\\",\\\"quizzScore\\\":\\\"5\\\",\\\"trueFlag\\\":false,\\\"myAnswer\\\":\\\"B,A\\\"},{\\\"quizzId\\\":\\\"CFEF9B19\\\",\\\"quizzScore\\\":\\\"7\\\"}]\" , rightCount = \"1\" , wrongCount = \"1\" where sn = '189'"
+t ->	worker_1
+t ->	worker_1
+echo:"update testrecord set totalScore = \"11\" , finishTime = \"2018-04-27 20:14:35\" , emptyCount = \"0\" , answerSheet = \"[{\\\"quizzId\\\":\\\"FA54D00A\\\",\\\"quizzScore\\\":\\\"11\\\",\\\"trueFlag\\\":true,\\\"myAnswer\\\":\\\"A\\\"},{\\\"quizzId\\\":\\\"39AF35DC\\\",\\\"quizzScore\\\":\\\"5\\\",\\\"trueFlag\\\":false,\\\"myAnswer\\\":\\\"B,A\\\"},{\\\"quizzId\\\":\\\"CFEF9B19\\\",\\\"quizzScore\\\":\\\"7\\\",\\\"trueFlag\\\":false,\\\"myAnswer\\\":\\\"B\\\"}]\" , rightCount = \"1\" , wrongCount = \"2\" where sn = '189'"
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+2018-04-27 20:15:33|6692|connection time out (127.0.0.1/56175) with id (~1). 
+2018-04-27 20:15:33|6692|connection closed (127.0.0.1/56175) with id (~1). 
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+echo:"update class set state = 1 , finishTime = \"2018-04-27 20:15:41\" , summary = \"[{\\\"studentNo\\\":\\\"0611011111\\\",\\\"emptyCount\\\":\\\"0\\\",\\\"answerSheet\\\":[{\\\"quizzId\\\":\\\"FA54D00A\\\",\\\"quizzScore\\\":\\\"11\\\",\\\"myAnswer\\\":\\\"A\\\",\\\"trueFlag\\\":true},{\\\"quizzId\\\":\\\"39AF35DC\\\",\\\"quizzScore\\\":\\\"5\\\",\\\"myAnswer\\\":\\\"B,A\\\",\\\"trueFlag\\\":false},{\\\"quizzId\\\":\\\"CFEF9B19\\\",\\\"quizzScore\\\":\\\"7\\\",\\\"myAnswer\\\":\\\"B\\\",\\\"trueFlag\\\":false}],\\\"recordSn\\\":189,\\\"totalScore\\\":\\\"11\\\",\\\"username\\\":\\\"work\\\",\\\"rightCount\\\":\\\"1\\\",\\\"wrongCount\\\":\\\"2\\\"}]\""
+t ->	worker_1
+[string "api/class.lua"]:162: attempt to index local 'room' (a nil value) <Runtime error>
+2018-04-27 20:15:47|6692|incoming connection (127.0.0.1/56528) is established and assigned a temporary id (~6). 
+t ->	worker_2
+[string "api/class.lua"]:162: attempt to index local 'room' (a nil value) <Runtime error>
+2018-04-27 20:15:50|6692|incoming connection (127.0.0.1/56534) is established and assigned a temporary id (~7). 
+t ->	worker_3
+[string "api/class.lua"]:162: attempt to index local 'room' (a nil value) <Runtime error>
+2018-04-27 20:15:53|6692|incoming connection (127.0.0.1/56539) is established and assigned a temporary id (~8). 
+t ->	worker_4
+[string "api/class.lua"]:162: attempt to index local 'room' (a nil value) <Runtime error>
+2018-04-27 20:15:56|6692|incoming connection (127.0.0.1/56544) is established and assigned a temporary id (~9). 
+t ->	worker_5
+[string "api/class.lua"]:162: attempt to index local 'room' (a nil value) <Runtime error>
+2018-04-27 20:15:59|6692|incoming connection (127.0.0.1/56549) is established and assigned a temporary id (~10). 
+t ->	worker_6
+[string "api/class.lua"]:162: attempt to index local 'room' (a nil value) <Runtime error>
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-04-27 20:16:12|6692|connection closed (127.0.0.1/56534) with id (~7). 
+2018-04-27 20:16:12|6692|incoming connection (127.0.0.1/56578) is established and assigned a temporary id (~11). 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-04-27 20:16:12|6692|connection closed (127.0.0.1/56306) with id (~2). 
+2018-04-27 20:16:12|6692|incoming connection (127.0.0.1/56579) is established and assigned a temporary id (~12). 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-04-27 20:16:12|6692|connection closed (127.0.0.1/56528) with id (~6). 
+2018-04-27 20:16:12|6692|incoming connection (127.0.0.1/56580) is established and assigned a temporary id (~13). 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-04-27 20:16:12|6692|connection closed (127.0.0.1/56578) with id (~11). 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-04-27 20:16:12|6692|connection closed (127.0.0.1/56544) with id (~9). 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-04-27 20:16:12|6692|connection closed (127.0.0.1/56539) with id (~8). 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-04-27 20:16:12|6692|connection closed (127.0.0.1/56579) with id (~12). 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-04-27 20:16:12|6692|connection closed (127.0.0.1/56549) with id (~10). 
+t ->	worker_8
+[string "api/class.lua"]:162: attempt to index local 'room' (a nil value) <Runtime error>
+t ->	worker_7
+[string "api/class.lua"]:162: attempt to index local 'room' (a nil value) <Runtime error>
+2018-04-27 20:16:15|6692|connection time out (127.0.0.1/56386) with id (~4). 
+2018-04-27 20:16:15|6692|connection time out (127.0.0.1/56385) with id (~3). 
+2018-04-27 20:16:15|6692|connection closed (127.0.0.1/56386) with id (~4). 
+2018-04-27 20:16:15|6692|connection closed (127.0.0.1/56385) with id (~3). 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-04-27 20:16:23|6692|connection closed (127.0.0.1/56580) with id (~13). 
+2018-04-27 20:16:35|6692|connection time out (127.0.0.1/56388) with id (~5). 
+2018-04-27 20:16:35|6692|connection closed (127.0.0.1/56388) with id (~5). 
+2018-04-27 20:22:21|6692|incoming connection (127.0.0.1/57112) is established and assigned a temporary id (~14). 
+t ->	worker_9
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
+t ->	worker_9
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
+t ->	worker_9
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
+t ->	worker_9
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
+2018-04-27 20:22:59|6692|incoming connection (127.0.0.1/57175) is established and assigned a temporary id (~15). 
+echo:"SELECT m.username, m.joinTime,\n        (SELECT COUNT(1) FROM class WHERE teacher = m.username) teached,\n        (SELECT COUNT(1) FROM testrecord WHERE username = m.username) learned,\n        (SELECT SUM( UNIX_TIMESTAMP(finishTime) -  UNIX_TIMESTAMP(beginTime) ) FROM testrecord WHERE username = m.username) learnDuration\n        FROM member m  where username = 'keep'"
+echo:"SELECT m.username, m.joinTime,\n        (SELECT COUNT(1) FROM class WHERE teacher = m.username) teached,\n        (SELECT COUNT(1) FROM testrecord WHERE username = m.username) learned,\n        (SELECT SUM( UNIX_TIMESTAMP(finishTime) -  UNIX_TIMESTAMP(beginTime) ) FROM testrecord WHERE username = m.username) learnDuration\n        FROM member m  where username = 'isyang'"
+echo:"SELECT m.username, m.joinTime,\n        (SELECT COUNT(1) FROM class WHERE teacher = m.username) teached,\n        (SELECT COUNT(1) FROM testrecord WHERE username = m.username) learned,\n        (SELECT SUM( UNIX_TIMESTAMP(finishTime) -  UNIX_TIMESTAMP(beginTime) ) FROM testrecord WHERE username = m.username) learnDuration\n        FROM member m  where username = 'keep'"
+2018-04-27 20:24:23|6692|connection time out (127.0.0.1/57112) with id (~14). 
+2018-04-27 20:24:23|6692|connection closed (127.0.0.1/57112) with id (~14). 
+2018-04-27 20:25:31|6692|connection time out (127.0.0.1/57175) with id (~15). 
+2018-04-27 20:25:31|6692|connection closed (127.0.0.1/57175) with id (~15). 

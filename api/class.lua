@@ -21,7 +21,7 @@ router:post('/begin', function(req, res, next)
     local lessonCover = p.lessonCover
     local goals = p.goals
     local username = p.username
-
+    local lessonPerformance = p.lessonPerformance
     local rq = rq(p, {'lessonNo', 'lessonUrl', 'username', 'lessonTitle', 'lessonCover' }, res)
 	if(not rq) then return end
     local startTime = os.date( "%Y-%m-%d %H:%M:%S", os.time() )
@@ -33,7 +33,8 @@ router:post('/begin', function(req, res, next)
         lessonCover = lessonCover,
         lessonNo = lessonNo,
         goals = goals,
-        startTime = startTime
+        startTime = startTime,
+        lessonPerformance = lessonPerformance
     })
     room:begin({
         classId = classId,
@@ -43,7 +44,8 @@ router:post('/begin', function(req, res, next)
         lessonCover = lessonCover,
         lessonNo = lessonNo,
         goals = goals,
-        startTime = startTime
+        startTime = startTime,
+        lessonPerformance = lessonPerformance
     })
     
     local rs = {
