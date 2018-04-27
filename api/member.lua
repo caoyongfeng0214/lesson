@@ -30,4 +30,19 @@ router:get('/auth', function(req, res, next)
     res:send(rs)
 end)
 
+-- 获取我的记录
+router:get('/statis', function(req, res, next)
+    local p = req.query
+    local username = p.username
+    local rq = rq(p, {'username'}, res)
+    if(not rq) then return end
+    local where = {}
+    where.username = username
+    local memberStatis = memberBll.statis(where)
+    res:send({
+        err = 0,
+        data = memberStatis
+    })
+end)
+
 NPL.export(router)

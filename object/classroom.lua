@@ -83,7 +83,7 @@ function classroom:commitAnswer( user, answerSheet, totalScore, rightCount, wron
             emptyCount = emptyCount,
             action = 'commitAnswer'
         }
-        -- TODO: 更新自己的 TestRecord
+        -- 更新自己的 TestRecord
         if(stu.recordSn) then
             local record = {
                 sn = stu.recordSn,
@@ -114,26 +114,35 @@ end
 
 -- finish
 function classroom:finish( user )
+    local _class = {}
     if( self.state == 0 and user.username == self.teacher ) then
-        -- TODO: save Summary into class
-        local _class = {
+        -- save Summary into class
+        local summary = {}
+        local summaryJsonStr = '[]'
+        for k,v in pairs(self.students) do
+            table.insert(summary, v)
+        end
+        if(#summary > 0) then
+            summaryJsonStr = commonlib.Json.Encode(summary)
+        end
+        _class = {
             sn = self.classSn,
             state = 1, -- 已结束
             finishTime = os.date( "%Y-%m-%d %H:%M:%S", os.time() ),
-            summary = commonlib.Json.Encode(self.students)
+            summary = summaryJsonStr
         }
         local num = classBll.update(_class)
         if(num) then
             local obj = {room = self, user = user, action = 'finish'}
             classroom._set(obj)
             express.handler.shareData('_set', obj);
-            return true
         else
-            return false
+            return nil
         end
     else
         -- 不处理
     end
+    return _class
 end
 
 classroom._set = function( obj ) 

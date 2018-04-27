@@ -1,4 +1,4 @@
-2018-04-26 16:35:43|10860|NPL Runtime started
+2018-04-27 16:34:47|13480|NPL Runtime started
 NPL bin dir: D:\cover\cover\ParaCraftSDK-master\NPLRuntime\win\bin\
 WorkingDir: D:\GitClone\lesson
 WritablePath: D:/GitClone/lesson/
@@ -7,7 +7,7 @@ OS version:Microsoft  (build 9200), 64-bit
 Number of processors:4
 Processor type:586
 TotalPhysicalMemory:8312676
-FreePhysicalMemory:2279564
+FreePhysicalMemory:1833916
 
 ParaEngine Root Dir is D:/GitClone/lesson/
 ./packages dir: D:\cover\cover\ParaCraftSDK-master\NPLRuntime\win\packages\
@@ -29,185 +29,281 @@ font Tahoma;12;norm is created
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
 ffi loaded shared lib: C
-2018-04-26 16:35:43|main|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-27 16:34:47|main|info|DomainSpecificLanguage|NPL language extension loaded
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+ffi loaded shared lib: C
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ffi loaded shared lib: C
 NPL server 0.1 is listening on 0.0.0.0:3000
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
 TCPKeepAlive: false
 AppKeepAlive: false
 IdleTimeout: true
 IdleTimeoutPeriod: 120000
-ffi loaded shared lib: C
 UseCompression(incoming): false
 CompressionLevel: -1
 CompressionThreshold: 204800
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
 ffi loaded shared lib: C
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-ffi loaded shared lib: C
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ffi loaded shared lib: C
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ffi loaded shared lib: C
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ffi loaded shared lib: C
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ffi loaded shared lib: C
-2018-04-26 16:35:43|worker_7|info|DomainSpecificLanguage|NPL language extension loaded
-2018-04-26 16:35:43|worker_10|info|DomainSpecificLanguage|NPL language extension loaded
-2018-04-26 16:35:43|worker_4|info|DomainSpecificLanguage|NPL language extension loaded
-2018-04-26 16:35:43|worker_5|info|DomainSpecificLanguage|NPL language extension loaded
-2018-04-26 16:35:43|worker_6|info|DomainSpecificLanguage|NPL language extension loaded
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ffi loaded shared lib: C
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ffi loaded shared lib: C
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ffi loaded shared lib: C
-2018-04-26 16:35:44|worker_3|info|DomainSpecificLanguage|NPL language extension loaded
 NPL max pending incoming connections allowed is 1000
-2018-04-26 16:35:44|worker_1|info|DomainSpecificLanguage|NPL language extension loaded
-2018-04-26 16:35:44|worker_9|info|DomainSpecificLanguage|NPL language extension loaded
-2018-04-26 16:35:44|worker_8|info|DomainSpecificLanguage|NPL language extension loaded
-2018-04-26 16:35:44|worker_2|info|DomainSpecificLanguage|NPL language extension loaded
-2018-04-26 16:35:54|7284|incoming connection (127.0.0.1/63803) is established and assigned a temporary id (~1). 
-t ->	worker_1
-echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
-t ->	worker_1
-echo:"SELECT nextval(\"classSeq\") val"
-echo:"insert into class (teacher,goals,lessonNo,lessonUrl,lessonTitle,lessonCover,classId) values (\"keep\",\"lesson goals\",\"1\",\"/keep/12211519639786370/test1\",\"lesson title\",\"/static/img/stitching.79a76b9.png\",\"100079814\")"
-2018-04-26 16:36:08|7284|incoming connection (127.0.0.1/63838) is established and assigned a temporary id (~2). 
-t ->	worker_1
-2018-04-26 16:36:08|7284|incoming connection (127.0.0.1/63839) is established and assigned a temporary id (~3). 
-2018-04-26 16:36:08|7284|incoming connection (127.0.0.1/63841) is established and assigned a temporary id (~4). 
-echo:"insert into testrecord (lessonCover,classSn,lessonTitle,lessonNo,lessonUrl,username,goals,classId) values (\"/static/img/stitching.79a76b9.png\",36,\"lesson title\",\"1\",\"/keep/12211519639786370/test1\",\"work\",\"lesson goals\",\"100079814\")"
-t ->t ->	worker_2
-	worker_3
-echo:"insert into testrecord (lessonCover,classSn,lessonTitle,lessonNo,lessonUrl,username,goals,classId) values (\"/static/img/stitching.79a76b9.png\",36,\"lesson title\",\"1\",\"/keep/12211519639786370/test1\",\"work\",\"lesson goals\",\"100079814\")"
-echo:"insert into testrecord (lessonCover,classSn,lessonTitle,lessonNo,lessonUrl,username,goals,classId) values (\"/static/img/stitching.79a76b9.png\",36,\"lesson title\",\"1\",\"/keep/12211519639786370/test1\",\"work\",\"lesson goals\",\"100079814\")"
-t ->	worker_1
-echo:"update testrecord set totalScore = \"11\" , finishTime = \"2018-04-26 16:36:10\" , emptyCount = \"2\" , answerSheet = \"[{\\\"quizzId\\\":\\\"FA54D00A\\\",\\\"quizzScore\\\":\\\"11\\\",\\\"trueFlag\\\":true,\\\"myAnswer\\\":\\\"A\\\"},{\\\"quizzId\\\":\\\"39AF35DC\\\",\\\"quizzScore\\\":\\\"5\\\"},{\\\"quizzId\\\":\\\"CFEF9B19\\\",\\\"quizzScore\\\":\\\"7\\\"}]\" , rightCount = \"1\" , wrongCount = \"0\" where sn = '102'"
-t ->	worker_1
-echo:"update testrecord set totalScore = \"16\" , finishTime = \"2018-04-26 16:36:13\" , emptyCount = \"1\" , answerSheet = \"[{\\\"quizzId\\\":\\\"FA54D00A\\\",\\\"quizzScore\\\":\\\"11\\\",\\\"trueFlag\\\":true,\\\"myAnswer\\\":\\\"A\\\"},{\\\"quizzId\\\":\\\"39AF35DC\\\",\\\"quizzScore\\\":\\\"5\\\",\\\"trueFlag\\\":true,\\\"myAnswer\\\":\\\"A,B\\\"},{\\\"quizzId\\\":\\\"CFEF9B19\\\",\\\"quizzScore\\\":\\\"7\\\"}]\" , rightCount = \"2\" , wrongCount = \"0\" where sn = '102'"
-t ->	worker_1
-echo:"update testrecord set totalScore = \"16\" , finishTime = \"2018-04-26 16:36:15\" , emptyCount = \"0\" , answerSheet = \"[{\\\"quizzId\\\":\\\"FA54D00A\\\",\\\"quizzScore\\\":\\\"11\\\",\\\"trueFlag\\\":true,\\\"myAnswer\\\":\\\"A\\\"},{\\\"quizzId\\\":\\\"39AF35DC\\\",\\\"quizzScore\\\":\\\"5\\\",\\\"trueFlag\\\":true,\\\"myAnswer\\\":\\\"A,B\\\"},{\\\"quizzId\\\":\\\"CFEF9B19\\\",\\\"quizzScore\\\":\\\"7\\\",\\\"trueFlag\\\":false,\\\"myAnswer\\\":\\\"B\\\"}]\" , rightCount = \"2\" , wrongCount = \"1\" where sn = '102'"
-2018-04-26 16:36:19|7284|incoming connection (127.0.0.1/63863) is established and assigned a temporary id (~5). 
-t ->	worker_1
-t ->	worker_1
-echo:"update class set state = 1 , finishTime = \"2018-04-26 16:36:27\" , summary = \"{\\\"work\\\":{\\\"studentNo\\\":\\\"0611011111\\\",\\\"emptyCount\\\":\\\"0\\\",\\\"answerSheet\\\":[{\\\"quizzId\\\":\\\"FA54D00A\\\",\\\"quizzScore\\\":\\\"11\\\",\\\"myAnswer\\\":\\\"A\\\",\\\"trueFlag\\\":true},{\\\"quizzId\\\":\\\"39AF35DC\\\",\\\"quizzScore\\\":\\\"5\\\",\\\"myAnswer\\\":\\\"A,B\\\",\\\"trueFlag\\\":true},{\\\"quizzId\\\":\\\"CFEF9B19\\\",\\\"quizzScore\\\":\\\"7\\\",\\\"myAnswer\\\":\\\"B\\\",\\\"trueFlag\\\":false}],\\\"recordSn\\\":102,\\\"totalScore\\\":\\\"16\\\",\\\"username\\\":\\\"work\\\",\\\"rightCount\\\":\\\"2\\\",\\\"wrongCount\\\":\\\"1\\\"}}\" where sn = '36'"
-t ->	worker_1
-t ->	worker_1
-echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
-t ->	worker_1
-echo:"SELECT nextval(\"classSeq\") val"
-echo:"insert into class (teacher,goals,lessonNo,lessonUrl,lessonTitle,lessonCover,classId) values (\"keep\",\"lesson goals\",\"1\",\"/keep/12211519639786370/test1\",\"lesson title\",\"/static/img/stitching.79a76b9.png\",\"100080728\")"
-t ->	worker_1
-t ->	worker_1
-t ->	worker_2
-t ->	worker_3
-echo:echo:"insert into testrecord (lessonCover,classSn,lessonTitle,lessonNo,lessonUrl,username,goals,classId) values (\"/static/img/stitching.79a76b9.png\",37,\"lesson title\",\"1\",\"/keep/12211519639786370/test1\",\"work\",\"lesson goals\",\"100080728\")"
-"insert into testrecord (lessonCover,classSn,lessonTitle,lessonNo,lessonUrl,username,goals,classId) values (\"/static/img/stitching.79a76b9.png\",37,\"lesson title\",\"1\",\"/keep/12211519639786370/test1\",\"work\",\"lesson goals\",\"100080728\")"
-echo:"insert into testrecord (lessonCover,classSn,lessonTitle,lessonNo,lessonUrl,username,goals,classId) values (\"/static/img/stitching.79a76b9.png\",37,\"lesson title\",\"1\",\"/keep/12211519639786370/test1\",\"work\",\"lesson goals\",\"100080728\")"
-t ->	worker_1
-t ->	worker_2
-t ->	worker_3
-echo:"insert into testrecord (lessonCover,classSn,lessonTitle,lessonNo,lessonUrl,username,goals,classId) values (\"/static/img/stitching.79a76b9.png\",37,\"lesson title\",\"1\",\"/keep/12211519639786370/test1\",\"isyang\",\"lesson goals\",\"100080728\")"
-echo:"insert into testrecord (lessonCover,classSn,lessonTitle,lessonNo,lessonUrl,username,goals,classId) values (\"/static/img/stitching.79a76b9.png\",37,\"lesson title\",\"1\",\"/keep/12211519639786370/test1\",\"isyang\",\"lesson goals\",\"100080728\")"
-echo:"insert into testrecord (lessonCover,classSn,lessonTitle,lessonNo,lessonUrl,username,goals,classId) values (\"/static/img/stitching.79a76b9.png\",37,\"lesson title\",\"1\",\"/keep/12211519639786370/test1\",\"isyang\",\"lesson goals\",\"100080728\")"
-t ->	worker_1
-echo:"update testrecord set totalScore = \"11\" , finishTime = \"2018-04-26 16:37:47\" , emptyCount = \"2\" , answerSheet = \"[{\\\"quizzId\\\":\\\"FA54D00A\\\",\\\"quizzScore\\\":\\\"11\\\",\\\"trueFlag\\\":true,\\\"myAnswer\\\":\\\"A\\\"},{\\\"quizzId\\\":\\\"39AF35DC\\\",\\\"quizzScore\\\":\\\"5\\\"},{\\\"quizzId\\\":\\\"CFEF9B19\\\",\\\"quizzScore\\\":\\\"7\\\"}]\" , rightCount = \"1\" , wrongCount = \"0\" where sn = '108'"
-t ->	worker_1
-echo:"update testrecord set totalScore = \"0\" , finishTime = \"2018-04-26 16:37:51\" , emptyCount = \"2\" , answerSheet = \"[{\\\"quizzId\\\":\\\"FA54D00A\\\",\\\"quizzScore\\\":\\\"11\\\"},{\\\"quizzId\\\":\\\"39AF35DC\\\",\\\"quizzScore\\\":\\\"5\\\",\\\"trueFlag\\\":false,\\\"myAnswer\\\":\\\"B,C\\\"},{\\\"quizzId\\\":\\\"CFEF9B19\\\",\\\"quizzScore\\\":\\\"7\\\"}]\" , rightCount = \"0\" , wrongCount = \"1\" where sn = '105'"
-t ->	worker_1
-2018-04-26 16:38:51|7284|connection time out (127.0.0.1/63803) with id (~1). 
-2018-04-26 16:38:51|7284|connection closed (127.0.0.1/63803) with id (~1). 
-2018-04-26 16:39:42|7284|connection time out (127.0.0.1/63839) with id (~3). 
-2018-04-26 16:39:42|7284|connection time out (127.0.0.1/63841) with id (~4). 
-2018-04-26 16:39:42|7284|connection closed (127.0.0.1/63839) with id (~3). 
-2018-04-26 16:39:42|7284|connection closed (127.0.0.1/63841) with id (~4). 
-2018-04-26 16:39:52|7284|connection time out (127.0.0.1/63838) with id (~2). 
-2018-04-26 16:39:52|7284|connection closed (127.0.0.1/63838) with id (~2). 
-2018-04-26 16:39:55|7284|incoming connection (127.0.0.1/64222) is established and assigned a temporary id (~6). 
-2018-04-26 16:39:55|7284|incoming connection (127.0.0.1/64223) is established and assigned a temporary id (~7). 
-2018-04-26 16:39:55|7284|incoming connection (127.0.0.1/64224) is established and assigned a temporary id (~8). 
-t ->	worker_1t ->
-	worker_2
-t ->	worker_3
+2018-04-27 16:34:47|worker_10|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-27 16:34:47|worker_6|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-27 16:34:47|worker_5|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-27 16:34:47|worker_9|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-27 16:34:47|worker_3|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-27 16:34:47|worker_7|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-27 16:34:47|worker_1|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-27 16:34:47|worker_8|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-27 16:34:47|worker_2|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-27 16:34:47|worker_4|info|DomainSpecificLanguage|NPL language extension loaded
+2018-04-27 16:34:48|9940|incoming connection (127.0.0.1/50848) is established and assigned a temporary id (~1). 
 t ->	worker_1
 t ->	worker_1
 t ->	worker_1
 t ->	worker_1
 t ->	worker_1
-t ->	worker_2
-2018-04-26 16:39:56|7284|connection time out (127.0.0.1/63863) with id (~5). 
-2018-04-26 16:39:56|7284|connection closed (127.0.0.1/63863) with id (~5). 
-2018-04-26 16:39:56|7284|incoming connection (127.0.0.1/64236) is established and assigned a temporary id (~9). 
-2018-04-26 16:39:56|7284|incoming connection (127.0.0.1/64237) is established and assigned a temporary id (~10). 
-2018-04-26 16:39:56|7284|incoming connection (127.0.0.1/64238) is established and assigned a temporary id (~11). 
-t ->	worker_1
-t ->	worker_2
-t ->	worker_3
-t ->	worker_1
-t ->	worker_2
 t ->	worker_1
 t ->	worker_1
 t ->	worker_1
-t ->	worker_2
 t ->	worker_1
-t ->	worker_2
 t ->	worker_1
-t ->t ->	worker_2
-	worker_1
-t ->	worker_3
-network: handle_read stopped, asio msg: End of file. Connection will be closed 
-network: handle_read stopped, asio msg: End of file. Connection will be closed 
-network: handle_read stopped, asio msg: End of file. Connection will be closed 
-2018-04-26 16:42:18|7284|connection closed (127.0.0.1/64236) with id (~9). 
-2018-04-26 16:42:18|7284|connection closed (127.0.0.1/64237) with id (~10). 
-2018-04-26 16:42:18|7284|connection closed (127.0.0.1/64238) with id (~11). 
-2018-04-26 16:42:24|7284|connection time out (127.0.0.1/64224) with id (~8). 
-2018-04-26 16:42:24|7284|connection time out (127.0.0.1/64223) with id (~7). 
-2018-04-26 16:42:24|7284|connection time out (127.0.0.1/64222) with id (~6). 
-2018-04-26 16:42:24|7284|connection closed (127.0.0.1/64224) with id (~8). 
-2018-04-26 16:42:24|7284|connection closed (127.0.0.1/64223) with id (~7). 
-2018-04-26 16:42:24|7284|connection closed (127.0.0.1/64222) with id (~6). 
-2018-04-26 16:42:30|7284|incoming connection (127.0.0.1/64499) is established and assigned a temporary id (~12). 
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+2018-04-27 16:45:38|9940|incoming connection (127.0.0.1/52134) is established and assigned a temporary id (~2). 
 t ->	worker_1
 echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'isyang'"
-echo:"insert into member (username) values (\"isyang\")"
-2018-04-26 16:42:31|7284|incoming connection (127.0.0.1/64512) is established and assigned a temporary id (~13). 
-t ->	worker_1
-echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
-t ->	worker_1
-echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
-network: handle_read stopped, asio msg: End of file. Connection will be closed 
-2018-04-26 16:44:26|7284|connection closed (127.0.0.1/64499) with id (~12). 
-2018-04-26 16:44:32|7284|connection time out (127.0.0.1/64512) with id (~13). 
-2018-04-26 16:44:32|7284|connection closed (127.0.0.1/64512) with id (~13). 
-2018-04-26 16:50:31|7284|incoming connection (127.0.0.1/65278) is established and assigned a temporary id (~14). 
 t ->	worker_1
 echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'isyang'"
-2018-04-26 16:50:32|7284|incoming connection (127.0.0.1/65292) is established and assigned a temporary id (~15). 
 t ->	worker_1
-echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
-t ->	worker_1
-echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
-2018-04-26 16:50:44|7284|incoming connection (127.0.0.1/65322) is established and assigned a temporary id (~16). 
-t ->	worker_1
-t ->	worker_1
-echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
-t ->	worker_1
-echo:"SELECT nextval(\"classSeq\") val"
-echo:"insert into class (teacher,goals,lessonNo,lessonUrl,lessonTitle,lessonCover,classId) values (\"keep\",\"lesson goals\",\"1\",\"/keep/12211519639786370/test1\",\"lesson title\",\"/static/img/stitching.79a76b9.png\",\"100081631\")"
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'isyang'"
 t ->	worker_1
 echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'isyang'"
 t ->	worker_1
@@ -217,1549 +313,70 @@ echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vi
 t ->	worker_1
 echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
 t ->	worker_1
-echo:"SELECT nextval(\"classSeq\") val"
-echo:"insert into class (teacher,goals,lessonNo,lessonUrl,lessonTitle,lessonCover,classId) values (\"keep\",\"lesson goals\",\"1\",\"/keep/12211519639786370/test1\",\"lesson title\",\"/static/img/stitching.79a76b9.png\",\"100082777\")"
 t ->	worker_1
 t ->	worker_1
 t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-2018-04-26 16:52:46|7284|connection time out (127.0.0.1/65322) with id (~16). 
-2018-04-26 16:52:46|7284|connection closed (127.0.0.1/65322) with id (~16). 
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'isyang'"
-t ->	worker_1
-echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
-t ->	worker_1
-echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'isyang'"
-t ->	worker_1
-echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
-t ->	worker_1
-echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
-t ->	worker_1
-echo:"SELECT nextval(\"classSeq\") val"
-echo:"insert into class (teacher,goals,lessonNo,lessonUrl,lessonTitle,lessonCover,classId) values (\"keep\",\"lesson goals\",\"1\",\"/keep/12211519639786370/test1\",\"lesson title\",\"/static/img/stitching.79a76b9.png\",\"100083172\")"
 t ->	worker_1
 t ->	worker_1
 t ->	worker_1
 t ->	worker_1
 network: handle_read stopped, asio msg: End of file. Connection will be closed 
-2018-04-26 16:56:05|7284|connection closed (127.0.0.1/65278) with id (~14). 
+2018-04-27 16:46:00|9940|connection closed (127.0.0.1/52134) with id (~2). 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-04-27 16:46:00|9940|connection closed (127.0.0.1/50848) with id (~1). 
+2018-04-27 16:46:05|9940|incoming connection (127.0.0.1/52184) is established and assigned a temporary id (~3). 
 t ->	worker_1
-2018-04-26 16:56:11|7284|incoming connection (127.0.0.1/49572) is established and assigned a temporary id (~17). 
 t ->	worker_1
-2018-04-26 16:56:11|7284|incoming connection (127.0.0.1/49573) is established and assigned a temporary id (~18). 
-2018-04-26 16:56:11|7284|incoming connection (127.0.0.1/49575) is established and assigned a temporary id (~19). 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-04-27 16:46:06|9940|connection closed (127.0.0.1/52184) with id (~3). 
+2018-04-27 16:46:09|9940|incoming connection (127.0.0.1/52197) is established and assigned a temporary id (~4). 
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+2018-04-27 16:46:46|9940|incoming connection (127.0.0.1/52267) is established and assigned a temporary id (~5). 
+t ->	worker_1
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'isyang'"
+t ->	worker_1
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'isyang'"
+t ->	worker_1
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'isyang'"
+t ->	worker_1
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'isyang'"
+t ->	worker_1
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
+t ->	worker_1
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
+t ->	worker_1
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'isyang'"
+t ->	worker_1
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
+t ->	worker_1
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
+t ->	worker_1
+2018-04-27 16:47:00|9940|incoming connection (127.0.0.1/52323) is established and assigned a temporary id (~6). 
 t ->	worker_2
-echo:"insert into testrecord (lessonCover,classSn,lessonTitle,lessonNo,lessonUrl,username,goals,classId) values (\"/static/img/stitching.79a76b9.png\",40,\"lesson title\",\"1\",\"/keep/12211519639786370/test1\",\"work\",\"lesson goals\",\"100083172\")"
-t ->	worker_3
-echo:"insert into testrecord (lessonCover,classSn,lessonTitle,lessonNo,lessonUrl,username,goals,classId) values (\"/static/img/stitching.79a76b9.png\",40,\"lesson title\",\"1\",\"/keep/12211519639786370/test1\",\"work\",\"lesson goals\",\"100083172\")"
-echo:"insert into testrecord (lessonCover,classSn,lessonTitle,lessonNo,lessonUrl,username,goals,classId) values (\"/static/img/stitching.79a76b9.png\",40,\"lesson title\",\"1\",\"/keep/12211519639786370/test1\",\"work\",\"lesson goals\",\"100083172\")"
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'isyang'"
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'isyang'"
 t ->	worker_1
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'isyang'"
 t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_2
-t ->	worker_3
-echo:echo:"insert into testrecord (lessonCover,classSn,lessonTitle,lessonNo,lessonUrl,username,goals,classId) values (\"/static/img/stitching.79a76b9.png\",40,\"lesson title\",\"1\",\"/keep/12211519639786370/test1\",\"isyang\",\"lesson goals\",\"100083172\")""insert into testrecord (lessonCover,classSn,lessonTitle,lessonNo,lessonUrl,username,goals,classId) values (\"/static/img/stitching.79a76b9.png\",40,\"lesson title\",\"1\",\"/keep/12211519639786370/test1\",\"isyang\",\"lesson goals\",\"100083172\")"
-
-echo:"insert into testrecord (lessonCover,classSn,lessonTitle,lessonNo,lessonUrl,username,goals,classId) values (\"/static/img/stitching.79a76b9.png\",40,\"lesson title\",\"1\",\"/keep/12211519639786370/test1\",\"isyang\",\"lesson goals\",\"100083172\")"
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-echo:"update testrecord set totalScore = \"11\" , finishTime = \"2018-04-26 16:56:46\" , emptyCount = \"2\" , answerSheet = \"[{\\\"quizzId\\\":\\\"FA54D00A\\\",\\\"quizzScore\\\":\\\"11\\\",\\\"trueFlag\\\":true,\\\"myAnswer\\\":\\\"A\\\"},{\\\"quizzId\\\":\\\"39AF35DC\\\",\\\"quizzScore\\\":\\\"5\\\"},{\\\"quizzId\\\":\\\"CFEF9B19\\\",\\\"quizzScore\\\":\\\"7\\\"}]\" , rightCount = \"1\" , wrongCount = \"0\" where sn = '114'"
-t ->	worker_1
-t ->	worker_1
-echo:"update testrecord set totalScore = \"16\" , finishTime = \"2018-04-26 16:56:48\" , emptyCount = \"1\" , answerSheet = \"[{\\\"quizzId\\\":\\\"FA54D00A\\\",\\\"quizzScore\\\":\\\"11\\\",\\\"trueFlag\\\":true,\\\"myAnswer\\\":\\\"A\\\"},{\\\"quizzId\\\":\\\"39AF35DC\\\",\\\"quizzScore\\\":\\\"5\\\",\\\"trueFlag\\\":true,\\\"myAnswer\\\":\\\"A,B\\\"},{\\\"quizzId\\\":\\\"CFEF9B19\\\",\\\"quizzScore\\\":\\\"7\\\"}]\" , rightCount = \"2\" , wrongCount = \"0\" where sn = '114'"
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-echo:"update testrecord set totalScore = \"0\" , finishTime = \"2018-04-26 16:56:54\" , emptyCount = \"2\" , answerSheet = \"[{\\\"quizzId\\\":\\\"FA54D00A\\\",\\\"quizzScore\\\":\\\"11\\\"},{\\\"quizzId\\\":\\\"39AF35DC\\\",\\\"quizzScore\\\":\\\"5\\\",\\\"trueFlag\\\":false,\\\"myAnswer\\\":\\\"D,C\\\"},{\\\"quizzId\\\":\\\"CFEF9B19\\\",\\\"quizzScore\\\":\\\"7\\\"}]\" , rightCount = \"0\" , wrongCount = \"1\" where sn = '111'"
-t ->	worker_1
-echo:"update testrecord set totalScore = \"0\" , finishTime = \"2018-04-26 16:56:56\" , emptyCount = \"1\" , answerSheet = \"[{\\\"quizzId\\\":\\\"FA54D00A\\\",\\\"quizzScore\\\":\\\"11\\\"},{\\\"quizzId\\\":\\\"39AF35DC\\\",\\\"quizzScore\\\":\\\"5\\\",\\\"trueFlag\\\":false,\\\"myAnswer\\\":\\\"D,C\\\"},{\\\"quizzId\\\":\\\"CFEF9B19\\\",\\\"quizzScore\\\":\\\"7\\\",\\\"trueFlag\\\":false,\\\"myAnswer\\\":\\\"B\\\"}]\" , rightCount = \"0\" , wrongCount = \"2\" where sn = '111'"
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-2018-04-26 16:58:20|7284|connection time out (127.0.0.1/49573) with id (~18). 
-2018-04-26 16:58:20|7284|connection time out (127.0.0.1/49572) with id (~17). 
-2018-04-26 16:58:20|7284|connection closed (127.0.0.1/49573) with id (~18). 
-2018-04-26 16:58:20|7284|connection closed (127.0.0.1/49572) with id (~17). 
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-echo:"update testrecord set totalScore = \"11\" , finishTime = \"2018-04-26 16:58:43\" , emptyCount = \"0\" , answerSheet = \"[{\\\"quizzId\\\":\\\"FA54D00A\\\",\\\"quizzScore\\\":\\\"11\\\",\\\"trueFlag\\\":true,\\\"myAnswer\\\":\\\"A\\\"},{\\\"quizzId\\\":\\\"39AF35DC\\\",\\\"quizzScore\\\":\\\"5\\\",\\\"trueFlag\\\":false,\\\"myAnswer\\\":\\\"D,C\\\"},{\\\"quizzId\\\":\\\"CFEF9B19\\\",\\\"quizzScore\\\":\\\"7\\\",\\\"trueFlag\\\":false,\\\"myAnswer\\\":\\\"B\\\"}]\" , rightCount = \"1\" , wrongCount = \"2\" where sn = '111'"
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-echo:"update testrecord set totalScore = \"23\" , finishTime = \"2018-04-26 16:59:04\" , emptyCount = \"0\" , answerSheet = \"[{\\\"quizzId\\\":\\\"FA54D00A\\\",\\\"quizzScore\\\":\\\"11\\\",\\\"trueFlag\\\":true,\\\"myAnswer\\\":\\\"A\\\"},{\\\"quizzId\\\":\\\"39AF35DC\\\",\\\"quizzScore\\\":\\\"5\\\",\\\"trueFlag\\\":true,\\\"myAnswer\\\":\\\"A,B\\\"},{\\\"quizzId\\\":\\\"CFEF9B19\\\",\\\"quizzScore\\\":\\\"7\\\",\\\"trueFlag\\\":true,\\\"myAnswer\\\":\\\"A\\\"}]\" , rightCount = \"3\" , wrongCount = \"0\" where sn = '114'"
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-2018-04-26 16:59:19|7284|incoming connection (127.0.0.1/49878) is established and assigned a temporary id (~20). 
-t ->	worker_2
-echo:"insert into testrecord (lessonCover,classSn,lessonTitle,lessonNo,lessonUrl,username,goals,classId) values (\"/static/img/stitching.79a76b9.png\",40,\"lesson title\",\"1\",\"/keep/12211519639786370/test1\",\"keep123\",\"lesson goals\",\"100083172\")"
-2018-04-26 16:59:19|7284|incoming connection (127.0.0.1/49881) is established and assigned a temporary id (~21). 
-t ->	worker_3
-echo:"insert into testrecord (lessonCover,classSn,lessonTitle,lessonNo,lessonUrl,username,goals,classId) values (\"/static/img/stitching.79a76b9.png\",40,\"lesson title\",\"1\",\"/keep/12211519639786370/test1\",\"keep123\",\"lesson goals\",\"100083172\")"
-echo:"insert into testrecord (lessonCover,classSn,lessonTitle,lessonNo,lessonUrl,username,goals,classId) values (\"/static/img/stitching.79a76b9.png\",40,\"lesson title\",\"1\",\"/keep/12211519639786370/test1\",\"keep123\",\"lesson goals\",\"100083172\")"
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-2018-04-26 17:01:20|7284|connection time out (127.0.0.1/49881) with id (~21). 
-2018-04-26 17:01:20|7284|connection time out (127.0.0.1/49575) with id (~19). 
-2018-04-26 17:01:20|7284|connection time out (127.0.0.1/49878) with id (~20). 
-2018-04-26 17:01:20|7284|connection closed (127.0.0.1/49881) with id (~21). 
-2018-04-26 17:01:20|7284|connection closed (127.0.0.1/49575) with id (~19). 
-2018-04-26 17:01:20|7284|connection closed (127.0.0.1/49878) with id (~20). 
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
 t ->	worker_1
 t ->	worker_1
 t ->	worker_1
