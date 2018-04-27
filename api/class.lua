@@ -10,10 +10,7 @@ local ROOM_ID_MAX = 999
 -- 开始上课
 router:post('/begin', function(req, res, next)
     print('t ->', __rts__:GetName())
-    -- TODO: 检查该 keepwork 账户是否拥有开课权限, 检查该导师是否存在未 finish 的课程
-    -- classId => 6 位自增长 + 3 为随机数
-    local seq = classBll.nextSeq()
-    local classId = '' .. seq.val .. math.random(ROOM_ID_MIN, ROOM_ID_MAX)  -- 3 位随机数
+    -- 检查该 keepwork 账户是否拥有开课权限
     local p = req.body
     local lessonNo = p.lessonNo
     local lessonUrl = p.lessonUrl
@@ -24,6 +21,27 @@ router:post('/begin', function(req, res, next)
     local lessonPerformance = p.lessonPerformance
     local rq = rq(p, {'lessonNo', 'lessonUrl', 'username', 'lessonTitle', 'lessonCover' }, res)
 	if(not rq) then return end
+    local where = { username = username }
+    local member = memberBll.get(where)
+    if(member == nil) then
+        member = {
+            username = username
+        }
+        memberBll.save(member)
+    else
+        if(member.vipDay == nil or member.vipDay < 0) then
+            -- 没有开课权限
+            res:send({
+                err = 102,
+                msg = 'not allow.'
+            })
+            return
+        end
+        -- TODO: 检查该导师是否存在未 finish 的课程
+    end
+    -- classId => 6 位自增长 + 3 为随机数
+    local seq = classBll.nextSeq()
+    local classId = '' .. seq.val .. math.random(ROOM_ID_MIN, ROOM_ID_MAX)  -- 3 位随机数
     local startTime = os.date( "%Y-%m-%d %H:%M:%S", os.time() )
     local room = classroom:new({
         classId = classId,
