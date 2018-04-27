@@ -336,6 +336,18 @@ dbutil.updateById = function(tableName,obj,cn)
 	return dbutil.update(tableName,obj,where,cn);
 end
 
+-- 根据 sn 更新操作
+--	tableName : 表名
+--	obj ： 要修改的对象
+--	cn ：cn 参数是可选的
+-- return 受影响的行数
+dbutil.updateBySn = function(tableName,obj,cn)
+	local length = countTable(obj);
+	local where = {sn = obj.sn}; 
+	obj.sn = nil;
+	return dbutil.update(tableName,obj,where,cn);
+end
+
 -- 根据条件删除
 --  tableName : 表名
 --  where : 条件

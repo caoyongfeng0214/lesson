@@ -24,25 +24,17 @@ app:use(express.session());
 -- ***********************************************************************
 -- ****** API ******
 -- ***********************************************************************
-
--- ------ 用户 -----------------------------------------------------------
 local class = NPL.load('./api/class');
 app:use('/api/class', class);
 
 local member = NPL.load('./api/member');
 app:use('/api/member', member);
 
-local router_news = NPL.load('./routes/news');
-app:use('/news/:id', router_news);
+local testrecord = NPL.load('./api/testrecord');
+app:use('/api/record', testrecord)
 
-local router_user = NPL.load('./routes/user');
-app:use('/user', router_user);
-
-local router_upload = NPL.load('./routes/upload');
-app:use('/upload', router_upload);
-
-local router_index = NPL.load('./routes/index');
-app:use('/', router_index);
+local orders = NPL.load('./api/orders')
+app:use('/api/order', orders)
 
 local router_my_record = NPL.load('./routes/myRecord');
 app:use('/myRecord', router_my_record);
