@@ -4,12 +4,27 @@
 <head>
     <meta charset="utf-8" />
     <title>NPLExpress</title>
+    <link href="/csslib/element-ui.css" rel="stylesheet" />
     <link href="/css/common.css" rel="stylesheet" />
+    {{? link}}
 </head>
 <body>
-    <div class="header">NPLExpress</div>
-    <div class="content">
+    <div class="header">
+        <div class="nav-bar">
+            <div class="menu">
+                <a href="#">HOME</a>
+                <a href="#">LESSONS</a>
+                <a href="#">BUY</a>
+                <a href="#" class="current">MY RECORD</a>
+            </div>  
+            <div class="to-download">
+                <a href="#">Paracraft<i class="el-icon-download"></i></a>    
+            </div>  
+        </div>   
+    </div>
+    <div class="main">
         {{? content}}
     </div>
+   
 </body>
 </html>

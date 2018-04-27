@@ -97,9 +97,8 @@ var get_dest_path = function (src) {
 var copy_to_dest = function (src) {
     var dest_path = get_dest_path(src);
     var extension = path.extname(src);
-    
     var pres = pretreatment(extension);
-    var ary = [gulp.src(src)];
+    var ary = [gulp.src(src, { base: path.dirname(src) })];
     if (pres) {
         ary.push(pres);
     }

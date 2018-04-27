@@ -44,6 +44,15 @@ app:use('/upload', router_upload);
 local router_index = NPL.load('./routes/index');
 app:use('/', router_index);
 
+local router_my_record = NPL.load('./routes/myRecord');
+app:use('/myRecord', router_my_record);
+
+local router_record_list = NPL.load('./routes/recordList');
+app:use('/recordList', router_record_list);
+
+local router_record_learned = NPL.load('./routes/learnedRecord');
+app:use('/learnedRecord', router_record_learned);
+
 -- ***********************************************************************
 -- ****** 无法匹配URL的页面 ******
 -- ***********************************************************************
