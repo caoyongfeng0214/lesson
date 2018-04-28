@@ -7,7 +7,10 @@
   "description": "lesson project",
   "author": "CaoYongfeng <me@caoyongfeng.com>",
   "dependencies": {
-    
+    "express": "*",
+    "lustache": "*",
+    "cors": "*",
+    "mysql": "*"
   },
   "devDependencies": {
     "del": "^3.0.0",

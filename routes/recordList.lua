@@ -2,9 +2,12 @@ local express = NPL.load('express');
 local router = express.Router:new();
 
 
-router:get('/', function(req, res, next)
+router:get('/:username', function(req, res, next)
+	local username = req.params.username
 
-	res:render('record_list');
+	res:render('record_list', {
+		username = username
+	});
 end);
 
 NPL.export(router);

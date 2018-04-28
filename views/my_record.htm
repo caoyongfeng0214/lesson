@@ -9,24 +9,29 @@
     <div class="user-info">
         <img class="portrait" src="https://avatars3.githubusercontent.com/u/18064049?s=460&v=4" alt="" />
         <strong>
-            Hi, William Smith.
+            Hi, {{data.username}}.
         </strong>
     </div> 
     <div class="info">
+        {{^data.haveRecordFlag}}
         <!--我的记录（空）-->
         <p>No record has been generated.Please enter <a href="#">LESSONS</a> to start learning/teaching.</p> 
-
+        {{/data.haveRecordFlag}}
+        {{#data.haveRecordFlag}}
         <!-- 有记录时 -->
-        <p>You have attended <em>25 classes</em>. The duration of each class is <em>45 minutes</em>. The total duration is 7 hours and
-            <em>30 minutes</em>
+        <p>You have attended <em>{{data.teached}} classes</em>. The duration of each class is <em>45 minutes</em>. The total duration is {{data.teachHours}} hours and
+            <em>{{data.teachMin}} minutes</em>
         </p>
 
-        <p>You have learned <em>10 lessons</em>. The total learning time is <em>3 hours and 25 minutes</em></p>
+        <p>You have learned <em>{{data.learned}} lessons</em>. The total learning time is <em>{{data.learnHours}} hours and {{data.learnMin}} minutes</em></p>
+        {{/data.haveRecordFlag}}
     </div>    
 
+    {{#data.haveRecordFlag}}
     <!-- 有记录 -->
     <div class="text-center">
-        <a href="#" class="el-button el-button--primary">View Lessons</a>
-    </div>    
+        <a href="/recordList/{{data.username}}" class="el-button el-button--primary">View More</a>
+    </div>  
+    {{/data.haveRecordFlag}}  
 </div>    
 {{/ content}}

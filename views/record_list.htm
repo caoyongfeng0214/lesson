@@ -5,66 +5,36 @@
 {{/link}}
 
 {{+ content}}
+<input hidden value="{{username}}" id="username"/>
 <div class="recordWrapper record-list">
-    <div class="tab-nav">
-        <a href="javascript:;" class="current">Have taught</a>
-        <a href="javascript:;">Have learned</a>
+    <div class="tab-nav" hidden>
+        <a id="tab-have-taught" href="javascript:;" class="current">Have taught</a>
+        <a id="tab-have-learn" href="javascript:;">Have learned</a>
     </div>
 
     <div class="tab-content">
-        <div class="sort-btn">
-            <span class="sort-icon">
-                <i class="el-icon-caret-top active"></i>
-                <i class="el-icon-caret-bottom"></i>
-            </span>
-            <span>Click to sort by teaching time</span>
-        </div>
-
-        <div class="have-item">
-            <div class="time">13:20 20/4/17</div>
-            <div class="layout-box">
-                <div class="cover" style="background-image: url(https://avatars3.githubusercontent.com/u/18064049?s=460&v=4)"></div>
-                <div class="content">
-                    <a href="#" class="title">Lesson 1：Tutorial: Installation, Movement and Edit Mode</a>
-                    <div class="goals">
-                        <span>Lesson Goals:</span>
-                        <ul>
-                            <li>Then the wandering soul wild crane stands still the memory river Listen to whistle play</li>   
-                            <li>Ship to go medium long things of the past.Wait for a ship’s person Wait for one Finally what to wait for until has</li>  
-                        </ul>    
-                    </div>
-                    <div class="foot">
-                        <a href="#" class="el-button el-button--primary el-button--medium is-plain">View Summary</a>
-                    </div>
-                </div>
+        <div class="have-taught">
+            <div class="sort-btn">
+                <span class="sort-icon">
+                    <i class="el-icon-caret-top active"></i>
+                    <i class="el-icon-caret-bottom"></i>
+                </span>
+                <span>Click to sort by teaching time</span>
             </div>
+            <div class="have-taught-list"></div>
         </div>
-
-        <div class="have-item">
-            <div class="time">13:20 20/4/17</div>
-            <div class="layout-box">
-                <div class="cover" style="background-image: url(https://avatars3.githubusercontent.com/u/18064049?s=460&v=4)"></div>
-                <div class="content">
-                    <a href="#" class="title">Lesson 1：Tutorial: Installation, Movement and Edit Mode</a>
-                    <div class="goals">
-                        <span>Lesson Goals:</span>
-                        <ul>
-                            <li>Then the wandering soul wild crane stands still the memory river Listen to whistle play</li>   
-                            <li>Ship to go medium long things of the past.Wait for a ship’s person Wait for one Finally what to wait for until has</li>  
-                            <li>Ship to go medium long things of the past.Wait for a ship’s person Wait for one Finally what to wait for until has</li>  
-                        </ul>    
-                    </div>
-                    <div class="foot">
-                        <a href="#" class="el-button el-button--primary el-button--medium is-plain">View Summary</a>
-                        <div class="scores-info">
-                            <span>Latest Scores: <em>10</em></span>
-                            <span>Best Scores :<em>20</em></span>
-                        </div>
-                    </div>
-                </div>
+        <div class="have-learn">
+            <div class="sort-btn">
+                <span class="sort-icon">
+                    <i class="el-icon-caret-top active"></i>
+                    <i class="el-icon-caret-bottom"></i>
+                </span>
+                <span>Click to sort by lesson No</span>
             </div>
+            <div class="have-learn-list"></div>
         </div>
     </div>    
 </div>
+<script src="/js/record_list.js"></script>
 {{/ content}}
 
