@@ -25,6 +25,7 @@ $(function () {
     });
     var taughtSortFlag = false,
         learnSortFlag = false;
+
     // 教学按照上课时间排序
     $('.have-taught').on('click', '.sort-btn', function () {
         if(taughtSortFlag) {
@@ -39,6 +40,7 @@ $(function () {
             taughtSortFlag = true
         }
     });
+
     // 学习按照 lesson No 排序
     $('.have-learn').on('click', '.sort-btn', function () {
         if(learnSortFlag) {
@@ -53,11 +55,13 @@ $(function () {
             learnSortFlag = true
         }
     });
+
     // tab 教学记录
     $('#tab-have-taught').on('click', function () {
         $(this).addClass('current').siblings().removeClass('current');
         getTaughtRecordList(PAGE_SIZE, 1)
     });
+
     // tab 学习记录
     $('#tab-have-learn').on('click', function () {
         $(this).addClass('current').siblings().removeClass('current');
@@ -89,7 +93,7 @@ var getTaughtRecordList = function ( psize, pno, order, reload ) {
                 '<div class="layout-box">' +
                 '    <div class="cover" style="background-image: url('+ item.lessonCover +')"></div>' +
                 '    <div class="content">' +
-                '        <a href="#" class="title">Lesson '+ item.lessonNo +'：'+ item.lessonTitle +'</a>' +
+                '        <a href="' + (keepworkHost + item.lessonUrl)+ '" target="_blank" class="title">Lesson '+ item.lessonNo +'：'+ item.lessonTitle +'</a>' +
                 '        <div class="goals">' +
                 '            <span>Lesson Goals:</span>' +
                 '            <ul>' +
@@ -97,7 +101,7 @@ var getTaughtRecordList = function ( psize, pno, order, reload ) {
                 '            </ul>' +
                 '        </div>' +
                 '        <div class="foot">' +
-                '            <a href="#" class="el-button el-button--primary el-button--medium is-plain">View Summary</a>' +
+                '            <a href="/taughtedRecord/' + item.classId + '" class="el-button el-button--primary el-button--medium is-plain">View Summary</a>' +
                 '        </div>' +
                 '    </div>' +
                 '</div>' +
@@ -130,7 +134,7 @@ var getLearnRecordList = function ( psize, pno, order, reload ) {
                 '<div class="layout-box">' +
                 '    <div class="cover" style="background-image: url(' + item.lessonCover + ')"></div>' +
                 '    <div class="content">' +
-                '        <a href="#" class="title">Lesson ' + item.lessonNo + '：' + item.lessonTitle + '</a>' +
+                '        <a href="' + (keepworkHost + item.lessonUrl)+ '" target="_blank" class="title">Lesson ' + item.lessonNo + '：' + item.lessonTitle + '</a>' +
                 '        <div class="goals">' +
                 '            <span>Lesson Goals:</span>' +
                 '            <ul>' +

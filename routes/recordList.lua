@@ -6,7 +6,8 @@ router:get('/:username', function(req, res, next)
 	local username = req.params.username
 
 	res:render('record_list', {
-		username = username
+		username = username,
+		recordCurrent = 'current'
 	});
 end);
 

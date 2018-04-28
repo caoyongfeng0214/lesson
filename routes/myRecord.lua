@@ -19,7 +19,8 @@ router:get('/:username', function(req, res, next)
 		end
 	end
 	res:render('my_record', {
-		data = memberStatis
+		data = memberStatis,
+		recordCurrent = 'current'
 	});
 end);
 

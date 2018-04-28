@@ -36,6 +36,10 @@ app:use('/api/record', testrecord)
 local orders = NPL.load('./api/orders')
 app:use('/api/order', orders)
 
+local router_index = NPL.load('./routes/index');
+app:use('/', router_index);
+app:use('/index', router_index);
+
 local router_my_record = NPL.load('./routes/myRecord');
 app:use('/myRecord', router_my_record);
 
@@ -44,6 +48,9 @@ app:use('/recordList', router_record_list);
 
 local router_record_learned = NPL.load('./routes/learnedRecord');
 app:use('/learnedRecord', router_record_learned);
+
+local router_record_taughted = NPL.load('./routes/taughtedRecord');
+app:use('/taughtedRecord', router_record_taughted);
 
 -- ***********************************************************************
 -- ****** 无法匹配URL的页面 ******

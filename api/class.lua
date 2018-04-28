@@ -263,12 +263,10 @@ router:get('/detail', function(req, res, next)
     local rs = {}
     local p = req.query
     local classId = p.classId
-    local sn = p.sn
-    local rq = rq(p, {'classId', 'sn'}, res)
+    local rq = rq(p, {'classId'}, res)
     if(not rq) then return end
     local where = {
         classId = classId,
-        sn = sn,
         state = 1
     }
     local data = classBll.detail(where)
