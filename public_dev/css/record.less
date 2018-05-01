@@ -160,7 +160,7 @@
 }
 
 
-.learned-record {
+.learned-record, .taughted-record {
     padding: 45px 8%;
     .item {
         margin-bottom: 40px;
@@ -244,5 +244,30 @@
 
     tbody tr:nth-child(even) {
         background:rgba(64,158,254, .1);
+    }
+}
+
+.taughted-record {
+    padding: 40px 5%;
+    .record-operate {
+        text-align: right;
+        margin-right: 3%;
+    }
+
+    .record-container {
+        margin-top: 20px;
+        padding: 30px;
+        background:rgba(121,176,255,0.05);
+    }
+
+    .item {
+        >ol {
+            padding-left: 18px;
+
+            li {
+                margin-top: 8px;
+                color: #333;
+            }
+        }
     }
 }

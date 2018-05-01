@@ -7,17 +7,43 @@
 
 {{+ content}}
     <input hidden value="{{classId}}" id="classId"/>
-    <div class="recordWrapper larned-record">
-        <div class="item">
-            <span>Lesson 1：</span>
-            <div>Tutorial: Installation, Movement and Edit Mode</div>
+    <div class="recordWrapper taughted-record">
+        <div class="record-operate">
+            <a href="#" class="el-button el-button--primary el-button--small">Print</a>
+            <a href="#" class="el-button el-button--primary el-button--small">Send to Mailbox</a>
         </div>
-        <div class="item">
-            <span>Accuracy Analysis:</span>
-            (You have learned the lesson for <em>4</em> times)
+
+        <div class="record-container">
+            <div class="item">
+                <span>Lesson 1：</span>
+                <div>Tutorial: Installation, Movement and Edit Mode</div>
+            </div>
+            <div class="item">
+                <span>Duration: </span>
+                <div>45 mins Monday 20th, April, 2018</div>
+            </div>
+            <div class="item">
+                <span>Lesson Goals: </span>
+                <ol>
+                    <li>learning installation</li>
+                    <li>learning movement</li>
+                    <li>learning edit mode</li>
+                    <li>learning Animation production process</li>
+                    <li>learning any problem</li>
+                </ol>
+            </div>
+
+            <div class="item">
+                <span>Accuracy Analysis:</span>
+                <div>
+                    <div>
+                        <canvas id="taughtedChart" height="40vh" width="80vw"></canvas>
+                    </div>
+                    <div>
+                        <canvas id="studentChart" height="40vh" width="80vw"></canvas>
+                    </div>
+                </div>
+            </div>
         </div>
-        
     </div>   
-
-
 {{/content}}
