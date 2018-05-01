@@ -2,7 +2,7 @@ local dbConfi = {
 	user = 'root',
 	pwd = 'root',
 	db = 'lesson',
-    host = '127.0.0.1',
+    host = '10.27.26.21',
 	port = '3306'
 }
 

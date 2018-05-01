@@ -6,7 +6,7 @@
 {{/link}}
 
 {{+ content}}
-    <div class="recordWrapper larned-record">
+    <div class="recordWrapper learned-record">
         <div class="item">
             <span>Lesson 1：</span>
             <div>Tutorial: Installation, Movement and Edit Mode</div>
@@ -16,7 +16,72 @@
             (You have learned the lesson for <em>4</em> times)
         </div>
 
-        <canvas id="learnedChart" width="100" height="50"></canvas>
+        <div class="item">
+            <canvas id="learnedChart" height="40vh" width="80vw"></canvas>
+        </div>
+
+        <div class="item">
+            <span>Detailed :</span>
+            <table class="table-wrap" cellspacing="0" border="0">
+                <thead>
+                    <tr>
+                        <td style="width:10%;">NO.</td>
+                        <td style="width:30%;">
+                            <div class="sort-btn">
+                                <span>
+                                    Starting Time
+                                </span>
+                                <span class="sort-icon">
+                                    <i class="el-icon-caret-top active"></i>
+                                    <i class="el-icon-caret-bottom"></i>
+                                </span>
+                            </div>
+                        </td>
+                        <td style="width:25%;">
+                            <div class="sort-btn">
+                                <span>
+                                    Accuracy Rate
+                                </span>
+                                <span class="sort-icon">
+                                    <i class="el-icon-caret-top active"></i>
+                                    <i class="el-icon-caret-bottom"></i>
+                                </span>
+                            </div>
+                        </td>
+                        <td style="width:20%;">
+                            <div class="sort-btn">
+                                <span>
+                                    Total Score
+                                </span>
+                                <span class="sort-icon">
+                                    <i class="el-icon-caret-top active"></i>
+                                    <i class="el-icon-caret-bottom"></i>
+                                </span>
+                            </div>
+                        </td>
+                        <td style="width:15%;"></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td> <a href="#" class="el-button el-button--primary el-button--mini">
+                                View Details</a></td>
+                    </tr>
+                    <tr>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td> <a href="#" class="el-button el-button--primary el-button--mini">
+                                    View Details</a></td>
+                        </tr>
+                </tbody>
+            </table>
+        </div>
     </div>   
 
 
@@ -27,7 +92,7 @@
             data: {
                 labels: ["15:30 20/4/2018", "15:30 20/4/2018", "15:30 20/4/2018", "15:30 20/4/2018", "15:30 20/4/2018"],
                 datasets: [{
-                    label: '',
+                    label: 'Learning time',
                     data: [20, 40, 60, 80, 50],
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.2)',
