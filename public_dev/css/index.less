@@ -1,0 +1,218 @@
+.text-align {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.flex-start {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.section-nav {
+    padding: 40px 0;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 40px;
+    color: rgba(51, 51, 51, 1);
+
+    i {
+        display: inline-block;
+        width: 68px;
+        height: 25px;
+        background: url(/imgs/main/nav_icon.png) no-repeat center center;
+        &:last-child {
+            transform: rotate(180deg);
+        }
+    }
+
+    span {
+        margin: 0 4%;
+    }
+}
+
+.section-wrapper{
+    &:nth-child(even) {
+        padding-top: 60px;
+        background-color: #fbfbfb;     
+    }
+
+    .tit {
+        display: block;
+        margin: 25px 0;
+        color: rgba(51, 51, 51, 1);
+        font-size: 24px;
+    }
+
+    .half {
+        flex: 1;
+        padding: 0 5%;
+        font-size: 16px;
+        line-height: 26px;
+        color: rgba(51, 51, 51, 1);
+    }
+}
+    
+
+.lesson-list,
+.user-wrapper,
+.about-lesson-wrapper,
+.about-us-wrapper,
+.footer-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 57px;
+}
+
+.lesson-list .item {
+    width: 31.333%;
+    margin: 0 1%;
+    text-decoration: none;
+    text-align: center;
+
+    &:hover .tit {
+        color: #2186FE;
+    }
+
+    .lesson-cover {
+        position: relative;
+    }
+
+    .lesson-cover:before {
+        content: "";
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        background: url(/imgs/main/play_btn.png) no-repeat center center;
+    }
+
+    .lesson-cover img {
+        max-width: 365px;
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .tit {
+        margin: 25px 0 35px;
+        text-align: center;
+        color: rgba(51, 51, 51, 1);
+        font-size: 24px;
+    }
+}
+
+.lesson-list .item:hover .lesson-cover:before {
+    background: url(/imgs/main/play_btn_action.png) no-repeat center center;
+}
+
+.lesson-list .btn,
+.user-wrapper .btn {
+    display: inline-block;
+    border-radius: 50px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    width: 280px;
+    height: 43px;
+    line-height: 43px;
+    background: rgba(33, 134, 254, 1);
+    box-shadow: 4px 6px 21px rgba(64, 158, 254, 0.99);
+}
+
+.user-wrapper .half:first-child {
+    border-right: 2px solid #fff;
+}
+
+.user-wrapper .btn {
+    margin-top: 30px;
+    width: 260px;
+    letter-spacing: 1px;
+}
+
+.about-lesson-wrapper .item {
+    width: 50%;
+    margin-bottom: 80px;
+    align-items: center;
+    padding: 0 3%;
+    box-sizing: border-box;
+
+    .img {
+        width: 140px;
+        text-align: center;
+        margin-right: 5%;
+    }
+
+    .tit {
+        margin: 15px 0;
+    }
+
+    .half {
+        padding: 0;
+    }
+}
+
+.about-lesson-wrapper .item:nth-child(3),
+.about-lesson-wrapper .item:nth-child(4) {
+    margin-bottom: 0;
+}
+
+.about-us-wrapper {
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(51, 51, 51, 1);
+    padding: 0 5% 5%;
+    box-sizing: border-box;
+}
+
+.footer-wrapper {
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        height: 30px;
+        line-height: 30px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        color: #333333;
+    }
+
+    .box-info {
+        max-width: 900px;
+        border-top: 2px solid #A0A0A0;
+        margin: 0 auto;
+        padding-top: 3%;
+        justify-content: center;
+    }
+
+    .content{
+        margin-right: 15%;
+    
+        li {
+            padding-left: 40px;
+        }
+    } 
+    .phone {
+        background: url(/imgs/main/phone.png) no-repeat center left;
+        background-size: 30px 30px;
+    }
+    .mailbox {
+        background: url(/imgs/main/mailbox.png) no-repeat center left;
+        background-size: 30px 30px;
+    }
+    .address {
+        background: url(/imgs/main/address.png) no-repeat center left;
+        background-size: 30px 30px;
+    }
+    
+}
