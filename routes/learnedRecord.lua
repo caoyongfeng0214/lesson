@@ -1,12 +1,21 @@
 local express = NPL.load('express');
 local router = express.Router:new();
 
-router:get('/', function(req, res, next)
-	res:render('learned_record',{});
+router:get('/:username/:lessonNo', function(req, res, next)
+	local username = req.params.username;
+	local lessonNo = req.params.lessonNo;
+	res:render('learned_record',{
+		username = username,
+		lessonNo = lessonNo,
+		recordCurrent = 'current'
+	});
 end);
 
-router:get('/:username', function(req, res, next)
-	res:render('learned_details',{});
+router:get('/:sn', function(req, res, next)
+	local sn = req.params.sn;
+	res:render('learned_details', {
+		sn = sn
+	});
 end);
 
 NPL.export(router);

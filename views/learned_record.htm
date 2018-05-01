@@ -6,6 +6,8 @@
 {{/link}}
 
 {{+ content}}
+    <input hidden value="{{username}}" id="username"/>
+    <input hidden value="{{lessonNo}}" id="lessonNo"/>
     <div class="recordWrapper learned-record">
         <div class="item">
             <span>Lesson 1：</span>
@@ -13,7 +15,7 @@
         </div>
         <div class="item">
             <span>Accuracy Analysis:</span>
-            (You have learned the lesson for <em>4</em> times)
+            (You have learned the lesson for <em class="learned-times">-</em> times)
         </div>
 
         <div class="item">
@@ -62,23 +64,7 @@
                         <td style="width:15%;"></td>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td> <a href="#" class="el-button el-button--primary el-button--mini">
-                                View Details</a></td>
-                    </tr>
-                    <tr>
-                            <td>1</td>
-                            <td>1</td>
-                            <td>1</td>
-                            <td>1</td>
-                            <td> <a href="#" class="el-button el-button--primary el-button--mini">
-                                    View Details</a></td>
-                        </tr>
+                <tbody class="tbl-learned-record">
                 </tbody>
             </table>
         </div>
@@ -92,7 +78,7 @@
             data: {
                 labels: ["15:30 20/4/2018", "15:30 20/4/2018", "15:30 20/4/2018", "15:30 20/4/2018", "15:30 20/4/2018"],
                 datasets: [{
-                    label: 'Learning time',
+                    label: 'Accuracy Rate',
                     data: [20, 40, 60, 80, 50],
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.2)',
@@ -114,7 +100,6 @@
             options: {
                 title: {
                     display: true,
-                    text: 'Custom Chart Title'
                 },      
                 scales: {
                     yAxes: [{
@@ -126,4 +111,5 @@
             }
         });
     </script>
+    <script src="/js/learned_record.js"></script>
 {{/content}}

@@ -142,7 +142,7 @@ var getLearnRecordList = function ( psize, pno, order, reload ) {
                 '            </ul> ' +   
                 '        </div>' +
                 '        <div class="foot">' +
-                '            <a href="#" class="el-button el-button--primary el-button--medium is-plain">View Summary</a>' +
+                '            <a href="/learnedRecord/' + username + '/' + item.lessonNo + '" class="el-button el-button--primary el-button--medium is-plain">View Summary</a>' +
                 '            <div class="scores-info">' +
                 '                <span>Latest Scores: <em>' + item.latestScore + '</em></span>' +
                 '                <span>Best Scores :<em>' + item.bestScore + '</em></span>' +
