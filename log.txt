@@ -6,7 +6,7 @@ OS version:Microsoft  (build 9200), 64-bit
 Number of processors:4
 Processor type:586
 TotalPhysicalMemory:8312716
-FreePhysicalMemory:2497596
+FreePhysicalMemory:2138296
 
 ParaEngine Root Dir is E:/KeepWork/lesson/
 ./packages dir: C:\ParaCraftSDK-master\NPLRuntime\win\packages\
@@ -27,12 +27,20 @@ font Tahoma;12;norm is created
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
 ffi loaded shared lib: ParaEngineClient
-2018-05-01 16:48:51|main|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-01 18:00:08|main|info|DomainSpecificLanguage|NPL language extension loaded
 NPL server 0.1 is listening on 0.0.0.0:3000
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: ParaEngineClient
+ffi loaded shared lib: ParaEngineClient
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: ParaEngineClient
+ffi loaded shared lib: ParaEngineClient
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
 ffi loaded shared lib: ParaEngineClient
@@ -40,11 +48,6 @@ ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ffi loaded shared lib: ParaEngineClient
-ffi loaded shared lib: ParaEngineClient
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ffi loaded shared lib: ParaEngineClient
 ffi loaded shared lib: ParaEngineClient
 ffi loaded shared lib: ParaEngineClient
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
@@ -60,65 +63,23 @@ IdleTimeoutPeriod: 120000
 UseCompression(incoming): false
 CompressionLevel: -1
 CompressionThreshold: 204800
-2018-05-01 16:48:51|worker_6|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-01 16:48:51|worker_5|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-01 16:48:51|worker_9|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-01 16:48:51|worker_8|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-01 16:48:51|worker_1|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-01 16:48:51|worker_3|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-01 16:48:51|worker_4|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-01 16:48:51|worker_7|info|DomainSpecificLanguage|NPL language extension loaded
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
 ffi loaded shared lib: ParaEngineClient
+2018-05-01 18:00:08|worker_6|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-01 18:00:08|worker_7|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-01 18:00:08|worker_3|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-01 18:00:08|worker_2|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-01 18:00:08|worker_9|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-01 18:00:08|worker_5|info|DomainSpecificLanguage|NPL language extension loaded2018-05-01 18:00:08|worker_8|info|DomainSpecificLanguage|
+NPL language extension loaded
+2018-05-01 18:00:08|worker_1|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-01 18:00:08|worker_4|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-01 18:00:08|worker_10|info|DomainSpecificLanguage|NPL language extension loaded
 NPL max pending incoming connections allowed is 1000
-ffi loaded shared lib: ParaEngineClient
-2018-05-01 16:48:51|worker_10|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-01 16:48:51|worker_2|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-01 16:48:51|7236|incoming connection (127.0.0.1/52420) is established and assigned a temporary id (~1). 
-2018-05-01 16:48:51|7236|incoming connection (127.0.0.1/52421) is established and assigned a temporary id (~2). 
-2018-05-01 16:48:51|7236|incoming connection (127.0.0.1/52422) is established and assigned a temporary id (~3). 
-2018-05-01 16:48:51|7236|incoming connection (127.0.0.1/52423) is established and assigned a temporary id (~4). 
-2018-05-01 16:48:51|7236|incoming connection (127.0.0.1/52424) is established and assigned a temporary id (~5). 
-2018-05-01 16:48:51|7236|incoming connection (127.0.0.1/52425) is established and assigned a temporary id (~6). 
-2018-05-01 16:50:53|7236|connection time out (127.0.0.1/52420) with id (~1). 
-2018-05-01 16:50:53|7236|connection time out (127.0.0.1/52421) with id (~2). 
-2018-05-01 16:50:53|7236|connection time out (127.0.0.1/52422) with id (~3). 
-2018-05-01 16:50:53|7236|connection time out (127.0.0.1/52424) with id (~5). 
-2018-05-01 16:50:53|7236|connection time out (127.0.0.1/52425) with id (~6). 
-2018-05-01 16:50:53|7236|connection closed (127.0.0.1/52420) with id (~1). 
-2018-05-01 16:50:53|7236|connection closed (127.0.0.1/52421) with id (~2). 
-2018-05-01 16:50:53|7236|connection closed (127.0.0.1/52422) with id (~3). 
-2018-05-01 16:50:53|7236|connection closed (127.0.0.1/52424) with id (~5). 
-2018-05-01 16:50:53|7236|connection closed (127.0.0.1/52425) with id (~6). 
-2018-05-01 16:50:55|7236|connection time out (127.0.0.1/52423) with id (~4). 
-2018-05-01 16:50:55|7236|connection closed (127.0.0.1/52423) with id (~4). 
-2018-05-01 16:53:32|7236|incoming connection (127.0.0.1/52910) is established and assigned a temporary id (~7). 
-2018-05-01 16:53:32|7236|incoming connection (127.0.0.1/52911) is established and assigned a temporary id (~8). 
-2018-05-01 16:53:32|7236|incoming connection (127.0.0.1/52912) is established and assigned a temporary id (~9). 
-2018-05-01 16:53:32|7236|incoming connection (127.0.0.1/52913) is established and assigned a temporary id (~10). 
-2018-05-01 16:53:32|7236|incoming connection (127.0.0.1/52914) is established and assigned a temporary id (~11). 
-2018-05-01 16:53:32|7236|incoming connection (127.0.0.1/52915) is established and assigned a temporary id (~12). 
-2018-05-01 16:55:34|7236|connection time out (127.0.0.1/52915) with id (~12). 
-2018-05-01 16:55:34|7236|connection time out (127.0.0.1/52912) with id (~9). 
-2018-05-01 16:55:34|7236|connection time out (127.0.0.1/52913) with id (~10). 
-2018-05-01 16:55:34|7236|connection time out (127.0.0.1/52910) with id (~7). 
-2018-05-01 16:55:34|7236|connection time out (127.0.0.1/52911) with id (~8). 
-2018-05-01 16:55:34|7236|connection closed (127.0.0.1/52915) with id (~12). 
-2018-05-01 16:55:34|7236|connection closed (127.0.0.1/52912) with id (~9). 
-2018-05-01 16:55:34|7236|connection closed (127.0.0.1/52913) with id (~10). 
-2018-05-01 16:55:34|7236|connection closed (127.0.0.1/52910) with id (~7). 
-2018-05-01 16:55:34|7236|connection closed (127.0.0.1/52911) with id (~8). 
-2018-05-01 16:55:40|7236|connection time out (127.0.0.1/52914) with id (~11). 
-2018-05-01 16:55:40|7236|connection closed (127.0.0.1/52914) with id (~11). 
-2018-05-01 16:56:07|7236|incoming connection (127.0.0.1/53185) is established and assigned a temporary id (~13). 
-2018-05-01 16:56:07|7236|incoming connection (127.0.0.1/53186) is established and assigned a temporary id (~14). 
-2018-05-01 16:56:07|7236|incoming connection (127.0.0.1/53187) is established and assigned a temporary id (~15). 
-2018-05-01 16:56:07|7236|incoming connection (127.0.0.1/53188) is established and assigned a temporary id (~16). 
-2018-05-01 16:56:07|7236|incoming connection (127.0.0.1/53189) is established and assigned a temporary id (~17). 
-2018-05-01 16:56:07|7236|incoming connection (127.0.0.1/53190) is established and assigned a temporary id (~18). 
-network: handle_read stopped, asio msg: End of file. Connection will be closed 
-2018-05-01 16:56:20|7236|connection closed (127.0.0.1/53190) with id (~18). 
-2018-05-01 16:56:42|7236|incoming connection (127.0.0.1/53248) is established and assigned a temporary id (~19). 
+2018-05-01 18:00:08|13504|incoming connection (127.0.0.1/59705) is established and assigned a temporary id (~1). 
+2018-05-01 18:00:08|13504|incoming connection (127.0.0.1/59706) is established and assigned a temporary id (~2). 
+2018-05-01 18:00:08|13504|incoming connection (127.0.0.1/59707) is established and assigned a temporary id (~3). 
+2018-05-01 18:00:08|13504|incoming connection (127.0.0.1/59708) is established and assigned a temporary id (~4). 
+2018-05-01 18:00:08|13504|incoming connection (127.0.0.1/59709) is established and assigned a temporary id (~5). 
+2018-05-01 18:00:08|13504|incoming connection (127.0.0.1/59710) is established and assigned a temporary id (~6). 

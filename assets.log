@@ -1,77 +1,12 @@
-2018-05-01 16:48:51|17224|CAsyncLoader IO Thread started2018-05-01 16:48:51|17152|Async Processing Thread Local(0) Started
-2018-05-01 16:48:51|8156|Async Processing Thread Asset(1) Started
-2018-05-01 16:48:51|1628|Async Processing Thread Asset(1) Started
-2018-05-01 16:48:51|4212|Async Processing Thread Web(2) Started
-2018-05-01 16:48:51|8352|Async Processing Thread BigFile(3) Started
-2018-05-01 16:48:51|5156|Async Processing Thread AudioFile(4) Started
-2018-05-01 16:48:51|7268|ParaFile.OpenAssetFile using local file:public/csslib/element-ui.css
-2018-05-01 16:48:51|7816|ParaFile.OpenAssetFile using local file:public/css/common.css
-2018-05-01 16:48:51|5768|ParaFile.OpenAssetFile using local file:public/jslib/jquery.min.js
-2018-05-01 16:48:51|15416|ParaFile.OpenAssetFile using local file:public/js/common.js
-2018-05-01 16:48:51|5480|ParaFile.OpenAssetFile using local file:public/css/index.css
-2018-05-01 16:48:51|7268|ParaFile.OpenAssetFile using local file:public/imgs/main/teacher.png
-2018-05-01 16:48:51|7268|ParaFile.OpenAssetFile using local file:public/imgs/main/student.png
-2018-05-01 16:48:51|7268|ParaFile.OpenAssetFile using local file:public/imgs/main/animations.png
-2018-05-01 16:48:51|7268|ParaFile.OpenAssetFile using local file:public/imgs/main/how.png
-2018-05-01 16:48:51|7268|ParaFile.OpenAssetFile using local file:public/imgs/main/Convenientservice.png
-2018-05-01 16:48:51|7268|ParaFile.OpenAssetFile using local file:public/imgs/main/FriendlyPrices.png
-2018-05-01 16:48:51|7816|ParaFile.OpenAssetFile using local file:public/imgs/main/mailbox.png
-2018-05-01 16:48:51|7268|ParaFile.OpenAssetFile using local file:public/imgs/main/address.png
-2018-05-01 16:48:51|15416|ParaFile.OpenAssetFile using local file:public/imgs/main/nav_icon.png
-2018-05-01 16:48:51|7268|ParaFile.OpenAssetFile using local file:public/csslib/fonts/element-icons.woff
-2018-05-01 16:48:51|7816|ParaFile.OpenAssetFile using local file:public/imgs/main/play_btn.png
-2018-05-01 16:48:51|5768|ParaFile.OpenAssetFile using local file:public/imgs/main/phone.png
-2018-05-01 16:48:53|7268|ParaFile.OpenAssetFile using local file:public/imgs/main/play_btn_action.png
-2018-05-01 16:53:32|7816|ParaFile.OpenAssetFile using local file:public/css/common.css
-2018-05-01 16:53:32|7268|ParaFile.OpenAssetFile using local file:public/csslib/element-ui.css
-2018-05-01 16:53:32|5768|ParaFile.OpenAssetFile using local file:public/jslib/jquery.min.js
-2018-05-01 16:53:32|15416|ParaFile.OpenAssetFile using local file:public/js/common.js
-2018-05-01 16:53:32|5480|ParaFile.OpenAssetFile using local file:public/css/index.css
-2018-05-01 16:53:32|7268|ParaFile.OpenAssetFile using local file:public/imgs/main/teacher.png
-2018-05-01 16:53:32|7816|ParaFile.OpenAssetFile using local file:public/imgs/main/student.png
-2018-05-01 16:53:32|5768|ParaFile.OpenAssetFile using local file:public/imgs/main/animations.png
-2018-05-01 16:53:32|15416|ParaFile.OpenAssetFile using local file:public/imgs/main/how.png
-2018-05-01 16:53:32|5480|ParaFile.OpenAssetFile using local file:public/imgs/main/Convenientservice.png
-2018-05-01 16:53:32|7336|ParaFile.OpenAssetFile using local file:public/imgs/main/FriendlyPrices.png
-2018-05-01 16:53:32|7268|ParaFile.OpenAssetFile using local file:public/imgs/main/address.png
-2018-05-01 16:53:32|7816|ParaFile.OpenAssetFile using local file:public/imgs/main/mailbox.png
-2018-05-01 16:53:32|5768|ParaFile.OpenAssetFile using local file:public/imgs/main/phone.png
-2018-05-01 16:53:32|15416|ParaFile.OpenAssetFile using local file:public/imgs/main/nav_icon.png
-2018-05-01 16:53:32|5480|ParaFile.OpenAssetFile using local file:public/csslib/fonts/element-icons.woff
-2018-05-01 16:53:32|7336|ParaFile.OpenAssetFile using local file:public/imgs/main/play_btn.png
-2018-05-01 16:53:39|7268|ParaFile.OpenAssetFile using local file:public/imgs/main/play_btn_action.png
-2018-05-01 16:56:07|7268|ParaFile.OpenAssetFile using local file:public/csslib/element-ui.css
-2018-05-01 16:56:07|7816|ParaFile.OpenAssetFile using local file:public/css/common.css
-2018-05-01 16:56:07|5768|ParaFile.OpenAssetFile using local file:public/jslib/jquery.min.js
-2018-05-01 16:56:07|15416|ParaFile.OpenAssetFile using local file:public/js/common.js
-2018-05-01 16:56:07|5480|ParaFile.OpenAssetFile using local file:public/css/index.css
-2018-05-01 16:56:07|7268|ParaFile.OpenAssetFile using local file:public/imgs/main/teacher.png
-2018-05-01 16:56:07|7268|ParaFile.OpenAssetFile using local file:public/imgs/main/student.png
-2018-05-01 16:56:07|7268|ParaFile.OpenAssetFile using local file:public/imgs/main/animations.png
-2018-05-01 16:56:07|7268|ParaFile.OpenAssetFile using local file:public/imgs/main/how.png
-2018-05-01 16:56:07|7268|ParaFile.OpenAssetFile using local file:public/imgs/main/Convenientservice.png
-2018-05-01 16:56:07|7268|ParaFile.OpenAssetFile using local file:public/imgs/main/FriendlyPrices.png
-2018-05-01 16:56:07|7268|ParaFile.OpenAssetFile using local file:public/imgs/main/address.png
-2018-05-01 16:56:07|7816|ParaFile.OpenAssetFile using local file:public/imgs/main/mailbox.png
-2018-05-01 16:56:07|7268|ParaFile.OpenAssetFile using local file:public/imgs/main/phone.png
-2018-05-01 16:56:07|7268|ParaFile.OpenAssetFile using local file:public/imgs/main/nav_icon.png
-2018-05-01 16:56:07|7268|ParaFile.OpenAssetFile using local file:public/csslib/fonts/element-icons.woff
-2018-05-01 16:56:07|7816|ParaFile.OpenAssetFile using local file:public/imgs/main/play_btn.png
-2018-05-01 16:56:13|7268|ParaFile.OpenAssetFile using local file:public/imgs/main/play_btn_action.png
-2018-05-01 16:56:42|7268|ParaFile.OpenAssetFile using local file:public/csslib/element-ui.css
-2018-05-01 16:56:42|7816|ParaFile.OpenAssetFile using local file:public/css/common.css
-2018-05-01 16:56:42|5768|ParaFile.OpenAssetFile using local file:public/jslib/jquery.min.js
-2018-05-01 16:56:42|15416|ParaFile.OpenAssetFile using local file:public/js/common.js
-2018-05-01 16:56:42|5480|ParaFile.OpenAssetFile using local file:public/css/index.css
-2018-05-01 16:56:42|7268|ParaFile.OpenAssetFile using local file:public/imgs/main/teacher.png
-2018-05-01 16:56:42|7268|ParaFile.OpenAssetFile using local file:public/imgs/main/student.png
-2018-05-01 16:56:42|7268|ParaFile.OpenAssetFile using local file:public/imgs/main/animations.png
-2018-05-01 16:56:42|7268|ParaFile.OpenAssetFile using local file:public/imgs/main/how.png
-2018-05-01 16:56:42|7268|ParaFile.OpenAssetFile using local file:public/imgs/main/Convenientservice.png
-2018-05-01 16:56:42|7268|ParaFile.OpenAssetFile using local file:public/imgs/main/FriendlyPrices.png
-2018-05-01 16:56:42|7268|ParaFile.OpenAssetFile using local file:public/imgs/main/address.png
-2018-05-01 16:56:42|7816|ParaFile.OpenAssetFile using local file:public/imgs/main/mailbox.png
-2018-05-01 16:56:42|5768|ParaFile.OpenAssetFile using local file:public/imgs/main/phone.png
-2018-05-01 16:56:42|15416|ParaFile.OpenAssetFile using local file:public/imgs/main/nav_icon.png
-2018-05-01 16:56:42|7268|ParaFile.OpenAssetFile using local file:public/csslib/fonts/element-icons.woff
-2018-05-01 16:56:42|7816|ParaFile.OpenAssetFile using local file:public/imgs/main/play_btn.png
+2018-05-01 18:00:08|5876|Async Processing Thread Asset(1) Started
+2018-05-01 18:00:08|17252|Async Processing Thread AudioFile(4) Started
+2018-05-01 18:00:08|6696|CAsyncLoader IO Thread started2018-05-01 18:00:08|7012|Async Processing Thread Local(0) Started
+2018-05-01 18:00:08|10880|Async Processing Thread Web(2) Started
+2018-05-01 18:00:08|920|Async Processing Thread Asset(1) Started
+2018-05-01 18:00:08|12764|Async Processing Thread BigFile(3) Started
+2018-05-01 18:00:08|484|ParaFile.OpenAssetFile using local file:public/csslib/element-ui.css
+2018-05-01 18:00:08|9656|ParaFile.OpenAssetFile using local file:public/jslib/jquery.min.js
+2018-05-01 18:00:08|4976|ParaFile.OpenAssetFile using local file:public/css/common.css
+2018-05-01 18:00:08|9244|ParaFile.OpenAssetFile using local file:public/js/common.js
+2018-05-01 18:00:08|12796|ParaFile.OpenAssetFile using local file:public/css/buy.css
+2018-05-01 18:00:09|484|ParaFile.OpenAssetFile using local file:public/imgs/main/buy_vip_bg.png
