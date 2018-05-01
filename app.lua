@@ -40,15 +40,19 @@ local router_index = NPL.load('./routes/index');
 app:use('/', router_index);
 app:use('/index', router_index);
 
+-- 我的记录
 local router_my_record = NPL.load('./routes/myRecord');
 app:use('/myRecord', router_my_record);
 
+-- 授课记录 & 自学记录
 local router_record_list = NPL.load('./routes/recordList');
 app:use('/recordList', router_record_list);
 
+-- 自学记录 - 详情页
 local router_record_learned = NPL.load('./routes/learnedRecord');
 app:use('/learnedRecord', router_record_learned);
 
+-- 授课记录 - 详情页
 local router_record_taughted = NPL.load('./routes/taughtedRecord');
 app:use('/taughtedRecord', router_record_taughted);
 
