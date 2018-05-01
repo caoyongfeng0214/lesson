@@ -1,0 +1,30 @@
+{{< layout}} 
+
+{{+ link}}
+<link href="/css/buy.css" rel="stylesheet" />
+{{/link}}
+
+{{+ content}} 
+
+<div class="buy-status">
+    <!-- 购买成功 -->
+    <div>
+        <i class="icon el-icon-success"></i>
+        <p class="info">Successfully Paid !</p>
+        <div class="price">$ 520</div>
+        <a href="/isyang/main/buy_history" class="el-button el-button--primary">
+        <span>View Purchase History</span>
+        </a>
+        </div>
+    
+    <!-- 购买失败 -->
+    <div>
+        <i class="icon el-icon-warning"></i>
+        <p class="info">Payment failed. Please try again later!</p>
+        <a href="/isyang/main/buy" class="el-button el-button--primary">
+        <span>Pay Again</span>
+        </a> 
+    </div>
+</div> 
+{{/ content}}
+      
