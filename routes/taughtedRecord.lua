@@ -11,4 +11,11 @@ router:get('/:class_id', function(req, res, next)
 	});
 end);
 
+router:get('/details/:sn', function(req, res, next)
+	local sn = req.params.sn;
+	res:render('taughted_details', {
+		sn = sn
+	});
+end);
+
 NPL.export(router);

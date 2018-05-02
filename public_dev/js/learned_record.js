@@ -2,7 +2,6 @@
 var username = $('#username').val();
 var lessonNo = $('#lessonNo').val();
 var PAGE_SIZE = 50;
-
 $(function(){
     getLessonLearnedRecord(PAGE_SIZE, 1);
 });
