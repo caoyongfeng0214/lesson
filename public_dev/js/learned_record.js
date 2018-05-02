@@ -2,12 +2,23 @@
 var username = $('#username').val();
 var lessonNo = $('#lessonNo').val();
 var PAGE_SIZE = 50;
+var no = 1;
 $(function(){
-    getLessonLearnedRecord(PAGE_SIZE, 1);
-});
-// TODO: 后端排序
+    getLessonLearnedRecord(PAGE_SIZE, no++);
 
+    $(".icon-more", ".learned-record").on('click', function() {
+        getLessonLearnedRecord(PAGE_SIZE, no++, 'desc', false);
+    })
+});
+
+var flag = false;
+var accuracyRateArray = [];
+var startTimeArray = [];
 var getLessonLearnedRecord = function( psize, pno, order, reload ) {
+    if(flag) {
+        return false;
+    }
+
     reload = (typeof reload !== 'undefined') ? reload : true;
     $.get("/api/record/detail", {
         username: username,
@@ -18,7 +29,16 @@ var getLessonLearnedRecord = function( psize, pno, order, reload ) {
     }, function (response) {
         var r = response.data;
         var p = response.page;
-        if (response.err == 0) {
+        
+        if(pno >= p.totalPage) {
+            $(".icon-more", ".learned-record").hide();
+        }
+
+        if (JSON.stringify(response.data) == "{}") {
+            flag = true;
+        }
+
+        if (JSON.stringify(response.data) != "{}" && response.err == 0) {
             var tblRecord = $('.tbl-learned-record');
             if(reload) { // 重新加载数据，否则为追加数据
                 tblRecord.html('');
@@ -26,8 +46,6 @@ var getLessonLearnedRecord = function( psize, pno, order, reload ) {
             $('.learned-times').text(p.totalCount);
             $('.lesson-no').text(r[0].lessonNo);
             $('.lesson-title').text(r[0].lessonTitle);
-            accuracyRateArray = [];
-            startTimeArray = [];
             for(var i = 0; i < r.length; i++) {
                 var item = r[i];
                 item.accuracyRate = item.rightCount/(item.rightCount + item.emptyCount + item.wrongCount);//正确率
