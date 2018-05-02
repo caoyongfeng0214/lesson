@@ -166,6 +166,7 @@
         margin-bottom: 40px;
         color: #111;
         font-size: 16px;
+        margin-right: 3%;
         > div {
             margin-top: 12px;
         }
@@ -173,7 +174,6 @@
         >span {
             color: #111;
             font-weight: bold;
-            margin-right: 15px;
         }
         em {
             color: #FF414A;
@@ -233,6 +233,15 @@
         text-align: center;
     }
 
+    thead td {
+        border-right:1px solid #BFBFBF;
+        border-bottom: 2px solid #bfbfbf;
+
+        &:last-child {
+            border-right: none;
+        }
+    }
+
     .sort-btn {
         padding: 0;
         justify-content: center;
@@ -245,6 +254,37 @@
     tbody tr:nth-child(even) {
         background:rgba(64,158,254, .1);
     }
+
+    .user-img {
+        width: 40px;
+        height: 40px;
+        margin: 0 auto;
+        .borderRadius(50%);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+
+.draw-user {
+    height: 30px;
+    overflow: hidden;
+
+    &::before, &::after {
+        content: "";
+        display: block;
+        width: 14px;
+        height: 14px;
+        margin: 0 auto;
+        border:2px solid @themeColor;
+        .borderRadius(50%);
+    }
+
+    &::after {
+        width: 24px;
+        height: 24px;
+    }
+    
 }
 
 .taughted-record {
@@ -261,7 +301,7 @@
     }
 
     .item {
-        >ol {
+        ol {
             padding-left: 18px;
 
             li {
@@ -269,5 +309,57 @@
                 color: #333;
             }
         }
+
+        .chartLayout {
+            .displayFlex;
+
+            >div {
+                width:50%;
+            }
+        }
+    }
+
+    .student-info {
+        .displayFlex;
+    }
+
+    .student-taughted-details {
+        @right: #27CE2F;
+        @wrong: #F53838;
+
+        .express {
+            >span {
+                margin-right: 10px;
+                font-size: 14px;
+                color: #676767;
+            }
+            .r::before, .w::before {
+                content: "";
+                width: 12px;
+                height: 12px;
+                display: inline-block;
+                margin: 0 15px;
+                vertical-align: middle;
+                .borderRadius(50%);
+            }
+            .r::before {
+                background-color: @right;
+            }
+            .w::before {
+                background-color: @wrong;
+            }
+        }
+
+        .table-wrap {
+            margin-top:15px;
+
+            .right {
+                color: @right;
+            }
+            .wrong {
+                color: @wrong;
+            }
+        }
     }
 }
+

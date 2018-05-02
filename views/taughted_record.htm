@@ -35,7 +35,7 @@
 
             <div class="item">
                 <span>Accuracy Analysis:</span>
-                <div>
+                <div class="chartLayout">
                     <div>
                         <canvas id="taughtedChart" height="40vh" width="80vw"></canvas>
                     </div>
@@ -44,6 +44,118 @@
                     </div>
                 </div>
             </div>
+
+            <div class="item">
+                <span>Detailed :</span>
+                <table class="table-wrap" cellspacing="0" border="0">
+                    <thead>
+                        <tr>
+                            <td style="width:10%;">
+                                <div class="draw-user"></div>
+                            </td>
+                            <td style="width:15%;">
+                                <div class="sort-btn">
+                                    <span>
+                                        Name
+                                    </span>
+                                    <span class="sort-icon">
+                                        <i class="el-icon-caret-top active"></i>
+                                        <i class="el-icon-caret-bottom"></i>
+                                    </span> 
+                                </div>
+                            </td>
+                            <td style="width:15%;">
+                                <div class="sort-btn">
+                                    <span>
+                                        Student No.
+                                    </span>
+                                    <span class="sort-icon">
+                                        <i class="el-icon-caret-top active"></i>
+                                        <i class="el-icon-caret-bottom"></i>
+                                    </span>
+                                </div>
+                            </td>
+                            <td style="width:10%;">
+                                <div class="sort-btn">
+                                    <span>
+                                        Accuracy Rate
+                                    </span>
+                                    <span class="sort-icon">
+                                        <i class="el-icon-caret-top active"></i>
+                                        <i class="el-icon-caret-bottom"></i>
+                                    </span>
+                                </div>
+                            </td>
+                            <td style="width:11%;">
+                                <div class="sort-btn">
+                                    <span>
+                                        Right
+                                    </span>
+                                    <span class="sort-icon">
+                                        <i class="el-icon-caret-top active"></i>
+                                        <i class="el-icon-caret-bottom"></i>
+                                    </span>
+                                </div>
+                            </td>
+                            <td style="width:12%;">
+                                <div class="sort-btn">
+                                    <span>
+                                       Wrong
+                                    </span>
+                                    <span class="sort-icon">
+                                        <i class="el-icon-caret-top active"></i>
+                                        <i class="el-icon-caret-bottom"></i>
+                                    </span>
+                                </div>
+                            </td>
+                            <td style="width:12%;">
+                                <div class="sort-btn">
+                                    <span>
+                                        Empty
+                                    </span>
+                                    <span class="sort-icon">
+                                        <i class="el-icon-caret-top active"></i>
+                                        <i class="el-icon-caret-bottom"></i>
+                                    </span>
+                                </div>
+                            </td>
+                            <td style="width:15%;"></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="user-img" style="background-image:url(https://avatars3.githubusercontent.com/u/18064049?s=460&v=4)"></div>
+                            </td>
+                            <td>IsYang</td>
+                            <td>061101111</td>
+                            <td>50%</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>
+                                <a href="#" class="el-button el-button--primary el-button--mini">View Details</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="user-img" style="background-image:url(https://avatars3.githubusercontent.com/u/18064049?s=460&v=4)"></div>
+                            </td>
+                            <td>IsYang</td>
+                            <td>061101111</td>
+                            <td>50%</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>
+                                <a href="#" class="el-button el-button--primary el-button--mini">View Details</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-    </div>   
+    </div>  
+    
+    <script src="/js/taughted_record.js"></script>
 {{/content}}
