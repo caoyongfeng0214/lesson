@@ -6,7 +6,7 @@ OS version:Microsoft  (build 9200), 64-bit
 Number of processors:4
 Processor type:586
 TotalPhysicalMemory:8312716
-FreePhysicalMemory:2380120
+FreePhysicalMemory:2458104
 
 ParaEngine Root Dir is E:/KeepWork/lesson/
 ./packages dir: C:\ParaCraftSDK-master\NPLRuntime\win\packages\
@@ -27,23 +27,40 @@ font Tahoma;12;norm is created
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
 ffi loaded shared lib: ParaEngineClient
-2018-05-02 14:16:05|main|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-02 14:24:12|main|info|DomainSpecificLanguage|NPL language extension loaded
 NPL server 0.1 is listening on 0.0.0.0:3000
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ffi loaded shared lib: ParaEngineClient
 ffi loaded shared lib: ParaEngineClient
 ffi loaded shared lib: ParaEngineClient
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ffi loaded shared lib: ParaEngineClient
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
 ffi loaded shared lib: ParaEngineClient
+ffi loaded shared lib: ParaEngineClient
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: ParaEngineClient
+ffi loaded shared lib: ParaEngineClient
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: ParaEngineClient
+ffi loaded shared lib: ParaEngineClient
+2018-05-02 14:24:12|worker_8|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-02 14:24:12|worker_6|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-02 14:24:12|worker_1|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-02 14:24:12|worker_4|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-02 14:24:12|worker_2|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-02 14:24:12|worker_7|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-02 14:24:12|worker_3|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-02 14:24:12|worker_5|info|DomainSpecificLanguage|NPL language extension loaded
 TCPKeepAlive: false
 AppKeepAlive: false
 IdleTimeout: true
@@ -54,26 +71,9 @@ CompressionThreshold: 204800
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
 ffi loaded shared lib: ParaEngineClient
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ffi loaded shared lib: ParaEngineClient
-ffi loaded shared lib: ParaEngineClient
+2018-05-02 14:24:12|worker_9|info|DomainSpecificLanguage|NPL language extension loaded
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
 ffi loaded shared lib: ParaEngineClient
-2018-05-02 14:16:05|worker_10|info|DomainSpecificLanguage|NPL language extension loaded
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ffi loaded shared lib: ParaEngineClient
-2018-05-02 14:16:05|worker_8|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-02 14:16:05|worker_1|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-02 14:16:05|worker_2|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-02 14:16:05|worker_7|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-02 14:16:05|worker_6|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-02 14:16:05|worker_4|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-02 14:16:05|worker_5|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-02 14:16:05|worker_9|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-02 14:16:05|worker_3|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-02 14:24:12|worker_10|info|DomainSpecificLanguage|NPL language extension loaded
 NPL max pending incoming connections allowed is 1000
