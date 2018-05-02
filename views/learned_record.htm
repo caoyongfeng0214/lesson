@@ -10,8 +10,8 @@
     <input hidden value="{{lessonNo}}" id="lessonNo"/>
     <div class="recordWrapper learned-record">
         <div class="item">
-            <span>Lesson 1：</span>
-            <div>Tutorial: Installation, Movement and Edit Mode</div>
+            <span>Lesson <span class="lesson-no">-</span>：</span>
+            <div><span class="lesson-title">-</span></div>
         </div>
         <div class="item">
             <span>Accuracy Analysis:</span>
@@ -76,10 +76,10 @@
         var myChart = new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: ["15:30 20/4/2018", "15:30 20/4/2018", "15:30 20/4/2018", "15:30 20/4/2018", "15:30 20/4/2018"],
+                labels: [],
                 datasets: [{
                     label: 'Accuracy Rate',
-                    data: [20, 40, 60, 80, 50],
+                    data: [],
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.2)',
                         'rgba(54, 162, 235, 0.2)',
