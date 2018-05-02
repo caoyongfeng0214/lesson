@@ -6,7 +6,7 @@ OS version:Microsoft  (build 9200), 64-bit
 Number of processors:4
 Processor type:586
 TotalPhysicalMemory:8312716
-FreePhysicalMemory:2458104
+FreePhysicalMemory:2471240
 
 ParaEngine Root Dir is E:/KeepWork/lesson/
 ./packages dir: C:\ParaCraftSDK-master\NPLRuntime\win\packages\
@@ -27,7 +27,7 @@ font Tahoma;12;norm is created
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
 ffi loaded shared lib: ParaEngineClient
-2018-05-02 14:24:12|main|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-02 14:50:32|main|info|DomainSpecificLanguage|NPL language extension loaded
 NPL server 0.1 is listening on 0.0.0.0:3000
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
@@ -37,30 +37,25 @@ ffi loaded shared lib: ParaEngineClient
 ffi loaded shared lib: ParaEngineClient
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ffi loaded shared lib: ParaEngineClient
 ffi loaded shared lib: ParaEngineClient
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ffi loaded shared lib: ParaEngineClient
 ffi loaded shared lib: ParaEngineClient
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: ParaEngineClient
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
 ffi loaded shared lib: ParaEngineClient
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
 ffi loaded shared lib: ParaEngineClient
-2018-05-02 14:24:12|worker_8|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-02 14:24:12|worker_6|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-02 14:24:12|worker_1|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-02 14:24:12|worker_4|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-02 14:24:12|worker_2|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-02 14:24:12|worker_7|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-02 14:24:12|worker_3|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-02 14:24:12|worker_5|info|DomainSpecificLanguage|NPL language extension loaded
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: ParaEngineClient
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: ParaEngineClient
 TCPKeepAlive: false
 AppKeepAlive: false
 IdleTimeout: true
@@ -68,12 +63,675 @@ IdleTimeoutPeriod: 120000
 UseCompression(incoming): false
 CompressionLevel: -1
 CompressionThreshold: 204800
+2018-05-02 14:50:32|worker_3|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-02 14:50:32|worker_2|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-02 14:50:32|worker_8|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-02 14:50:32|worker_7|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-02 14:50:32|worker_9|info|DomainSpecificLanguage|NPL language extension loaded
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
 ffi loaded shared lib: ParaEngineClient
-2018-05-02 14:24:12|worker_9|info|DomainSpecificLanguage|NPL language extension loaded
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ffi loaded shared lib: ParaEngineClient
-2018-05-02 14:24:12|worker_10|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-02 14:50:32|worker_5|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-02 14:50:32|worker_6|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-02 14:50:32|worker_10|info|DomainSpecificLanguage|NPL language extension loaded
 NPL max pending incoming connections allowed is 1000
+2018-05-02 14:50:32|worker_1|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-02 14:50:32|worker_4|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-02 14:50:33|16500|incoming connection (127.0.0.1/62734) is established and assigned a temporary id (~1). 
+2018-05-02 14:50:33|16500|incoming connection (127.0.0.1/62735) is established and assigned a temporary id (~2). 
+2018-05-02 14:50:33|16500|incoming connection (127.0.0.1/62736) is established and assigned a temporary id (~3). 
+2018-05-02 14:50:33|16500|incoming connection (127.0.0.1/62737) is established and assigned a temporary id (~4). 
+2018-05-02 14:50:33|16500|incoming connection (127.0.0.1/62738) is established and assigned a temporary id (~5). 
+2018-05-02 14:50:33|16500|incoming connection (127.0.0.1/62739) is established and assigned a temporary id (~6). 
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=1,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 0 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=1,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 0 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=1,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 0 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=2,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 1 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=3,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 2 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=4,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 3 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=5,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 4 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=1,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 0 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=1,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 0 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=2,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 1 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=1,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 0 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=1,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 0 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=2,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 1 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=3,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 2 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=4,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 3 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=1,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 0 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=1,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 0 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=2,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 1 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=1,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 0 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=2,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 1 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=3,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 2 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=1,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 0 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=2,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 1 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=1,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 0 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=2,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 1 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=3,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 2 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=4,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 3 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=1,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 0 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=2,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 1 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=3,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 2 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=4,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 3 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=1,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 0 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=2,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 1 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=3,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 2 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=1,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 0 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=2,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 1 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=3,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 2 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=4,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 3 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=5,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 4 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=6,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 5 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=7,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 6 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=8,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 7 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=1,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 0 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=1,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 0 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=2,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 1 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=3,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 2 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=4,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 3 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=5,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 4 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=1,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 0 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=2,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 1 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=3,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 2 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=4,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 3 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=5,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 4 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=1,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 0 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=2,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 1 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=3,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 2 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=4,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 3 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=5,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 4 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=1,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 0 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=2,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 1 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=4,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 3 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=5,pageSize=1,}
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 4 , 1"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=3,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 2 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=6,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 5 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=1,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 0 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=2,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 1 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=3,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 2 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=4,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 3 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=5,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 4 , 1"
+2018-05-02 15:04:02|16500|connection time out (127.0.0.1/62734) with id (~1). 
+2018-05-02 15:04:02|16500|connection time out (127.0.0.1/62736) with id (~3). 
+2018-05-02 15:04:02|16500|connection time out (127.0.0.1/62735) with id (~2). 
+2018-05-02 15:04:02|16500|connection time out (127.0.0.1/62738) with id (~5). 
+2018-05-02 15:04:02|16500|connection time out (127.0.0.1/62739) with id (~6). 
+2018-05-02 15:04:02|16500|connection closed (127.0.0.1/62734) with id (~1). 
+2018-05-02 15:04:02|16500|connection closed (127.0.0.1/62736) with id (~3). 
+2018-05-02 15:04:02|16500|connection closed (127.0.0.1/62735) with id (~2). 
+2018-05-02 15:04:02|16500|connection closed (127.0.0.1/62738) with id (~5). 
+2018-05-02 15:04:02|16500|connection closed (127.0.0.1/62739) with id (~6). 
+2018-05-02 15:04:10|16500|connection time out (127.0.0.1/62737) with id (~4). 
+2018-05-02 15:04:10|16500|connection closed (127.0.0.1/62737) with id (~4). 
+2018-05-02 15:06:50|16500|incoming connection (127.0.0.1/64523) is established and assigned a temporary id (~7). 
+2018-05-02 15:06:50|16500|incoming connection (127.0.0.1/64524) is established and assigned a temporary id (~8). 
+2018-05-02 15:06:50|16500|incoming connection (127.0.0.1/64525) is established and assigned a temporary id (~9). 
+2018-05-02 15:06:50|16500|incoming connection (127.0.0.1/64526) is established and assigned a temporary id (~10). 
+2018-05-02 15:06:50|16500|incoming connection (127.0.0.1/64527) is established and assigned a temporary id (~11). 
+2018-05-02 15:06:50|16500|incoming connection (127.0.0.1/64528) is established and assigned a temporary id (~12). 
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=1,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 0 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=2,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 1 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=3,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 2 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=4,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 3 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=5,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 4 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=6,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 5 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=7,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 6 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=8,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 7 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=9,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 8 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=1,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 0 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=2,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 1 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=3,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 2 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=4,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 3 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=5,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 4 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=6,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 5 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=7,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 6 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=8,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 7 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=9,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 8 , 1"
+2018-05-02 15:09:18|16500|connection time out (127.0.0.1/64527) with id (~11). 
+2018-05-02 15:09:18|16500|connection time out (127.0.0.1/64526) with id (~10). 
+2018-05-02 15:09:18|16500|connection time out (127.0.0.1/64525) with id (~9). 
+2018-05-02 15:09:18|16500|connection time out (127.0.0.1/64524) with id (~8). 
+2018-05-02 15:09:18|16500|connection time out (127.0.0.1/64523) with id (~7). 
+2018-05-02 15:09:18|16500|connection closed (127.0.0.1/64527) with id (~11). 
+2018-05-02 15:09:18|16500|connection closed (127.0.0.1/64526) with id (~10). 
+2018-05-02 15:09:18|16500|connection closed (127.0.0.1/64525) with id (~9). 
+2018-05-02 15:09:18|16500|connection closed (127.0.0.1/64524) with id (~8). 
+2018-05-02 15:09:18|16500|connection closed (127.0.0.1/64523) with id (~7). 
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=1,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 0 , 1"
+2018-05-02 15:09:25|16500|incoming connection (127.0.0.1/64820) is established and assigned a temporary id (~13). 
+2018-05-02 15:09:25|16500|incoming connection (127.0.0.1/64821) is established and assigned a temporary id (~14). 
+2018-05-02 15:09:25|16500|incoming connection (127.0.0.1/64822) is established and assigned a temporary id (~15). 
+2018-05-02 15:09:25|16500|incoming connection (127.0.0.1/64823) is established and assigned a temporary id (~16). 
+2018-05-02 15:09:25|16500|incoming connection (127.0.0.1/64824) is established and assigned a temporary id (~17). 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-02 15:09:36|16500|connection closed (127.0.0.1/64820) with id (~13). 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-02 15:09:36|16500|connection closed (127.0.0.1/64821) with id (~14). 
+2018-05-02 15:09:36|16500|connection closed (127.0.0.1/64822) with id (~15). 
+2018-05-02 15:09:36|16500|connection closed (127.0.0.1/64823) with id (~16). 
+2018-05-02 15:09:36|16500|connection closed (127.0.0.1/64824) with id (~17). 
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=1,pageSize=1,}
+2018-05-02 15:09:36|16500|incoming connection (127.0.0.1/64848) is established and assigned a temporary id (~18). 
+2018-05-02 15:09:36|16500|incoming connection (127.0.0.1/64849) is established and assigned a temporary id (~19). 
+2018-05-02 15:09:36|16500|incoming connection (127.0.0.1/64850) is established and assigned a temporary id (~20). 
+2018-05-02 15:09:36|16500|incoming connection (127.0.0.1/64851) is established and assigned a temporary id (~21). 
+2018-05-02 15:09:36|16500|incoming connection (127.0.0.1/64852) is established and assigned a temporary id (~22). 
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 0 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=2,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 1 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=3,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 2 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=4,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 3 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=5,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 4 , 1"
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-02 15:10:04|16500|connection closed (127.0.0.1/64848) with id (~18). 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-02 15:10:04|16500|connection closed (127.0.0.1/64849) with id (~19). 
+2018-05-02 15:10:04|16500|connection closed (127.0.0.1/64850) with id (~20). 
+2018-05-02 15:10:04|16500|connection closed (127.0.0.1/64851) with id (~21). 
+2018-05-02 15:10:04|16500|connection closed (127.0.0.1/64852) with id (~22). 
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=1,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 0 , 1"
+2018-05-02 15:10:04|16500|incoming connection (127.0.0.1/64912) is established and assigned a temporary id (~23). 
+2018-05-02 15:10:04|16500|incoming connection (127.0.0.1/64913) is established and assigned a temporary id (~24). 
+2018-05-02 15:10:04|16500|incoming connection (127.0.0.1/64914) is established and assigned a temporary id (~25). 
+2018-05-02 15:10:04|16500|incoming connection (127.0.0.1/64915) is established and assigned a temporary id (~26). 
+2018-05-02 15:10:04|16500|incoming connection (127.0.0.1/64916) is established and assigned a temporary id (~27). 
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=2,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 1 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=3,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 2 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=4,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 3 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=5,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 4 , 1"
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-02 15:10:54|16500|connection closed (127.0.0.1/64912) with id (~23). 
+2018-05-02 15:10:54|16500|connection closed (127.0.0.1/64913) with id (~24). 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-02 15:10:54|16500|connection closed (127.0.0.1/64914) with id (~25). 
+2018-05-02 15:10:54|16500|connection closed (127.0.0.1/64915) with id (~26). 
+2018-05-02 15:10:54|16500|connection closed (127.0.0.1/64916) with id (~27). 
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=1,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 0 , 1"
+2018-05-02 15:10:54|16500|incoming connection (127.0.0.1/65012) is established and assigned a temporary id (~28). 
+2018-05-02 15:10:54|16500|incoming connection (127.0.0.1/65013) is established and assigned a temporary id (~29). 
+2018-05-02 15:10:54|16500|incoming connection (127.0.0.1/65014) is established and assigned a temporary id (~30). 
+2018-05-02 15:10:54|16500|incoming connection (127.0.0.1/65015) is established and assigned a temporary id (~31). 
+2018-05-02 15:10:54|16500|incoming connection (127.0.0.1/65016) is established and assigned a temporary id (~32). 
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=2,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 1 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=3,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 2 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=4,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 3 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=5,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 4 , 1"
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-02 15:11:22|16500|connection closed (127.0.0.1/65012) with id (~28). 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-02 15:11:22|16500|connection closed (127.0.0.1/65013) with id (~29). 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-02 15:11:22|16500|connection closed (127.0.0.1/65014) with id (~30). 
+2018-05-02 15:11:22|16500|connection closed (127.0.0.1/65015) with id (~31). 
+2018-05-02 15:11:22|16500|connection closed (127.0.0.1/65016) with id (~32). 
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=1,pageSize=1,}
+2018-05-02 15:11:22|16500|incoming connection (127.0.0.1/65075) is established and assigned a temporary id (~33). 
+2018-05-02 15:11:22|16500|incoming connection (127.0.0.1/65076) is established and assigned a temporary id (~34). 
+2018-05-02 15:11:22|16500|incoming connection (127.0.0.1/65077) is established and assigned a temporary id (~35). 
+2018-05-02 15:11:22|16500|incoming connection (127.0.0.1/65078) is established and assigned a temporary id (~36). 
+2018-05-02 15:11:22|16500|incoming connection (127.0.0.1/65079) is established and assigned a temporary id (~37). 
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 0 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=2,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 1 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=3,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 2 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=4,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 3 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=5,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 4 , 1"
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-02 15:11:52|16500|connection closed (127.0.0.1/65075) with id (~33). 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-02 15:11:52|16500|connection closed (127.0.0.1/65076) with id (~34). 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-02 15:11:52|16500|connection closed (127.0.0.1/65077) with id (~35). 
+2018-05-02 15:11:52|16500|connection closed (127.0.0.1/65078) with id (~36). 
+2018-05-02 15:11:52|16500|connection closed (127.0.0.1/65079) with id (~37). 
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=1,pageNo=1,pageSize=50,}
+2018-05-02 15:12:37|16500|incoming connection (127.0.0.1/65222) is established and assigned a temporary id (~38). 
+2018-05-02 15:12:37|16500|incoming connection (127.0.0.1/65223) is established and assigned a temporary id (~39). 
+2018-05-02 15:12:37|16500|incoming connection (127.0.0.1/65224) is established and assigned a temporary id (~40). 
+2018-05-02 15:12:37|16500|incoming connection (127.0.0.1/65225) is established and assigned a temporary id (~41). 
+2018-05-02 15:12:37|16500|incoming connection (127.0.0.1/65226) is established and assigned a temporary id (~42). 
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 0 , 50"
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-02 15:13:34|16500|connection closed (127.0.0.1/65222) with id (~38). 
+2018-05-02 15:13:34|16500|connection closed (127.0.0.1/65223) with id (~39). 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-02 15:13:34|16500|connection closed (127.0.0.1/65224) with id (~40). 
+2018-05-02 15:13:34|16500|connection closed (127.0.0.1/65225) with id (~41). 
+2018-05-02 15:13:34|16500|connection closed (127.0.0.1/65226) with id (~42). 
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=1,pageNo=1,pageSize=50,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 0 , 50"
+2018-05-02 15:14:25|16500|incoming connection (127.0.0.1/65407) is established and assigned a temporary id (~43). 
+2018-05-02 15:14:25|16500|incoming connection (127.0.0.1/65408) is established and assigned a temporary id (~44). 
+2018-05-02 15:14:25|16500|incoming connection (127.0.0.1/65409) is established and assigned a temporary id (~45). 
+2018-05-02 15:14:25|16500|incoming connection (127.0.0.1/65410) is established and assigned a temporary id (~46). 
+2018-05-02 15:14:25|16500|incoming connection (127.0.0.1/65411) is established and assigned a temporary id (~47). 
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=1,pageSize=1,}
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-02 15:14:34|16500|connection closed (127.0.0.1/65407) with id (~43). 
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 0 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=1,pageSize=1,}
+2018-05-02 15:14:34|16500|incoming connection (127.0.0.1/65437) is established and assigned a temporary id (~48). 
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 0 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=2,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 1 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=3,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 2 , 1"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=4,pageNo=4,pageSize=1,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 3 , 1"
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-02 15:14:48|16500|connection closed (127.0.0.1/65437) with id (~48). 
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=1,pageNo=1,pageSize=50,}
+2018-05-02 15:14:48|16500|incoming connection (127.0.0.1/65466) is established and assigned a temporary id (~49). 
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 0 , 50"
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-02 15:14:59|16500|connection closed (127.0.0.1/65466) with id (~49). 
+2018-05-02 15:14:59|16500|incoming connection (127.0.0.1/65488) is established and assigned a temporary id (~50). 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-02 15:15:11|16500|connection closed (127.0.0.1/65488) with id (~50). 
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=1,pageNo=1,pageSize=50,}
+2018-05-02 15:15:11|16500|incoming connection (127.0.0.1/65511) is established and assigned a temporary id (~51). 
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 0 , 50"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=2,pageNo=1,pageSize=2,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 0 , 2"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=2,pageNo=2,pageSize=2,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 2 , 2"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=2,pageNo=1,pageSize=2,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 0 , 2"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=2,pageNo=1,pageSize=2,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 0 , 2"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=2,pageNo=2,pageSize=2,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 2 , 2"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=2,pageNo=1,pageSize=2,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 0 , 2"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=2,pageNo=2,pageSize=2,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 2 , 2"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=2,pageNo=1,pageSize=2,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 0 , 2"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=2,pageNo=2,pageSize=2,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 2 , 2"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=1,pageNo=1,pageSize=50,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 0 , 50"
+echo:"SELECT beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonPerformance, duration, lessonTitle, DATEDIFF(t.`beginTime`,m.`joinTime`) learnedDays FROM testrecord t LEFT JOIN member m ON t.`username` = m.`username` where t.sn = '181'"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=1,pageNo=1,pageSize=50,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 0 , 50"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=4,totalPage=1,pageNo=1,pageSize=50,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'isyang' order by beginTime DESC limit 0 , 50"
