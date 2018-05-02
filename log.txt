@@ -1,0 +1,181 @@
+2018-05-02 16:48:48|16200|NPL Runtime started
+NPL bin dir: D:\cover\cover\ParaCraftSDK-master\NPLRuntime\win\bin\
+WorkingDir: D:\GitClone\lesson
+WritablePath: D:/GitClone/lesson/
+OS information:
+OS version:Microsoft  (build 9200), 64-bit
+Number of processors:4
+Processor type:586
+TotalPhysicalMemory:8312676
+FreePhysicalMemory:2732852
+
+ParaEngine Root Dir is D:/GitClone/lesson/
+./packages dir: D:\cover\cover\ParaCraftSDK-master\NPLRuntime\win\packages\
+Archive: D:\cover\cover\ParaCraftSDK-master\NPLRuntime\win\packages\main_mobile_res.pkg is opened and read 613 entries
+Archive: D:\cover\cover\ParaCraftSDK-master\NPLRuntime\win\packages\main150727.pkg is opened and read 2665 entries
+Archive: D:\cover\cover\ParaCraftSDK-master\NPLRuntime\win\packages\main.pkg is opened and read 7536 entries
+main loop: bin/www.npl 
+CAssetManifest loaded 0 files
+CAsyncLoader QueueID:0(Local) has 1 worker threads
+CAsyncLoader QueueID:1(Asset) has 2 worker threads
+CAsyncLoader QueueID:2(Web) has 1 worker threads
+CAsyncLoader QueueID:3(Asset_BigFile) has 1 worker threads
+CAsyncLoader QueueID:4(AudioFile) has 1 worker threads
+CAsyncLoader is started with 1 IO thread and 6 worker threads
+Plug-in loaded: D:\cover\cover\ParaCraftSDK-master\NPLRuntime\win\bin\PhysicsBT.dll version: 1 
+font Tahoma;12;bold is created 
+font Tahoma;12;norm is created 
+(main) state is now running in a separate thread. It is more responsive now. 
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+2018-05-02 16:48:48|main|info|DomainSpecificLanguage|NPL language extension loaded
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+NPL server 0.1 is listening on 0.0.0.0:3000
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+ffi loaded shared lib: C
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+TCPKeepAlive: false
+AppKeepAlive: false
+ffi loaded shared lib: C
+IdleTimeout: true
+IdleTimeoutPeriod: 120000
+UseCompression(incoming): false
+CompressionLevel: -1
+CompressionThreshold: 204800
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+NPL max pending incoming connections allowed is 1000
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+2018-05-02 16:48:48|worker_1|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-02 16:48:48|worker_4|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-02 16:48:48|worker_10|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-02 16:48:48|worker_2|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-02 16:48:48|worker_8|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-02 16:48:48|worker_6|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-02 16:48:48|worker_3|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-02 16:48:48|worker_9|info|DomainSpecificLanguage|NPL language extension loaded2018-05-02 16:48:48|worker_7|info|DomainSpecificLanguage|
+NPL language extension loaded
+2018-05-02 16:48:48|worker_5|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-02 16:48:48|6396|incoming connection (127.0.0.1/63166) is established and assigned a temporary id (~1). 
+echo:"update testrecord set duration = duration + 1 where sn = \"193\""
+2018-05-02 16:48:50|6396|incoming connection (127.0.0.1/63172) is established and assigned a temporary id (~2). 
+2018-05-02 16:48:50|6396|incoming connection (127.0.0.1/63173) is established and assigned a temporary id (~3). 
+2018-05-02 16:48:50|6396|incoming connection (127.0.0.1/63174) is established and assigned a temporary id (~4). 
+2018-05-02 16:48:50|6396|incoming connection (127.0.0.1/63175) is established and assigned a temporary id (~5). 
+2018-05-02 16:48:50|6396|incoming connection (127.0.0.1/63176) is established and assigned a temporary id (~6). 
+2018-05-02 16:48:50|6396|incoming connection (127.0.0.1/63177) is established and assigned a temporary id (~7). 
+echo:"SELECT beginTime, t.username, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonPerformance, duration, lessonTitle, DATEDIFF(t.`beginTime`,m.`joinTime`) learnedDays FROM testrecord t LEFT JOIN member m ON t.`username` = m.`username` where t.sn = '194'"
+echo:"update testrecord set duration = duration + 1 where sn = \"193\""
+echo:"SELECT beginTime, t.username, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonPerformance, duration, lessonTitle, DATEDIFF(t.`beginTime`,m.`joinTime`) learnedDays FROM testrecord t LEFT JOIN member m ON t.`username` = m.`username` where t.sn = '194'"
+echo:"SELECT beginTime, t.username, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonPerformance, duration, lessonTitle, DATEDIFF(t.`beginTime`,m.`joinTime`) learnedDays FROM testrecord t LEFT JOIN member m ON t.`username` = m.`username` where t.sn = '194'"
+echo:"update testrecord set duration = duration + 1 where sn = \"193\""
+echo:"SELECT COUNT(1) FROM ( SELECT lessonUrl, lessonTitle, lessonCover, goals, lessonNo, MAX(totalScore) bestScore,\n        (SELECT totalScore FROM testrecord WHERE lessonNo = t.lessonNo AND username = t.username ORDER BY finishTime DESC LIMIT 0,1) latestScore\n        FROM testrecord t where username = 'keep' group by lessonNo order by lessonNo DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=1,totalPage=1,pageNo=1,pageSize=50,}
+echo:"SELECT lessonUrl, lessonTitle, lessonCover, goals, lessonNo, MAX(totalScore) bestScore,\n        (SELECT totalScore FROM testrecord WHERE lessonNo = t.lessonNo AND username = t.username ORDER BY finishTime DESC LIMIT 0,1) latestScore\n        FROM testrecord t where username = 'keep' group by lessonNo order by lessonNo DESC limit 0 , 50"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, classId, startTime, lessonUrl, lessonTitle, lessonNo, goals, lessonCover FROM class where teacher = 'keep' and state = '1' order by startTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=14,totalPage=1,pageNo=1,pageSize=50,}
+echo:"SELECT sn, classId, startTime, lessonUrl, lessonTitle, lessonNo, goals, lessonCover FROM class where teacher = 'keep' and state = '1' order by startTime DESC limit 0 , 50"
+echo:"SELECT COUNT(1) FROM ( SELECT lessonUrl, lessonTitle, lessonCover, goals, lessonNo, MAX(totalScore) bestScore,\n        (SELECT totalScore FROM testrecord WHERE lessonNo = t.lessonNo AND username = t.username ORDER BY finishTime DESC LIMIT 0,1) latestScore\n        FROM testrecord t where username = 'keep' group by lessonNo order by lessonNo DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=1,totalPage=1,pageNo=1,pageSize=50,}
+echo:"SELECT lessonUrl, lessonTitle, lessonCover, goals, lessonNo, MAX(totalScore) bestScore,\n        (SELECT totalScore FROM testrecord WHERE lessonNo = t.lessonNo AND username = t.username ORDER BY finishTime DESC LIMIT 0,1) latestScore\n        FROM testrecord t where username = 'keep' group by lessonNo order by lessonNo DESC limit 0 , 50"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'keep' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=2,totalPage=1,pageNo=1,pageSize=50,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '2' and username = 'keep' order by beginTime DESC limit 0 , 50"
+echo:"SELECT sn, classId, startTime, lessonUrl, teacher, lessonTitle, lessonNo, goals, startTime, finishTime, summary, state, lessonCover FROM class where state = '1' and classId = '100103728'"
+echo:"update testrecord set duration = duration + 1 where sn = \"193\""
+echo:"update testrecord set duration = duration + 1 where sn = \"193\""
+2018-05-02 16:53:20|6396|connection time out (127.0.0.1/63175) with id (~5). 
+2018-05-02 16:53:20|6396|connection time out (127.0.0.1/63176) with id (~6). 
+2018-05-02 16:53:20|6396|connection time out (127.0.0.1/63177) with id (~7). 
+2018-05-02 16:53:20|6396|connection closed (127.0.0.1/63175) with id (~5). 
+2018-05-02 16:53:20|6396|connection closed (127.0.0.1/63176) with id (~6). 
+2018-05-02 16:53:20|6396|connection closed (127.0.0.1/63177) with id (~7). 
+2018-05-02 16:53:40|6396|connection time out (127.0.0.1/63172) with id (~2). 
+2018-05-02 16:53:40|6396|connection time out (127.0.0.1/63173) with id (~3). 
+2018-05-02 16:53:40|6396|connection time out (127.0.0.1/63174) with id (~4). 
+2018-05-02 16:53:40|6396|connection closed (127.0.0.1/63172) with id (~2). 
+2018-05-02 16:53:40|6396|connection closed (127.0.0.1/63173) with id (~3). 
+2018-05-02 16:53:40|6396|connection closed (127.0.0.1/63174) with id (~4). 
+echo:"update testrecord set duration = duration + 1 where sn = \"193\""
+2018-05-02 16:53:53|6396|incoming connection (127.0.0.1/63405) is established and assigned a temporary id (~8). 
+2018-05-02 16:53:53|6396|incoming connection (127.0.0.1/63406) is established and assigned a temporary id (~9). 
+2018-05-02 16:53:53|6396|incoming connection (127.0.0.1/63407) is established and assigned a temporary id (~10). 
+2018-05-02 16:53:53|6396|incoming connection (127.0.0.1/63408) is established and assigned a temporary id (~11). 
+2018-05-02 16:53:53|6396|incoming connection (127.0.0.1/63409) is established and assigned a temporary id (~12). 
+2018-05-02 16:53:53|6396|incoming connection (127.0.0.1/63410) is established and assigned a temporary id (~13). 
+echo:"SELECT COUNT(1) FROM ( SELECT sn, classId, startTime, lessonUrl, lessonTitle, lessonNo, goals, lessonCover FROM class where teacher = 'keep' and state = '1' order by startTime ASC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=14,totalPage=1,pageNo=1,pageSize=50,}
+echo:"SELECT sn, classId, startTime, lessonUrl, lessonTitle, lessonNo, goals, lessonCover FROM class where teacher = 'keep' and state = '1' order by startTime ASC limit 0 , 50"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, classId, startTime, lessonUrl, lessonTitle, lessonNo, goals, lessonCover FROM class where teacher = 'keep' and state = '1' order by startTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=14,totalPage=1,pageNo=1,pageSize=50,}
+echo:"SELECT sn, classId, startTime, lessonUrl, lessonTitle, lessonNo, goals, lessonCover FROM class where teacher = 'keep' and state = '1' order by startTime DESC limit 0 , 50"
+echo:"SELECT COUNT(1) FROM ( SELECT lessonUrl, lessonTitle, lessonCover, goals, lessonNo, MAX(totalScore) bestScore,\n        (SELECT totalScore FROM testrecord WHERE lessonNo = t.lessonNo AND username = t.username ORDER BY finishTime DESC LIMIT 0,1) latestScore\n        FROM testrecord t where username = 'keep' group by lessonNo order by lessonNo DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=1,totalPage=1,pageNo=1,pageSize=50,}
+echo:"SELECT lessonUrl, lessonTitle, lessonCover, goals, lessonNo, MAX(totalScore) bestScore,\n        (SELECT totalScore FROM testrecord WHERE lessonNo = t.lessonNo AND username = t.username ORDER BY finishTime DESC LIMIT 0,1) latestScore\n        FROM testrecord t where username = 'keep' group by lessonNo order by lessonNo DESC limit 0 , 50"
+echo:"SELECT COUNT(1) FROM ( SELECT lessonUrl, lessonTitle, lessonCover, goals, lessonNo, MAX(totalScore) bestScore,\n        (SELECT totalScore FROM testrecord WHERE lessonNo = t.lessonNo AND username = t.username ORDER BY finishTime DESC LIMIT 0,1) latestScore\n        FROM testrecord t where username = 'keep' group by lessonNo order by lessonNo ASC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=1,totalPage=1,pageNo=1,pageSize=50,}
+echo:"SELECT lessonUrl, lessonTitle, lessonCover, goals, lessonNo, MAX(totalScore) bestScore,\n        (SELECT totalScore FROM testrecord WHERE lessonNo = t.lessonNo AND username = t.username ORDER BY finishTime DESC LIMIT 0,1) latestScore\n        FROM testrecord t where username = 'keep' group by lessonNo order by lessonNo ASC limit 0 , 50"
+echo:"SELECT COUNT(1) FROM ( SELECT lessonUrl, lessonTitle, lessonCover, goals, lessonNo, MAX(totalScore) bestScore,\n        (SELECT totalScore FROM testrecord WHERE lessonNo = t.lessonNo AND username = t.username ORDER BY finishTime DESC LIMIT 0,1) latestScore\n        FROM testrecord t where username = 'keep' group by lessonNo order by lessonNo DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=1,totalPage=1,pageNo=1,pageSize=50,}
+echo:"SELECT lessonUrl, lessonTitle, lessonCover, goals, lessonNo, MAX(totalScore) bestScore,\n        (SELECT totalScore FROM testrecord WHERE lessonNo = t.lessonNo AND username = t.username ORDER BY finishTime DESC LIMIT 0,1) latestScore\n        FROM testrecord t where username = 'keep' group by lessonNo order by lessonNo DESC limit 0 , 50"
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-02 16:54:32|6396|connection closed (127.0.0.1/63406) with id (~9). 
+2018-05-02 16:54:32|6396|connection closed (127.0.0.1/63407) with id (~10). 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-02 16:54:32|6396|connection closed (127.0.0.1/63408) with id (~11). 
+2018-05-02 16:54:32|6396|connection closed (127.0.0.1/63409) with id (~12). 
+2018-05-02 16:54:32|6396|connection closed (127.0.0.1/63410) with id (~13). 
+2018-05-02 16:54:32|6396|incoming connection (127.0.0.1/63428) is established and assigned a temporary id (~14). 
+2018-05-02 16:54:34|6396|incoming connection (127.0.0.1/63457) is established and assigned a temporary id (~15). 
+t ->	worker_1
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
+echo:"update testrecord set duration = duration + 1 where sn = \"193\""
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-02 16:55:18|6396|connection closed (127.0.0.1/63428) with id (~14). 
+echo:"SELECT COUNT(1) FROM ( SELECT sn, classId, startTime, lessonUrl, lessonTitle, lessonNo, goals, lessonCover FROM class where teacher = 'keep' and state = '1' order by startTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=14,totalPage=1,pageNo=1,pageSize=50,}
+echo:"SELECT sn, classId, startTime, lessonUrl, lessonTitle, lessonNo, goals, lessonCover FROM class where teacher = 'keep' and state = '1' order by startTime DESC limit 0 , 50"
+2018-05-02 16:55:20|6396|incoming connection (127.0.0.1/63526) is established and assigned a temporary id (~16). 
+2018-05-02 16:55:20|6396|incoming connection (127.0.0.1/63527) is established and assigned a temporary id (~17). 
+2018-05-02 16:55:20|6396|incoming connection (127.0.0.1/63528) is established and assigned a temporary id (~18). 
+2018-05-02 16:55:20|6396|incoming connection (127.0.0.1/63529) is established and assigned a temporary id (~19). 
+echo:"SELECT sn, classId, startTime, lessonUrl, teacher, lessonTitle, lessonNo, goals, startTime, finishTime, summary, state, lessonCover FROM class where state = '1' and classId = '100103728'"
+echo:"update testrecord set duration = duration + 1 where sn = \"193\""
+2018-05-02 16:56:34|6396|connection time out (127.0.0.1/63457) with id (~15). 
+2018-05-02 16:56:34|6396|connection closed (127.0.0.1/63457) with id (~15). 

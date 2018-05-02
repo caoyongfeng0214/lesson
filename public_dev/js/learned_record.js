@@ -5,7 +5,7 @@ var PAGE_SIZE = 50;
 $(function(){
     getLessonLearnedRecord(PAGE_SIZE, 1);
 });
-
+// TODO: 后端排序
 
 var getLessonLearnedRecord = function( psize, pno, order, reload ) {
     reload = (typeof reload !== 'undefined') ? reload : true;

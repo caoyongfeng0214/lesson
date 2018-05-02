@@ -11,10 +11,12 @@ router:get('/:class_id', function(req, res, next)
 	});
 end);
 
-router:get('/details/:sn', function(req, res, next)
-	local sn = req.params.sn;
+router:get('/details/:sn/:studentNo', function(req, res, next)
+	local recordSn = req.params.sn;
+	local studentNo = req.params.studentNo;
 	res:render('taughted_details', {
-		sn = sn
+		recordSn = recordSn,
+		studentNo = studentNo
 	});
 end);
 
