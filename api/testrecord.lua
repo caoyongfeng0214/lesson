@@ -38,7 +38,7 @@ router:post('/saveOrUpdate', function(req, res, next)
         end
     else
         -- save 
-        local rq = rq(p, {'username', 'lessonUrl'}, res)
+        local rq = rq(p, {'username', 'lessonUrl'}, res) -- 必选参数
         if(not rq) then return end
         local num, lastId = recordBll.save(p)
         if(lastId) then
@@ -54,6 +54,24 @@ router:post('/saveOrUpdate', function(req, res, next)
                 err = 101,
                 msg = 'save record fail.'
             }
+        end
+    end
+    res:send(rs)
+end)
+
+-- 更新学习时长 频率控制为 1 分钟
+router:post('/study', function(req, res, next)
+    local p = req.body
+    local sn = p.sn
+    local rs = {
+        err = 101,
+        msg = 'update duration fail.'
+    }
+    if( sn ) then
+        local num  = recordBll.updateDuration(sn)
+        if(num) then
+            rs.err = 0
+            rs.msg = 'update duration success.'
         end
     end
     res:send(rs)
@@ -120,6 +138,7 @@ router:get('/detail', function(req, res, next)
     res:send(rs)
 end)
 
+-- learn Detail by Sn
 router:get('/learnDetailBySn', function(req, res, next)
     local rs = {}
     local p = req.query
