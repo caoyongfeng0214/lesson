@@ -2,6 +2,7 @@
 var username = $('#username').val();
 var lessonNo = $('#lessonNo').val();
 var PAGE_SIZE = 50;
+
 $(function(){
     getLessonLearnedRecord(PAGE_SIZE, 1);
 });
@@ -23,8 +24,9 @@ var getLessonLearnedRecord = function( psize, pno, order, reload ) {
             if(reload) { // 重新加载数据，否则为追加数据
                 tblRecord.html('');
             }
-            console.log(r)
             $('.learned-times').text(p.totalCount);
+            $('.lesson-no').text(r[0].lessonNo);
+            $('.lesson-title').text(r[0].lessonTitle);
             accuracyRateArray = [];
             startTimeArray = [];
             for(var i = 0; i < r.length; i++) {
@@ -39,7 +41,7 @@ var getLessonLearnedRecord = function( psize, pno, order, reload ) {
                     '    <td>' + fmtStartTime + '</td>'+
                     '    <td>' + item.accuracyRate + '%</td>'+
                     '    <td>' + (item.totalScore ? item.totalScore : 0)+ '</td>'+
-                    '    <td> <a href="#" class="el-button el-button--primary el-button--mini">'+
+                    '    <td> <a href="/learnedRecord/' + item.sn + '" class="el-button el-button--primary el-button--mini">'+
                     '            View Details</a></td>'+
                     '</tr>')
             }

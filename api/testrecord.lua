@@ -120,4 +120,25 @@ router:get('/detail', function(req, res, next)
     res:send(rs)
 end)
 
+router:get('/learnDetailBySn', function(req, res, next)
+    local rs = {}
+    local p = req.query
+    local sn = p.sn
+    local rq = rq(p, {'sn'}, res)
+    if(not rq) then return end
+    local where = {
+        ['t.sn'] = sn
+    }
+    local data = recordBll.detailBySn(where)
+    if(data) then
+        data.answerSheet = commonlib.Json.Decode(data.answerSheet)
+        rs.err = 0
+        rs.data = data
+    else
+        rs.err = 101
+        rs.msg = 'get learn detail fail.'
+    end
+    res:send(rs)
+end)
+
 NPL.export(router)
