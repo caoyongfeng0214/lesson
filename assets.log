@@ -1,12 +1,5 @@
-2018-05-02 13:43:12|2432|Async Processing Thread Local(0) Started
-2018-05-02 13:43:12|4268|CAsyncLoader IO Thread started2018-05-02 13:43:12|13408|Async Processing Thread Asset(1) Started
-2018-05-02 13:43:12|4584|Async Processing Thread Asset(1) Started
-2018-05-02 13:43:12|11964|Async Processing Thread Web(2) Started
-2018-05-02 13:43:12|8100|Async Processing Thread AudioFile(4) Started
-2018-05-02 13:43:12|12716|Async Processing Thread BigFile(3) Started
-2018-05-02 13:53:52|13092|ParaFile.OpenAssetFile using local file:public/csslib/element-ui.css
-2018-05-02 13:53:52|14044|ParaFile.OpenAssetFile using local file:public/css/common.css
-2018-05-02 13:53:52|464|ParaFile.OpenAssetFile using local file:public/jslib/jquery.min.js
-2018-05-02 13:53:52|6812|ParaFile.OpenAssetFile using local file:public/js/common.js
-2018-05-02 13:53:52|15136|ParaFile.OpenAssetFile using local file:public/css/record.css
-2018-05-02 13:53:52|13092|ParaFile.OpenAssetFile using local file:public/csslib/fonts/element-icons.woff
+2018-05-02 14:16:05|9448|CAsyncLoader IO Thread started2018-05-02 14:16:05|12188|Async Processing Thread Local(0) Started
+2018-05-02 14:16:05|17000|Async Processing Thread Asset(1) Started
+2018-05-02 14:16:05|512|Async Processing Thread Asset(1) Started
+2018-05-02 14:16:05|16968|Async Processing Thread Web(2) Started
+2018-05-02 14:16:05|13488|Async Processing Thread BigFile(3) Started
