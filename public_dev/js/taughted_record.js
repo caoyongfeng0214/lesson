@@ -97,6 +97,7 @@ $(function(){
             appendRecord(summary[i]);
         }
     }
+    /* Sort Begin */
     $('.sort-by-name').on('click', function() {
         if(nameSortFlag) {
             // 倒序
@@ -174,6 +175,19 @@ $(function(){
             emptySortFlag = true;
             sortList('emptyCount',true);
         }
+    });
+    /* Sort End */
+    // 发送 email
+    $('#sendEmail').on('click', function() {
+        var email=prompt("Please enter your email address:");  
+        if(email) {  
+            $.post('/api/record/sendEmail', {
+                email: email,
+                content: 'TODO: 内容和打印内容保持一致'
+            }, function(response) {
+                console.log(response);
+            })
+        } 
     });
 });
 

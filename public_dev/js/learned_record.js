@@ -60,7 +60,7 @@ $(function(){
             orderBy = 3;
             getLessonLearnedRecord(PAGE_SIZE, no, orderBy);
         }
-    })
+    });
 });
 
 var flag = false;

@@ -1,4 +1,4 @@
-2018-05-04 14:29:05|13016|NPL Runtime started
+2018-05-04 15:44:51|7788|NPL Runtime started
 NPL bin dir: D:\cover\cover\ParaCraftSDK-master\NPLRuntime\win\bin\
 WorkingDir: D:\GitClone\lesson
 WritablePath: D:/GitClone/lesson/
@@ -7,7 +7,7 @@ OS version:Microsoft  (build 9200), 64-bit
 Number of processors:4
 Processor type:586
 TotalPhysicalMemory:8312676
-FreePhysicalMemory:3413132
+FreePhysicalMemory:2250148
 
 ParaEngine Root Dir is D:/GitClone/lesson/
 ./packages dir: D:\cover\cover\ParaCraftSDK-master\NPLRuntime\win\packages\
@@ -29,7 +29,7 @@ font Tahoma;12;norm is created
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
 ffi loaded shared lib: C
-2018-05-04 14:29:05|main|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-04 15:44:51|main|info|DomainSpecificLanguage|NPL language extension loaded
 NPL server 0.1 is listening on 0.0.0.0:3000
 TCPKeepAlive: false
 AppKeepAlive: false
@@ -40,9 +40,18 @@ CompressionLevel: -1
 CompressionThreshold: 204800
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+ffi loaded shared lib: C
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
 ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
 ffi loaded shared lib: C
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
@@ -51,87 +60,62 @@ ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
 ffi loaded shared lib: C
 NPL max pending incoming connections allowed is 1000
+2018-05-04 15:44:52|worker_8|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-04 15:44:52|worker_1|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-04 15:44:52|worker_3|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-04 15:44:52|worker_6|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-04 15:44:52|worker_9|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-04 15:44:52|worker_2|info|DomainSpecificLanguage|NPL language extension loaded
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
 ffi loaded shared lib: C
+2018-05-04 15:44:52|worker_10|info|DomainSpecificLanguage|NPL language extension loaded
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
 ffi loaded shared lib: C
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ffi loaded shared lib: C
-ffi loaded shared lib: C
+2018-05-04 15:44:52|worker_4|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-04 15:44:52|worker_5|info|DomainSpecificLanguage|NPL language extension loaded
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
 ffi loaded shared lib: C
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ffi loaded shared lib: C
-2018-05-04 14:29:05|worker_5|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-04 14:29:05|worker_10|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-04 14:29:05|worker_4|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-04 14:29:05|worker_1|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-04 14:29:05|worker_6|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-04 14:29:05|worker_2|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-04 14:29:05|worker_8|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-04 14:29:05|worker_9|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-04 14:29:05|worker_3|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-04 14:29:05|worker_7|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-04 14:29:10|10576|incoming connection (127.0.0.1/60540) is established and assigned a temporary id (~1). 
-2018-05-04 14:29:11|10576|incoming connection (127.0.0.1/60544) is established and assigned a temporary id (~2). 
-2018-05-04 14:29:11|10576|incoming connection (127.0.0.1/60545) is established and assigned a temporary id (~3). 
-2018-05-04 14:29:11|10576|incoming connection (127.0.0.1/60546) is established and assigned a temporary id (~4). 
-2018-05-04 14:29:11|10576|incoming connection (127.0.0.1/60547) is established and assigned a temporary id (~5). 
-2018-05-04 14:29:11|10576|incoming connection (127.0.0.1/60548) is established and assigned a temporary id (~6). 
-echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '1' and username = 'keep' order by beginTime DESC ) a"
-echo:"<--------------------------------------------------page----------------------------------------------------->"
-echo:{totalCount=2,totalPage=1,pageNo=1,pageSize=50,}
-echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '1' and username = 'keep' order by beginTime DESC limit 0 , 50"
-2018-05-04 14:29:12|10576|incoming connection (127.0.0.1/60551) is established and assigned a temporary id (~7). 
-echo:"update testrecord set duration = duration + 1 where sn = \"220\""
-echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '1' and username = 'keep' order by beginTime ASC ) a"
-echo:"<--------------------------------------------------page----------------------------------------------------->"
-echo:{totalCount=2,totalPage=1,pageNo=1,pageSize=50,}
-echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '1' and username = 'keep' order by beginTime ASC limit 0 , 50"
-echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '1' and username = 'keep' order by rightCount/(rightCount+emptyCount+wrongCount) ASC ) a"
-echo:"<--------------------------------------------------page----------------------------------------------------->"
-echo:{totalCount=2,totalPage=1,pageNo=1,pageSize=50,}
-echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '1' and username = 'keep' order by rightCount/(rightCount+emptyCount+wrongCount) ASC limit 0 , 50"
-echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '1' and username = 'keep' order by totalScore ASC ) a"
-echo:"<--------------------------------------------------page----------------------------------------------------->"
-echo:{totalCount=2,totalPage=1,pageNo=1,pageSize=50,}
-echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '1' and username = 'keep' order by totalScore ASC limit 0 , 50"
-echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '1' and username = 'keep' order by rightCount/(rightCount+emptyCount+wrongCount) DESC ) a"
-echo:"<--------------------------------------------------page----------------------------------------------------->"
-echo:{totalCount=2,totalPage=1,pageNo=1,pageSize=50,}
-echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '1' and username = 'keep' order by rightCount/(rightCount+emptyCount+wrongCount) DESC limit 0 , 50"
-echo:"SELECT beginTime, t.username, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonPerformance, duration, lessonTitle, DATEDIFF(t.`beginTime`,m.`joinTime`) learnedDays FROM testrecord t LEFT JOIN member m ON t.`username` = m.`username` where t.sn = '219'"
-2018-05-04 14:29:19|10576|incoming connection (127.0.0.1/60573) is established and assigned a temporary id (~8). 
-echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '1' and username = 'keep' order by beginTime DESC ) a"
-echo:"<--------------------------------------------------page----------------------------------------------------->"
-echo:{totalCount=2,totalPage=1,pageNo=1,pageSize=50,}
-echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '1' and username = 'keep' order by beginTime DESC limit 0 , 50"
-echo:"SELECT beginTime, t.username, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonPerformance, duration, lessonTitle, DATEDIFF(t.`beginTime`,m.`joinTime`) learnedDays FROM testrecord t LEFT JOIN member m ON t.`username` = m.`username` where t.sn = '219'"
-echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '1' and username = 'keep' order by beginTime DESC ) a"
-echo:"<--------------------------------------------------page----------------------------------------------------->"
-echo:{totalCount=2,totalPage=1,pageNo=1,pageSize=50,}
-echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '1' and username = 'keep' order by beginTime DESC limit 0 , 50"
-echo:"SELECT COUNT(1) FROM ( SELECT lessonUrl, lessonTitle, lessonCover, goals, lessonNo, MAX(totalScore) bestScore,\n        (SELECT totalScore FROM testrecord WHERE lessonNo = t.lessonNo AND username = t.username ORDER BY finishTime DESC LIMIT 0,1) latestScore\n        FROM testrecord t where username = 'keep' group by lessonNo order by lessonNo DESC ) a"
-echo:"<--------------------------------------------------page----------------------------------------------------->"
-echo:{totalCount=1,totalPage=1,pageNo=1,pageSize=50,}
-echo:"SELECT lessonUrl, lessonTitle, lessonCover, goals, lessonNo, MAX(totalScore) bestScore,\n        (SELECT totalScore FROM testrecord WHERE lessonNo = t.lessonNo AND username = t.username ORDER BY finishTime DESC LIMIT 0,1) latestScore\n        FROM testrecord t where username = 'keep' group by lessonNo order by lessonNo DESC limit 0 , 50"
-echo:"SELECT COUNT(1) FROM ( SELECT sn, classId, startTime, lessonUrl, lessonTitle, lessonNo, goals, lessonCover FROM class where teacher = 'keep' and state = '1' order by startTime DESC ) a"
-echo:"<--------------------------------------------------page----------------------------------------------------->"
-echo:{totalCount=2,totalPage=1,pageNo=1,pageSize=50,}
-echo:"SELECT sn, classId, startTime, lessonUrl, lessonTitle, lessonNo, goals, lessonCover FROM class where teacher = 'keep' and state = '1' order by startTime DESC limit 0 , 50"
-echo:"SELECT COUNT(1) FROM ( SELECT lessonUrl, lessonTitle, lessonCover, goals, lessonNo, MAX(totalScore) bestScore,\n        (SELECT totalScore FROM testrecord WHERE lessonNo = t.lessonNo AND username = t.username ORDER BY finishTime DESC LIMIT 0,1) latestScore\n        FROM testrecord t where username = 'keep' group by lessonNo order by lessonNo DESC ) a"
-echo:"<--------------------------------------------------page----------------------------------------------------->"
-echo:{totalCount=1,totalPage=1,pageNo=1,pageSize=50,}
-echo:"SELECT lessonUrl, lessonTitle, lessonCover, goals, lessonNo, MAX(totalScore) bestScore,\n        (SELECT totalScore FROM testrecord WHERE lessonNo = t.lessonNo AND username = t.username ORDER BY finishTime DESC LIMIT 0,1) latestScore\n        FROM testrecord t where username = 'keep' group by lessonNo order by lessonNo DESC limit 0 , 50"
-echo:"SELECT COUNT(1) FROM ( SELECT sn, classId, startTime, lessonUrl, lessonTitle, lessonNo, goals, lessonCover FROM class where teacher = 'keep' and state = '1' order by startTime DESC ) a"
-echo:"<--------------------------------------------------page----------------------------------------------------->"
-echo:{totalCount=2,totalPage=1,pageNo=1,pageSize=50,}
-echo:"SELECT sn, classId, startTime, lessonUrl, lessonTitle, lessonNo, goals, lessonCover FROM class where teacher = 'keep' and state = '1' order by startTime DESC limit 0 , 50"
-echo:"update testrecord set duration = duration + 1 where sn = \"220\""
+2018-05-04 15:44:52|worker_7|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-04 15:44:52|8832|incoming connection (127.0.0.1/51200) is established and assigned a temporary id (~1). 
+t ->	worker_1
+2018-05-04 15:44:54|8832|incoming connection (127.0.0.1/51205) is established and assigned a temporary id (~2). 
+2018-05-04 15:44:54|8832|incoming connection (127.0.0.1/51206) is established and assigned a temporary id (~3). 
+2018-05-04 15:44:54|8832|incoming connection (127.0.0.1/51207) is established and assigned a temporary id (~4). 
+2018-05-04 15:44:54|8832|incoming connection (127.0.0.1/51208) is established and assigned a temporary id (~5). 
+2018-05-04 15:44:54|8832|incoming connection (127.0.0.1/51209) is established and assigned a temporary id (~6). 
+2018-05-04 15:44:54|8832|incoming connection (127.0.0.1/51210) is established and assigned a temporary id (~7). 
+echo:"SELECT sn, classId, startTime, lessonUrl, teacher, lessonTitle, lessonNo, goals, startTime, finishTime, summary, state, lessonCover FROM class where state = '1' and classId = '100120814'"
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+echo:{header="220 163.com Anti-spam GT for Coremail System (163com[20141201])\r\n250-mail\r\n250-PIPELINING\r\n250-AUTH LOGIN PLAIN\r\n250-AUTH=LOGIN PLAIN\r\n250-coremail 1Uxr2xKj7kG0xkI17xGrU7I0s8FY2U3Uj8Cz28x1UUUUU7Ic2I0Y2UFxzwkmUCa0xDrUUUUj\r\n250-STARTTLS\r\n250 8BITMIME\r\n334 dXNlcm5hbWU6\r\n334 UGFzc3dvcmQ6\r\n235 Authentication successful\r\n250 Mail OK\r\n250 Mail OK\r\n354 End data with <CR><LF>.<CR><LF>\r\n250 Mail OK queued as smtp12,EMCowADX7cp+D+xaSoVtAA--.39564S2 1525419902\r\n",rcode=250,code=0,}
+t ->	worker_1
+t ->	worker_1
+2018-05-04 15:45:10|8832|incoming connection (127.0.0.1/51237) is established and assigned a temporary id (~8). 
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
+t ->	worker_1
