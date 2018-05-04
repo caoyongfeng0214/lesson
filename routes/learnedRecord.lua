@@ -6,8 +6,7 @@ router:get('/:username/:lessonNo', function(req, res, next)
 	local lessonNo = req.params.lessonNo;
 	res:render('learned_record',{
 		username = username,
-		lessonNo = lessonNo,
-		recordCurrent = 'current'
+		lessonNo = lessonNo
 	});
 end);
 

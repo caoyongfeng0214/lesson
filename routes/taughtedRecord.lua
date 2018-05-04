@@ -6,8 +6,7 @@ router:get('/:class_id', function(req, res, next)
 	local classId = req.params.class_id
 
 	res:render('taughted_record', {
-		classId = classId,
-		recordCurrent = 'current'
+		classId = classId
 	});
 end);
 
