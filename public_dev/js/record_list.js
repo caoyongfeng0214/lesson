@@ -89,7 +89,7 @@ var getTaughtRecordList = function ( psize, pno, order, reload ) {
                 var item = response.data[i];
                 item.lessonCover = item.lessonCover.startsWith('http')?item.lessonCover:keepworkHost + item.lessonCover;
                 haveTaughtList.append('<div class="have-item">' +
-                '<div class="time">'+ new Date(item.startTime).format("hh:mm yyyy/MM/dd") +'</div>' +
+                '<div class="time">'+ new Date(item.startTime).format("hh:mm dd/MM/yyyy") +'</div>' +
                 '<div class="layout-box">' +
                 '    <div class="cover" style="background-image: url('+ item.lessonCover +')"></div>' +
                 '    <div class="content">' +

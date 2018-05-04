@@ -311,6 +311,19 @@ dbutil.findById = function(tableName,priId,cn)
 	return mysql:execRow(sql, sqlParams,cn);
 end
 
+-- 根据 sn 查询数据
+-- 	tableName : 表名
+--	sn ：主键sn
+--	cn ：cn 参数是可选的
+-- return 查询的对象
+dbutil.findBySn = function(tableName,sn,cn)
+	local sql = "select * from "..tableName.." where sn= ?sn";
+	lastSqlString = sql;
+	dbutil.showSqlStr();
+	local sqlParams = {sn = sn};
+	return mysql:execRow(sql, sqlParams,cn);
+end
+
 -- 更新操作 
 --	tableName : 表名
 --	obj ： 要修改的对象

@@ -1,0 +1,133 @@
+2018-05-04 20:01:51|4168|NPL Runtime started
+NPL bin dir: D:\cover\cover\ParaCraftSDK-master\NPLRuntime\win\bin\
+WorkingDir: D:\GitClone\lesson
+WritablePath: D:/GitClone/lesson/
+OS information:
+OS version:Microsoft  (build 9200), 64-bit
+Number of processors:4
+Processor type:586
+TotalPhysicalMemory:8312676
+FreePhysicalMemory:1364684
+
+ParaEngine Root Dir is D:/GitClone/lesson/
+./packages dir: D:\cover\cover\ParaCraftSDK-master\NPLRuntime\win\packages\
+Archive: D:\cover\cover\ParaCraftSDK-master\NPLRuntime\win\packages\main_mobile_res.pkg is opened and read 613 entries
+Archive: D:\cover\cover\ParaCraftSDK-master\NPLRuntime\win\packages\main150727.pkg is opened and read 2665 entries
+Archive: D:\cover\cover\ParaCraftSDK-master\NPLRuntime\win\packages\main.pkg is opened and read 7536 entries
+main loop: bin/www.npl 
+CAssetManifest loaded 0 files
+CAsyncLoader QueueID:0(Local) has 1 worker threads
+CAsyncLoader QueueID:1(Asset) has 2 worker threads
+CAsyncLoader QueueID:2(Web) has 1 worker threads
+CAsyncLoader QueueID:3(Asset_BigFile) has 1 worker threads
+CAsyncLoader QueueID:4(AudioFile) has 1 worker threads
+CAsyncLoader is started with 1 IO thread and 6 worker threads
+Plug-in loaded: D:\cover\cover\ParaCraftSDK-master\NPLRuntime\win\bin\PhysicsBT.dll version: 1 
+font Tahoma;12;bold is created 
+font Tahoma;12;norm is created 
+(main) state is now running in a separate thread. It is more responsive now. 
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+2018-05-04 20:01:51|main|info|DomainSpecificLanguage|NPL language extension loaded
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ffi loaded shared lib: C
+NPL server 0.1 is listening on 0.0.0.0:3000
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+TCPKeepAlive: false
+AppKeepAlive: false
+IdleTimeout: true
+IdleTimeoutPeriod: 120000
+UseCompression(incoming): false
+CompressionLevel: -1
+CompressionThreshold: 204800
+NPL max pending incoming connections allowed is 1000
+2018-05-04 20:01:51|worker_5|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-04 20:01:51|worker_6|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-04 20:01:51|worker_4|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-04 20:01:51|worker_8|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-04 20:01:51|worker_9|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-04 20:01:51|worker_2|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-04 20:01:51|worker_7|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-04 20:01:51|worker_3|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-04 20:01:51|worker_10|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-04 20:01:51|worker_1|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-04 20:16:41|14584|incoming connection (127.0.0.1/63864) is established and assigned a temporary id (~1). 
+2018-05-04 20:16:41|14584|incoming connection (127.0.0.1/63866) is established and assigned a temporary id (~2). 
+2018-05-04 20:16:41|14584|incoming connection (127.0.0.1/63867) is established and assigned a temporary id (~3). 
+2018-05-04 20:16:41|14584|incoming connection (127.0.0.1/63868) is established and assigned a temporary id (~4). 
+2018-05-04 20:17:01|14584|incoming connection (127.0.0.1/63915) is established and assigned a temporary id (~5). 
+2018-05-04 20:17:01|14584|incoming connection (127.0.0.1/63916) is established and assigned a temporary id (~6). 
+echo:"SELECT m.username, m.joinTime,\n        (SELECT COUNT(1) FROM class WHERE teacher = m.username) teached,\n        (SELECT COUNT(1) FROM testrecord WHERE username = m.username) learned,\n        (SELECT IFNULL( SUM( duration ), 0) FROM testrecord WHERE username = m.username) learnDuration\n        FROM member m  where username = 'keep'"
+echo:"SELECT m.username, m.joinTime,\n        (SELECT COUNT(1) FROM class WHERE teacher = m.username) teached,\n        (SELECT COUNT(1) FROM testrecord WHERE username = m.username) learned,\n        (SELECT IFNULL( SUM( duration ), 0) FROM testrecord WHERE username = m.username) learnDuration\n        FROM member m  where username = 'keep'"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, classId, startTime, lessonUrl, lessonTitle, lessonNo, goals, lessonCover FROM class where teacher = 'keep' and state = '1' order by startTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=3,totalPage=1,pageNo=1,pageSize=50,}
+echo:"SELECT sn, classId, startTime, lessonUrl, lessonTitle, lessonNo, goals, lessonCover FROM class where teacher = 'keep' and state = '1' order by startTime DESC limit 0 , 50"
+echo:"SELECT m.username, m.joinTime,\n        (SELECT COUNT(1) FROM class WHERE teacher = m.username) teached,\n        (SELECT COUNT(1) FROM testrecord WHERE username = m.username) learned,\n        (SELECT IFNULL( SUM( duration ), 0) FROM testrecord WHERE username = m.username) learnDuration\n        FROM member m  where username = 'keep'"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, classId, startTime, lessonUrl, lessonTitle, lessonNo, goals, lessonCover FROM class where teacher = 'keep' and state = '1' order by startTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=3,totalPage=1,pageNo=1,pageSize=50,}
+echo:"SELECT sn, classId, startTime, lessonUrl, lessonTitle, lessonNo, goals, lessonCover FROM class where teacher = 'keep' and state = '1' order by startTime DESC limit 0 , 50"
+echo:"SELECT COUNT(1) FROM ( SELECT lessonUrl, lessonTitle, lessonCover, goals, lessonNo, MAX(totalScore) bestScore,\n        (SELECT totalScore FROM testrecord WHERE lessonNo = t.lessonNo AND username = t.username ORDER BY finishTime DESC LIMIT 0,1) latestScore\n        FROM testrecord t where username = 'keep' group by lessonNo order by lessonNo DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=1,totalPage=1,pageNo=1,pageSize=50,}
+echo:"SELECT lessonUrl, lessonTitle, lessonCover, goals, lessonNo, MAX(totalScore) bestScore,\n        (SELECT totalScore FROM testrecord WHERE lessonNo = t.lessonNo AND username = t.username ORDER BY finishTime DESC LIMIT 0,1) latestScore\n        FROM testrecord t where username = 'keep' group by lessonNo order by lessonNo DESC limit 0 , 50"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, classId, startTime, lessonUrl, lessonTitle, lessonNo, goals, lessonCover FROM class where teacher = 'keep' and state = '1' order by startTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=3,totalPage=1,pageNo=1,pageSize=50,}
+echo:"SELECT sn, classId, startTime, lessonUrl, lessonTitle, lessonNo, goals, lessonCover FROM class where teacher = 'keep' and state = '1' order by startTime DESC limit 0 , 50"
+echo:"SELECT sn, classId, startTime, lessonUrl, teacher, lessonTitle, lessonNo, goals, startTime, finishTime, summary, state, lessonCover FROM class where state = '1' and classId = '100212814'"
+echo:"SELECT sn, classId, startTime, lessonUrl, teacher, lessonTitle, lessonNo, goals, startTime, finishTime, summary, state, lessonCover FROM class where state = '1' and classId = '100120814'"
+echo:"SELECT beginTime, t.username, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonPerformance, duration, lessonTitle, DATEDIFF(t.`beginTime`,m.`joinTime`) learnedDays FROM testrecord t LEFT JOIN member m ON t.`username` = m.`username` where t.sn = '216'"
+echo:"SELECT beginTime, t.username, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonPerformance, duration, lessonTitle, DATEDIFF(t.`beginTime`,m.`joinTime`) learnedDays FROM testrecord t LEFT JOIN member m ON t.`username` = m.`username` where t.sn = '216'"
+echo:"SELECT COUNT(1) FROM ( SELECT lessonUrl, lessonTitle, lessonCover, goals, lessonNo, MAX(totalScore) bestScore,\n        (SELECT totalScore FROM testrecord WHERE lessonNo = t.lessonNo AND username = t.username ORDER BY finishTime DESC LIMIT 0,1) latestScore\n        FROM testrecord t where username = 'keep' group by lessonNo order by lessonNo DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=1,totalPage=1,pageNo=1,pageSize=50,}
+echo:"SELECT lessonUrl, lessonTitle, lessonCover, goals, lessonNo, MAX(totalScore) bestScore,\n        (SELECT totalScore FROM testrecord WHERE lessonNo = t.lessonNo AND username = t.username ORDER BY finishTime DESC LIMIT 0,1) latestScore\n        FROM testrecord t where username = 'keep' group by lessonNo order by lessonNo DESC limit 0 , 50"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '1' and username = 'keep' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=3,totalPage=1,pageNo=1,pageSize=50,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '1' and username = 'keep' order by beginTime DESC limit 0 , 50"
+echo:"SELECT beginTime, t.username, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonPerformance, duration, lessonTitle, DATEDIFF(t.`beginTime`,m.`joinTime`) learnedDays FROM testrecord t LEFT JOIN member m ON t.`username` = m.`username` where t.sn = '476'"
+echo:"SELECT beginTime, t.username, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonPerformance, duration, lessonTitle, DATEDIFF(t.`beginTime`,m.`joinTime`) learnedDays FROM testrecord t LEFT JOIN member m ON t.`username` = m.`username` where t.sn = '220'"
+echo:"SELECT beginTime, t.username, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonPerformance, duration, lessonTitle, DATEDIFF(t.`beginTime`,m.`joinTime`) learnedDays FROM testrecord t LEFT JOIN member m ON t.`username` = m.`username` where t.sn = '219'"
+2018-05-04 20:20:52|14584|connection time out (127.0.0.1/63915) with id (~5). 
+2018-05-04 20:20:52|14584|connection closed (127.0.0.1/63915) with id (~5). 
+2018-05-04 20:20:56|14584|connection time out (127.0.0.1/63866) with id (~2). 
+2018-05-04 20:20:56|14584|connection time out (127.0.0.1/63864) with id (~1). 
+2018-05-04 20:20:56|14584|connection time out (127.0.0.1/63867) with id (~3). 
+2018-05-04 20:20:56|14584|connection time out (127.0.0.1/63868) with id (~4). 
+2018-05-04 20:20:56|14584|connection closed (127.0.0.1/63866) with id (~2). 
+2018-05-04 20:20:56|14584|connection closed (127.0.0.1/63864) with id (~1). 
+2018-05-04 20:20:56|14584|connection closed (127.0.0.1/63867) with id (~3). 
+2018-05-04 20:20:56|14584|connection closed (127.0.0.1/63868) with id (~4). 
+2018-05-04 20:20:58|14584|connection time out (127.0.0.1/63916) with id (~6). 
+2018-05-04 20:20:58|14584|connection closed (127.0.0.1/63916) with id (~6). 

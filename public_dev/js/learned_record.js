@@ -104,7 +104,7 @@ var getLessonLearnedRecord = function( psize, pno, order, reload ) {
                 var item = r[i];
                 item.accuracyRate = item.rightCount/(item.rightCount + item.emptyCount + item.wrongCount);//正确率
                 item.accuracyRate = item.accuracyRate ? Number(item.accuracyRate*100).toFixed(1) : 0;
-                var fmtStartTime = new Date(item.beginTime).format("hh:mm yyyy/MM/dd")
+                var fmtStartTime = new Date(item.beginTime).format("hh:mm dd/MM/yyyy")
                 accuracyRateArray.push(item.accuracyRate);
                 startTimeArray.push(fmtStartTime);
                 tblRecord.append('<tr>'+
