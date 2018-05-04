@@ -75,10 +75,126 @@ var chartStudent = new Chart(studentChart, {
 var classId = $('#classId').val();
 $(function(){
     getLessonTaughtedRecord();
+    var nameSortFlag = false,
+        noSortFlag = false,
+        rateSortFlag = false,
+        rightSortFlag = false,
+        wrongSortFlag = false,
+        emptySortFlag = false;
+    var compare = function(prop, ascFlag) {
+        return function(a,b){
+            var value1 = a[prop];
+            var value2 = b[prop];
+            var ret = 0;
+            value1 > value2 ? ret = 1 : ret = -1;
+            return ascFlag ? ret : -ret;
+        }
+    }
+    var sortList = function(prop, ascFlag) {
+        summary.sort(compare(prop, ascFlag));
+        tblRecord.html('');
+        for(var i = 0; i < summary.length; i++) {
+            appendRecord(summary[i]);
+        }
+    }
+    /* Sort Begin */
+    $('.sort-by-name').on('click', function() {
+        if(nameSortFlag) {
+            // 倒序
+            $(this).find('.el-icon-caret-top').addClass('active').siblings().removeClass('active');
+            nameSortFlag = false;
+            sortList('username',false);
+        } else {
+            // 正序
+            $(this).find('.el-icon-caret-bottom').addClass('active').siblings().removeClass('active');
+            nameSortFlag = true
+            sortList('username',true);
+        }
+    });
+    $('.sort-by-no').on('click', function() {
+        if(noSortFlag) {
+            // 倒序
+            $(this).find('.el-icon-caret-top').addClass('active').siblings().removeClass('active');
+            noSortFlag = false;
+            sortList('studentNo',false);
+        } else {
+            // 正序
+            $(this).find('.el-icon-caret-bottom').addClass('active').siblings().removeClass('active');
+            noSortFlag = true
+            sortList('studentNo',true);
+        }
+    });
+    $('.sort-by-rate').on('click', function() {
+        if(rateSortFlag) {
+            // 倒序
+            $(this).find('.el-icon-caret-top').addClass('active').siblings().removeClass('active');
+            rateSortFlag = false;
+            sortList('accuracyRate',false);
+        } else {
+            // 正序
+            $(this).find('.el-icon-caret-bottom').addClass('active').siblings().removeClass('active');
+            rateSortFlag = true;
+            sortList('accuracyRate',true);
+        }
+    });
+    $('.sort-by-right').on('click', function() {
+        if(rightSortFlag) {
+            // 倒序
+            $(this).find('.el-icon-caret-top').addClass('active').siblings().removeClass('active');
+            rightSortFlag = false;
+            sortList('rightCount',false);
+        } else {
+            // 正序
+            $(this).find('.el-icon-caret-bottom').addClass('active').siblings().removeClass('active');
+            rightSortFlag = true;
+            sortList('rightCount',true);
+        }
+    });
+    $('.sort-by-wrong').on('click', function() {
+        if(wrongSortFlag) {
+            // 倒序
+            $(this).find('.el-icon-caret-top').addClass('active').siblings().removeClass('active');
+            wrongSortFlag = false;
+            sortList('wrongCount',false);
+        } else {
+            // 正序
+            $(this).find('.el-icon-caret-bottom').addClass('active').siblings().removeClass('active');
+            wrongSortFlag = true;
+            sortList('wrongCount',true);
+        }
+    });
+    $('.sort-by-empty').on('click', function() {
+        if(emptySortFlag) {
+            // 倒序
+            $(this).find('.el-icon-caret-top').addClass('active').siblings().removeClass('active');
+            emptySortFlag = false;
+            sortList('emptyCount',false);
+        } else {
+            // 正序
+            $(this).find('.el-icon-caret-bottom').addClass('active').siblings().removeClass('active');
+            emptySortFlag = true;
+            sortList('emptyCount',true);
+        }
+    });
+    /* Sort End */
+    // 发送 email
+    $('#sendEmail').on('click', function() {
+        var email=prompt("Please enter your email address:");  
+        if(email) {  
+            $.post('/api/record/sendEmail', {
+                email: email,
+                content: '<h1>TODO: 内容和打印内容保持一致</h1>' +
+                    '<h2>TODO: 内容和打印内容保持一致</h2>' +
+                    '<h3>TODO: 内容和打印内容保持一致</h3>'
+            }, function(response) {
+                console.log(response);
+            })
+        } 
+    });
 });
 
-// TODO: 前端排序
-
+var tblRecord = $('.record-tbl');
+var summary = [];
 var getLessonTaughtedRecord = function() {
     $.get("/api/class/detail", {
         classId: classId
@@ -89,8 +205,8 @@ var getLessonTaughtedRecord = function() {
             $('.lesson-title').text(r.lessonTitle);
             $('.lesson-time').text( fmtDate(r.startTime) );
             $('.lesson-goals').text(r.goals);
-            var tblRecord = $('.record-tbl');
             if(r.summary instanceof Array) {
+                summary = r.summary;
                 var quizzLable = []; // quizz 图表的 Lable
                 var quizzRight = []; // quizz 正确的人数
                 var quizzRate = []; // quizz 正确率
@@ -111,20 +227,7 @@ var getLessonTaughtedRecord = function() {
                     item.emptyCount = parseInt(item.emptyCount);
                     item.accuracyRate = item.rightCount/(item.rightCount + item.emptyCount + item.wrongCount); // 正确率
                     item.accuracyRate = item.accuracyRate ? Number(item.accuracyRate*100).toFixed(1) : 0;
-                    tblRecord.append('<tr>'+
-                        '    <td>'+
-                        '        <div class="user-img" style="background-image:url(https://avatars3.githubusercontent.com/u/18064049?s=460&v=4)"></div>'+
-                        '    </td>'+
-                        '    <td>' + item.username + '</td>'+
-                        '    <td>' + item.studentNo + '</td>'+
-                        '    <td>' + item.accuracyRate + '%</td>'+
-                        '    <td>' + item.rightCount + '</td>'+
-                        '    <td>' + item.wrongCount + '</td>'+
-                        '    <td>' + item.emptyCount + '</td>'+
-                        '    <td>'+
-                        '        <a href="/taughtedRecord/details/' + item.recordSn + '/' + item.studentNo + '" class="el-button el-button--primary el-button--mini">View Details</a>'+
-                        '    </td>'+
-                        '</tr>');
+                    appendRecord(item);
                     // 解析 item.answerSheet
                     if(item.accuracyRate < 60) {
                         studentDiv[0] += 1;// <60
@@ -156,4 +259,21 @@ var getLessonTaughtedRecord = function() {
             }
         }
     });
+}
+
+var appendRecord = function(item) {
+    tblRecord.append('<tr>'+
+    '    <td>'+
+    '        <div class="user-img" style="background-image:url(https://avatars3.githubusercontent.com/u/18064049?s=460&v=4)"></div>'+
+    '    </td>'+
+    '    <td>' + item.username + '</td>'+
+    '    <td>' + item.studentNo + '</td>'+
+    '    <td>' + item.accuracyRate + '%</td>'+
+    '    <td>' + item.rightCount + '</td>'+
+    '    <td>' + item.wrongCount + '</td>'+
+    '    <td>' + item.emptyCount + '</td>'+
+    '    <td>'+
+    '        <a href="/taughtedRecord/details/' + item.recordSn + '/' + item.studentNo + '" class="el-button el-button--primary el-button--mini">View Details</a>'+
+    '    </td>'+
+    '</tr>');
 }

@@ -32,7 +32,16 @@ end
 -- 开始课堂
 function classroom:begin( classVo )
     if(self.state == 0) then
-        local num, lastId = classBll.save( classVo )
+        local num, lastId = classBll.save({
+            classId = classVo.classId,
+            teacher = classVo.teacher,
+            lessonUrl = classVo.lessonUrl,
+            lessonTitle = classVo.lessonTitle,
+            lessonCover = classVo.lessonCover,
+            lessonNo = classVo.lessonNo,
+            goals = classVo.goals,
+            startTime = classVo.startTime
+            })
         self.classSn = lastId
         classroom._begin(self)
         express.handler.shareData('_begin', self)
@@ -107,7 +116,11 @@ end
 -- 获取学生的上课实时状态（答题情况）
 function classroom:getStudentPerformance( user )
     if( user and user.username == self.teacher ) then
-        return self.students
+        local _students = {}
+        for k,v in pairs(self.students) do
+            table.insert(_students, v)
+        end
+        return _students
     else
         return nil
     end
@@ -133,6 +146,7 @@ function classroom:finish( user )
             summary = summaryJsonStr
         }
         local num = classBll.update(_class)
+        _class.summary = summary
         if(num) then
             local obj = {room = self, user = user, action = 'finish'}
             classroom._set(obj)
@@ -153,6 +167,10 @@ classroom._set = function( obj )
         -- action mapping
         if(obj.action == 'enter') then
             _room.students[_user.username] = _user
+            classroom.USERs[_user.username] = {
+                username = _user.username,
+                classId = obj.room.classId
+            }
         elseif(obj.action == 'commitAnswer') then
             local stu = _room.students[_user.username]
             stu.answerSheet = commonlib.Json.Decode( obj.answerSheet )

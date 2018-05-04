@@ -1,6 +1,9 @@
 local express = NPL.load('express')
 local router = express.Router:new()
 local recordBll = NPL.load('../bll/testrecord')
+NPL.load("(gl)script/ide/commonlib.lua")
+NPL.load("(gl)script/ide/System/os/GetUrl.lua")
+System = commonlib.gettable("System")
 
 -- 保存或更新
 router:post('/saveOrUpdate', function(req, res, next)
@@ -112,6 +115,7 @@ router:get('/detail', function(req, res, next)
     local p = req.query
     local lessonNo = p.lessonNo
     local username = p.username
+    local orderBy = p.order
     local rq = rq(p, {'lessonNo', 'username'}, res)
     if(not rq) then return end
     local where = {
@@ -123,6 +127,24 @@ router:get('/detail', function(req, res, next)
         pageSize = p.psize,
         pageNo = p.pno
     }
+    if(orderBy) then
+        orderBy = tonumber(orderBy)
+        if(orderBy == 1) then
+            order = { beginTime = 'ASC' }
+        elseif(orderBy == 101) then
+            order = { beginTime = 'DESC' }
+        elseif(orderBy == 2) then
+            -- Accuracy Rate ASC
+            order = { ['rightCount/(rightCount+emptyCount+wrongCount)'] = 'ASC' }
+        elseif(orderBy == 102) then
+            -- Accuracy Rate DESC
+            order = { ['rightCount/(rightCount+emptyCount+wrongCount)'] = 'DESC' }
+        elseif(orderBy == 3) then
+            order = { totalScore = 'ASC' }
+        elseif(orderBy == 103) then
+            order = { totalScore = 'DESC' }
+        end
+    end
     local list, page = recordBll.detail(where, nil, order, limit )
     if(list) then
         for i,v in ipairs(list) do
@@ -158,6 +180,28 @@ router:get('/learnDetailBySn', function(req, res, next)
         rs.msg = 'get learn detail fail.'
     end
     res:send(rs)
+end)
+
+-- send email
+router:post('/sendEmail', function(req, res, next)
+    local p = req.body
+    local email = p.email
+    local content = p.content
+    local rq = rq(p, {'email'}, res)
+    if(not rq) then return end
+    System.os.SendEmail({
+	    url="smtp.163.com/", 
+	    username="13227379709@163.com", password="ping1234",   --这里的password 是授权密码
+	    from="13227379709@163.com", 
+        to= email, 
+	    subject = content, -- title
+	    body = content -- body
+    }, function(err, msg) echo(msg)
+	    res:send( {
+            err = err,
+            msg = msg
+        });
+    end);
 end)
 
 NPL.export(router)

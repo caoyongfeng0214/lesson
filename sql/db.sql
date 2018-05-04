@@ -42,6 +42,7 @@ CREATE TABLE `orders` (
   `reallyPayAmount` int(11) DEFAULT NULL COMMENT '实际支付金额',
   `lessAmount` int(11) DEFAULT NULL COMMENT '优惠金额',
   `couponID` int(11) DEFAULT NULL COMMENT '优惠券ID',
+  `endTime` datetime DEFAULT NULL COMMENT 'vip 有效期',
   `goodsType` tinyint(4) NOT NULL DEFAULT '0' COMMENT '商品类型 0.购买半年 1.购买一年',
   `state` tinyint(4) NOT NULL DEFAULT '0' COMMENT '订单状态 0.已提交 1.已支付 2.已完成  3.已退款 4.失效',
   PRIMARY KEY (`sn`)

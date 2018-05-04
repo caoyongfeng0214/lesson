@@ -1,52 +1,6 @@
-2018-05-04 16:52:35|16380|CAsyncLoader IO Thread started2018-05-04 16:52:35|10928|Async Processing Thread Local(0) Started
-2018-05-04 16:52:35|10576|Async Processing Thread Asset(1) Started
-2018-05-04 16:52:35|7696|Async Processing Thread Asset(1) Started
-2018-05-04 16:52:35|6976|Async Processing Thread Web(2) Started
-2018-05-04 16:52:35|8788|Async Processing Thread BigFile(3) Started
-2018-05-04 16:52:35|14652|Async Processing Thread AudioFile(4) Started
-2018-05-04 16:54:03|16712|ParaFile.OpenAssetFile using local file:public/csslib/element-ui.css
-2018-05-04 16:54:03|16712|ParaFile.OpenAssetFile using local file:public/css/common.css
-2018-05-04 16:54:03|16712|ParaFile.OpenAssetFile using local file:public/css/index.css
-2018-05-04 16:54:03|16712|ParaFile.OpenAssetFile using local file:public/jslib/jquery.min.js
-2018-05-04 16:54:03|16712|ParaFile.OpenAssetFile using local file:public/js/common.js
-2018-05-04 16:54:03|16712|ParaFile.OpenAssetFile using local file:public/imgs/main/banner.jpg
-2018-05-04 16:54:03|16712|ParaFile.OpenAssetFile using local file:public/imgs/main/teacher.png
-2018-05-04 16:54:03|16712|ParaFile.OpenAssetFile using local file:public/imgs/main/student.png
-2018-05-04 16:54:03|16712|ParaFile.OpenAssetFile using local file:public/csslib/fonts/element-icons.woff
-2018-05-04 16:54:03|16712|ParaFile.OpenAssetFile using local file:public/imgs/main/animations.png
-2018-05-04 16:54:03|16712|ParaFile.OpenAssetFile using local file:public/imgs/main/how.png
-2018-05-04 16:54:03|16712|ParaFile.OpenAssetFile using local file:public/imgs/main/Convenientservice.png
-2018-05-04 16:54:03|16712|ParaFile.OpenAssetFile using local file:public/imgs/main/FriendlyPrices.png
-2018-05-04 16:54:03|16712|ParaFile.OpenAssetFile using local file:public/imgs/main/address.png
-2018-05-04 16:54:03|16712|ParaFile.OpenAssetFile using local file:public/imgs/main/mailbox.png
-2018-05-04 16:54:03|16712|ParaFile.OpenAssetFile using local file:public/imgs/main/phone.png
-2018-05-04 16:54:03|16712|ParaFile.OpenAssetFile using local file:public/imgs/main/nav_icon.png
-2018-05-04 16:54:03|16712|ParaFile.OpenAssetFile using local file:public/imgs/main/play_btn.png
-2018-05-04 16:54:08|16712|ParaFile.OpenAssetFile using local file:public/csslib/element-ui.css
-2018-05-04 16:54:08|8944|ParaFile.OpenAssetFile using local file:public/css/common.css
-2018-05-04 16:54:08|15696|ParaFile.OpenAssetFile using local file:public/js/common.js
-2018-05-04 16:54:08|14576|ParaFile.OpenAssetFile using local file:public/jslib/jquery.min.js
-2018-05-04 16:54:08|16712|ParaFile.OpenAssetFile using local file:public/css/record.css
-2018-05-04 16:54:08|16712|ParaFile.OpenAssetFile using local file:public/csslib/fonts/element-icons.woff
-2018-05-04 16:54:13|16712|ParaFile.OpenAssetFile using local file:public/csslib/element-ui.css
-2018-05-04 16:54:13|8944|ParaFile.OpenAssetFile using local file:public/css/common.css
-2018-05-04 16:54:13|14576|ParaFile.OpenAssetFile using local file:public/jslib/jquery.min.js
-2018-05-04 16:54:13|15696|ParaFile.OpenAssetFile using local file:public/js/common.js
-2018-05-04 16:54:13|32|ParaFile.OpenAssetFile using local file:public/css/record.css
-2018-05-04 16:54:13|9764|ParaFile.OpenAssetFile using local file:public/js/record_list.js
-2018-05-04 16:54:13|16712|ParaFile.OpenAssetFile using local file:public/csslib/fonts/element-icons.woff
-2018-05-04 16:54:17|16712|ParaFile.OpenAssetFile using local file:public/csslib/element-ui.css
-2018-05-04 16:54:17|8944|ParaFile.OpenAssetFile using local file:public/css/common.css
-2018-05-04 16:54:17|16712|ParaFile.OpenAssetFile using local file:public/js/common.js
-2018-05-04 16:54:17|14576|ParaFile.OpenAssetFile using local file:public/jslib/jquery.min.js
-2018-05-04 16:54:17|15696|ParaFile.OpenAssetFile using local file:public/css/record.css
-2018-05-04 16:54:17|16712|ParaFile.OpenAssetFile using local file:public/jslib/Chart.min.js
-2018-05-04 16:54:17|8944|ParaFile.OpenAssetFile using local file:public/js/learned_record.js
-2018-05-04 16:54:17|16712|ParaFile.OpenAssetFile using local file:public/csslib/fonts/element-icons.woff
-2018-05-04 16:54:19|16712|ParaFile.OpenAssetFile using local file:public/csslib/element-ui.css
-2018-05-04 16:54:19|8944|ParaFile.OpenAssetFile using local file:public/css/common.css
-2018-05-04 16:54:19|15696|ParaFile.OpenAssetFile using local file:public/js/common.js
-2018-05-04 16:54:19|32|ParaFile.OpenAssetFile using local file:public/css/record.css
-2018-05-04 16:54:19|16712|ParaFile.OpenAssetFile using local file:public/js/learned_details.js
-2018-05-04 16:54:19|14576|ParaFile.OpenAssetFile using local file:public/jslib/jquery.min.js
-2018-05-04 16:54:19|16712|ParaFile.OpenAssetFile using local file:public/csslib/fonts/element-icons.woff
+2018-05-04 19:45:38|9328|CAsyncLoader IO Thread started2018-05-04 19:45:38|7532|Async Processing Thread Local(0) Started
+2018-05-04 19:45:38|3984|Async Processing Thread Asset(1) Started
+2018-05-04 19:45:38|16004|Async Processing Thread Asset(1) Started
+2018-05-04 19:45:38|10456|Async Processing Thread Web(2) Started
+2018-05-04 19:45:38|16824|Async Processing Thread BigFile(3) Started
+2018-05-04 19:45:38|15432|Async Processing Thread AudioFile(4) Started

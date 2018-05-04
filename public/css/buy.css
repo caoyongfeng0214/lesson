@@ -1,1 +1,292 @@
-.icon,.user-authority>div .body-content li.have::before{font-family:element-icons!important;speak:none;font-variant:normal;text-transform:none;vertical-align:baseline;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-style:normal;display:inline-block}body{background-color:#fff}.icon{font-weight:400}.history-tag{width:187px;height:46px;margin:65px 0 20px;line-height:46px;text-align:center;background:#f55868;border-radius:5px;text-decoration:none;color:#fff}.history-tag:hover{background:rgba(245,88,104,.88)}.user-authority>div{width:48%;border:1px solid #eee;background:#fff;box-shadow:0 0 11px rgba(0,0,0,.08);color:#999}.user-authority>div h3{margin:0 0 10px;font-size:24px;color:#333;font-weight:500}.user-authority>div .head{padding:33px 10px;background:#f7f7f7;text-align:center}.user-authority>div .head span{font-size:18px}.user-authority>div.vip .head{background:url(/imgs/main/buy_vip_bg.png) center center no-repeat;background-size:cover;color:#FEFFB3;font-size:20px}.user-authority>div.vip .head h3{color:#FEFFB3}.user-authority>div .body-content{padding:8px 0 40px}.user-authority>div .body-content ul{padding:0 10px 0 25px}.user-authority>div .body-content li{padding-left:30px;margin-top:20px;line-height:24px;color:#A4A3A3;font-size:16px;list-style:none;position:relative}.user-authority>div .body-content li.have{color:#333}.user-authority>div .body-content li.have::before{content:"\E639";position:absolute;left:0;font-size:20px;color:#10C55B;font-weight:400}.purchasing-type{margin:115px 0;text-align:center}.purchasing-type>h2{margin:15px 0;color:#333;font-size:28px;line-height:36px}.purchasing-type .hint{color:#FE4558;font-size:16px;line-height:24px}.purchasing-type .type-item{max-width:370px;margin:55px 29px 70px;padding:28px;position:relative;border:1px solid #dcdcdc;border-radius:5px;font-size:20px;color:#666;cursor:pointer}.purchasing-type .type-item>.price{padding:20px 0 40px;border-bottom:1px solid #dcdcdc;color:#333;font-size:46px;line-height:46px;word-wrap:break-word}.purchasing-type .type-item>.price>i{padding-right:5px;font-style:normal;font-size:28px;vertical-align:text-top}.purchasing-type .type-item.current{box-shadow:0 7px 15px rgba(250,149,36,.4);border:2px solid #FA9524}.purchasing-type .type-item.current .position-top{width:0;height:0;border-top:60px solid #FA9524;border-left:60px solid transparent}.purchasing-type .type-item.current .icon::after{content:"\E611";position:absolute;right:5px;z-index:2;margin-top:-50px;line-height:1;color:#fff}.purchasing-type .type-item.current>.price{color:#FA9524}.purchasing-type .type-item>.time{display:inline-block;padding-top:25px}.purchasing-type .type-item .position-top{position:absolute;top:0;right:0;z-index:2}.purchasing-type .el-button{padding:20px 51px;font-size:18px;letter-spacing:2px}.history-list{margin-top:45px}.history-list .history-item{padding:20px;list-style:none;margin-bottom:25px;border:1px solid #b3d9fe;background:#f7faff}.history-list .history-item li{margin:15px 0;color:#409EFE;font-size:16px;letter-spacing:1px}.history-list .history-item li>span{width:160px;margin-right:10px;text-align:right;color:#999}.history-list .history-item li>div{flex:1}.history-list .history-item.expired{border:1px solid #e1e1e1;background-color:#fcfcfc;position:relative;z-index:2}.history-list .history-item.expired::after{content:"";position:absolute;top:50%;right:40%;transform:translate(-40%,-50%);z-index:-1;width:120px;height:96px;background:url(/imgs/main/expired_tag.png) center center no-repeat}.history-list .history-item.expired li{color:#333}.buy-status{text-align:center}.buy-status>div{padding:10% 0}.buy-status .icon{font-size:60px}.buy-status .info{margin:15px 0;font-size:28px;color:#333}.buy-status .price{color:#FE4558;font-size:24px}.buy-status .el-button{display:inline-block;margin-top:6%;font-size:16px;text-decoration:none}.icon.el-icon-success{color:#409EFF}.icon.el-icon-warning{color:#f5586a}@media (max-width:768px){.container{padding:0 10px}.history-tag{margin:35px 0 15px}.user-authority>div{width:49%}.user-authority>div h3{font-size:22px}.user-authority>div .head{padding:30px 10px}.user-authority>div .head span{font-size:16px}.user-authority>div .body-content li{margin-top:12px;font-size:14px;line-height:20px}.purchasing-type{margin:65px 0}.purchasing-type>h2{font-size:24px;margin:10px 0}.purchasing-type .hint{font-size:14px;line-height:20px}.purchasing-type .type-item{margin:25px 20px 50px}.history-list{margin-top:35px}.history-list .history-item{padding:10px;margin-bottom:15px}}
+body {
+  background-color: #fff;
+}
+.icon {
+  font-family: element-icons !important;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  vertical-align: baseline;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.history-tag {
+  width: 187px;
+  height: 46px;
+  margin: 65px 0 20px;
+  line-height: 46px;
+  text-align: center;
+  background: #f55868;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+}
+.history-tag:hover {
+  background: rgba(245, 88, 104, 0.88);
+}
+.user-authority > div {
+  width: 48%;
+  border: 1px solid #eee;
+  background: #ffffff;
+  box-shadow: 0 0px 11px rgba(0, 0, 0, 0.08);
+  color: #999;
+}
+.user-authority > div h3 {
+  margin: 0 0 10px;
+  font-size: 24px;
+  color: #333;
+  font-weight: 500;
+}
+.user-authority > div .head {
+  padding: 33px 10px;
+  background: #f7f7f7;
+  text-align: center;
+}
+.user-authority > div .head span {
+  font-size: 18px;
+}
+.user-authority > div.vip .head {
+  background: url(/imgs/main/buy_vip_bg.png) no-repeat center center;
+  background-size: cover;
+  color: #FEFFB3;
+  font-size: 20px;
+}
+.user-authority > div.vip .head h3 {
+  color: #FEFFB3;
+}
+.user-authority > div .body-content {
+  padding: 8px 0 40px;
+}
+.user-authority > div .body-content ul {
+  padding: 0 10px 0 25px;
+}
+.user-authority > div .body-content li {
+  padding-left: 30px;
+  margin-top: 20px;
+  line-height: 24px;
+  color: #A4A3A3;
+  font-size: 16px;
+  list-style: none;
+  position: relative;
+}
+.user-authority > div .body-content li.have {
+  color: #333;
+}
+.user-authority > div .body-content li.have::before {
+  content: "\E639";
+  position: absolute;
+  left: 0;
+  font-size: 20px;
+  color: #10C55B;
+  font-family: element-icons !important;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  vertical-align: baseline;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.purchasing-type {
+  margin: 115px 0;
+  text-align: center;
+}
+.purchasing-type > h2 {
+  margin: 15px 0;
+  color: #333;
+  font-size: 28px;
+  line-height: 36px;
+}
+.purchasing-type .hint {
+  color: #FE4558;
+  font-size: 16px;
+  line-height: 24px;
+}
+.purchasing-type .type-item {
+  max-width: 370px;
+  margin: 55px 29px 70px;
+  padding: 28px;
+  position: relative;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #666;
+  cursor: pointer;
+}
+.purchasing-type .type-item > .price {
+  padding: 20px 0 40px;
+  border-bottom: 1px solid #dcdcdc;
+  color: #333;
+  font-size: 46px;
+  line-height: 46px;
+  word-wrap: break-word;
+}
+.purchasing-type .type-item > .price > i {
+  padding-right: 5px;
+  font-style: normal;
+  font-size: 28px;
+  vertical-align: text-top;
+}
+.purchasing-type .type-item.current {
+  box-shadow: 0 7px 15px rgba(250, 149, 36, 0.4);
+  border: 2px solid #FA9524;
+}
+.purchasing-type .type-item.current .position-top {
+  width: 0;
+  height: 0;
+  border-top: 60px solid #FA9524;
+  border-left: 60px solid transparent;
+}
+.purchasing-type .type-item.current .icon::after {
+  content: "\E611";
+  position: absolute;
+  right: 5px;
+  z-index: 2;
+  margin-top: -50px;
+  line-height: 1;
+  color: #fff;
+}
+.purchasing-type .type-item.current > .price {
+  color: #FA9524;
+}
+.purchasing-type .type-item > .time {
+  display: inline-block;
+  padding-top: 25px;
+}
+.purchasing-type .type-item .position-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+.purchasing-type .el-button {
+  padding: 20px 51px;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+.history-list {
+  margin-top: 45px;
+}
+.history-list .history-item {
+  padding: 20px;
+  list-style: none;
+  margin-bottom: 25px;
+  border: 1px solid #b3d9fe;
+  background: #f7faff;
+}
+.history-list .history-item li {
+  margin: 15px 0;
+  color: #409EFE;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.history-list .history-item li > span {
+  width: 160px;
+  margin-right: 10px;
+  text-align: right;
+  color: #999;
+}
+.history-list .history-item li > div {
+  flex: 1;
+}
+.history-list .history-item.expired {
+  border: 1px solid #e1e1e1;
+  background-color: #fcfcfc;
+  position: relative;
+  z-index: 2;
+}
+.history-list .history-item.expired::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 40%;
+  transform: translate(-40%, -50%);
+  z-index: -1;
+  width: 120px;
+  height: 96px;
+  background: url(/imgs/main/expired_tag.png) no-repeat center center;
+}
+.history-list .history-item.expired li {
+  color: #333;
+}
+.buy-status {
+  text-align: center;
+}
+.buy-status > div {
+  padding: 10% 0;
+}
+.buy-status .icon {
+  font-size: 60px;
+}
+.buy-status .info {
+  margin: 15px 0;
+  font-size: 28px;
+  color: #333;
+}
+.buy-status .price {
+  color: #FE4558;
+  font-size: 24px;
+}
+.buy-status .el-button {
+  display: inline-block;
+  margin-top: 6%;
+  font-size: 16px;
+  text-decoration: none;
+}
+.icon.el-icon-success {
+  color: #409EFF;
+}
+.icon.el-icon-warning {
+  color: #f5586a;
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+  .history-tag {
+    margin: 35px 0 15px;
+  }
+  .user-authority > div {
+    width: 49%;
+  }
+  .user-authority > div h3 {
+    font-size: 22px;
+  }
+  .user-authority > div .head {
+    padding: 30px 10px;
+  }
+  .user-authority > div .head span {
+    font-size: 16px;
+  }
+  .user-authority > div .body-content li {
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .purchasing-type {
+    margin: 65px 0;
+  }
+  .purchasing-type > h2 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  .purchasing-type .hint {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .purchasing-type .type-item {
+    margin: 25px 20px 50px;
+  }
+  .history-list {
+    margin-top: 35px;
+  }
+  .history-list .history-item {
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+}
