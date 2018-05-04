@@ -30,7 +30,7 @@ testrecord.detail = function( where, group, order, limit, cn )
 end
 
 testrecord.detailBySn = function( where, group, order, cn )
-    local sql  = [[SELECT beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonPerformance, duration, lessonTitle, DATEDIFF(t.`beginTime`,m.`joinTime`) learnedDays FROM testrecord t LEFT JOIN member m ON t.`username` = m.`username`]]
+    local sql  = [[SELECT beginTime, t.username, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonPerformance, duration, lessonTitle, DATEDIFF(t.`beginTime`,m.`joinTime`) learnedDays FROM testrecord t LEFT JOIN member m ON t.`username` = m.`username`]]
     return db.detail(sql, where, group, order, cn)
 end
 

@@ -3,4 +3,5 @@
 /public/css/
 /public/uploads/ 
 *.log
+*.txt
 *.json

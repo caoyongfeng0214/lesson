@@ -5,28 +5,30 @@
 {{/link}}
 
 {{+ content}}
+<input hidden value="{{recordSn}}" id="recordSn"/>
+<input hidden value="{{studentNo}}" id="studentNo"/>
 <div class="recordWrapper taughted-record">
     <div class="item">
-        <span>Lesson 1：</span>
-        <div>Tutorial: Installation, Movement and Edit Mode</div>
+        <span>Lesson <span class="lesson-no">-</span>：</span>
+        <div><span class="lesson-title">-</span></div>
     </div>
     <div class="item">
         <span>Duration: </span>
-        <div>45 mins Monday 20th, April, 2018</div>
+        <div>45 mins <span class="lesson-time">-</span></div>
     </div>
 
     <div class="student-info">
         <div class="item">
             <span>Name: </span>   
-            isyang 
+            <span class="student-name">-</span>
         </div>    
         <div class="item">
             <span>Student No: </span>   
-            11111 
+            <span class="student-no">-</span>
         </div>   
         <div class="item">
             <span>Accuracy Rate: </span>   
-            40% 
+            <span class="accuracy-rate">-</span>
         </div>   
     </div>
 
@@ -38,38 +40,17 @@
 
         <table class="table-wrap" cellspacing="0" border="0">
             <thead>
-                <tr>
-                    <td>
-                        Quiz 1
-                    </td>
-                    <td>
-                        Quiz 2
-                    </td>
-                    <td>
-                        Quiz 3
-                    </td>
-                    <td>
-                        Quiz 4
-                    </td>
-                    <td>
-                        Quiz 5
-                    </td>
+                <tr class="tbl-head">
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>
-                        <span class="right">A</span>
-                    </td>
-                    <td><span class="right">B</span></td>
-                    <td><span class="wrong">B</span></td>
-                    <td><span class="wrong">B</span></td>
-                    <td><span class="right">B</span></td>
+                <tr class="tbl-body">
                 </tr>
             </tbody>
         </table>
     </div>
 
-</div>   
+</div>
+<script src="/js/taught_details.js"></script>
 
 {{/content}}
