@@ -194,8 +194,8 @@ router:post('/sendEmail', function(req, res, next)
 	    username="13227379709@163.com", password="ping1234",   --这里的password 是授权密码
 	    from="13227379709@163.com", 
         to= email, 
-	    subject = content,
-	    body = content
+	    subject = content, -- title
+	    body = content -- body
     }, function(err, msg) echo(msg)
 	    res:send( {
             err = err,

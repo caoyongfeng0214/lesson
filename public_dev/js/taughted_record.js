@@ -183,7 +183,9 @@ $(function(){
         if(email) {  
             $.post('/api/record/sendEmail', {
                 email: email,
-                content: 'TODO: 内容和打印内容保持一致'
+                content: '<h1>TODO: 内容和打印内容保持一致</h1>' +
+                    '<h2>TODO: 内容和打印内容保持一致</h2>' +
+                    '<h3>TODO: 内容和打印内容保持一致</h3>'
             }, function(response) {
                 console.log(response);
             })

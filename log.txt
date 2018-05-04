@@ -1,4 +1,4 @@
-2018-05-04 15:44:51|7788|NPL Runtime started
+2018-05-04 16:42:04|13836|NPL Runtime started
 NPL bin dir: D:\cover\cover\ParaCraftSDK-master\NPLRuntime\win\bin\
 WorkingDir: D:\GitClone\lesson
 WritablePath: D:/GitClone/lesson/
@@ -7,7 +7,7 @@ OS version:Microsoft  (build 9200), 64-bit
 Number of processors:4
 Processor type:586
 TotalPhysicalMemory:8312676
-FreePhysicalMemory:2250148
+FreePhysicalMemory:2197148
 
 ParaEngine Root Dir is D:/GitClone/lesson/
 ./packages dir: D:\cover\cover\ParaCraftSDK-master\NPLRuntime\win\packages\
@@ -29,8 +29,52 @@ font Tahoma;12;norm is created
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
 ffi loaded shared lib: C
-2018-05-04 15:44:51|main|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-04 16:42:04|main|info|DomainSpecificLanguage|NPL language extension loaded
+[string "api/orders.lua"]:6: ')' expected near '，' <Syntax error>
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
 NPL server 0.1 is listening on 0.0.0.0:3000
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+2018-05-04 16:42:04|worker_2|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-04 16:42:04|worker_4|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-04 16:42:04|worker_8|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-04 16:42:04|worker_10|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-04 16:42:04|worker_9|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-04 16:42:04|worker_7|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-04 16:42:04|worker_6|info|DomainSpecificLanguage|NPL language extension loaded
+[string "api/orders.lua"]:6: ')' expected near '，' <Syntax error>
+2018-05-04 16:42:04|worker_3|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-04 16:42:04|worker_1|info|DomainSpecificLanguage|NPL language extension loaded
+[string "api/orders.lua"]:6: ')' expected near '，' <Syntax error>
+[string "api/orders.lua"]:6: ')' expected near '，' <Syntax error>
+[string "api/orders.lua"]:6: ')' expected near '，' <Syntax error>
 TCPKeepAlive: false
 AppKeepAlive: false
 IdleTimeout: true
@@ -38,63 +82,23 @@ IdleTimeoutPeriod: 120000
 UseCompression(incoming): false
 CompressionLevel: -1
 CompressionThreshold: 204800
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ffi loaded shared lib: C
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-ffi loaded shared lib: C
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ffi loaded shared lib: C
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ffi loaded shared lib: C
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ffi loaded shared lib: C
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ffi loaded shared lib: C
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ffi loaded shared lib: C
+[string "api/orders.lua"]:6: ')' expected near '，' <Syntax error>
+[string "api/orders.lua"]:6: ')' expected near '，' <Syntax error>
+[string "api/orders.lua"]:6: ')' expected near '，' <Syntax error>
+[string "api/orders.lua"]:6: ')' expected near '，' <Syntax error>
+2018-05-04 16:42:04|worker_5|info|DomainSpecificLanguage|NPL language extension loaded
 NPL max pending incoming connections allowed is 1000
-2018-05-04 15:44:52|worker_8|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-04 15:44:52|worker_1|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-04 15:44:52|worker_3|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-04 15:44:52|worker_6|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-04 15:44:52|worker_9|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-04 15:44:52|worker_2|info|DomainSpecificLanguage|NPL language extension loaded
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ffi loaded shared lib: C
-2018-05-04 15:44:52|worker_10|info|DomainSpecificLanguage|NPL language extension loaded
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ffi loaded shared lib: C
-2018-05-04 15:44:52|worker_4|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-04 15:44:52|worker_5|info|DomainSpecificLanguage|NPL language extension loaded
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ffi loaded shared lib: C
-2018-05-04 15:44:52|worker_7|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-04 15:44:52|8832|incoming connection (127.0.0.1/51200) is established and assigned a temporary id (~1). 
+[string "api/orders.lua"]:6: ')' expected near '，' <Syntax error>
+[string "api/orders.lua"]:6: ')' expected near '，' <Syntax error>
+2018-05-04 16:42:21|13316|incoming connection (127.0.0.1/56700) is established and assigned a temporary id (~1). 
 t ->	worker_1
-2018-05-04 15:44:54|8832|incoming connection (127.0.0.1/51205) is established and assigned a temporary id (~2). 
-2018-05-04 15:44:54|8832|incoming connection (127.0.0.1/51206) is established and assigned a temporary id (~3). 
-2018-05-04 15:44:54|8832|incoming connection (127.0.0.1/51207) is established and assigned a temporary id (~4). 
-2018-05-04 15:44:54|8832|incoming connection (127.0.0.1/51208) is established and assigned a temporary id (~5). 
-2018-05-04 15:44:54|8832|incoming connection (127.0.0.1/51209) is established and assigned a temporary id (~6). 
-2018-05-04 15:44:54|8832|incoming connection (127.0.0.1/51210) is established and assigned a temporary id (~7). 
-echo:"SELECT sn, classId, startTime, lessonUrl, teacher, lessonTitle, lessonNo, goals, startTime, finishTime, summary, state, lessonCover FROM class where state = '1' and classId = '100120814'"
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
 t ->	worker_1
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
 t ->	worker_1
-t ->	worker_1
-echo:{header="220 163.com Anti-spam GT for Coremail System (163com[20141201])\r\n250-mail\r\n250-PIPELINING\r\n250-AUTH LOGIN PLAIN\r\n250-AUTH=LOGIN PLAIN\r\n250-coremail 1Uxr2xKj7kG0xkI17xGrU7I0s8FY2U3Uj8Cz28x1UUUUU7Ic2I0Y2UFxzwkmUCa0xDrUUUUj\r\n250-STARTTLS\r\n250 8BITMIME\r\n334 dXNlcm5hbWU6\r\n334 UGFzc3dvcmQ6\r\n235 Authentication successful\r\n250 Mail OK\r\n250 Mail OK\r\n354 End data with <CR><LF>.<CR><LF>\r\n250 Mail OK queued as smtp12,EMCowADX7cp+D+xaSoVtAA--.39564S2 1525419902\r\n",rcode=250,code=0,}
-t ->	worker_1
-t ->	worker_1
-2018-05-04 15:45:10|8832|incoming connection (127.0.0.1/51237) is established and assigned a temporary id (~8). 
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
+echo:"SELECT nextval(\"classSeq\") val"
+echo:"insert into class (teacher,startTime,goals,lessonNo,lessonUrl,lessonTitle,lessonCover,classId) values (\"keep\",\"2018-05-04 16:42:25\",\"1.learning installation \\n2.learning movement \\n3.learning edit mod\",\"1\",\"/keep/12211519639786370/test1\",\"Tutorial: Lesson React\",\"http://daofeng-school.com/imgs/school/react-course.jpg\",\"100158814\")"
 t ->	worker_1
 t ->	worker_1
 t ->	worker_1
@@ -112,8 +116,36 @@ t ->	worker_1
 t ->	worker_1
 t ->	worker_1
 t ->	worker_1
+2018-05-04 16:43:18|13316|incoming connection (127.0.0.1/56785) is established and assigned a temporary id (~2). 
+2018-05-04 16:43:18|13316|incoming connection (127.0.0.1/56786) is established and assigned a temporary id (~3). 
+2018-05-04 16:43:18|13316|incoming connection (127.0.0.1/56787) is established and assigned a temporary id (~4). 
+2018-05-04 16:43:18|13316|incoming connection (127.0.0.1/56788) is established and assigned a temporary id (~5). 
 t ->	worker_1
 t ->	worker_1
+2018-05-04 16:43:21|13316|incoming connection (127.0.0.1/56819) is established and assigned a temporary id (~6). 
+t ->	worker_2
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'isyang'"
+t ->	echo:worker_1
+"insert into testrecord (lessonCover,lessonPerformance,classSn,lessonTitle,goals,lessonUrl,username,lessonNo,classId) values (\"http://daofeng-school.com/imgs/school/react-course.jpg\",\"\",74,\"Tutorial: Lesson React\",\"1.learning installation \\n2.learning movement \\n3.learning edit mod\",\"/keep/12211519639786370/test1\",\"isyang\",\"1\",\"100158814\")"
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'isyang'"
+echo:"insert into testrecord (lessonCover,lessonPerformance,classSn,lessonTitle,goals,lessonUrl,username,lessonNo,classId) values (\"http://daofeng-school.com/imgs/school/react-course.jpg\",\"\",74,\"Tutorial: Lesson React\",\"1.learning installation \\n2.learning movement \\n3.learning edit mod\",\"/keep/12211519639786370/test1\",\"isyang\",\"1\",\"100158814\")"
+t ->	worker_2
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'isyang'"
+t ->	worker_1
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
+t ->	worker_1
+t ->	worker_1
+echo:"update testrecord set totalScore = \"11\" , finishTime = \"2018-05-04 16:43:24\" , emptyCount = \"2\" , answerSheet = \"[{\\\"quizzId\\\":\\\"FA54D00A\\\",\\\"quizzScore\\\":\\\"11\\\",\\\"trueFlag\\\":true,\\\"myAnswer\\\":\\\"A\\\"},{\\\"quizzId\\\":\\\"39AF35DC\\\",\\\"quizzScore\\\":\\\"5\\\"},{\\\"quizzId\\\":\\\"CFEF9B19\\\",\\\"quizzScore\\\":\\\"7\\\"}]\" , rightCount = \"1\" , wrongCount = \"0\" where sn = '328'"
+t ->	worker_1
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-04 16:43:28|13316|connection closed (127.0.0.1/56785) with id (~2). 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-04 16:43:28|13316|connection closed (127.0.0.1/56786) with id (~3). 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-04 16:43:28|13316|connection closed (127.0.0.1/56787) with id (~4). 
+2018-05-04 16:43:28|13316|connection closed (127.0.0.1/56788) with id (~5). 
 t ->	worker_1
 t ->	worker_1
 t ->	worker_1

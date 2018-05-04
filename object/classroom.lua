@@ -116,7 +116,11 @@ end
 -- 获取学生的上课实时状态（答题情况）
 function classroom:getStudentPerformance( user )
     if( user and user.username == self.teacher ) then
-        return self.students
+        local _students = {}
+        for k,v in pairs(self.students) do
+            table.insert(_students, v)
+        end
+        return _students
     else
         return nil
     end
