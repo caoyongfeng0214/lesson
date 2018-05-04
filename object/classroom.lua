@@ -142,6 +142,7 @@ function classroom:finish( user )
             summary = summaryJsonStr
         }
         local num = classBll.update(_class)
+        _class.summary = summary
         if(num) then
             local obj = {room = self, user = user, action = 'finish'}
             classroom._set(obj)

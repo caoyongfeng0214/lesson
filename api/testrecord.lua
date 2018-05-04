@@ -112,6 +112,7 @@ router:get('/detail', function(req, res, next)
     local p = req.query
     local lessonNo = p.lessonNo
     local username = p.username
+    local orderBy = p.order
     local rq = rq(p, {'lessonNo', 'username'}, res)
     if(not rq) then return end
     local where = {
@@ -123,6 +124,24 @@ router:get('/detail', function(req, res, next)
         pageSize = p.psize,
         pageNo = p.pno
     }
+    if(orderBy) then
+        orderBy = tonumber(orderBy)
+        if(orderBy == 1) then
+            order = { beginTime = 'ASC' }
+        elseif(orderBy == 101) then
+            order = { beginTime = 'DESC' }
+        elseif(orderBy == 2) then
+            -- Accuracy Rate ASC
+            order = { ['rightCount/(rightCount+emptyCount+wrongCount)'] = 'ASC' }
+        elseif(orderBy == 102) then
+            -- Accuracy Rate DESC
+            order = { ['rightCount/(rightCount+emptyCount+wrongCount)'] = 'DESC' }
+        elseif(orderBy == 3) then
+            order = { totalScore = 'ASC' }
+        elseif(orderBy == 103) then
+            order = { totalScore = 'DESC' }
+        end
+    end
     local list, page = recordBll.detail(where, nil, order, limit )
     if(list) then
         for i,v in ipairs(list) do

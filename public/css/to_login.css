@@ -1,1 +1,70 @@
-.introduction-wrapper{max-width:1200px;height:auto;margin:35px auto 0;padding:30px 30px 80px;background-color:#fff}.introduction-wrapper>h3{margin:10px 30px 25px;color:#51a1ff;font-size:26px}.introduction-wrapper .lesson-content{padding:20px 10px;background-color:#fafafa}.introduction-wrapper .lesson-content li{margin-bottom:12px;font-size:16px;line-height:24px;color:#333}.introduction-wrapper .lesson-content ul{padding:0 25px;list-style-type:disc}.introduction-wrapper .lesson-content span{color:#999;padding-right:8px}.introduction-wrapper .lesson-content>ul>li{display:flex}.introduction-wrapper .info{margin:60px 0 30px;font-size:20px}.introduction-wrapper .opt-btn .el-button{padding:20px 45px;font-size:18px}.introduction-wrapper .opt-btn .el-button+.el-button{margin-left:40px}@media (max-width:768px){.introduction-wrapper{margin-top:20px;padding:20px 20px 50px}.introduction-wrapper>h3{font-size:22px;margin:10px 20px 15px}.introduction-wrapper .lesson-content{padding:20px 0}.introduction-wrapper .lesson-content li{font-size:15px;line-height:20px}.introduction-wrapper .info{margin:30px 0 20px;font-size:18px}.introduction-wrapper .opt-btn .el-button{padding:12px 20px;font-size:14px}}
+.introduction-wrapper {
+  max-width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 35px;
+  padding: 30px 30px 80px;
+  background-color: #fff;
+}
+.introduction-wrapper > h3 {
+  margin: 10px 30px 25px;
+  color: #51a1ff;
+  font-size: 26px;
+}
+.introduction-wrapper .lesson-content {
+  padding: 20px 10px;
+  background-color: #fafafa;
+}
+.introduction-wrapper .lesson-content li {
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+}
+.introduction-wrapper .lesson-content ul {
+  padding: 0 25px;
+  list-style-type: disc;
+}
+.introduction-wrapper .lesson-content span {
+  color: #999;
+  padding-right: 8px;
+}
+.introduction-wrapper .lesson-content > ul > li {
+  display: flex;
+}
+.introduction-wrapper .info {
+  margin: 60px 0 30px;
+  font-size: 20px;
+}
+.introduction-wrapper .opt-btn .el-button {
+  padding: 20px 45px;
+  font-size: 18px;
+}
+.introduction-wrapper .opt-btn .el-button + .el-button {
+  margin-left: 40px;
+}
+@media (max-width: 768px) {
+  .introduction-wrapper {
+    margin-top: 20px;
+    padding: 20px 20px 50px;
+  }
+  .introduction-wrapper > h3 {
+    font-size: 22px;
+    margin: 10px 20px 15px;
+  }
+  .introduction-wrapper .lesson-content {
+    padding: 20px 0;
+  }
+  .introduction-wrapper .lesson-content li {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .introduction-wrapper .info {
+    margin: 30px 0 20px;
+    font-size: 18px;
+  }
+  .introduction-wrapper .opt-btn .el-button {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+}
