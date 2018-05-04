@@ -104,11 +104,6 @@ router:post('/enter', function(req, res, next)
             })
             return
         end
-        local user = {
-            username = username,
-            classId = room.classId
-        }
-        classroom.USERs[username] = user
         local _user = {}
         _user.username = username
         _user.studentNo = studentNo

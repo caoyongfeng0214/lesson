@@ -32,7 +32,16 @@ end
 -- 开始课堂
 function classroom:begin( classVo )
     if(self.state == 0) then
-        local num, lastId = classBll.save( classVo )
+        local num, lastId = classBll.save({
+            classId = classVo.classId,
+            teacher = classVo.teacher,
+            lessonUrl = classVo.lessonUrl,
+            lessonTitle = classVo.lessonTitle,
+            lessonCover = classVo.lessonCover,
+            lessonNo = classVo.lessonNo,
+            goals = classVo.goals,
+            startTime = classVo.startTime
+            })
         self.classSn = lastId
         classroom._begin(self)
         express.handler.shareData('_begin', self)
@@ -153,6 +162,10 @@ classroom._set = function( obj )
         -- action mapping
         if(obj.action == 'enter') then
             _room.students[_user.username] = _user
+            classroom.USERs[_user.username] = {
+                username = _user.username,
+                classId = obj.room.classId
+            }
         elseif(obj.action == 'commitAnswer') then
             local stu = _room.students[_user.username]
             stu.answerSheet = commonlib.Json.Decode( obj.answerSheet )
