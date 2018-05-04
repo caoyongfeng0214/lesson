@@ -40,6 +40,7 @@
     .el-button {
         padding: 17px 19px;
         font-size: 16px;
+        margin-left: -45px;
     }
 }
 
@@ -367,6 +368,50 @@
             .wrong {
                 color: @wrong;
             }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .taughted-record{
+        padding: 20px;
+
+        .record-container {
+            padding: 25px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .record-list .tab-content {
+        padding: 20px 0;
+
+        .have-item .layout-box .content .foot {
+            width: 100%;
+        }
+    }
+
+    .sort-btn {
+        padding: 15px;
+    }
+
+    .learned-record .item, .taughted-record .item {
+        margin-bottom: 25px;
+
+        &>div {
+            margin-top: 8px;
+        }
+    }
+
+    .table-wrap {
+        margin-top: 25px;
+
+        thead td, .sort-btn {
+            font-size: 14px;
+        }
+
+        td {
+            padding: 8px;
         }
     }
 }

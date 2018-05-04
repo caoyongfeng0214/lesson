@@ -7,33 +7,35 @@
 {{+ content}}
 <input hidden value="{{username}}" id="username"/>
 <div class="recordWrapper record-list">
-    <div class="tab-nav" hidden>
-        <a id="tab-have-taught" href="javascript:;" class="current">Have taught</a>
-        <a id="tab-have-learn" href="javascript:;">Have learned</a>
-    </div>
+    <div class="container">
+        <div class="tab-nav" hidden>
+            <a id="tab-have-taught" href="javascript:;" class="current">Have taught</a>
+            <a id="tab-have-learn" href="javascript:;">Have learned</a>
+        </div>
 
-    <div class="tab-content">
-        <div class="have-taught">
-            <div class="sort-btn">
-                <span class="sort-icon">
-                    <i class="el-icon-caret-top active"></i>
-                    <i class="el-icon-caret-bottom"></i>
-                </span>
-                <span>Click to sort by teaching time</span>
+        <div class="tab-content">
+            <div class="have-taught">
+                <div class="sort-btn">
+                    <span class="sort-icon">
+                        <i class="el-icon-caret-top active"></i>
+                        <i class="el-icon-caret-bottom"></i>
+                    </span>
+                    <span>Click to sort by teaching time</span>
+                </div>
+                <div class="have-taught-list"></div>
             </div>
-            <div class="have-taught-list"></div>
-        </div>
-        <div class="have-learn">
-            <div class="sort-btn">
-                <span class="sort-icon">
-                    <i class="el-icon-caret-top active"></i>
-                    <i class="el-icon-caret-bottom"></i>
-                </span>
-                <span>Click to sort by lesson No</span>
+            <div class="have-learn">
+                <div class="sort-btn">
+                    <span class="sort-icon">
+                        <i class="el-icon-caret-top active"></i>
+                        <i class="el-icon-caret-bottom"></i>
+                    </span>
+                    <span>Click to sort by lesson No</span>
+                </div>
+                <div class="have-learn-list"></div>
             </div>
-            <div class="have-learn-list"></div>
-        </div>
-    </div>    
+        </div> 
+    </div>   
 </div>
 <script src="/js/record_list.js"></script>
 {{/ content}}

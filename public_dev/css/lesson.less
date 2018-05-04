@@ -1,0 +1,71 @@
+@import 'lib';
+body {
+    background-color: #fff;
+}
+
+.lesson-list {
+    padding: 70px 10px;
+
+    .total {
+        margin-bottom: 25px;
+        font-size:20px;
+        color: #666;
+    }
+
+    .el-row {
+        margin: 0 -9px;
+    }
+
+    .el-col {
+        padding: 0 9px 25px 9px;
+    }
+
+    .lesson-cover {
+        display: block;
+        height: 160px;
+        position: relative;
+
+        &:hover :before {
+            content: "";
+            width: 55px;
+            height: 55px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            background: url(/imgs/main/play_btn.png) no-repeat center center;
+            background-size: contain;
+        }
+
+        > div {
+            width: 100%;
+            height: 100%;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            .borderRadius(6px);
+
+        }
+    }
+
+    .title {
+        display: block;
+        margin: 12px 0;
+        font-size: 17px;
+        color: #333;
+
+        &:hover {
+            color: @themeColor;
+        }
+    }
+
+    .time, .ages {
+        margin-bottom: 10px;
+        color: #999;
+        font-size: 14px;
+        span {
+            color: #666;
+        }
+    }
+}

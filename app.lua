@@ -59,6 +59,9 @@ app:use('/taughtedRecord', router_record_taughted);
 local router_buy = NPL.load('./routes/buy');
 app:use('/buy', router_buy);
 
+local router_lesson = NPL.load('./routes/lesson');
+app:use('/lesson', router_lesson);
+
 -- ***********************************************************************
 -- ****** 无法匹配URL的页面 ******
 -- ***********************************************************************
