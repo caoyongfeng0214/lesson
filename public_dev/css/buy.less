@@ -2,11 +2,6 @@ body {
     background-color: #fff;
 }
 
-.main {
-    max-width: 1080px;
-    margin: 0 auto;
-}
-
 .icon {
     font-family: element-icons !important;
     speak: none;
@@ -269,4 +264,63 @@ body {
 }
 .icon.el-icon-warning{
    color:#f5586a;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .history-tag {
+        margin: 35px 0 15px;
+    }
+
+    .user-authority>div {
+        width: 49%;
+
+        h3 {
+            font-size: 22px;
+        }
+
+        .head {
+            padding: 30px 10px;
+
+            span {
+                font-size: 16px;
+            }
+        }
+
+        .body-content li {
+            margin-top: 12px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+    .purchasing-type {
+        margin: 65px 0;
+
+        > h2 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .hint {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .type-item {
+            margin: 25px 20px 50px;
+        }
+    }
+
+    .history-list {
+        margin-top: 35px;
+
+        .history-item {
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+    }
 }

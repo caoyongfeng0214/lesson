@@ -12,6 +12,10 @@ body {
 a {
     color: @themeColor;
     text-decoration: none;
+
+    &:active {
+        outline: none;
+    }
 }
 em {
     font-style: normal;
@@ -55,9 +59,9 @@ ol {
         .menu {
             .displayFlex;
             .flexJustifyContent(center);
-            padding-top:6px;
             list-style: none;
             >a {
+                padding-top:6px;
                 margin: 0 4.5%;
                 color: #101010;
                 font-size: 16px;
@@ -95,4 +99,32 @@ ol {
 .main {
     padding-top: 60px;
     height: 100%;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .header .nav-bar .menu {
+        .flexJustifyContent(flex-start);
+    }
+}
+
+@media (min-width: 768px) {
+    .container, .header .nav-bar {
+        width:750px
+    }
+}
+
+@media (min-width: 992px) {
+    .container, .header .nav-bar {
+        width:970px
+    }
+}
+
+@media (min-width: 1200px) {
+    .container, .header .nav-bar {
+        width:1170px
+    }
 }
