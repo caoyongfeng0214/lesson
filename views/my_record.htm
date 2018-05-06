@@ -14,16 +14,22 @@
     </div> 
     <div class="info">
         {{^data.haveRecordFlag}}
-        <!--我的记录（空）-->
-        <p>No record has been generated.Please enter <a href="#">LESSONS</a> to start learning/teaching.</p> 
+            <!--我的记录（空）-->
+            <p>No record has been generated.Please enter <a href="/lesson">LESSONS</a> to start learning/teaching.</p> 
+            <div class="text-center">
+                <a href="/lesson" class="el-button el-button--primary">View Lessons</a>
+            </div>
         {{/data.haveRecordFlag}}
         {{#data.haveRecordFlag}}
-        <!-- 有记录时 -->
-        <p>You have attended <em>{{data.teached}} classes</em>. The duration of each class is <em>45 minutes</em>. The total duration is {{data.teachHours}} hours and
-            <em>{{data.teachMin}} minutes</em>
-        </p>
-
-        <p>You have learned <em>{{data.learned}} lessons</em>. The total learning time is <em>{{data.learnHours}} hours and {{data.learnMin}} minutes</em></p>
+            <!-- 有记录时 -->
+            {{#data.haveTeachedFlag}}
+            <p>You have attended <em>{{data.teached}} classes</em>. The duration of each class is <em>45 minutes</em>. The total duration is {{data.teachHours}} hours and
+                <em>{{data.teachMin}} minutes</em>
+            </p>
+            {{/data.haveTeachedFlag}}
+            {{#data.haveLearnedFlag}}
+            <p>You have learned <em>{{data.learned}} lessons</em>. The total learning time is <em>{{data.learnHours}} hours and {{data.learnMin}} minutes</em></p>
+            {{/data.haveLearnedFlag}}
         {{/data.haveRecordFlag}}
     </div>    
 

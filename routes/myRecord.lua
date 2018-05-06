@@ -7,15 +7,19 @@ router:get('/:username', function(req, res, next)
 	local where = {}
     where.username = username
     local memberStatis = memberBll.statis(where)
-	if(memberStatis and (memberStatis.teached > 0 or memberStatis.learned >0) ) then
+	local teached = tonumber(memberStatis.teached)
+	local learnedDuration = tonumber(memberStatis.learnDuration)
+	if(memberStatis and (teached > 0 or memberStatis.learned >0) ) then
 		memberStatis.haveRecordFlag = true
-		if(memberStatis.teached) then
-			memberStatis.teachHours = math.floor(memberStatis.teached * 45 / 60)
-			memberStatis.teachMin = memberStatis.teached * 45 % 60
+		if(teached and teached > 0) then
+			memberStatis.haveTeachedFlag = true
+			memberStatis.teachHours = math.floor(teached * 45 / 60)
+			memberStatis.teachMin = teached * 45 % 60
 		end
-		if(memberStatis.learned) then
-			memberStatis.learnHours = math.floor(memberStatis.learnDuration / 60)
-			memberStatis.learnMin = memberStatis.learned % 60
+		if(learnedDuration and memberStatis.learned > 0) then
+			memberStatis.haveLearnedFlag = true
+			memberStatis.learnHours = math.floor(learnedDuration / 60)
+			memberStatis.learnMin = learnedDuration % 60
 		end
 	end
 	res:render('my_record', {
