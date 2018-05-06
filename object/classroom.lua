@@ -68,6 +68,7 @@ function classroom:enter( user )
         local num, lastId = recordBll.save(record)
         if(lastId) then 
             user.recordSn = lastId
+            user.state = 1 -- learning
             local obj = {room = self, user = user, action = 'enter'}
             classroom._set(obj)
             express.handler.shareData('_set', obj);
@@ -107,7 +108,26 @@ function classroom:commitAnswer( user, answerSheet, totalScore, rightCount, wron
             recordBll.update(record)
         end
         classroom._set(obj)
-        express.handler.shareData('_set', obj);
+        express.handler.shareData('_set', obj)
+    else
+        -- 非法操作
+    end
+end
+
+-- 更新学员的在线状态
+-- args: user 学员
+--       state 状态 1.learning 2.Leave learning page 3.Offline
+function classroom:upsertstate( user, state )
+    local stu = self.students[user.username]
+    if (stu and self.state == 0) then
+        local obj = {
+            room = self,
+            user = stu,
+            state = state,
+            action = 'upsertstate'
+        }
+        classroom._set(obj)
+        express.handler.shareData('_set', obj)
     else
         -- 非法操作
     end
@@ -178,6 +198,9 @@ classroom._set = function( obj )
             stu.rightCount = obj.rightCount
             stu.wrongCount = obj.wrongCount
             stu.emptyCount = obj.emptyCount
+        elseif(obj.action == 'upsertstate') then
+            local stu = _room.students[_user.username]
+            stu.state = obj.state
         elseif(obj.action == 'finish') then
             classroom.classROOMs[obj.room.classId] = nil
         end

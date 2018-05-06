@@ -9,7 +9,6 @@ local ROOM_ID_MAX = 999
 
 -- 开始上课
 router:post('/begin', function(req, res, next)
-    print('t ->', __rts__:GetName())
     -- 检查该 keepwork 账户是否拥有开课权限
     local p = req.body
     local lessonNo = p.lessonNo
@@ -73,9 +72,29 @@ router:post('/begin', function(req, res, next)
     res:send(rs)
 end)
 
+-- 检查是否存在可恢复课堂
+router:post('/resurme', function(req, res, next)
+    local p = req.query
+    local lessonUrl = p.lessonUrl
+    local username = p.username
+    local rq = rq(p, {'username', 'lessonUrl'}, res)
+    if(not rq) then return end
+    for i,v in pairs(classroom.classROOMs) do
+        echo('#DEBUG')
+        echo(v)
+        if(v.teacher == username and v.lessonUrl == lessonUrl) then
+            res:send({
+                err = 0,
+                data = v
+            })
+            return
+        end
+    end
+    res:send({err = 102, msg = 'not allow.'})
+end)
+
 -- 进入课堂
 router:post('/enter', function(req, res, next)
-    print('t ->', __rts__:GetName())
     local rs = {}
     local p = req.body
     local username = p.username -- TODO: 更换为当前登录用户, 添加用户头像
@@ -127,7 +146,6 @@ end)
 
 -- 提交答题卡
 router:post('/replay', function(req, res, next)
-    print('t ->', __rts__:GetName())
     local rs = {}
     local p = req.body
     local username = p.username -- TODO: 更换为当前登录用户
@@ -151,12 +169,44 @@ router:post('/replay', function(req, res, next)
         else
             rs = {
                 err = 201,
-                msg = 'class is finish.'
+                msg = 'class is finished.'
             }
         end
     else
         -- do nothing
-        
+        rs = {
+            err = 102,
+            msg = 'not allow.'
+        }
+    end
+    res:send(rs)
+end)
+
+-- 学员更新自己的状态
+router:post('/upsertstate', function(req, res, next) 
+    local rs = {}
+    local p = req.body
+    local username = p.username
+    local state = p.state
+    local rq = rq(p, {'username', 'state'}, res)
+    if(not rq) then return end
+    local user = classroom.USERs[username]
+    if( user ) then
+        local room = classroom.classROOMs[user.classId]
+        if(room and room.state == 0) then
+            room:upsertstate(user, state)
+            rs = {
+                err = 0,
+                data = user
+            }
+        else
+            rs = {
+                err = 201,
+                msg = 'class is finished.'
+            }
+        end
+    else
+
     end
     res:send(rs)
 end)
