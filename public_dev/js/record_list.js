@@ -91,7 +91,7 @@ var getTaughtRecordList = function ( psize, pno, order, reload ) {
                 haveTaughtList.append('<div class="have-item">' +
                 '<div class="time">'+ new Date(item.startTime).format("hh:mm dd/MM/yyyy") +'</div>' +
                 '<div class="layout-box">' +
-                '    <div class="cover" style="background-image: url('+ item.lessonCover +')"></div>' +
+                '    <a href="' + (keepworkHost + item.lessonUrl)+ '" target="_blank" class="title"><div class="cover" style="background-image: url('+ item.lessonCover +')"></div></a>' +
                 '    <div class="content">' +
                 '        <a href="' + (keepworkHost + item.lessonUrl)+ '" target="_blank" class="title">Lesson '+ item.lessonNo +'：'+ item.lessonTitle +'</a>' +
                 '        <div class="goals">' +
@@ -132,7 +132,7 @@ var getLearnRecordList = function ( psize, pno, order, reload ) {
                 item.lessonCover = item.lessonCover.startsWith('http')?item.lessonCover:keepworkHost + item.lessonCover;
                 haveLearnList.append('<div class="have-item">' +
                 '<div class="layout-box">' +
-                '    <div class="cover" style="background-image: url(' + item.lessonCover + ')"></div>' +
+                '    <a href="' + (keepworkHost + item.lessonUrl)+ '" target="_blank" class="title"><div class="cover" style="background-image: url(' + item.lessonCover + ')"></div></a>' +
                 '    <div class="content">' +
                 '        <a href="' + (keepworkHost + item.lessonUrl)+ '" target="_blank" class="title">Lesson ' + item.lessonNo + '：' + item.lessonTitle + '</a>' +
                 '        <div class="goals">' +
@@ -144,8 +144,8 @@ var getLearnRecordList = function ( psize, pno, order, reload ) {
                 '        <div class="foot">' +
                 '            <a href="/learnedRecord/' + username + '/' + item.lessonNo + '" class="el-button el-button--primary el-button--medium is-plain">View Summary</a>' +
                 '            <div class="scores-info">' +
-                '                <span>Latest Scores: <em>' + item.latestScore + '</em></span>' +
-                '                <span>Best Scores :<em>' + item.bestScore + '</em></span>' +
+                '                <span>Latest Scores: <em>' + (item.latestScore ? item.latestScore : 0) + '</em></span>' +
+                '                <span>Best Scores: <em>' + (item.bestScore ? item.bestScore : 0) + '</em></span>' +
                 '            </div>' +
                 '        </div>' +
                 '    </div>' +

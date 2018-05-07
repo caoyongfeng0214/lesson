@@ -118,6 +118,13 @@ var getLessonLearnedRecord = function( psize, pno, order, reload ) {
             }
             myChart.data.datasets[0].data = accuracyRateArray;
             myChart.data.labels = startTimeArray;
+            var bgArr = myChart.data.datasets[0].backgroundColor;
+            var bdArr = myChart.data.datasets[0].borderColor;
+            while(bgArr.length < startTimeArray.length){
+                var idx = parseInt( Math.random() * 4 );
+                bgArr.push(bgArr[idx]);
+                bdArr.push(bdArr[idx]);
+            }
             myChart.update();
         }
     });

@@ -74,7 +74,7 @@ end)
 
 -- 检查是否存在可恢复课堂
 router:post('/resurme', function(req, res, next)
-    local p = req.query
+    local p = req.body
     local lessonUrl = p.lessonUrl
     local username = p.username
     local rq = rq(p, {'username', 'lessonUrl'}, res)
