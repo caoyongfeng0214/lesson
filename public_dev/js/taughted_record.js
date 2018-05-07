@@ -4,7 +4,7 @@ var chartRate = new Chart(taughtedChart, {
     data: {
         labels: [],
         datasets: [{
-            label: 'Accuracy Rate',
+            label: 'Horizontal Axis: Quizzes, Vertical Axis: Accuracy Rate(%)',
             data: [],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
@@ -25,7 +25,7 @@ var chartRate = new Chart(taughtedChart, {
     },
     options: {
         title: {
-            display: true,
+            display: true
         },      
         scales: {
             yAxes: [{
@@ -43,7 +43,7 @@ var chartStudent = new Chart(studentChart, {
     data: {
         labels: ["<60%", "60%-80%", ">80%"],
         datasets: [{
-            label: 'Number of Students (total: 0)',
+            label: 'Horizontal Axis: Accuracy Rate, Vertical Axis: Number of Students (total: 0)',
             data: [0, 0, 0],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
@@ -257,7 +257,7 @@ var getLessonTaughtedRecord = function() {
                 chartRate.data.labels = quizzLable;
                 chartRate.data.datasets[0].data = quizzRate;
                 chartStudent.data.datasets[0].data = studentDiv;
-                chartStudent.data.datasets[0].label = 'Number of Students (total: ' + r.summary.length + ')'
+                chartStudent.data.datasets[0].label = 'Horizontal Axis: Accuracy Rate, Vertical Axis: Number of Students (total: ' + r.summary.length + ')'
                 chartRate.update();
                 chartStudent.update();
             }
