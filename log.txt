@@ -1,4 +1,4 @@
-2018-05-07 18:19:38|13136|NPL Runtime started
+2018-05-08 17:26:54|9064|NPL Runtime started
 NPL bin dir: D:\cover\cover\ParaCraftSDK-master\NPLRuntime\win\bin\
 WorkingDir: D:\GitClone\lesson
 WritablePath: D:/GitClone/lesson/
@@ -7,7 +7,7 @@ OS version:Microsoft  (build 9200), 64-bit
 Number of processors:4
 Processor type:586
 TotalPhysicalMemory:8312676
-FreePhysicalMemory:2334100
+FreePhysicalMemory:1138856
 
 ParaEngine Root Dir is D:/GitClone/lesson/
 ./packages dir: D:\cover\cover\ParaCraftSDK-master\NPLRuntime\win\packages\
@@ -29,13 +29,42 @@ font Tahoma;12;norm is created
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
 ffi loaded shared lib: C
-2018-05-07 18:19:38|main|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-08 17:26:54|main|info|DomainSpecificLanguage|NPL language extension loaded
 NPL server 0.1 is listening on 0.0.0.0:3000
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
 ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+ffi loaded shared lib: C
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+2018-05-08 17:26:55|worker_2|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-08 17:26:55|worker_1|info|DomainSpecificLanguage|NPL language extension loaded
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+2018-05-08 17:26:55|worker_5|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-08 17:26:55|worker_6|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-08 17:26:55|worker_4|info|DomainSpecificLanguage|NPL language extension loaded
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+2018-05-08 17:26:55|worker_3|info|DomainSpecificLanguage|NPL language extension loaded
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+2018-05-08 17:26:55|worker_7|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-08 17:26:55|worker_8|info|DomainSpecificLanguage|NPL language extension loaded
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
 ffi loaded shared lib: C
 TCPKeepAlive: false
 AppKeepAlive: false
@@ -47,457 +76,437 @@ CompressionThreshold: 204800
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
 ffi loaded shared lib: C
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ffi loaded shared lib: C
-ffi loaded shared lib: C
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ffi loaded shared lib: C
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ffi loaded shared lib: C
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ffi loaded shared lib: C
-2018-05-07 18:19:38|worker_5|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-07 18:19:38|worker_8|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-07 18:19:38|worker_6|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-07 18:19:38|worker_9|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-07 18:19:38|worker_7|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-07 18:19:38|worker_2|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-07 18:19:38|worker_3|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-07 18:19:38|worker_4|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-08 17:26:55|worker_10|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-08 17:26:55|worker_9|info|DomainSpecificLanguage|NPL language extension loaded
 NPL max pending incoming connections allowed is 1000
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ffi loaded shared lib: C
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ffi loaded shared lib: C
-2018-05-07 18:19:38|worker_1|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-07 18:19:38|worker_10|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-07 18:19:39|15340|incoming connection (127.0.0.1/55041) is established and assigned a temporary id (~1). 
+2018-05-08 17:26:55|2716|incoming connection (127.0.0.1/52571) is established and assigned a temporary id (~1). 
+2018-05-08 17:26:55|2716|incoming connection (127.0.0.1/52570) is established and assigned a temporary id (~2). 
+2018-05-08 17:26:57|2716|incoming connection (127.0.0.1/52574) is established and assigned a temporary id (~3). 
+2018-05-08 17:26:57|2716|incoming connection (127.0.0.1/52575) is established and assigned a temporary id (~4). 
+2018-05-08 17:26:57|2716|incoming connection (127.0.0.1/52576) is established and assigned a temporary id (~5). 
+2018-05-08 17:26:58|2716|incoming connection (127.0.0.1/52579) is established and assigned a temporary id (~6). 
+echo:"update testrecord set duration = duration + 1 where sn = \"1167\""
+2018-05-08 17:27:06|2716|incoming connection (127.0.0.1/52592) is established and assigned a temporary id (~7). 
+echo:"update testrecord set duration = duration + 1 where sn = \"1161\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1178\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1170\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1164\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1181\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1136\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1167\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1161\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1178\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1170\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1164\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1181\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1136\""
+2018-05-08 17:28:44|2716|incoming connection (127.0.0.1/52754) is established and assigned a temporary id (~8). 
+echo:"update testrecord set duration = duration + 1 where sn = \"1167\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1161\""
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-08 17:29:08|2716|connection closed (127.0.0.1/52575) with id (~4). 
+2018-05-08 17:29:08|2716|connection closed (127.0.0.1/52571) with id (~1). 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-08 17:29:08|2716|connection closed (127.0.0.1/52570) with id (~2). 
+2018-05-08 17:29:08|2716|connection closed (127.0.0.1/52574) with id (~3). 
+2018-05-08 17:29:08|2716|connection closed (127.0.0.1/52754) with id (~8). 
+2018-05-08 17:29:08|2716|connection closed (127.0.0.1/52576) with id (~5). 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-08 17:29:08|2716|connection closed (127.0.0.1/52592) with id (~7). 
+2018-05-08 17:29:08|2716|connection closed (127.0.0.1/52579) with id (~6). 
+2018-05-08 17:29:08|2716|incoming connection (127.0.0.1/52831) is established and assigned a temporary id (~9). 
 t ->	worker_1
+2018-05-08 17:29:08|2716|incoming connection (127.0.0.1/52833) is established and assigned a temporary id (~10). 
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
 t ->	worker_1
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
 t ->	worker_1
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
+2018-05-08 17:29:16|2716|incoming connection (127.0.0.1/52848) is established and assigned a temporary id (~11). 
+echo:"update testrecord set duration = duration + 1 where sn = \"1178\""
+2018-05-08 17:29:20|2716|incoming connection (127.0.0.1/52854) is established and assigned a temporary id (~12). 
+echo:"update testrecord set duration = duration + 1 where sn = \"1170\""
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-08 17:29:34|2716|connection closed (127.0.0.1/52854) with id (~12). 
+echo:"update testrecord set duration = duration + 1 where sn = \"1164\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1181\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1136\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1167\""
+2018-05-08 17:30:06|2716|incoming connection (127.0.0.1/52925) is established and assigned a temporary id (~13). 
+echo:"update testrecord set duration = duration + 1 where sn = \"1161\""
+2018-05-08 17:30:07|2716|incoming connection (127.0.0.1/52930) is established and assigned a temporary id (~14). 
+echo:"update testrecord set duration = duration + 1 where sn = \"1178\""
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-08 17:30:20|2716|connection closed (127.0.0.1/52930) with id (~14). 
+echo:"update testrecord set duration = duration + 1 where sn = \"1170\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1164\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1181\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1136\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1167\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1161\""
+2018-05-08 17:31:09|2716|connection time out (127.0.0.1/52833) with id (~10). 
+2018-05-08 17:31:09|2716|connection time out (127.0.0.1/52831) with id (~9). 
+2018-05-08 17:31:09|2716|connection closed (127.0.0.1/52833) with id (~10). 
+2018-05-08 17:31:09|2716|connection closed (127.0.0.1/52831) with id (~9). 
+echo:"update testrecord set duration = duration + 1 where sn = \"1178\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1170\""
+2018-05-08 17:31:31|2716|incoming connection (127.0.0.1/53069) is established and assigned a temporary id (~15). 
 t ->	worker_1
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
+2018-05-08 17:31:31|2716|incoming connection (127.0.0.1/53071) is established and assigned a temporary id (~16). 
 t ->	worker_1
-2018-05-07 18:19:42|15340|incoming connection (10.27.26.21/55048) is established and assigned a temporary id (~2). 
-2018-05-07 18:19:42|15340|incoming connection (10.27.26.21/55049) is established and assigned a temporary id (~3). 
-2018-05-07 18:19:42|15340|incoming connection (10.27.26.21/55050) is established and assigned a temporary id (~4). 
-2018-05-07 18:19:42|15340|incoming connection (10.27.26.21/55051) is established and assigned a temporary id (~5). 
-2018-05-07 18:19:42|15340|incoming connection (10.27.26.21/55052) is established and assigned a temporary id (~6). 
-2018-05-07 18:19:42|15340|incoming connection (10.27.26.21/55053) is established and assigned a temporary id (~7). 
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
+echo:"update testrecord set duration = duration + 1 where sn = \"1164\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1181\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1136\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1167\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1161\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1178\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1170\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1164\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1181\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1136\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1167\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1161\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1178\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1170\""
+2018-05-08 17:33:33|2716|connection time out (127.0.0.1/53071) with id (~16). 
+2018-05-08 17:33:33|2716|connection time out (127.0.0.1/53069) with id (~15). 
+2018-05-08 17:33:33|2716|connection closed (127.0.0.1/53071) with id (~16). 
+2018-05-08 17:33:33|2716|connection closed (127.0.0.1/53069) with id (~15). 
+echo:"update testrecord set duration = duration + 1 where sn = \"1164\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1181\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1136\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1167\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1161\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1178\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1170\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1164\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1181\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1136\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1167\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1161\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1178\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1170\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1164\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1181\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1136\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1167\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1161\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1178\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1170\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1164\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1181\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1136\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1167\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1161\""
+2018-05-08 17:37:07|2716|incoming connection (127.0.0.1/53644) is established and assigned a temporary id (~17). 
+echo:"update testrecord set duration = duration + 1 where sn = \"1178\""
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-08 17:37:20|2716|connection closed (127.0.0.1/53644) with id (~17). 
+echo:"update testrecord set duration = duration + 1 where sn = \"1170\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1164\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1181\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1136\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1167\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1161\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1178\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1170\""
+2018-05-08 17:38:20|2716|incoming connection (127.0.0.1/53755) is established and assigned a temporary id (~18). 
+2018-05-08 17:38:20|2716|incoming connection (127.0.0.1/53756) is established and assigned a temporary id (~19). 
+2018-05-08 17:38:20|2716|incoming connection (127.0.0.1/53757) is established and assigned a temporary id (~20). 
+2018-05-08 17:38:20|2716|incoming connection (127.0.0.1/53758) is established and assigned a temporary id (~21). 
+2018-05-08 17:38:20|2716|incoming connection (127.0.0.1/53759) is established and assigned a temporary id (~22). 
+echo:"update testrecord set duration = duration + 1 where sn = \"1164\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1181\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1136\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1167\""
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-08 17:39:00|2716|connection closed (127.0.0.1/53759) with id (~22). 
+2018-05-08 17:39:00|2716|incoming connection (127.0.0.1/53820) is established and assigned a temporary id (~23). 
+2018-05-08 17:39:00|2716|incoming connection (127.0.0.1/53821) is established and assigned a temporary id (~24). 
+echo:"update testrecord set duration = duration + 1 where sn = \"1161\""
+echo:"SELECT m.username, m.joinTime,\n        (SELECT COUNT(1) FROM class WHERE teacher = m.username) teached,\n        (SELECT COUNT(1) FROM testrecord WHERE username = m.username) learned,\n        (SELECT IFNULL( SUM( duration ), 0) FROM testrecord WHERE username = m.username) learnDuration\n        FROM member m  where username = 'keep'"
 echo:"SELECT m.username, m.joinTime,\n        (SELECT COUNT(1) FROM class WHERE teacher = m.username) teached,\n        (SELECT COUNT(1) FROM testrecord WHERE username = m.username) learned,\n        (SELECT IFNULL( SUM( duration ), 0) FROM testrecord WHERE username = m.username) learnDuration\n        FROM member m  where username = 'keep'"
 echo:"SELECT COUNT(1) FROM ( SELECT sn, classId, startTime, lessonUrl, lessonTitle, lessonNo, goals, lessonCover FROM class where teacher = 'keep' and state = '1' order by startTime DESC ) a"
 echo:"<--------------------------------------------------page----------------------------------------------------->"
-echo:{totalCount=45,totalPage=1,pageNo=1,pageSize=50,}
+echo:{totalCount=3,totalPage=1,pageNo=1,pageSize=50,}
 echo:"SELECT sn, classId, startTime, lessonUrl, lessonTitle, lessonNo, goals, lessonCover FROM class where teacher = 'keep' and state = '1' order by startTime DESC limit 0 , 50"
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
 echo:"SELECT COUNT(1) FROM ( SELECT lessonUrl, lessonTitle, lessonCover, goals, lessonNo, MAX(totalScore) bestScore,\n        (SELECT totalScore FROM testrecord WHERE lessonNo = t.lessonNo AND username = t.username ORDER BY finishTime DESC LIMIT 0,1) latestScore\n        FROM testrecord t where username = 'keep' group by lessonNo order by lessonNo DESC ) a"
-echo:"<--------------------------------------------------page----------------------------------------------------->"
-echo:{totalCount=2,totalPage=1,pageNo=1,pageSize=50,}
-echo:"SELECT lessonUrl, lessonTitle, lessonCover, goals, lessonNo, MAX(totalScore) bestScore,\n        (SELECT totalScore FROM testrecord WHERE lessonNo = t.lessonNo AND username = t.username ORDER BY finishTime DESC LIMIT 0,1) latestScore\n        FROM testrecord t where username = 'keep' group by lessonNo order by lessonNo DESC limit 0 , 50"
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '9' and username = 'keep' order by beginTime DESC ) a"
 echo:"<--------------------------------------------------page----------------------------------------------------->"
 echo:{totalCount=1,totalPage=1,pageNo=1,pageSize=50,}
-echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '9' and username = 'keep' order by beginTime DESC limit 0 , 50"
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-echo:"SELECT m.username, m.joinTime,\n        (SELECT COUNT(1) FROM class WHERE teacher = m.username) teached,\n        (SELECT COUNT(1) FROM testrecord WHERE username = m.username) learned,\n        (SELECT IFNULL( SUM( duration ), 0) FROM testrecord WHERE username = m.username) learnDuration\n        FROM member m  where username = 'keep'"
-echo:"SELECT COUNT(1) FROM ( SELECT sn, classId, startTime, lessonUrl, lessonTitle, lessonNo, goals, lessonCover FROM class where teacher = 'keep' and state = '1' order by startTime DESC ) a"
-echo:"<--------------------------------------------------page----------------------------------------------------->"
-echo:{totalCount=45,totalPage=1,pageNo=1,pageSize=50,}
-echo:"SELECT sn, classId, startTime, lessonUrl, lessonTitle, lessonNo, goals, lessonCover FROM class where teacher = 'keep' and state = '1' order by startTime DESC limit 0 , 50"
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-echo:"SELECT COUNT(1) FROM ( SELECT lessonUrl, lessonTitle, lessonCover, goals, lessonNo, MAX(totalScore) bestScore,\n        (SELECT totalScore FROM testrecord WHERE lessonNo = t.lessonNo AND username = t.username ORDER BY finishTime DESC LIMIT 0,1) latestScore\n        FROM testrecord t where username = 'keep' group by lessonNo order by lessonNo DESC ) a"
+echo:"SELECT lessonUrl, lessonTitle, lessonCover, goals, lessonNo, MAX(totalScore) bestScore,\n        (SELECT totalScore FROM testrecord WHERE lessonNo = t.lessonNo AND username = t.username ORDER BY finishTime DESC LIMIT 0,1) latestScore\n        FROM testrecord t where username = 'keep' group by lessonNo order by lessonNo DESC limit 0 , 50"
+echo:"update testrecord set duration = duration + 1 where sn = \"1178\""
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '1' and username = 'keep' order by beginTime DESC ) a"
 echo:"<--------------------------------------------------page----------------------------------------------------->"
 echo:{totalCount=2,totalPage=1,pageNo=1,pageSize=50,}
-echo:"SELECT lessonUrl, lessonTitle, lessonCover, goals, lessonNo, MAX(totalScore) bestScore,\n        (SELECT totalScore FROM testrecord WHERE lessonNo = t.lessonNo AND username = t.username ORDER BY finishTime DESC LIMIT 0,1) latestScore\n        FROM testrecord t where username = 'keep' group by lessonNo order by lessonNo DESC limit 0 , 50"
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-2018-05-07 18:20:21|15340|incoming connection (127.0.0.1/55160) is established and assigned a temporary id (~8). 
-echo:"update testrecord set duration = duration + 1 where sn = \"916\""
-t ->	worker_2
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-echo:"update testrecord set duration = duration + 1 where sn = \"919\""
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-echo:"update testrecord set duration = duration + 1 where sn = \"916\""
-t ->	worker_2
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-echo:"update testrecord set duration = duration + 1 where sn = \"919\""
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-2018-05-07 18:22:14|15340|connection time out (10.27.26.21/55049) with id (~3). 
-2018-05-07 18:22:14|15340|connection time out (10.27.26.21/55050) with id (~4). 
-2018-05-07 18:22:14|15340|connection time out (10.27.26.21/55051) with id (~5). 
-2018-05-07 18:22:14|15340|connection time out (10.27.26.21/55052) with id (~6). 
-2018-05-07 18:22:14|15340|connection time out (10.27.26.21/55053) with id (~7). 
-2018-05-07 18:22:14|15340|connection closed (10.27.26.21/55049) with id (~3). 
-2018-05-07 18:22:14|15340|connection closed (10.27.26.21/55050) with id (~4). 
-2018-05-07 18:22:14|15340|connection closed (10.27.26.21/55051) with id (~5). 
-2018-05-07 18:22:14|15340|connection closed (10.27.26.21/55052) with id (~6). 
-2018-05-07 18:22:14|15340|connection closed (10.27.26.21/55053) with id (~7). 
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-2018-05-07 18:22:20|15340|connection time out (10.27.26.21/55048) with id (~2). 
-2018-05-07 18:22:20|15340|connection closed (10.27.26.21/55048) with id (~2). 
-echo:"update testrecord set duration = duration + 1 where sn = \"916\""
-t ->	worker_2
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-echo:"update testrecord set duration = duration + 1 where sn = \"919\""
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-echo:"update testrecord set duration = duration + 1 where sn = \"916\""
-t ->	worker_2
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-echo:"update testrecord set duration = duration + 1 where sn = \"919\""
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
-t ->	worker_1
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '1' and username = 'keep' order by beginTime DESC limit 0 , 50"
+echo:"update testrecord set duration = duration + 1 where sn = \"1170\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1164\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1181\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1136\""
+echo:"SELECT beginTime, t.username, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonPerformance, duration, lessonTitle, DATEDIFF(t.`beginTime`,m.`joinTime`) learnedDays FROM testrecord t LEFT JOIN member m ON t.`username` = m.`username` where t.sn = '1184'"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '1' and username = 'keep' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=2,totalPage=1,pageNo=1,pageSize=50,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '1' and username = 'keep' order by beginTime DESC limit 0 , 50"
+echo:"SELECT beginTime, t.username, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonPerformance, duration, lessonTitle, DATEDIFF(t.`beginTime`,m.`joinTime`) learnedDays FROM testrecord t LEFT JOIN member m ON t.`username` = m.`username` where t.sn = '1173'"
+echo:"SELECT COUNT(1) FROM ( SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '1' and username = 'keep' order by beginTime DESC ) a"
+echo:"<--------------------------------------------------page----------------------------------------------------->"
+echo:{totalCount=2,totalPage=1,pageNo=1,pageSize=50,}
+echo:"SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord where lessonNo = '1' and username = 'keep' order by beginTime DESC limit 0 , 50"
+echo:"update testrecord set duration = duration + 1 where sn = \"1167\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1161\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1178\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1170\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1164\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1181\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1136\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1167\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1161\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1178\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1170\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1164\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1181\""
+2018-05-08 17:41:43|2716|incoming connection (127.0.0.1/54214) is established and assigned a temporary id (~25). 
+t ->	worker_1
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
+2018-05-08 17:41:43|2716|incoming connection (127.0.0.1/54216) is established and assigned a temporary id (~26). 
+t ->	worker_1
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
+echo:"update testrecord set duration = duration + 1 where sn = \"1136\""
+2018-05-08 17:41:57|2716|connection time out (127.0.0.1/53820) with id (~23). 
+2018-05-08 17:41:57|2716|connection time out (127.0.0.1/53821) with id (~24). 
+2018-05-08 17:41:57|2716|connection time out (127.0.0.1/53756) with id (~19). 
+2018-05-08 17:41:57|2716|connection time out (127.0.0.1/53758) with id (~21). 
+2018-05-08 17:41:57|2716|connection time out (127.0.0.1/53755) with id (~18). 
+2018-05-08 17:41:57|2716|connection time out (127.0.0.1/53757) with id (~20). 
+2018-05-08 17:41:57|2716|connection closed (127.0.0.1/53820) with id (~23). 
+2018-05-08 17:41:57|2716|connection closed (127.0.0.1/53821) with id (~24). 
+2018-05-08 17:41:57|2716|connection closed (127.0.0.1/53756) with id (~19). 
+2018-05-08 17:41:57|2716|connection closed (127.0.0.1/53758) with id (~21). 
+2018-05-08 17:41:57|2716|connection closed (127.0.0.1/53755) with id (~18). 
+2018-05-08 17:41:57|2716|connection closed (127.0.0.1/53757) with id (~20). 
+echo:"update testrecord set duration = duration + 1 where sn = \"1167\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1161\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1178\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1170\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1164\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1181\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1136\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1167\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1161\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1178\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1170\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1164\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1181\""
+2018-05-08 17:43:43|2716|connection time out (127.0.0.1/54214) with id (~25). 
+2018-05-08 17:43:43|2716|connection time out (127.0.0.1/54216) with id (~26). 
+2018-05-08 17:43:43|2716|connection closed (127.0.0.1/54214) with id (~25). 
+2018-05-08 17:43:43|2716|connection closed (127.0.0.1/54216) with id (~26). 
+echo:"update testrecord set duration = duration + 1 where sn = \"1136\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1167\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1161\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1178\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1170\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1164\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1181\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1136\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1167\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1161\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1178\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1170\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1164\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1181\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1136\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1167\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1161\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1178\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1170\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1164\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1181\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1136\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1167\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1161\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1178\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1170\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1164\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1181\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1136\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1167\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1161\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1178\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1170\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1164\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1181\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1136\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1167\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1161\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1178\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1170\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1164\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1181\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1136\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1167\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1161\""
+2018-05-08 17:50:07|2716|incoming connection (127.0.0.1/55148) is established and assigned a temporary id (~27). 
+echo:"update testrecord set duration = duration + 1 where sn = \"1178\""
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-08 17:50:20|2716|connection closed (127.0.0.1/55148) with id (~27). 
+echo:"update testrecord set duration = duration + 1 where sn = \"1170\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1164\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1181\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1136\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1167\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1161\""
+2018-05-08 17:51:07|2716|incoming connection (127.0.0.1/55244) is established and assigned a temporary id (~28). 
+echo:"update testrecord set duration = duration + 1 where sn = \"1178\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1170\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1164\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1181\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1136\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1167\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1161\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1178\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1170\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1164\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1181\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1136\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1167\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1161\""
+2018-05-08 17:53:07|2716|connection time out (127.0.0.1/52848) with id (~11). 
+2018-05-08 17:53:07|2716|connection closed (127.0.0.1/52848) with id (~11). 
+echo:"update testrecord set duration = duration + 1 where sn = \"1178\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1170\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1164\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1181\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1136\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1167\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1161\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1178\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1170\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1164\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1181\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1136\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1167\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1161\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1178\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1170\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1164\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1181\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1136\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1167\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1161\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1178\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1170\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1164\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1181\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1136\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1167\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1161\""
+2018-05-08 17:57:07|2716|incoming connection (127.0.0.1/55900) is established and assigned a temporary id (~29). 
+echo:"update testrecord set duration = duration + 1 where sn = \"1178\""
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-08 17:57:20|2716|connection closed (127.0.0.1/55900) with id (~29). 
+echo:"update testrecord set duration = duration + 1 where sn = \"1170\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1164\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1181\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1136\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1167\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1161\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1178\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1170\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1164\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1181\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1136\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1167\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1161\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1178\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1170\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1164\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1181\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1136\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1167\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1161\""
+2018-05-08 18:00:07|2716|incoming connection (127.0.0.1/56204) is established and assigned a temporary id (~30). 
+echo:"update testrecord set duration = duration + 1 where sn = \"1178\""
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-08 18:00:20|2716|connection closed (127.0.0.1/56204) with id (~30). 
+echo:"update testrecord set duration = duration + 1 where sn = \"1170\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1164\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1181\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1136\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1167\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1161\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1178\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1170\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1164\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1181\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1136\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1167\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1161\""
+2018-05-08 18:02:07|2716|incoming connection (127.0.0.1/56385) is established and assigned a temporary id (~31). 
+echo:"update testrecord set duration = duration + 1 where sn = \"1178\""
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-08 18:02:20|2716|connection closed (127.0.0.1/56385) with id (~31). 
+echo:"update testrecord set duration = duration + 1 where sn = \"1170\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1164\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1181\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1136\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1167\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1161\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1178\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1170\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1164\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1181\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1136\""
+2018-05-08 18:03:57|2716|incoming connection (127.0.0.1/56570) is established and assigned a temporary id (~32). 
+t ->	worker_1
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
+t ->	worker_1
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
+2018-05-08 18:03:57|2716|incoming connection (127.0.0.1/56573) is established and assigned a temporary id (~33). 
+echo:"update testrecord set duration = duration + 1 where sn = \"1167\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1161\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1178\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1170\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1164\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1181\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1136\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1167\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1161\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1178\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1170\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1164\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1181\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1136\""
+t ->	worker_1
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
+t ->	worker_1
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
+echo:"update testrecord set duration = duration + 1 where sn = \"1167\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1161\""
+t ->	worker_1
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
+t ->	worker_1
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
+echo:"SELECT nextval(\"classSeq\") val"
+echo:"insert into class (teacher,startTime,goals,lessonNo,lessonUrl,lessonTitle,lessonCover,classId) values (\"keep\",\"2018-05-08 18:06:08\",\"lesson goals\",\"999\",\"/keep/12211519639786370/ch/ch3\",\"lesson title\",\"/static/img/stitching.79a76b9.png\",\"100401814\")"
+t ->	worker_1
+t ->	worker_1
+echo:"update class set summary = \"[]\" , finishTime = \"2018-05-08 18:06:11\" , state = 1 , classId = \"100401814\" where sn = '310'"
+2018-05-08 18:06:11|2716|incoming connection (127.0.0.1/56830) is established and assigned a temporary id (~34). 
+2018-05-08 18:06:11|2716|incoming connection (127.0.0.1/56831) is established and assigned a temporary id (~35). 
+2018-05-08 18:06:11|2716|incoming connection (127.0.0.1/56832) is established and assigned a temporary id (~36). 
+2018-05-08 18:06:11|2716|incoming connection (127.0.0.1/56833) is established and assigned a temporary id (~37). 
+2018-05-08 18:06:11|2716|incoming connection (127.0.0.1/56834) is established and assigned a temporary id (~38). 
+2018-05-08 18:06:11|2716|incoming connection (127.0.0.1/56835) is established and assigned a temporary id (~39). 
+echo:"SELECT sn, classId, startTime, lessonUrl, teacher, lessonTitle, lessonNo, goals, startTime, finishTime, summary, state, lessonCover FROM class where state = '1' and classId = '100401814'"
+echo:"update testrecord set duration = duration + 1 where sn = \"1178\""
+echo:"update testrecord set duration = duration + 1 where sn = \"1170\""

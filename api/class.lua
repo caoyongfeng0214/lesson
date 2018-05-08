@@ -18,7 +18,8 @@ router:post('/begin', function(req, res, next)
     local goals = p.goals
     local username = p.username
     local lessonPerformance = p.lessonPerformance
-    local rq = rq(p, {'lessonNo', 'lessonUrl', 'username', 'lessonTitle', 'lessonCover' }, res)
+    local quizzNum = p.quizzNum
+    local rq = rq(p, {'lessonNo', 'lessonUrl', 'username', 'lessonTitle', 'lessonCover', 'quizzNum' }, res)
 	if(not rq) then return end
     local where = { username = username }
     local member = memberBll.get(where)
@@ -51,7 +52,8 @@ router:post('/begin', function(req, res, next)
         lessonNo = lessonNo,
         goals = goals,
         startTime = startTime,
-        lessonPerformance = lessonPerformance
+        lessonPerformance = lessonPerformance,
+        quizzNum = tonumber(quizzNum)
     })
     room:begin({
         classId = classId,
@@ -62,7 +64,8 @@ router:post('/begin', function(req, res, next)
         lessonNo = lessonNo,
         goals = goals,
         startTime = startTime,
-        lessonPerformance = lessonPerformance
+        lessonPerformance = lessonPerformance,
+        quizzNum = tonumber(quizzNum)
     })
     
     local rs = {
