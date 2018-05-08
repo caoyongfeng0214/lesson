@@ -21,6 +21,7 @@ router:post('/saveOrUpdate', function(req, res, next)
     local rightCount = p.rightCount
     local wrongCount = p.wrongCount
     local emptyCount = p.emptyCount
+    local state = p.state
     local rs = {}
     if( sn ) then
         -- update
