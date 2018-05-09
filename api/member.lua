@@ -4,7 +4,7 @@ local express = NPL.load('express')
 local memberBll = NPL.load('../bll/member')
 local router = express.Router:new()
 local System = commonlib.gettable("System")
-local sitecfg = NPL.load('../confi/siteConfig');
+local sitecfg = NPL.load('../confi/siteConfig')
 
 -- 验证身份
 router:get('/auth', function(req, res, next)

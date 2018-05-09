@@ -2,7 +2,9 @@
 
 {{+ link}}
 <link href="/css/record.css" rel="stylesheet" />
-<script src="/jslib/Chart.min.js"></script>
+<link rel="stylesheet" href="/csslib/c3.min.css" />
+<script type="text/javascript" src="/jslib/d3.min.js"></script>
+<script type="text/javascript" src="/jslib/c3.min.js"></script>
 {{/link}}
 
 {{+ content}}
@@ -33,10 +35,10 @@
                 <span>Accuracy Analysis:</span>
                 <div class="chartLayout">
                     <div>
-                        <canvas id="taughtedChart" height="40vh" width="80vw"></canvas>
+                        <div id="taughtedChart" height="40vh" width="80vw"></div>
                     </div>
                     <div>
-                        <canvas id="studentChart" height="40vh" width="80vw"></canvas>
+                        <div id="studentChart" height="40vh" width="80vw"></div>
                     </div>
                 </div>
             </div>

@@ -69,6 +69,14 @@ function classroom:enter( user )
         if(lastId) then 
             user.recordSn = lastId
             user.state = 1 -- learning
+            user.totalScore = 0
+            user.rightCount = 0
+            user.wrongCount = 0
+            user.emptyCount = self.quizzNum
+            user.answerSheet = {}
+            for i=1, self.quizzNum do 
+                table.insert( user.answerSheet, {} )
+            end
             local obj = {room = self, user = user, action = 'enter'}
             classroom._set(obj)
             express.handler.shareData('_set', obj);
@@ -160,6 +168,7 @@ function classroom:finish( user )
             summaryJsonStr = commonlib.Json.Encode(summary)
         end
         _class = {
+            classId = self.classId,
             sn = self.classSn,
             state = 1, -- 已结束
             finishTime = os.date( "%Y-%m-%d %H:%M:%S", os.time() ),

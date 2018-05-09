@@ -4,6 +4,30 @@ var lessonNo = $('#lessonNo').val();
 var PAGE_SIZE = 50;
 var no = 1;
 var orderBy = 0; // 排序标识位
+//learnedChart
+var learnedChart = c3.generate({
+    bindto: '#learnedChart',
+    data: {
+        types: {
+            Rate: 'bar'
+        },
+        columns: [],
+    },
+    axis: {
+        x: {
+            label: 'Starting Time',
+            type: 'category'
+        },
+        y: {
+            label: 'Accuracy Rate(%)'
+        }
+    },
+    grid: {
+        y: {
+            show: true
+        }
+    }
+});
 $(function(){
     getLessonLearnedRecord(PAGE_SIZE, no);
 
@@ -64,7 +88,7 @@ $(function(){
 });
 
 var flag = false;
-var accuracyRateArray = [];
+var accuracyRateArray = ['Rate'];
 var startTimeArray = [];
 var getLessonLearnedRecord = function( psize, pno, order, reload ) {
     if(flag) {
@@ -94,7 +118,7 @@ var getLessonLearnedRecord = function( psize, pno, order, reload ) {
             var tblRecord = $('.tbl-learned-record');
             if(reload) { // 重新加载数据，否则为追加数据
                 tblRecord.html('');
-                accuracyRateArray = [];
+                accuracyRateArray = ['Rate'];
                 startTimeArray = [];
             }
             $('.learned-times').text(p.totalCount);
@@ -116,16 +140,20 @@ var getLessonLearnedRecord = function( psize, pno, order, reload ) {
                     '            View Details</a></td>'+
                     '</tr>')
             }
-            myChart.data.datasets[0].data = accuracyRateArray;
-            myChart.data.labels = startTimeArray;
-            var bgArr = myChart.data.datasets[0].backgroundColor;
-            var bdArr = myChart.data.datasets[0].borderColor;
-            while(bgArr.length < startTimeArray.length){
-                var idx = parseInt( Math.random() * 4 );
-                bgArr.push(bgArr[idx]);
-                bdArr.push(bdArr[idx]);
-            }
-            myChart.update();
+            // myChart.data.datasets[0].data = accuracyRateArray;
+            // myChart.data.labels = startTimeArray;
+            // var bgArr = myChart.data.datasets[0].backgroundColor;
+            // var bdArr = myChart.data.datasets[0].borderColor;
+            // while(bgArr.length < startTimeArray.length){
+            //     var idx = parseInt( Math.random() * 4 );
+            //     bgArr.push(bgArr[idx]);
+            //     bdArr.push(bdArr[idx]);
+            // }
+            // myChart.update();
+            learnedChart.load({
+                columns: [accuracyRateArray],
+                categories: startTimeArray
+            });
         }
     });
 }

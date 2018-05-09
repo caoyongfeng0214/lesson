@@ -1,0 +1,169 @@
+<<<<<<< HEAD
+=======
+2018-05-09 17:04:54|13684|NPL Runtime started
+NPL bin dir: D:\cover\cover\ParaCraftSDK-master\NPLRuntime\win\bin\
+WorkingDir: D:\GitClone\lesson
+WritablePath: D:/GitClone/lesson/
+OS information:
+OS version:Microsoft  (build 9200), 64-bit
+Number of processors:4
+Processor type:586
+TotalPhysicalMemory:8312676
+FreePhysicalMemory:2141324
+
+ParaEngine Root Dir is D:/GitClone/lesson/
+./packages dir: D:\cover\cover\ParaCraftSDK-master\NPLRuntime\win\packages\
+Archive: D:\cover\cover\ParaCraftSDK-master\NPLRuntime\win\packages\main_mobile_res.pkg is opened and read 613 entries
+Archive: D:\cover\cover\ParaCraftSDK-master\NPLRuntime\win\packages\main150727.pkg is opened and read 2665 entries
+Archive: D:\cover\cover\ParaCraftSDK-master\NPLRuntime\win\packages\main.pkg is opened and read 7536 entries
+main loop: bin/www.npl 
+CAssetManifest loaded 0 files
+CAsyncLoader QueueID:0(Local) has 1 worker threads
+CAsyncLoader QueueID:1(Asset) has 2 worker threads
+CAsyncLoader QueueID:2(Web) has 1 worker threads
+CAsyncLoader QueueID:3(Asset_BigFile) has 1 worker threads
+CAsyncLoader QueueID:4(AudioFile) has 1 worker threads
+CAsyncLoader is started with 1 IO thread and 6 worker threads
+Plug-in loaded: D:\cover\cover\ParaCraftSDK-master\NPLRuntime\win\bin\PhysicsBT.dll version: 1 
+font Tahoma;12;bold is created 
+font Tahoma;12;norm is created 
+(main) state is now running in a separate thread. It is more responsive now. 
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+2018-05-09 17:04:54|main|info|DomainSpecificLanguage|NPL language extension loaded
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+NPL server 0.1 is listening on 0.0.0.0:3000
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+TCPKeepAlive: false
+AppKeepAlive: false
+IdleTimeout: true
+IdleTimeoutPeriod: 120000
+UseCompression(incoming): false
+CompressionLevel: -1
+CompressionThreshold: 204800
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+NPL max pending incoming connections allowed is 1000
+2018-05-09 17:04:54|worker_6|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-09 17:04:54|worker_2|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-09 17:04:54|worker_1|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-09 17:04:54|worker_5|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-09 17:04:54|worker_8|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-09 17:04:54|worker_7|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-09 17:04:54|worker_9|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-09 17:04:54|worker_3|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-09 17:04:54|worker_10|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-09 17:04:54|worker_4|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-09 17:06:09|10992|incoming connection (127.0.0.1/56581) is established and assigned a temporary id (~1). 
+2018-05-09 17:06:09|10992|incoming connection (127.0.0.1/56586) is established and assigned a temporary id (~2). 
+2018-05-09 17:06:10|10992|incoming connection (127.0.0.1/56587) is established and assigned a temporary id (~3). 
+2018-05-09 17:06:10|10992|incoming connection (127.0.0.1/56588) is established and assigned a temporary id (~4). 
+2018-05-09 17:06:10|10992|incoming connection (127.0.0.1/56589) is established and assigned a temporary id (~5). 
+2018-05-09 17:06:10|10992|incoming connection (127.0.0.1/56590) is established and assigned a temporary id (~6). 
+echo:"SELECT sn, classId, startTime, lessonUrl, teacher, lessonTitle, lessonNo, goals, startTime, finishTime, summary, state, lessonCover FROM class where state = '1' and classId = '100397814'"
+echo:{header="220 163.com Anti-spam GT for Coremail System (163com[20141201])\r\n250-mail\r\n250-PIPELINING\r\n250-AUTH LOGIN PLAIN\r\n250-AUTH=LOGIN PLAIN\r\n250-coremail 1Uxr2xKj7kG0xkI17xGrU7I0s8FY2U3Uj8Cz28x1UUUUU7Ic2I0Y2UFnQ7orUCa0xDrUUUUj\r\n250-STARTTLS\r\n250 8BITMIME\r\n334 dXNlcm5hbWU6\r\n334 UGFzc3dvcmQ6\r\n235 Authentication successful\r\n250 Mail OK\r\n250 Mail OK\r\n354 End data with <CR><LF>.<CR><LF>\r\n250 Mail OK queued as smtp14,EsCowAC3uQQIuvJaNoOKAw--.3073S2 1525856776\r\n",rcode=250,code=0,}
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-09 17:06:22|10992|connection closed (127.0.0.1/56586) with id (~2). 
+2018-05-09 17:06:22|10992|connection closed (127.0.0.1/56587) with id (~3). 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-09 17:06:22|10992|connection closed (127.0.0.1/56588) with id (~4). 
+2018-05-09 17:06:22|10992|connection closed (127.0.0.1/56589) with id (~5). 
+2018-05-09 17:06:22|10992|connection closed (127.0.0.1/56590) with id (~6). 
+2018-05-09 17:08:18|10992|connection time out (127.0.0.1/56581) with id (~1). 
+2018-05-09 17:08:18|10992|connection closed (127.0.0.1/56581) with id (~1). 
+2018-05-09 17:12:39|10992|incoming connection (127.0.0.1/57178) is established and assigned a temporary id (~7). 
+2018-05-09 17:12:39|10992|incoming connection (127.0.0.1/57185) is established and assigned a temporary id (~8). 
+2018-05-09 17:12:40|10992|incoming connection (127.0.0.1/57186) is established and assigned a temporary id (~9). 
+2018-05-09 17:12:40|10992|incoming connection (127.0.0.1/57187) is established and assigned a temporary id (~10). 
+2018-05-09 17:12:40|10992|incoming connection (127.0.0.1/57188) is established and assigned a temporary id (~11). 
+2018-05-09 17:12:40|10992|incoming connection (127.0.0.1/57189) is established and assigned a temporary id (~12). 
+echo:"SELECT sn, classId, startTime, lessonUrl, teacher, lessonTitle, lessonNo, goals, startTime, finishTime, summary, state, lessonCover FROM class where state = '1' and classId = '100397814'"
+echo:{header="220 163.com Anti-spam GT for Coremail System (163com[20141201])\r\n250-mail\r\n250-PIPELINING\r\n250-AUTH LOGIN PLAIN\r\n250-AUTH=LOGIN PLAIN\r\n250-coremail 1Uxr2xKj7kG0xkI17xGrU7I0s8FY2U3Uj8Cz28x1UUUUU7Ic2I0Y2UrKQNiPUCa0xDrUUUUj\r\n250-STARTTLS\r\n250 8BITMIME\r\n334 dXNlcm5hbWU6\r\n334 UGFzc3dvcmQ6\r\n235 Authentication successful\r\n250 Mail OK\r\n250 Mail OK\r\n354 End data with <CR><LF>.<CR><LF>\r\n250 Mail OK queued as smtp11,D8CowAB3DgePu_JaFK7_Ag--.58113S2 1525857167\r\n",rcode=250,code=0,}
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-09 17:12:54|10992|connection closed (127.0.0.1/57185) with id (~8). 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-09 17:12:54|10992|connection closed (127.0.0.1/57186) with id (~9). 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-09 17:12:54|10992|connection closed (127.0.0.1/57187) with id (~10). 
+2018-05-09 17:12:54|10992|connection closed (127.0.0.1/57188) with id (~11). 
+2018-05-09 17:12:54|10992|connection closed (127.0.0.1/57189) with id (~12). 
+2018-05-09 17:14:38|10992|incoming connection (127.0.0.1/57391) is established and assigned a temporary id (~13). 
+2018-05-09 17:14:38|10992|incoming connection (127.0.0.1/57392) is established and assigned a temporary id (~14). 
+2018-05-09 17:14:38|10992|incoming connection (127.0.0.1/57393) is established and assigned a temporary id (~15). 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-09 17:15:02|10992|connection closed (127.0.0.1/57391) with id (~13). 
+2018-05-09 17:15:02|10992|connection closed (127.0.0.1/57392) with id (~14). 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-09 17:15:02|10992|connection closed (127.0.0.1/57393) with id (~15). 
+2018-05-09 17:15:03|10992|incoming connection (127.0.0.1/57431) is established and assigned a temporary id (~16). 
+2018-05-09 17:15:03|10992|incoming connection (127.0.0.1/57432) is established and assigned a temporary id (~17). 
+2018-05-09 17:15:03|10992|incoming connection (127.0.0.1/57433) is established and assigned a temporary id (~18). 
+2018-05-09 17:15:03|10992|incoming connection (127.0.0.1/57434) is established and assigned a temporary id (~19). 
+2018-05-09 17:15:03|10992|incoming connection (127.0.0.1/57435) is established and assigned a temporary id (~20). 
+echo:"SELECT sn, classId, startTime, lessonUrl, teacher, lessonTitle, lessonNo, goals, startTime, finishTime, summary, state, lessonCover FROM class where state = '1' and classId = '100397814'"
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-09 17:15:13|10992|connection closed (127.0.0.1/57431) with id (~16). 
+2018-05-09 17:15:13|10992|connection closed (127.0.0.1/57432) with id (~17). 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-09 17:15:13|10992|connection closed (127.0.0.1/57433) with id (~18). 
+2018-05-09 17:15:13|10992|connection closed (127.0.0.1/57434) with id (~19). 
+2018-05-09 17:15:13|10992|connection closed (127.0.0.1/57435) with id (~20). 
+echo:{header="250 Mail OK\r\n250 Mail OK\r\n354 End data with <CR><LF>.<CR><LF>\r\n250 Mail OK queued as smtp11,D8CowAB3DgePu_JaFK7_Ag--.58113S3 1525857312\r\n",rcode=250,code=0,}
+2018-05-09 17:17:14|10992|connection time out (127.0.0.1/57178) with id (~7). 
+2018-05-09 17:17:14|10992|connection closed (127.0.0.1/57178) with id (~7). 
+2018-05-09 17:18:08|10992|incoming connection (127.0.0.1/57702) is established and assigned a temporary id (~21). 
+2018-05-09 17:18:09|10992|incoming connection (127.0.0.1/57707) is established and assigned a temporary id (~22). 
+2018-05-09 17:18:09|10992|incoming connection (127.0.0.1/57708) is established and assigned a temporary id (~23). 
+2018-05-09 17:18:09|10992|incoming connection (127.0.0.1/57709) is established and assigned a temporary id (~24). 
+2018-05-09 17:18:09|10992|incoming connection (127.0.0.1/57710) is established and assigned a temporary id (~25). 
+2018-05-09 17:18:09|10992|incoming connection (127.0.0.1/57711) is established and assigned a temporary id (~26). 
+echo:"SELECT sn, classId, startTime, lessonUrl, teacher, lessonTitle, lessonNo, goals, startTime, finishTime, summary, state, lessonCover FROM class where state = '1' and classId = '100397814'"
+2018-05-09 17:20:10|10992|connection time out (127.0.0.1/57709) with id (~24). 
+2018-05-09 17:20:10|10992|connection time out (127.0.0.1/57702) with id (~21). 
+2018-05-09 17:20:10|10992|connection time out (127.0.0.1/57708) with id (~23). 
+2018-05-09 17:20:10|10992|connection time out (127.0.0.1/57710) with id (~25). 
+2018-05-09 17:20:10|10992|connection time out (127.0.0.1/57711) with id (~26). 
+2018-05-09 17:20:10|10992|connection time out (127.0.0.1/57707) with id (~22). 
+2018-05-09 17:20:10|10992|connection closed (127.0.0.1/57709) with id (~24). 
+2018-05-09 17:20:10|10992|connection closed (127.0.0.1/57702) with id (~21). 
+2018-05-09 17:20:10|10992|connection closed (127.0.0.1/57708) with id (~23). 
+2018-05-09 17:20:10|10992|connection closed (127.0.0.1/57710) with id (~25). 
+2018-05-09 17:20:10|10992|connection closed (127.0.0.1/57711) with id (~26). 
+2018-05-09 17:20:10|10992|connection closed (127.0.0.1/57707) with id (~22). 
+>>>>>>> 3b830885ff7564eb930b9d07c10796f63a5cff67

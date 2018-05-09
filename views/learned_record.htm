@@ -2,7 +2,9 @@
 
 {{+ link}}
 <link href="/css/record.css" rel="stylesheet" />
-<script src="/jslib/Chart.min.js"></script>
+<link rel="stylesheet" href="/csslib/c3.min.css" />
+<script type="text/javascript" src="/jslib/d3.min.js"></script>
+<script type="text/javascript" src="/jslib/c3.min.js"></script>
 {{/link}}
 
 {{+ content}}
@@ -19,7 +21,7 @@
         </div>
 
         <div class="item">
-            <canvas id="learnedChart" height="40vh" width="80vw"></canvas>
+            <div id="learnedChart" height="40vh" width="80vw"></div>
         </div>
 
         <div class="item">
@@ -71,45 +73,6 @@
                 <a href="javascript:;" class="icon-more el-icon-d-arrow-right"></a>
             </div>
         </div>
-    </div>   
-
-
-    <script>
-        var ctx = document.getElementById("learnedChart").getContext('2d');
-        var myChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: [],
-                datasets: [{
-                    label: 'Horizontal Axis: Starting Time, Vertival Axis: Accuracy Rate(%)',
-                    data: [],
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(255, 206, 86, 0.2)',
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(255, 159, 64, 0.2)'
-                    ],
-                    borderColor: [
-                        'rgba(255,99,132,1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(255, 159, 64, 1)'
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                    yAxes: [{
-                        ticks: {
-                            beginAtZero:true
-                        }
-                    }]
-                }
-            }
-        });
-    </script>
+    </div>
     <script src="/js/learned_record.js"></script>
 {{/content}}
