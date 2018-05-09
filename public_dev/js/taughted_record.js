@@ -54,6 +54,7 @@ var studentChart = c3.generate({
 
 var classId = $('#classId').val();
 $(function(){
+    $('#load').hide();
     getLessonTaughtedRecord();
     var nameSortFlag = false,
         noSortFlag = false,
@@ -172,22 +173,37 @@ $(function(){
         if(email) {  
             $.post('/api/record/sendEmail', {
                 email: email,
-                content: $('.record-container').html() + style
+                content: '<div class="recordWrapper taughted-record">' + $('.record-container').html() + '</div>' + style
             }, function(response) {
                 console.log(response);
             })
         } 
     });
+    $('#btnPrint').on('click', function() {
+        if(lessonUrl) {
+            $('.recordWrapper').append('<iframe id="keepworkContainer" frameborder="0" width="100%" src="' + keepworkHost + lessonUrl + '?device=print"></iframe>');
+        }
+        // prop a dialog
+        $('#load').fadeIn();
+        setTimeout(function(){  
+            window.print();
+            // dimiss a dialog
+            $("iframe").remove("#keepworkContainer");
+            $('#load').fadeOut();
+        }, 5000);
+    });
 });
 
 var tblRecord = $('.record-tbl');
 var summary = [];
+var lessonUrl;
 var getLessonTaughtedRecord = function() {
     $.get("/api/class/detail", {
         classId: classId
     }, function (response) {
         var r = response.data;
         if (response.err == 0) {
+            lessonUrl = r.lessonUrl;
             $('.lesson-no').text(r.lessonNo);
             $('.lesson-title').text(r.lessonTitle);
             $('.lesson-time').text( fmtDate(r.startTime) );
@@ -262,7 +278,7 @@ var appendRecord = function(item) {
     '    <td>' + item.wrongCount + '</td>'+
     '    <td>' + item.emptyCount + '</td>'+
     '    <td>'+
-    '        <a target="_blank" href="/taughtedRecord/details/' + item.recordSn + '/' + item.studentNo + '" class="el-button el-button--primary el-button--mini">View Details</a>'+
+    '        <a class="noprint" target="_blank" href="/taughtedRecord/details/' + item.recordSn + '/' + item.studentNo + '" class="el-button el-button--primary el-button--mini">View Details</a>'+
     '    </td>'+
     '</tr>');
 }

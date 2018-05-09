@@ -5,16 +5,21 @@
 <link rel="stylesheet" href="/csslib/c3.min.css" />
 <script type="text/javascript" src="/jslib/d3.min.js"></script>
 <script type="text/javascript" src="/jslib/c3.min.js"></script>
+<style type="text/css" media=print>
+    .noprint{
+        display: none;
+    }
+</style> 
 {{/link}}
 
 {{+ content}}
     <input hidden value="{{classId}}" id="classId"/>
+    <!--startprint-->
     <div class="recordWrapper taughted-record">
         <div class="record-operate">
-            <a href="#" class="el-button el-button--primary el-button--small">Print</a>
-            <a href="#" id="sendEmail" class="el-button el-button--primary el-button--small">Send to Mailbox</a>
+            <a href="#" id="btnPrint" class="el-button el-button--primary el-button--small noprint">Print</a>
+            <a href="#" id="sendEmail" class="el-button el-button--primary el-button--small noprint">Send to Mailbox</a>
         </div>
-
         <div class="record-container">
             <div class="item">
                 <span>Lesson <span class="lesson-no">-</span>：</span>
@@ -35,10 +40,10 @@
                 <span>Accuracy Analysis:</span>
                 <div class="chartLayout">
                     <div>
-                        <div id="taughtedChart" height="40vh" width="80vw"></div>
+                        <div id="taughtedChart"></div>
                     </div>
                     <div>
-                        <div id="studentChart" height="40vh" width="80vw"></div>
+                        <div id="studentChart"></div>
                     </div>
                 </div>
             </div>
@@ -125,7 +130,8 @@
                 </table>
             </div>
         </div>
-    </div>  
+    </div> 
+    <!--endprint-->
     
     <script src="/js/taughted_record.js"></script>
 {{/content}}

@@ -1,12 +1,25 @@
-{{< layout}}
-
-{{+ link}}
+{{< layout}} {{+ link}} 
 <link href="/css/record.css" rel="stylesheet" />
-{{/link}}
-
-{{+ content}}
-<input hidden value="{{recordSn}}" id="recordSn"/>
-<input hidden value="{{studentNo}}" id="studentNo"/>
+<style type="text/css">
+    #load {
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        filter: alpha(opacity=60);
+        background-color: #777;
+        z-index: 1002;
+        left: 0px;
+        display: none;
+        opacity: 0.5;
+        -moz-opacity: 0.5;
+        padding-top: 100px;
+        color: #000000
+    }
+</style>
+{{/link}} {{+ content}}
+<input hidden value="{{recordSn}}" id="recordSn" />
+<input hidden value="{{studentNo}}" id="studentNo" />
 <div class="recordWrapper taughted-record">
     <div class="item">
         <span>Lesson <span class="lesson-no">-</span>：</span>
@@ -19,17 +32,17 @@
 
     <div class="student-info">
         <div class="item">
-            <span>Name: </span>   
+            <span>Name: </span>
             <span class="student-name">-</span>
-        </div>    
+        </div>
         <div class="item">
-            <span>Student No.: </span>   
+            <span>Student No.: </span>
             <span class="student-no">-</span>
-        </div>   
+        </div>
         <div class="item">
-            <span>Accuracy Rate: </span>   
+            <span>Accuracy Rate: </span>
             <span class="accuracy-rate">-</span>
-        </div>   
+        </div>
     </div>
 
     <div class="student-taughted-details">
@@ -49,8 +62,9 @@
             </tbody>
         </table>
     </div>
-
+    <div id="load" align="center"><img src="images/loading.gif" width="28" height="28" align="absmiddle" />加载中...</div>
 </div>
+
 <script src="/js/taught_details.js"></script>
 
 {{/content}}
