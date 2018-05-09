@@ -24,11 +24,11 @@
             <!-- 有记录时 -->
             {{#data.haveTeachedFlag}}
             <p>You have attended <em>{{data.teached}} classes</em>. The duration of each class is <em>45 minutes</em>. The total duration is {{data.teachHours}} hours and
-                <em>{{data.teachMin}} minutes</em>
+                <em>{{data.teachMin}} minutes</em>.
             </p>
             {{/data.haveTeachedFlag}}
             {{#data.haveLearnedFlag}}
-            <p>You have learned <em>{{data.learned}} lessons</em>. The total learning time is <em>{{data.learnHours}} hours and {{data.learnMin}} minutes</em></p>
+            <p>You have learned <em>{{data.learned}} lessons</em>. The total learning time is <em>{{data.learnHours}} hours and {{data.learnMin}} minutes</em>.</p>
             {{/data.haveLearnedFlag}}
         {{/data.haveRecordFlag}}
     </div>    
