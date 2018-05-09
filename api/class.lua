@@ -1,8 +1,12 @@
+NPL.load("(gl)script/ide/commonlib.lua")
+NPL.load("(gl)script/ide/System/os/GetUrl.lua")
 local express = NPL.load('express')
 local classroom = NPL.load('../object/classroom')
 local classBll = NPL.load('../bll/class')
 local memberBll = NPL.load('../bll/member')
 local router = express.Router:new()
+local System = commonlib.gettable("System")
+local sitecfg = NPL.load('../confi/siteConfig')
 
 local ROOM_ID_MIN = 100
 local ROOM_ID_MAX = 999
@@ -327,6 +331,23 @@ router:get('/detail', function(req, res, next)
         rs.msg = 'get classinfo fail.'
     end
     res:send(rs)
+end)
+
+-- 获取 lesson list
+router:get('/lesson', function(req, res, next)
+    local rs = {}
+    System.os.GetUrl({
+        url = sitecfg.esApi,
+        headers={["content-type"]="application/json"},
+        postfields = '{"query": {"match_phrase_prefix": {"content": "```@Lesson"}}}' -- jsonString
+    }, function(err, msg, data)
+        if(data ~= nil) then
+            res:send(data);
+        else
+            rs = { type = 'error', err = 400, result ='forbid Fail'};
+            res:send(rs); 
+        end
+    end);
 end)
 
 -- 获取整体课堂详情（用于调试）

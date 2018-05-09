@@ -1,4 +1,4 @@
-2018-05-08 19:48:13|2764|NPL Runtime started
+2018-05-09 14:45:09|8888|NPL Runtime started
 NPL bin dir: D:\cover\cover\ParaCraftSDK-master\NPLRuntime\win\bin\
 WorkingDir: D:\GitClone\lesson
 WritablePath: D:/GitClone/lesson/
@@ -7,7 +7,7 @@ OS version:Microsoft  (build 9200), 64-bit
 Number of processors:4
 Processor type:586
 TotalPhysicalMemory:8312676
-FreePhysicalMemory:2332328
+FreePhysicalMemory:1016172
 
 ParaEngine Root Dir is D:/GitClone/lesson/
 ./packages dir: D:\cover\cover\ParaCraftSDK-master\NPLRuntime\win\packages\
@@ -29,23 +29,23 @@ font Tahoma;12;norm is created
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
 ffi loaded shared lib: C
-2018-05-08 19:48:13|main|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-09 14:45:09|main|info|DomainSpecificLanguage|NPL language extension loaded
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ffi loaded shared lib: C
-ffi loaded shared lib: C
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ffi loaded shared lib: C
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ffi loaded shared lib: C
-ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
-Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ffi loaded shared lib: C
 NPL server 0.1 is listening on 0.0.0.0:3000
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
+ffi loaded shared lib: C
+ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
+Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
+ffi loaded shared lib: C
 TCPKeepAlive: false
 AppKeepAlive: false
 IdleTimeout: true
@@ -64,18 +64,87 @@ Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loo
 ffi loaded shared lib: C
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
-ffi loaded shared lib: C
 ParaEngine LuaJIT 32bits version:LuaJIT 2.0.3
 Jit status:true, CMOV, SSE2, SSE3, SSE4.1, fold, cse, dce, fwd, dse, narrow, loop, abc, sink, fuse 
 ffi loaded shared lib: C
+ffi loaded shared lib: C
 NPL max pending incoming connections allowed is 1000
-2018-05-08 19:48:13|worker_9|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-08 19:48:13|worker_10|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-08 19:48:13|worker_3|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-08 19:48:13|worker_6|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-08 19:48:13|worker_5|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-08 19:48:13|worker_1|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-08 19:48:13|worker_2|info|DomainSpecificLanguage|NPL language extension loaded2018-05-08 19:48:13|worker_4|info|DomainSpecificLanguage|
-NPL language extension loaded
-2018-05-08 19:48:13|worker_8|info|DomainSpecificLanguage|NPL language extension loaded
-2018-05-08 19:48:13|worker_7|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-09 14:45:09|worker_5|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-09 14:45:09|worker_2|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-09 14:45:09|worker_6|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-09 14:45:09|worker_10|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-09 14:45:09|worker_4|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-09 14:45:09|worker_1|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-09 14:45:09|worker_3|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-09 14:45:09|worker_8|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-09 14:45:09|worker_9|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-09 14:45:09|worker_7|info|DomainSpecificLanguage|NPL language extension loaded
+2018-05-09 14:45:12|13448|incoming connection (127.0.0.1/58380) is established and assigned a temporary id (~1). 
+2018-05-09 14:47:13|13448|connection time out (127.0.0.1/58380) with id (~1). 
+2018-05-09 14:47:13|13448|connection closed (127.0.0.1/58380) with id (~1). 
+2018-05-09 14:59:38|13448|incoming connection (127.0.0.1/60055) is established and assigned a temporary id (~2). 
+2018-05-09 14:59:38|13448|incoming connection (127.0.0.1/60056) is established and assigned a temporary id (~3). 
+2018-05-09 14:59:38|13448|incoming connection (127.0.0.1/60057) is established and assigned a temporary id (~4). 
+2018-05-09 14:59:38|13448|incoming connection (127.0.0.1/60058) is established and assigned a temporary id (~5). 
+2018-05-09 14:59:38|13448|incoming connection (127.0.0.1/60059) is established and assigned a temporary id (~6). 
+2018-05-09 14:59:38|13448|incoming connection (127.0.0.1/60060) is established and assigned a temporary id (~7). 
+2018-05-09 15:01:50|13448|connection time out (127.0.0.1/60056) with id (~3). 
+2018-05-09 15:01:50|13448|connection time out (127.0.0.1/60059) with id (~6). 
+2018-05-09 15:01:50|13448|connection closed (127.0.0.1/60056) with id (~3). 
+2018-05-09 15:01:50|13448|connection closed (127.0.0.1/60059) with id (~6). 
+2018-05-09 15:03:32|13448|connection time out (127.0.0.1/60055) with id (~2). 
+2018-05-09 15:03:32|13448|connection time out (127.0.0.1/60058) with id (~5). 
+2018-05-09 15:03:32|13448|connection time out (127.0.0.1/60057) with id (~4). 
+2018-05-09 15:03:32|13448|connection time out (127.0.0.1/60060) with id (~7). 
+2018-05-09 15:03:32|13448|connection closed (127.0.0.1/60055) with id (~2). 
+2018-05-09 15:03:32|13448|connection closed (127.0.0.1/60058) with id (~5). 
+2018-05-09 15:03:32|13448|connection closed (127.0.0.1/60057) with id (~4). 
+2018-05-09 15:03:32|13448|connection closed (127.0.0.1/60060) with id (~7). 
+2018-05-09 15:23:35|13448|incoming connection (127.0.0.1/62346) is established and assigned a temporary id (~8). 
+2018-05-09 15:23:35|13448|incoming connection (127.0.0.1/62347) is established and assigned a temporary id (~9). 
+2018-05-09 15:23:35|13448|incoming connection (127.0.0.1/62348) is established and assigned a temporary id (~10). 
+2018-05-09 15:23:35|13448|incoming connection (127.0.0.1/62349) is established and assigned a temporary id (~11). 
+2018-05-09 15:23:35|13448|incoming connection (127.0.0.1/62350) is established and assigned a temporary id (~12). 
+2018-05-09 15:24:33|13448|incoming connection (127.0.0.1/62465) is established and assigned a temporary id (~13). 
+t ->	worker_1
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
+t ->	worker_1
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
+t ->	worker_1
+echo:"SELECT sn, username, vipEndTime,TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member where username = 'keep'"
+2018-05-09 15:24:34|13448|incoming connection (127.0.0.1/62471) is established and assigned a temporary id (~14). 
+2018-05-09 15:24:34|13448|incoming connection (127.0.0.1/62474) is established and assigned a temporary id (~15). 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2018-05-09 15:25:01|13448|connection closed (127.0.0.1/62474) with id (~15). 
+2018-05-09 15:25:52|13448|connection time out (127.0.0.1/62348) with id (~10). 
+2018-05-09 15:25:52|13448|connection closed (127.0.0.1/62348) with id (~10). 
+2018-05-09 15:26:34|13448|connection time out (127.0.0.1/62465) with id (~13). 
+2018-05-09 15:26:34|13448|connection time out (127.0.0.1/62471) with id (~14). 
+2018-05-09 15:26:34|13448|connection closed (127.0.0.1/62465) with id (~13). 
+2018-05-09 15:26:34|13448|connection closed (127.0.0.1/62471) with id (~14). 
+2018-05-09 15:29:02|13448|connection time out (127.0.0.1/62350) with id (~12). 
+2018-05-09 15:29:02|13448|connection time out (127.0.0.1/62347) with id (~9). 
+2018-05-09 15:29:02|13448|connection time out (127.0.0.1/62346) with id (~8). 
+2018-05-09 15:29:02|13448|connection time out (127.0.0.1/62349) with id (~11). 
+2018-05-09 15:29:02|13448|connection closed (127.0.0.1/62350) with id (~12). 
+2018-05-09 15:29:02|13448|connection closed (127.0.0.1/62347) with id (~9). 
+2018-05-09 15:29:02|13448|connection closed (127.0.0.1/62346) with id (~8). 
+2018-05-09 15:29:02|13448|connection closed (127.0.0.1/62349) with id (~11). 
+2018-05-09 15:30:46|13448|incoming connection (127.0.0.1/63008) is established and assigned a temporary id (~16). 
+2018-05-09 15:30:46|13448|incoming connection (127.0.0.1/63009) is established and assigned a temporary id (~17). 
+2018-05-09 15:30:46|13448|incoming connection (127.0.0.1/63010) is established and assigned a temporary id (~18). 
+2018-05-09 15:30:46|13448|incoming connection (127.0.0.1/63011) is established and assigned a temporary id (~19). 
+2018-05-09 15:30:46|13448|incoming connection (127.0.0.1/63012) is established and assigned a temporary id (~20). 
+2018-05-09 15:30:46|13448|incoming connection (127.0.0.1/63013) is established and assigned a temporary id (~21). 
+2018-05-09 15:32:48|13448|connection time out (127.0.0.1/63010) with id (~18). 
+2018-05-09 15:32:48|13448|connection time out (127.0.0.1/63011) with id (~19). 
+2018-05-09 15:32:48|13448|connection time out (127.0.0.1/63009) with id (~17). 
+2018-05-09 15:32:48|13448|connection time out (127.0.0.1/63013) with id (~21). 
+2018-05-09 15:32:48|13448|connection time out (127.0.0.1/63012) with id (~20). 
+2018-05-09 15:32:48|13448|connection closed (127.0.0.1/63010) with id (~18). 
+2018-05-09 15:32:48|13448|connection closed (127.0.0.1/63011) with id (~19). 
+2018-05-09 15:32:48|13448|connection closed (127.0.0.1/63009) with id (~17). 
+2018-05-09 15:32:48|13448|connection closed (127.0.0.1/63013) with id (~21). 
+2018-05-09 15:32:48|13448|connection closed (127.0.0.1/63012) with id (~20). 
+2018-05-09 15:34:26|13448|connection time out (127.0.0.1/63008) with id (~16). 
+2018-05-09 15:34:26|13448|connection closed (127.0.0.1/63008) with id (~16). 
