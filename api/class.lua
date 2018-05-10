@@ -23,7 +23,7 @@ router:post('/begin', function(req, res, next)
     local username = p.username
     local lessonPerformance = p.lessonPerformance
     local quizzNum = p.quizzNum
-    local rq = rq(p, {'lessonNo', 'lessonUrl', 'username', 'lessonTitle', 'lessonCover', 'quizzNum' }, res)
+    local rq = rq(p, {'lessonNo', 'lessonUrl', 'username', 'lessonTitle', 'lessonCover' }, res)
 	if(not rq) then return end
     local where = { username = username }
     local member = memberBll.get(where)
@@ -32,16 +32,27 @@ router:post('/begin', function(req, res, next)
             username = username
         }
         memberBll.save(member)
-    else
-        if(member.vipDay == nil or member.vipDay < 0) then
-            -- 没有开课权限
+    end
+    if(member.vipDay == nil or member.vipDay < 0) then
+        -- 没有开课权限
+        res:send({
+            err = 102,
+            msg = 'not allow.'
+        })
+        return
+    end
+    -- 检查该导师是否存在未 finish 的课程
+    local _user = classroom.USERs[username]
+    if( _user ) then
+        local _room = classroom.classROOMs[_user.classId]
+        if(_room and _room.teacher == username) then
             res:send({
-                err = 102,
-                msg = 'not allow.'
+                err = 103,
+                msg = 'have opening class.',
+                data = _room
             })
             return
         end
-        -- TODO: 检查该导师是否存在未 finish 的课程
     end
     -- classId => 6 位自增长 + 3 为随机数
     local seq = classBll.nextSeq()
@@ -87,8 +98,6 @@ router:post('/resurme', function(req, res, next)
     local rq = rq(p, {'username', 'lessonUrl'}, res)
     if(not rq) then return end
     for i,v in pairs(classroom.classROOMs) do
-        echo('#DEBUG')
-        echo(v)
         if(v.teacher == username and v.lessonUrl == lessonUrl) then
             res:send({
                 err = 0,
@@ -220,7 +229,6 @@ end)
 
 -- 获取学员答题情况
 router:post('/performance', function(req, res, next)
-    print('t ->', __rts__:GetName())
     local rs = {}
     local p = req.body
     local username = p.username -- TODO: 更换为当前登录用户
@@ -229,7 +237,10 @@ router:post('/performance', function(req, res, next)
     local user = classroom.USERs[username]
     if( user ) then
         local room = classroom.classROOMs[user.classId]
-        local performance = room:getStudentPerformance( user )
+        local performance = nil
+        if(room) then
+            performance = room:getStudentPerformance( user )
+        end
         if(performance == nil) then
             rs = {
                 err = 400,
@@ -253,7 +264,6 @@ end)
 
 -- 结束课堂
 router:post('/finish', function(req, res, next)
-    print('t ->', __rts__:GetName())
     local rs = {}
     local p = req.body
     local username = p.username -- TODO: 更换为当前登录用户

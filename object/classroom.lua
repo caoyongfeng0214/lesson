@@ -73,9 +73,11 @@ function classroom:enter( user )
             user.rightCount = 0
             user.wrongCount = 0
             user.emptyCount = self.quizzNum
-            user.answerSheet = {}
-            for i=1, self.quizzNum do 
-                table.insert( user.answerSheet, {} )
+            if(self.quizzNum) then
+                user.answerSheet = {}
+                for i=1, self.quizzNum do 
+                    table.insert( user.answerSheet, {} )
+                end
             end
             local obj = {room = self, user = user, action = 'enter'}
             classroom._set(obj)
