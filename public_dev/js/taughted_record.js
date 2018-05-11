@@ -297,4 +297,6 @@ window.onload = function() {
     container.style.height = height + 'px';
     container.contentWindow.document.getElementsByClassName("header")[0].style.display = 'none'; 
     container.contentWindow.document.getElementsByClassName("main")[0].style.padding = "0";
+    container.contentWindow.document.getElementsByClassName("recordWrapper")[0].style.width = '1080px';
+    container.contentWindow.document.getElementsByClassName("recordWrapper")[0].style.padding = "40px 2%";
 }
