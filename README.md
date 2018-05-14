@@ -53,17 +53,8 @@ https://github.com/caoyongfeng0214/lesson
 
 ```
 {
-	"data": {
-		"lessonUrl": "/keep/12211519639786370/ch/ch8",
-		"u": {
-			"studentNo": "0611011111",
-			"totalScore": 0,
-			"recordSn": 1318,
-			"state": 1,
-			"username": "isyang",
-			"rightCount": 0,
-			"wrongCount": 0
-		}
+  "data": {
+		"lessonUrl": "/keep/12211519639786370/ch/ch8?device=pad&classId=100547814&username=isyang&studentNo=0611011111"
 	},
 	"err": 0
 }

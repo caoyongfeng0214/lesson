@@ -6,6 +6,7 @@ DROP TABLE IF EXISTS `member`;
 CREATE TABLE `member` (
   `sn` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '序号',
   `username` varchar(128) COLLATE utf8_unicode_ci NOT NULL COMMENT '用户名',
+  `portrait` varchar(512) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '用户头像',
   `joinTime` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '加入时间',
   `vipEndTime` datetime DEFAULT NULL COMMENT '权限结束时间',
   PRIMARY KEY (`sn`),

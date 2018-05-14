@@ -5,7 +5,7 @@ local member = {}
 local tbl = 'member'
 
 member.get = function( where, group, order, cn )
-    local sql = 'SELECT sn, username, vipEndTime, UNIX_TIMESTAMP(vipEndTime) vipEndUnixTime, TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member'
+    local sql = 'SELECT sn, username, portrait, vipEndTime, UNIX_TIMESTAMP(vipEndTime) vipEndUnixTime, TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member'
     return db.detail(sql, where, group, order, cn)
 end
 
@@ -17,16 +17,21 @@ member.update = function( member, cn )
     return db.updateBySn(tbl, member, cn)
 end
 
-member.findOrInsertByName = function( uesename )
-    local sql = 'SELECT sn, username, vipEndTime, UNIX_TIMESTAMP(vipEndTime) vipEndUnixTime, TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member'
+member.findOrInsertByName = function( username, portrait )
+    local sql = 'SELECT sn, username, portrait, vipEndTime, UNIX_TIMESTAMP(vipEndTime) vipEndUnixTime, TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member'
     local memberVo = db.detail(sql, { username = username } )
     if( memberVo == nil ) then
         -- insert
+        echo('#debug')
+        echo(username)
+        echo(portrait)
         local num, lastSn = db.insert(tbl, {
-            username = username
+            username = username,
+            portrait = portrait
         })
         memberVo = {
             username = username,
+            portrait = portrait,
             sn = lastSn
         }
     end

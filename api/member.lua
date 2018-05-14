@@ -11,18 +11,11 @@ router:get('/auth', function(req, res, next)
     print('t ->', __rts__:GetName())
     local p = req.query
     local username = p.username
+    local portrait = p.portrait
     local rq = rq(p, {'username'}, res)
     if(not rq) then return end
-    local where = {}
-    where.username = username
-    local member = memberBll.get(where)
+    local member = memberBll.findOrInsertByName(username, portrait)
     local rs = {}
-    if(member == nil) then
-        member = {
-            username = username
-        }
-        memberBll.save(member)
-    end
     rs = {
         err = 0,
         data = member
