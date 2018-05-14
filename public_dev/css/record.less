@@ -263,14 +263,12 @@
         background:rgba(64,158,254, .1);
     }
 
-    .user-img {
+    .user-img img {
         width: 40px;
         height: 40px;
         margin: 0 auto;
         .borderRadius(50%);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center center;
+        vertical-align: middle;
     }
 }
 
@@ -302,6 +300,7 @@
 
 .taughted-record {
     padding: 40px 5%;
+
     .record-operate {
         text-align: right;
         margin-right: 3%;
@@ -401,6 +400,25 @@
     }
 }
 
+.print-head {
+    position: fixed;
+    top:0;
+    z-index:9;
+    width:100%;
+    padding: 0 15px;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #D2D2D2;
+    .displayFlex;
+    .flexJustifyContent(space-between);
+    .flexAlignItems(center);
+
+    .logo {
+        height: 30px;
+        vertical-align: middle;
+    }
+}
+
 @media (max-width: 992px) {
     .taughted-record{
         padding: 20px;
@@ -446,7 +464,7 @@
 }
 
 @media print {
-    .noprint {
+    .noprint, .sort-icon {
         display: none;
     }
 
@@ -491,5 +509,8 @@
        
     }
     
+    .table-wrap thead td:nth-last-child(2) {
+        border-right: none;
+    }
 
 }
