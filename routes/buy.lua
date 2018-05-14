@@ -34,7 +34,7 @@ router:get('/order/:type/:username', function(req, res, next)
     end
 	local num, lastId = orderBll.save( orderVo )
     if(lastId) then
-        res:redirect('http://release.keepwork.com/wiki/pay?username='..username..'&app_name=lessons&app_goods_id=1&price='..orderVo.amount..'&additional={%22order_no%22:'..lastId..'}&redirect=http://'..req.Host..'/buy/result/'..lastId);
+        res:redirect('http://release.keepwork.com/wiki/pay?username='..username..'&app_name=lessons&app_goods_id=1&price='..orderVo.amount..'&additional={%22order_no%22:'..lastId..'}&redirect=http://lesson.keepwork.com/buy/result/'..lastId);
     else
         -- 下订单失败
     end

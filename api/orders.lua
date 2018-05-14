@@ -79,11 +79,11 @@ router:post('/keepworkPayHandler', function(req, res,next)
 			echo(v);
 			-- 10.28.18.2 release 环境
 			-- 10.28.18.6 online 环境
-			if(v ~= '10.28.18.6') then
-				data['msg'] = 'Not allow IP!';
-				data['err'] = 103;
-				res:send(data);
-				echo(data);
+			if(v ~= '10.28.18.2') then
+				res:send({
+                    err = 103,
+                    msg = 'Not allow IP!'
+                });
 				return;
 			end
 		end
@@ -109,7 +109,7 @@ router:post('/keepworkPayHandler', function(req, res,next)
             orderVo.lessAmount = 0
         end
         local orderPrice = 0 + (orderVo.amount - orderVo.lessAmount)
-        if(orderVo.state == 0 and (orderPrice - orderInfo.price) == 0) then
+        if(orderVo.state == 0 and (orderPrice * 100 - orderInfo.price) == 0) then
             orderVo.reallyPayAmount = orderVo.amount - orderVo.lessAmount
             local succ = orderBll.finish(orderVo)
         else
