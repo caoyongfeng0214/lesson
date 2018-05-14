@@ -6,12 +6,9 @@
     background-color: #fff;
 }
 
-.my-record {
-    padding: 45px 10px 45px 8%;
-    .user-info {
-        .displayFlex;
-        .flexAlignItems;
-    }
+.my-record .user-info, .taughted-record .user-info {
+    .displayFlex;
+    .flexAlignItems;
 
     .portrait {
         .borderRadius;
@@ -26,6 +23,12 @@
         color: #333;
         font-size:20px;
     }
+
+}
+
+
+.my-record {
+    padding: 45px 10px 45px 8%;
 
     .info {
         margin: 30px 0 90px;
@@ -187,6 +190,7 @@
     width: 100%;
     padding: 80px 70px 60px;
     box-shadow: 5px 4px 20px rgba(64,158,254,0.44);
+    word-wrap: break-word;
     position: relative;
 
     &::after, &::before {
@@ -303,10 +307,21 @@
         margin-right: 3%;
     }
 
+    .user-info {
+        display: none;
+    }
+
     .record-container {
         margin-top: 20px;
         padding: 30px;
         background:rgba(121,176,255,0.05);
+    }
+
+    .lecture-date {
+        display: none;
+        font-size: 16px;
+        color:#111;
+        margin:40px 0 10px;
     }
 
     .item {
@@ -328,7 +343,7 @@
         }
     }
 
-    .student-info {
+    .student-info{
         .displayFlex;
     }
 
@@ -369,6 +384,20 @@
                 color: @wrong;
             }
         }
+    }
+
+    .print-lesson-describe {
+        display: none;
+        
+        .item {
+            margin-right: 10%;
+        }
+    }
+
+    .totalStudentNum {
+        display: none;
+        margin: 10px 0;
+        font-size: 16px;
     }
 }
 
@@ -414,4 +443,53 @@
             padding: 8px;
         }
     }
+}
+
+@media print {
+    .noprint {
+        display: none;
+    }
+
+    .taughted-record {
+        padding: 0 2%;
+
+        .item .chartLayout {
+            flex-wrap: wrap;
+
+            >div {
+                width: 100%;
+            }
+        }
+
+        .user-info {
+            display: block;
+
+            .portrait {
+                vertical-align: middle;
+            }
+        }
+
+        .record-container {
+            padding: 0;
+        }
+
+        .lecture-date {
+            display: block;
+        }
+
+        .print-lesson-describe {
+            .displayFlex;
+        }   
+        
+        .totalStudentNum { 
+            display: block;
+
+            + span {
+                font-weight: 500;
+            }
+        }
+       
+    }
+    
+
 }
