@@ -32,3 +32,125 @@ https://github.com/caoyongfeng0214/lesson
 7.在`/confi/dbConfi.lua`下配置数据库链接参数
 
 8.执行`gulp init`以及`gulp`即可在本地端口访问项目（默认3000端口）
+
+## 客户端接口说明
+
+### 1.学生 Pad 进入教室
+
+- **URL**
+
+> [POST] /api/class/enter
+
+- **参数**
+
+| 请求参数 | 参数类型 | 参数说明 |
+| :-------- | :--------| :------ |
+| username  | String, 不可为空   | 用户名 |
+| classId   | Number, 不可为空   | 房间ID，由教师给出 |
+| studentNo | Number, 不可为空   | 学号 |
+
+- **返回示例**
+
+```
+{
+	"data": {
+		"lessonUrl": "/keep/12211519639786370/ch/ch8",
+		"u": {
+			"studentNo": "0611011111",
+			"totalScore": 0,
+			"recordSn": 1318,
+			"state": 1,
+			"username": "isyang",
+			"rightCount": 0,
+			"wrongCount": 0
+		}
+	},
+	"err": 0
+}
+```
+
+- **返回说明**
+
+| 返回参数 | 参数类型 | 参数说明 |
+| :-------- | :--------| :------ |
+| err| Number | 请求成功与否 0 成功; 200 房间不存在 |
+| data| Object| lessonUrl 课程的 URL |
+| message| String| 执行结果消息 |
+
+- **其他说明**
+
+当学生客户端输入由教师提供的 ClassID 进入，需要在客户端打开一个网页，该网页的网址为 data.lessonUrl
+
+### 2.学生 Pad 更新自己的状态
+
+- **URL**
+
+> [POST] /api/class/upsertstate
+
+- **参数**
+
+| 请求参数 | 参数类型 | 参数说明 |
+| :-------- | :--------| :------ |
+| username  | String, 不可为空   | 用户名 |
+| state   | Number, 不可为空   | 学习状态 1.learning 2.Leave learning page 3.Offline |
+
+- **返回示例**
+
+```
+{
+  "data": {
+    "classId": "100547814",
+    "username": "isyang"
+  },
+  "err": 0
+}
+```
+
+- **返回说明**
+
+| 返回参数 | 参数类型 | 参数说明 |
+| :-------- | :--------| :------ |
+| err| Number | 请求成功与否 0 成功; 201 课堂已结束; 202 用户不存在|
+| data| Object| 当前用户信息 |
+| message| String| 执行结果消息 |
+
+- **其他说明**
+
+由学生客户端调用该接口来维护学生在课堂上的状态
+
+
+### 3.学生 PC 客户端更新学习状态
+
+- **URL**
+
+> [POST] /api/record/saveOrUpdate
+
+- **参数**
+
+| 请求参数 | 参数类型 | 参数说明 |
+| :-------- | :--------| :------ |
+| sn  | Number, 不可为空   | 自学的编号，该参数在 `PareCarf` 客户端打开的网页链接中获取 |
+| state   | Number, 不可为空   | 自学的学习状态 1.自学中 2.自学结束 |
+
+- **返回示例**
+
+```
+{
+  "data": {
+    "recordSn": "666"
+  },
+  "err": 0
+}
+```
+
+- **返回说明**
+
+| 返回参数 | 参数类型 | 参数说明 |
+| :-------- | :--------| :------ |
+| err| Number | 请求成功与否 0 成功; 101 db 操作错误|
+| data| Object| recordSn 当前学习的编号 |
+| message| String| 执行结果消息 |
+
+- **其他说明**
+
+由学生 `PareCarf` 客户端调用该接口来维护学生在课堂上的状态

@@ -130,11 +130,12 @@ router:post('/enter', function(req, res, next)
     local room = classroom.getClassRoom(classId)
     if( room and room.state == 0) then -- 进行中的课堂
         if(classroom.USERs['username'] ~= nil) then
+            local _u = room:getStudent( username )
             res:send({
                 err = 0,
                 data = {
                     u = room:getStudent(username),
-                    lessonUrl = room.lessonUrl
+                    lessonUrl = room.lessonUrl .. '?device=pad&classId=' .. room.classId .. '&username=' .. _u.username .. '&studentNo=' .. _u.studentNo
                 } 
             })
             return
@@ -146,8 +147,8 @@ router:post('/enter', function(req, res, next)
         rs = {
             err = 0,
             data = {
-                u = room:getStudent( username ),
-                lessonUrl = room.lessonUrl
+                u = _u,
+                lessonUrl = room.lessonUrl .. '?device=pad&classId=' .. room.classId .. '&username=' .. username .. '&studentNo=' .. studentNo
             }
         }
     else
@@ -201,7 +202,7 @@ end)
 -- 学员更新自己的状态
 router:post('/upsertstate', function(req, res, next) 
     local rs = {}
-    local p = req.body
+    local p = req.query
     local username = p.username
     local state = p.state
     local rq = rq(p, {'username', 'state'}, res)
@@ -222,7 +223,10 @@ router:post('/upsertstate', function(req, res, next)
             }
         end
     else
-
+        rs = {
+            err = 202,
+            msg = 'user is defind.'
+        }
     end
     res:send(rs)
 end)
