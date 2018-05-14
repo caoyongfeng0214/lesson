@@ -48,15 +48,16 @@ https://github.com/caoyongfeng0214/lesson
 | username  | String, 不可为空   | 用户名 |
 | classId   | Number, 不可为空   | 房间ID，由教师给出 |
 | studentNo | Number, 不可为空   | 学号 |
+| portrait | String, 可为空   | 用户头像 |
 
 - **返回示例**
 
 ```
 {
   "data": {
-		"lessonUrl": "/keep/12211519639786370/ch/ch8?device=pad&classId=100547814&username=isyang&studentNo=0611011111"
-	},
-	"err": 0
+    "lessonUrl": "/keep/12211519639786370/ch/ch8?device=pad&classId=100547814&username=isyang&studentNo=0611011111"
+  },
+  "err": 0
 }
 ```
 
