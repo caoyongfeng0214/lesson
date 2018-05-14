@@ -12,14 +12,34 @@ var learnedChart = c3.generate({
             Rate: 'bar'
         },
         columns: [],
+        colors: {
+            Rate: '#49A5F8'
+        }
     },
     axis: {
         x: {
-            label: 'Starting Time',
-            type: 'category'
+            label: {
+                text: 'Starting Time',
+                position: 'outer-right'
+            },
+            type: 'category',
+            tick: {
+                rotate: -35,
+                multiline: false
+            },
+            height: 85
         },
         y: {
-            label: 'Accuracy Rate(%)'
+            label: {
+                text: 'Accuracy Rate(%)',
+                position: 'outer-top'
+            },
+            tick: {
+                format: function(d) {
+                    return d <= 100? d : '';
+                }
+            },
+            padding: {top: 100, bottom: 100}
         }
     },
     grid: {
