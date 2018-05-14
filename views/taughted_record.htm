@@ -5,31 +5,49 @@
 <link rel="stylesheet" href="/csslib/c3.min.css" />
 <script type="text/javascript" src="/jslib/d3.min.js"></script>
 <script type="text/javascript" src="/jslib/c3.min.js"></script>
-<style type="text/css" media=print>
-    .noprint {
-        display: none;
-    }
-    
-</style> 
 {{/link}}
 
 {{+ content}}
     <input hidden value="{{classId}}" id="classId"/>
     <!--startprint-->
     <div class="recordWrapper taughted-record">
-        <div class="record-operate">
-            <a href="#" id="btnPrint" class="el-button el-button--primary el-button--small noprint">Print</a>
-            <a href="#" id="sendEmail" class="el-button el-button--primary el-button--small noprint">Send to Mailbox</a>
+        <div class="user-info">
+            <img class="portrait" src="https://avatars3.githubusercontent.com/u/18064049?s=460&amp;v=4" alt="">
+            <strong class="teacher-nickname"></strong>
         </div>
+        
+        <div class="lecture-date"></div>
+
+        <div class="record-operate">
+            <a href="javascript:;" id="btnPrint" class="el-button el-button--primary el-button--small noprint">Print</a>
+            <a href="javascript:;" id="sendEmail" class="el-button el-button--primary el-button--small noprint">Send to Mailbox</a>
+        </div>
+
         <div class="record-container">
             <div class="item">
                 <span>Lesson <span class="lesson-no">-</span>：</span>
                 <div><span class="lesson-title">-</span></div>
             </div>
-            <div class="item">
+            <div class="item noprint">
                 <span>Duration: </span>
-                <div>45 mins &nbsp&nbsp<span class="lesson-time">-</span></div>
+                <div>45 mins &nbsp;&nbsp;<span class="lesson-time">-</span></div>
             </div>
+
+            <div class="print-lesson-describe">
+                <div class="item">
+                    <span>Duration: </span>    
+                    <div>45 mins</div>
+                </div>    
+                <div class="item">
+                    <span>Number of students：</span>
+                    <div class="student-num"></div>
+                </div>
+                <div class="item">
+                    <span>Ages: </span>
+                    <div>Suitable for all</div>
+                </div>
+            </div>    
+
             <div class="item">
                 <span>Lesson Goals: </span>
                 <ol>
@@ -38,6 +56,7 @@
             </div>
 
             <div class="item">
+                <div class="totalStudentNum"><strong>Students' Performance:</strong>&nbsp;&nbsp;&nbsp;(Total: <span class="student-num"></span> students)</div>
                 <span>Accuracy Analysis:</span>
                 <div class="chartLayout">
                     <div class="printChart">
@@ -133,6 +152,33 @@
         </div>
     </div> 
     <!--endprint-->
-    
+
+    <div class="el-message-box__wrapper dialog-fade-enter-active" style="display:none; z-index: 2017;">
+        <div class="el-message-box">
+            <div class="el-message-box__header">
+                <div class="el-message-box__title"><span>提示</span></div>
+                <button type="button" aria-label="Close" class="el-message-box__headerbtn">
+                    <i class="el-message-box__close el-icon-close"></i>
+                </button>
+            </div>
+            <div class="el-message-box__content">
+                <div class="el-message-box__message">
+                    <p>Please enter your email address:</p>
+                </div>
+                <div class="el-message-box__input">
+                    <div class="el-input"><input type="text" placeholder="" id="emailInput" class="el-input__inner"></div>
+                </div>
+            </div>
+            <div class="el-message-box__btns">
+                <button type="button" class="closeMessage el-button el-button--default el-button--small">
+                    <span>Cancel</span>
+                </button>
+                <button type="button" class="sendMessage el-button el-button--default el-button--small el-button--primary ">
+                    <span>Send</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="v-modal" style="display:none; z-index: 2016;"></div>
     <script src="/js/taughted_record.js"></script>
 {{/content}}
