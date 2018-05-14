@@ -22,9 +22,6 @@ member.findOrInsertByName = function( username, portrait )
     local memberVo = db.detail(sql, { username = username } )
     if( memberVo == nil ) then
         -- insert
-        echo('#debug')
-        echo(username)
-        echo(portrait)
         local num, lastSn = db.insert(tbl, {
             username = username,
             portrait = portrait
