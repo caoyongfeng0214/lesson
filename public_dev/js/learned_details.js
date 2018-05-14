@@ -31,7 +31,9 @@ function calcPageHeight(doc) {
 window.onload = function() {
     var height = calcPageHeight(document);
     var container = parent.document.getElementById('summaryContainer');
-    container.style.height = height + 'px';
-    container.contentWindow.document.getElementsByClassName("header")[0].style.display = 'none'; 
-    container.contentWindow.document.getElementsByClassName("main")[0].style.padding = "0";
+    if(container) {
+        container.style.height = height + 'px';
+        container.contentWindow.document.getElementsByClassName("header")[0].style.display = 'none'; 
+        container.contentWindow.document.getElementsByClassName("main")[0].style.padding = "0";
+    }
 }

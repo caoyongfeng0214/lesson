@@ -211,8 +211,6 @@ var getLessonTaughtedRecord = function() {
         classId: classId
     }, function (response) {
         var r = response.data;
-        console.log(response);
-
         if (response.err == 0) {
             lessonUrl = r.lessonUrl;
             $('.lesson-no').text(r.lessonNo);
