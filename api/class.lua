@@ -23,16 +23,10 @@ router:post('/begin', function(req, res, next)
     local username = p.username
     local lessonPerformance = p.lessonPerformance
     local quizzNum = p.quizzNum
+    local portrait = p.portrait
     local rq = rq(p, {'lessonNo', 'lessonUrl', 'username', 'lessonTitle', 'lessonCover' }, res)
 	if(not rq) then return end
-    local where = { username = username }
-    local member = memberBll.get(where)
-    if(member == nil) then
-        member = {
-            username = username
-        }
-        memberBll.save(member)
-    end
+    local member = memberBll.findOrInsertByName(username, portrait)
     if(member.vipDay == nil or member.vipDay < 0) then
         -- 没有开课权限
         res:send({
@@ -116,17 +110,10 @@ router:post('/enter', function(req, res, next)
     local username = p.username -- TODO: 更换为当前登录用户, 添加用户头像
     local classId = p.classId..''
     local studentNo = p.studentNo
+    local portrait = p.portrait
     local rq = rq(p, {'username', 'classId', 'studentNo'}, res)
 	if(not rq) then return end
-    local where = {}
-    where.username = username
-    local member = memberBll.get(where)
-    if(member == nil) then
-        member = {
-            username = username
-        }
-        memberBll.save(member)
-    end
+    local member = memberBll.findOrInsertByName(username, portrait)
     local room = classroom.getClassRoom(classId)
     if( room and room.state == 0) then -- 进行中的课堂
         if(classroom.USERs['username'] ~= nil) then
@@ -202,7 +189,7 @@ end)
 -- 学员更新自己的状态
 router:post('/upsertstate', function(req, res, next) 
     local rs = {}
-    local p = req.query
+    local p = req.body
     local username = p.username
     local state = p.state
     local rq = rq(p, {'username', 'state'}, res)
