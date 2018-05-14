@@ -48,15 +48,16 @@ https://github.com/caoyongfeng0214/lesson
 | username  | String, 不可为空   | 用户名 |
 | classId   | Number, 不可为空   | 房间ID，由教师给出 |
 | studentNo | Number, 不可为空   | 学号 |
+| portrait | String, 可为空   | 用户头像 |
 
 - **返回示例**
 
 ```
 {
   "data": {
-		"lessonUrl": "/keep/12211519639786370/ch/ch8?device=pad&classId=100547814&username=isyang&studentNo=0611011111"
-	},
-	"err": 0
+    "lessonUrl": "/keep/12211519639786370/ch/ch8?device=pad&classId=100547814&username=isyang&studentNo=0611011111"
+  },
+  "err": 0
 }
 ```
 
@@ -144,4 +145,4 @@ https://github.com/caoyongfeng0214/lesson
 
 - **其他说明**
 
-由学生 `PareCarf` 客户端调用该接口来维护学生在课堂上的状态
+由学生 `PareCarf` 客户端调用该接口来维护学生在自学时的状态，当用户自学完成时需要调用
