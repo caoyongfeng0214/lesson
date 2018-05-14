@@ -5,14 +5,23 @@ var taughtedChart = c3.generate({
             Rate: 'bar'
         },
         columns: [],
+        colors: {
+            Rate: '#49A5F8'
+        }
     },
     axis: {
         x: {
-            label: 'Accuracy Rate(%)',
+            label: {
+                text: 'Quizzes',
+                position: 'outer-right'
+            },
             type: 'category'
         },
         y: {
-            label: 'Quizzes'
+            label: {
+                text: 'Accuracy Rate(%)',
+                position: 'outer-top'
+            }
         }
     },
     grid: {
@@ -29,15 +38,24 @@ var studentChart = c3.generate({
             Number: 'bar'
         },
         columns: [],
+        colors: {
+            Number: '#49A5F8'
+        }
     },
     axis: {
         x: {
-            label: 'Accuracy Rate(%)',
+            label: {
+                text: 'Accuracy Rate(%)',
+                position: 'outer-right'
+            },
             type: 'category',
             categories: ["<60%", "60%-80%", ">80%"]
         },
         y: {
-            label: 'Number of Students (total: 0)',
+            label: {
+                text: 'Number of Students (total: 0)',
+                position: 'outer-top'
+            },
             tick: {
                 format: function(d) {
                     return d%1 == 0? d : '';

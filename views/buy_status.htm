@@ -7,16 +7,18 @@
 {{+ content}} 
 
 <div class="buy-status">
+    {{#successFlag}}
     <!-- 购买成功 -->
     <div>
         <i class="icon el-icon-success"></i>
         <p class="info">Successfully Paid !</p>
-        <div class="price">$ 520</div>
+        <div class="price">$ {{orderVo.reallyPayAmount}}</div>
         <a href="/buy/history" class="el-button el-button--primary">
         <span>View Purchase History</span>
         </a>
-        </div>
-    
+    </div>
+    {{/successFlag}}
+    {{^successFlag}}
     <!-- 购买失败 -->
     <div>
         <i class="icon el-icon-warning"></i>
@@ -25,6 +27,7 @@
         <span>Pay Again</span>
         </a> 
     </div>
+    {{/successFlag}}
 </div> 
 {{/ content}}
       

@@ -1,1 +1,1 @@
-$(function(){$(".purchasing-type .type-item").on("click",function(){$(this).addClass("current").siblings().removeClass("current")})});
+var username="keep";$(function(){var n=1;$(".purchasing-type .type-item").on("click",function(){$(this).addClass("current").siblings().removeClass("current"),n=$(this).attr("type")}),$("#btnPay").on("click",function(){location="/buy/order/"+n+"/"+username})});

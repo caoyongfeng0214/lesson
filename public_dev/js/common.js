@@ -55,7 +55,7 @@ var genEnNum = function( number ) {
  * format date -> Friday 27th, April, 2018
  * @param dateStr 
  */
-var fmtDate = function( dateStr ) {
+var fmtDate = function( dateStr , fmtStr ) {
     var weekArr = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     var monthArr = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
     var d = new Date(dateStr);
@@ -63,5 +63,8 @@ var fmtDate = function( dateStr ) {
     var day = genEnNum( d.getDate() );
     var month = monthArr[ d.getMonth() ];
     var year = d.getFullYear();
+    if(fmtStr && fmtStr == 'dd, MM, yyyy') {
+        return day + ', ' + month + ', ' + year;
+    }
     return week + ' ' + day + ', ' + month + ', ' + year;
 }
