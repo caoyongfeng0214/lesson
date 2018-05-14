@@ -145,4 +145,4 @@ https://github.com/caoyongfeng0214/lesson
 
 - **其他说明**
 
-由学生 `PareCarf` 客户端调用该接口来维护学生在课堂上的状态
+由学生 `PareCarf` 客户端调用该接口来维护学生在自学时的状态，当用户自学完成时需要调用
