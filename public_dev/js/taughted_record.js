@@ -207,12 +207,17 @@ $(function(){
     })
 
     $('#btnPrint').on('click', function() {
+        pagesetup_default();
+
         if(lessonUrl) {
             $('.recordWrapper').append('<iframe id="keepworkContainer" frameborder="0" width="100%" src="' + keepworkHost + lessonUrl + '?device=print"></iframe>');
         }
         $('.print-show').show();
+
+        $(".el-loading-mask").show();
         // prop a dialog
         setTimeout(function(){
+            $(".el-loading-mask").hide();
             window.print();
             // dimiss a dialog
             $("iframe").remove("#keepworkContainer");
@@ -299,7 +304,7 @@ var getLessonTaughtedRecord = function() {
 var appendRecord = function(item) {
     tblRecord.append('<tr>'+
     '    <td>'+
-    '        <div class="user-img" style="background-image:url(https://avatars3.githubusercontent.com/u/18064049?s=460&v=4)"></div>'+
+    '        <div class="user-img"><img src="https://avatars3.githubusercontent.com/u/18064049?s=460&v=4" /></div>'+
     '    </td>'+
     '    <td>' + item.username + '</td>'+
     '    <td>' + item.studentNo + '</td>'+
@@ -307,7 +312,7 @@ var appendRecord = function(item) {
     '    <td>' + item.rightCount + '</td>'+
     '    <td>' + item.wrongCount + '</td>'+
     '    <td>' + item.emptyCount + '</td>'+
-    '    <td>'+
+    '    <td class="noprint">'+
     '        <a class="noprint" target="_blank" href="/taughtedRecord/details/' + item.recordSn + '/' + item.studentNo + '" class="el-button el-button--primary el-button--mini">View Details</a>'+
     '    </td>'+
     '</tr>');
@@ -325,10 +330,25 @@ window.onload = function() {
     var height = calcPageHeight(document);
     var container = parent.document.getElementById('summaryContainer');
     if(container) {
-        container.style.height = height + 'px';
+        container.style.height = height + 100 + 'px';
         container.contentWindow.document.getElementsByClassName("header")[0].style.display = 'none'; 
         container.contentWindow.document.getElementsByClassName("main")[0].style.padding = "0";
         container.contentWindow.document.getElementsByClassName("recordWrapper")[0].style.width = '1080px';
         container.contentWindow.document.getElementsByClassName("recordWrapper")[0].style.padding = "40px 2%";
     }
+}
+
+
+function pagesetup_default() {
+    var hkey_root,hkey_path,hkey_key;
+    hkey_root="HKEY_CURRENT_USER";
+    hkey_path="\\Software\\Microsoft\\Internet Explorer\\PageSetup\\";
+
+    try{
+        var RegWsh = new ActiveXObject("WScript.Shell");
+        hkey_key="header" ;
+        RegWsh.RegWrite(hkey_root + hkey_path + hkey_key,"");
+        hkey_key="footer";
+        RegWsh.RegWrite(hkey_root + hkey_path + hkey_key,"");
+    }catch(e){}
 }

@@ -10,6 +10,12 @@
 {{+ content}}
     <input hidden value="{{classId}}" id="classId"/>
     <!--startprint-->
+    <!-- <div class="print-head">
+        <img src="/imgs/keepwork_logo.svg" class="logo" alt="logo" />
+
+        <strong>http://keepwork.com/lesson</strong>
+    </div> -->
+
     <div class="recordWrapper taughted-record">
         <div class="user-info">
             <img class="portrait" src="https://avatars3.githubusercontent.com/u/18064049?s=460&amp;v=4" alt="">
@@ -142,7 +148,7 @@
                                     </span>
                                 </div>
                             </td>
-                            <td style="width:15%;"></td>
+                            <td style="width:15%;" class="noprint"></td>
                         </tr>
                     </thead>
                     <tbody class="record-tbl">
@@ -180,5 +186,11 @@
         </div>
     </div>
     <div class="v-modal" style="display:none; z-index: 2016;"></div>
+
+    <div class="el-loading-mask is-fullscreen" style="z-index: 2012;display: none;">
+        <div class="el-loading-spinner">
+            <svg viewBox="25 25 50 50" class="circular"><circle cx="50" cy="50" r="20" fill="none" class="path"></circle></svg>
+        </div>
+    </div>
     <script src="/js/taughted_record.js"></script>
 {{/content}}
