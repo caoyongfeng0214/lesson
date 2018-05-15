@@ -33,7 +33,7 @@ https://github.com/caoyongfeng0214/lesson
 
 8.执行`gulp init`以及`gulp`即可在本地端口访问项目（默认3000端口）
 
-## 客户端接口说明
+## 接口文档
 
 ### 1.学生 Pad 进入教室
 
