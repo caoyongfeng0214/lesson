@@ -1,7 +1,7 @@
 ﻿NPL.load('common');
 local app = NPL.load('../app');
 
-local server = app:listen(3000);
+local server = app:listen(3030);
 
 local function activate()
 
