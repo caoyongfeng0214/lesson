@@ -216,13 +216,16 @@ $(function(){
 
         $(".el-loading-mask").show();
         // prop a dialog
-        setTimeout(function(){
-            $(".el-loading-mask").hide();
-            window.print();
-            // dimiss a dialog
-            $("iframe").remove("#keepworkContainer");
-            // $('.print-show').hide();
-        }, 5000);
+        var iframeTimer = setInterval(function(){
+            console.log(new Date().getTime());
+            if($('#keepworkContainer').attr('ready') == 'ready') {
+                $(".el-loading-mask").hide();
+                window.print();
+                // dimiss a dialog
+                $("iframe").remove("#keepworkContainer");
+                clearInterval(iframeTimer);
+            }
+        }, 500);
     });
 });
 

@@ -117,7 +117,6 @@ router:post('/enter', function(req, res, next)
     local room = classroom.getClassRoom(classId)
     if( room and room.state == 0) then -- 进行中的课堂
         if(classroom.USERs['username'] ~= nil) then
-            local _u = room:getStudent( username )
             res:send({
                 err = 0,
                 data = {
@@ -134,7 +133,7 @@ router:post('/enter', function(req, res, next)
         rs = {
             err = 0,
             data = {
-                u = _u,
+                u = room:getStudent(username),
                 lessonUrl = room.lessonUrl .. '?device=pad&classId=' .. room.classId .. '&username=' .. username .. '&studentNo=' .. studentNo
             }
         }

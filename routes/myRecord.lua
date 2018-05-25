@@ -2,6 +2,10 @@ local express = NPL.load('express');
 local router = express.Router:new();
 local memberBll = NPL.load('../bll/member')
 
+router:get('/', function(req, res, next)
+	res:render('to_login',{});
+end);
+
 router:get('/:username', function(req, res, next)
 	local username = req.params.username
 	local where = {}

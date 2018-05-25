@@ -6,6 +6,7 @@ DROP TABLE IF EXISTS `member`;
 CREATE TABLE `member` (
   `sn` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '序号',
   `username` varchar(128) COLLATE utf8_unicode_ci NOT NULL COMMENT '用户名',
+  `displayName` varchar(512) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '昵称',
   `portrait` varchar(512) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '用户头像',
   `joinTime` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '加入时间',
   `vipEndTime` datetime DEFAULT NULL COMMENT '权限结束时间',
@@ -22,12 +23,14 @@ CREATE TABLE `class` (
   `lessonNo` varchar(128) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '课程序号',
   `lessonTitle` varchar(256) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '课程页面标题',
   `lessonCover` varchar(512) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '课程封面地址',
-  `lessonVedio` varchar(512) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '课程视频地址',
   `goals` varchar(512) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '课程目标',
   `startTime` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '课程开始时间',
   `finishTime` datetime DEFAULT NULL COMMENT '课程结束时间',
   `summary` text COLLATE utf8_unicode_ci COMMENT '课程总结 JSON 格式',
   `state` tinyint(4) NOT NULL DEFAULT '0' COMMENT '状态 0.start 1.finish',
+  `input` varchar(2048) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '输入',
+  `output` varchar(2048) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '输出',
+  `prerequisite` varchar(2048) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '前置条件',
   PRIMARY KEY (`sn`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 

@@ -1,6 +1,7 @@
 local express = NPL.load('express')
 local router = express.Router:new()
 local recordBll = NPL.load('../bll/testrecord')
+local sitecfg = NPL.load('../confi/siteConfig')
 NPL.load("(gl)script/ide/commonlib.lua")
 NPL.load("(gl)script/ide/System/os/GetUrl.lua")
 System = commonlib.gettable("System")
@@ -191,9 +192,9 @@ router:post('/sendEmail', function(req, res, next)
     local rq = rq(p, {'email'}, res)
     if(not rq) then return end
     System.os.SendEmail({
-	    url="smtp.163.com/", 
-	    username="13227379709@163.com", password="ping1234",   --这里的password 是授权密码
-	    from="13227379709@163.com", 
+	    url=sitecfg.replyEmail, 
+	    username=sitecfg.replyUsername, password=sitecfg.replyPassword,   --这里的password 是授权密码
+	    from=sitecfg.replyUsername, 
         to= email, 
 	    subject = 'this is your summary.', -- title
 	    body = content -- body
