@@ -72,7 +72,6 @@ var studentChart = c3.generate({
 
 var classId = $('#classId').val();
 $(function(){
-    $('#load').hide();
     getLessonTaughtedRecord();
     var nameSortFlag = false,
         noSortFlag = false,

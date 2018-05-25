@@ -7,6 +7,8 @@
 local express = NPL.load('express');
 local cors = NPL.load('cors');
 local app = express:new();
+local lang_cn = NPL.load('./confi/language/string_cn');
+local lang_en = NPL.load('./confi/language/string_en');
 
 app:set('views', 'views');
 app:set('view engine', 'lustache');
@@ -20,6 +22,33 @@ end, {
 
 app:use(express.static('public'));
 app:use(express.session());
+
+app:use(function(req, res, next)
+	local url = req.url;
+	if not (url:startsWith('/api/') or url:startsWith('/imgs/') or url:startsWith('/css/') or url:startsWith('/js/') or url:startsWith('/jslib/') or url:startsWith('/csslib/') or url:startsWith('/icons/')or url:startsWith('/uploads/') ) then
+		-- 初始化
+		res.__data__ = {};
+		-- 获取 Accect Language，优先 Cookie 设置， 然后 Accect Language， 最后默认 en
+		local resource = lang_en; -- 缺省值
+		local lang  = req.cookies.language;
+		local accectLang = req["Accept-Language"];
+		if(lang) then
+			if(lang.value == 'en') then
+				resource = lang_en;
+			elseif(lang.value == 'cn') then
+				resource = lang_cn;
+			end
+		elseif( accectLang ) then
+			if( accectLang:startsWith('zh-CN') ) then
+				resource = lang_cn;
+			elseif( accectLang:startsWith('en-US') ) then
+				resource = lang_en;
+			end
+		end
+		res.__data__.string = resource;
+	end
+	next(req, res, next);
+end);
 
 -- ***********************************************************************
 -- ****** API ******

@@ -1,4 +1,4 @@
-var username = 'keep' // TODO:更换为 keepwork 当前登录用户
+var username = $('#username').val(); // TODO:更换为 keepwork 当前登录用户
 
 $(function() {
     // 获取订单历史数据
@@ -7,9 +7,9 @@ $(function() {
 
 var getOrderHistory = function( psize, pno ) {
     $.get("/api/order/list", {
-        username: username,
         psize: psize,
-        pno: pno
+        pno: pno,
+        username: username
     }, function (response) {
         var r = response.data;
         var p = response.page;

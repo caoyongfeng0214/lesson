@@ -4,7 +4,6 @@ $(function(){
         url : "/api/class/lesson",   
         complete:function(response) {  
             var r = JSON.parse(response.responseText)
-            console.log(r);
             $('.lesson-total').text(r.hits.total);
             var data = r.hits.hits;
             if(data) {
@@ -34,10 +33,10 @@ $(function(){
             }
         }
         if(lessonData) {
-            item.lessonTitle = lessonData.split('Title : ')[1].split('- ')[0];
+            item.lessonTitle = lessonData.split('Title:')[1].split('\n')[0].replaceAll("'","");
             item.lessonUrl = keepworkHost + item.url;
-            item.lessonCover = lessonData.split('CoverImageOfTheLesson : ')[1].split('- ')[0];
-            item.lessonNo = lessonData.split('LessonNo : ')[1].split('- ')[0];
+            item.lessonCover = lessonData.split('CoverImageOfTheLesson:')[1].split('\n')[0];
+            item.lessonNo = lessonData.split('LessonNo:')[1].split('\n')[0].replaceAll("'","");
         }
     }
 });

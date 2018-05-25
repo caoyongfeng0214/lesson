@@ -16,10 +16,10 @@
     <div class="header noprint">
         <div class="nav-bar">
             <div class="menu">
-                <a href="/" class="{{homeCurrent}}">HOME</a>
-                <a href="/lesson" class="{{lessonCurrent}}">LESSONS</a>
-                <a href="/buy" class="{{buyCurrent}}">BUY</a>
-                <a href="/myRecord" class="{{recordCurrent}}">MY RECORD</a>
+                <a href="/" class="{{homeCurrent}}">{{__data__.string.home}}</a>
+                <a href="/lesson" class="{{lessonCurrent}}">{{__data__.string.lessons}}</a>
+                <a href="/buy" class="{{buyCurrent}}">{{__data__.string.buy}}</a>
+                <a href="/myRecord" class="{{recordCurrent}}">{{__data__.string.record}}</a>
             </div>  
             <div class="to-download">
                 <a href="http://www.paracraft.cn/download" target="_blank">Paracraft<i class="el-icon-download"></i></a>    
@@ -29,6 +29,29 @@
     <div class="main">
         {{? content}}
     </div>
-   
+    <script>
+        // setInterval(function(){
+            // iFrame 通讯
+            if (window.parent !== window) {
+                var height = $('body').outerHeight() + 400;
+                console.log('lesson echo: ' + height)
+                window.parent.postMessage({cmd:'element_style', selector:'iframeId', style:{'height':height + 'px'}}, 'http://localhost:8080');
+            }
+        // }, 1000)
+
+        function getCookie(c_name) {
+            if (document.cookie.length>0){
+                c_start=document.cookie.indexOf(c_name + "=")
+                if (c_start!=-1) { 
+                    c_start=c_start + c_name.length+1 
+                    c_end=document.cookie.indexOf(";",c_start)
+                    if (c_end==-1) c_end=document.cookie.length
+                    return unescape(document.cookie.substring(c_start,c_end))
+                } 
+            }
+            return ""
+        }
+        // alert(getCookie("token"));
+    </script>
 </body>
 </html>

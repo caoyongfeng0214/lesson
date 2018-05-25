@@ -24,6 +24,11 @@ String.prototype.startWith = function(s) {
     return true
 }
 
+String.prototype.replaceAll = function(f, e) {
+    var reg=new RegExp(f,"g");
+    return this.replace(reg,e); 
+}
+
 var keepworkHost = 'http://localhost:8080';
 
 /**
