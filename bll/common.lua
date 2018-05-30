@@ -4,6 +4,7 @@ local sitecfg = NPL.load('../confi/siteConfig')
 
 local common = {}
 
+-- 使用 keepwork Token 获取到 keepwork 登录信息
 common.auth = function ( token, successCallback, errCallback )
     -- body
     if(token) then

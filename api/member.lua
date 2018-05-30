@@ -9,6 +9,9 @@ local sitecfg = NPL.load('../confi/siteConfig')
 -- 验证身份
 router:get('/auth', function(req, res, next)
     print('t ->', __rts__:GetName())
+    local token = req.cookies.token
+    echo('#debug')
+    echo(token)
     local p = req.query
     local username = p.username
     local portrait = p.portrait
@@ -20,6 +23,7 @@ router:get('/auth', function(req, res, next)
         err = 0,
         data = member
     }
+    -- res:setHeader('Access-Control-Allow-Origin','http://localhost:8080')
     res:send(rs)
 end)
 

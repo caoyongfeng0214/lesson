@@ -339,7 +339,7 @@ router:get('/lesson', function(req, res, next)
     System.os.GetUrl({
         url = sitecfg.esApi,
         headers={["content-type"]="application/json"},
-        postfields = '{"query": {"match_phrase_prefix": {"content": "```@Lesson"}}}' -- jsonString
+        postfields = '{"query": {"match_phrase_prefix": {"content": "```@Lesson styleID: 0 lesson: LessonNo:"}}}' -- jsonString
     }, function(err, msg, data)
         if(data ~= nil) then
             res:send(data);

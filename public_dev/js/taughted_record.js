@@ -206,8 +206,6 @@ $(function(){
     })
 
     $('#btnPrint').on('click', function() {
-        pagesetup_default();
-
         if(lessonUrl) {
             $('.recordWrapper').append('<iframe id="keepworkContainer" frameborder="0" width="100%" src="' + keepworkHost + lessonUrl + '?device=print"></iframe>');
         }
@@ -338,19 +336,4 @@ window.onload = function() {
         container.contentWindow.document.getElementsByClassName("recordWrapper")[0].style.width = '1080px';
         container.contentWindow.document.getElementsByClassName("recordWrapper")[0].style.padding = "40px 2%";
     }
-}
-
-
-function pagesetup_default() {
-    var hkey_root,hkey_path,hkey_key;
-    hkey_root="HKEY_CURRENT_USER";
-    hkey_path="\\Software\\Microsoft\\Internet Explorer\\PageSetup\\";
-
-    try{
-        var RegWsh = new ActiveXObject("WScript.Shell");
-        hkey_key="header" ;
-        RegWsh.RegWrite(hkey_root + hkey_path + hkey_key,"");
-        hkey_key="footer";
-        RegWsh.RegWrite(hkey_root + hkey_path + hkey_key,"");
-    }catch(e){}
 }

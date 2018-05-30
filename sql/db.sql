@@ -10,6 +10,13 @@ CREATE TABLE `member` (
   `portrait` varchar(512) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '用户头像',
   `joinTime` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '加入时间',
   `vipEndTime` datetime DEFAULT NULL COMMENT '权限结束时间',
+  `identity` tinyint(4) NOT NULL DEFAULT '1' COMMENT '身份 1.normal 2.教学者',
+  `coin` int(11) NOT NULL DEFAULT '200' COMMENT '知识币，初始值为200',
+  `firstInFlag` tinyint(4) NOT NULL DEFAULT '1' COMMENT '是否第一次进入 1.是 2.否',
+  `codeReadLine` int(11) NOT NULL DEFAULT '0' COMMENT '代码阅读行数',
+  `codeWriteLine` int(11) NOT NULL DEFAULT '0' COMMENT '代码书写行数',
+  `commands` int(11) NOT NULL DEFAULT '0' COMMENT '学习命令数',
+  `presenter` varchar(128) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '推荐人 username',
   PRIMARY KEY (`sn`),
   UNIQUE KEY `username` (`username`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
@@ -82,6 +89,39 @@ CREATE TABLE `seq` (
   `name` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '序列名',
   `val` int(11) DEFAULT NULL COMMENT '当前值',
   `step` tinyint(4) NOT NULL DEFAULT '1' COMMENT '步长'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+DROP TABLE IF EXISTS `package`;
+CREATE TABLE `package` (
+  `id` varchar(128) COLLATE utf8_unicode_ci NOT NULL COMMENT '课程包Id',
+  `title` varchar(256) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '标题',
+  `cover` varchar(512) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '封面',
+  `skills` varchar(512) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '技能点',
+  `agesMin` int(11) NOT NULL DEFAULT '0' COMMENT '适合最小年龄 0.suitable4all',
+  `agesMax` int(11) DEFAULT NULL COMMENT '适合最大年龄',
+  `input` varchar(2048) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '输入，添加该课程包需要什么',
+  `output` varchar(2048) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '输出，学完该课程包会得到什么',
+  `prerequisite` varchar(2048) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '前置条件',
+  `packageUrl` varchar(256) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'URL 地址',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+DROP TABLE IF EXISTS `cdkey`;
+CREATE TABLE `cdkey` (
+  `sn` int(11) NOT NULL AUTO_INCREMENT COMMENT 'cdKey 序号',
+  `key` varchar(32) COLLATE utf8_unicode_ci NOT NULL COMMENT '秘钥',
+  `createTime` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `useTime` datetime DEFAULT NULL COMMENT '使用时间',
+  `state` tinyint(4) NOT NULL DEFAULT '1' COMMENT '1. normal 2. used 3.forbidden',
+  PRIMARY KEY (`sn`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+DROP TABLE IF EXISTS `package2lesson`;
+CREATE TABLE `package2lesson` (
+  `sn` int(11) NOT NULL AUTO_INCREMENT COMMENT '序号',
+  `packageId` varchar(128) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '课程包Id',
+  `lessonUrl` varchar(256) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '对应课程的Url',
+  PRIMARY KEY (`sn`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 # 序列函数

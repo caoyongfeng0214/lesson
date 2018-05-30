@@ -35,7 +35,7 @@
             if (window.parent !== window) {
                 var height = $('body').outerHeight() + 400;
                 console.log('lesson echo: ' + height)
-                window.parent.postMessage({cmd:'element_style', selector:'iframeId', style:{'height':height + 'px'}}, 'http://localhost:8080');
+                window.parent.postMessage({cmd:'element_style', selector:'iframeId', style:{'height':height + 'px'}}, 'http://stage.keepwork.com');
             }
         // }, 1000)
 

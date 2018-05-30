@@ -20,6 +20,17 @@ end, {
 	is_current_origin = true
 }));
 
+
+app:use(function(req, res, next)
+	-- 因为keepwork调用接口需要用到cookie，这样需要返回更具体的允许主机
+	local host = req['Origin'] or '';
+	-- if string.find(host, 'keepwork.com') then
+		res:setHeader('Access-Control-Allow-Origin', host);
+		res:setHeader('Access-Control-Allow-Credentials', 'true');		
+	-- end
+	next(req, res, next);
+end);
+
 app:use(express.static('public'));
 app:use(express.session());
 
@@ -30,22 +41,28 @@ app:use(function(req, res, next)
 		res.__data__ = {};
 		-- 获取 Accect Language，优先 Cookie 设置， 然后 Accect Language， 最后默认 en
 		local resource = lang_en; -- 缺省值
+		local langStr = 'EN'; -- 缺省值
 		local lang  = req.cookies.language;
 		local accectLang = req["Accept-Language"];
 		if(lang) then
 			if(lang.value == 'en') then
 				resource = lang_en;
+				langStr = 'EN';
 			elseif(lang.value == 'cn') then
 				resource = lang_cn;
+				langStr = 'CN';
 			end
 		elseif( accectLang ) then
 			if( accectLang:startsWith('zh-CN') ) then
 				resource = lang_cn;
+				langStr = 'CN';
 			elseif( accectLang:startsWith('en-US') ) then
 				resource = lang_en;
+				langStr = 'EN';
 			end
 		end
 		res.__data__.string = resource;
+		res.__data__.language = langStr;
 	end
 	next(req, res, next);
 end);
