@@ -23,7 +23,6 @@ router:get('/auth', function(req, res, next)
         err = 0,
         data = member
     }
-    -- res:setHeader('Access-Control-Allow-Origin','http://localhost:8080')
     res:send(rs)
 end)
 

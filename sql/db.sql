@@ -122,6 +122,16 @@ CREATE TABLE `package2lesson` (
   `lessonUrl` varchar(256) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '对应课程的Url'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+DROP TABLE IF EXISTS `subscribe`;
+CREATE TABLE `subscribe` (
+  `sn` int(11) NOT NULL AUTO_INCREMENT COMMENT '序号',
+  `username` varchar(128) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '用户名',
+  `createTime` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `packageId` varchar(128) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '课程包ID',
+  `finished` tinyint(4) NOT NULL DEFAULT '1' COMMENT '1. 未完成 2. 已完成',
+  PRIMARY KEY (`sn`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
 # 序列函数
 DELIMITER $$
 CREATE

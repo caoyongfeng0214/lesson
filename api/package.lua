@@ -4,23 +4,9 @@ local express = NPL.load('express')
 local router = express.Router:new()
 local packageBll = NPL.load('../bll/package')
 
-router:post('/upsert', function(req, res, next)
-    local p = req.query
-    local rs = {err = 0, msg = 'upsert package succes.'}
-    local package = p
-    local num = packageBll.upsert(package)
-    if(num == nil)then
-        rs = {
-            err = 101,
-            msg = 'upsert package failed.'
-        }
-    end
-    res:send(rs)
-end)
-
 router:post('/createOrUpdate', function(req, res, next)
     local p = req.body
-    local rs = {err = 0, msg = 'create or update package succes.'}
+    local rs = {err = 0, msg = 'create or update package success.'}
     local id = p.id
     local title = p.title
     local cover = p.cover
