@@ -10,7 +10,7 @@ member.get = function( where, group, order, cn )
 end
 
 member.save = function( member, cn )
-    return db.insert(tbl, member)
+    return db.insert(tbl, member, cn)
 end
 
 member.update = function( member, cn )

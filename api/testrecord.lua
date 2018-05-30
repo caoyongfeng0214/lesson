@@ -202,8 +202,8 @@ router:post('/sendEmail', function(req, res, next)
 	    res:send( {
             err = err,
             msg = msg
-        });
-    end);
+        })
+    end)
 end)
 
 NPL.export(router)

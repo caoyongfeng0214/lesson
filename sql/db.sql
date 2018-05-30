@@ -118,10 +118,8 @@ CREATE TABLE `cdkey` (
 
 DROP TABLE IF EXISTS `package2lesson`;
 CREATE TABLE `package2lesson` (
-  `sn` int(11) NOT NULL AUTO_INCREMENT COMMENT '序号',
   `packageId` varchar(128) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '课程包Id',
-  `lessonUrl` varchar(256) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '对应课程的Url',
-  PRIMARY KEY (`sn`)
+  `lessonUrl` varchar(256) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '对应课程的Url'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 # 序列函数

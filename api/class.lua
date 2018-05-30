@@ -7,6 +7,7 @@ local memberBll = NPL.load('../bll/member')
 local router = express.Router:new()
 local System = commonlib.gettable("System")
 local sitecfg = NPL.load('../confi/siteConfig')
+local uuid = NPL.load('uuid')
 
 local ROOM_ID_MIN = 100
 local ROOM_ID_MAX = 999
@@ -342,12 +343,12 @@ router:get('/lesson', function(req, res, next)
         postfields = '{"query": {"match_phrase_prefix": {"content": "```@Lesson styleID: 0 lesson: LessonNo:"}}}' -- jsonString
     }, function(err, msg, data)
         if(data ~= nil) then
-            res:send(data);
+            res:send(data)
         else
-            rs = { type = 'error', err = 400, result ='forbid Fail'};
-            res:send(rs); 
+            rs = { type = 'error', err = 400, result ='forbid Fail'}
+            res:send(rs) 
         end
-    end);
+    end)
 end)
 
 -- 获取整体课堂详情（用于调试）
@@ -361,4 +362,11 @@ router:get('/debug', function(req, res, next)
     res:send(rs)
 end)
 
-NPL.export(router);
+-- GenUUID
+router:get('/uuid', function(req, res, next)
+    print(uuid.a)
+    uuid.seed()
+    res:send(uuid())
+end)
+
+NPL.export(router)

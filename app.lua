@@ -77,10 +77,13 @@ local member = NPL.load('./api/member');
 app:use('/api/member', member);
 
 local testrecord = NPL.load('./api/testrecord');
-app:use('/api/record', testrecord)
+app:use('/api/record', testrecord);
 
-local orders = NPL.load('./api/orders')
-app:use('/api/order', orders)
+local orders = NPL.load('./api/orders');
+app:use('/api/order', orders);
+
+local package = NPL.load('./api/package');
+app:use('/api/package', package);
 
 local router_index = NPL.load('./routes/index');
 app:use('/', router_index);

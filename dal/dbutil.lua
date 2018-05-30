@@ -133,6 +133,32 @@ dbutil.insert = function(tableName,obj,cn)
 	return mysql:execNonQuery(sql,obj,cn);
 end
 
+-- 插入或更新
+--	tableName: 表名
+--	obj: 插入或更新的对象 table
+--	cn: cn 参数是可选的
+-- return: 受影响行数 cnt
+dbutil.upsert = function(tableName, obj, cn)
+	local length = countTable(obj);
+	local index = 0;
+	local keys = "";
+	local values = "";
+	for k, v in pairs(obj) do 
+		index = index + 1;
+		if(index ~= length) then
+			keys = keys..k..",";
+			values = values.."?"..k..",";
+		else
+			keys = keys..k;
+			values = values.."?"..k;
+		end
+	end
+	local sql = "insert into "..tableName.." ("..keys..") values ("..values.. ") ON DUPLICATE KEY UPDATE "..dbutil._parsePlaceholderSet(obj);
+	lastSqlString = sql;
+	dbutil.showSqlStr();
+	return mysql:execNonQuery(sql,obj,cn);
+end
+
 -- 根据 条件 查询数据 支持分页
 -- args  (where,group,order,limit 子句均为可选参数,可传 nil)
 -- 	tableName : 表名
@@ -535,6 +561,10 @@ end
 --  obj : 更新项 table(k-v) 返回结果为占位符形式 set id = ?id 
 -- return set 子句字符串
 dbutil.parsePlaceholderSet = function(obj)
+	return " set ".._parsePlaceholderSet(obj);
+end
+
+dbutil._parsePlaceholderSet = function(obj)
 	local length = countTable(obj); 
 	local index = 0;
 	local set = "";
@@ -546,14 +576,17 @@ dbutil.parsePlaceholderSet = function(obj)
 			set = set..k.." = ?"..k;
 		end
 	end
-	-- echo(set);
-	return " set "..set;
+	return set;
 end
 
 -- 解析 set 子句 (用于更新语句)
 --   obj ： 更新项 table(k-v)  返回结果不带引号
 -- return set 子句字符串
 dbutil.parseSetWithoutQuote = function(obj)
+	return " set "..dbutil._parseSetWithoutQuote(obj);
+end
+
+dbutil._parseSetWithoutQuote = function(obj)
 	local length = countTable(obj);
 	local index = 0;
 	local set = "";
@@ -565,7 +598,7 @@ dbutil.parseSetWithoutQuote = function(obj)
 			set = set..k.." = "..v;
 		end
 	end
-	return " set "..set;
+	return set;
 end
 
 -- 解析 group by 子句
@@ -725,43 +758,6 @@ dbutil.showSqlStr = function()
 	end
 end
 
---=================================================================--
---=======================   公共方法区   ===========================--
---=================================================================--
-
--- 公共方法 校验是否登录 接口使用
---  args：obj 从session 中取 user_data, res 响应对象
--- return ：登录成功返回当前登录用户
-function checkAuth(obj,res)
-	if(obj == nil) then
-		local rs = {};
-		rs['type'] = 'error';
-        rs['err'] = 102;
-        rs['result'] = 'No Auth!';
-		echo("No Auth");
-		res:send(rs);
-		return false;
-	else
-		return obj.value;
-	end
-end
-
--- 公共方法 校验是否登录 视图使用
---  args：obj 从 session 中取 user_data  callbackUrl  回调的链接地址
--- return : 登录成功返回当前登录用户
-function routesAuth(obj,res,callbackUrl)
-	if(obj == nil) then
-		if(callbackUrl ~= nil) then
-			res:render('/login', {callback = callbackUrl});
-		else
-			res:render('/login',{});
-		end
-		return false;
-	else
-		return obj.value;
-	end
-end
-
 -- 校验必填参数
 --  args: obj 校验对象 requireArr 必填项数组 res 响应对象
 function rq(obj, requireArr, res)
@@ -773,21 +769,6 @@ function rq(obj, requireArr, res)
 		end
 	end
 	return true;
-end
-
--- 解析前台传递的参数列表
-function parseParame (objs)
-	local res = "";
-	for k, v in pairs(objs) do 
-		if(v ~= nil and v ~= 0 ) then
-			res = res.."&"..k.."="..v;
-		else
-			if(k == 'price_min' or k == 'price_max') then
-				res = res.."&"..k.."="..v;
-			end
-		end
-	end
-	return res;
 end
 
 NPL.export(dbutil);

@@ -63,32 +63,32 @@ end)
 -- keepwork 支付回调
 router:post('/keepworkPayHandler', function(req, res,next)
     -- TODO: 查询订单信息，检查订单金额是否正确，更新订单状态
-    echo('----------------keepworkPayHandler------------------keepworkPayHandler---------------');
-	echo('----------------body------------------body---------------');
-	echo(req.body);
-	echo('----------------query------------------query---------------');
-	echo(req.query);
-	echo('----------------host------------------host---------------');
-	echo(req.Host);
-	echo('----------------client------------------client---------------');
-	echo(req.client);
-	echo('----------------req------------------req---------------');
+    echo('----------------keepworkPayHandler------------------keepworkPayHandler---------------')
+	echo('----------------body------------------body---------------')
+	echo(req.body)
+	echo('----------------query------------------query---------------')
+	echo(req.query)
+	echo('----------------host------------------host---------------')
+	echo(req.Host)
+	echo('----------------client------------------client---------------')
+	echo(req.client)
+	echo('----------------req------------------req---------------')
     -- 检查请求来源 ip 是否来自 keepwork
 	for k,v in pairs(req) do
 		if(k == 'X-Real-IP') then
-			echo(v);
+			echo(v)
 			-- 10.28.18.2 release 环境
 			-- 10.28.18.6 online 环境
 			if(v ~= '10.28.18.2') then
 				res:send({
                     err = 103,
                     msg = 'Not allow IP!'
-                });
-				return;
+                })
+				return
 			end
 		end
 	end
-	local orderInfo = req.query;
+	local orderInfo = req.query
     if(orderInfo == nil or orderInfo.order_no == nil) then
         res:send({
             err = 101,

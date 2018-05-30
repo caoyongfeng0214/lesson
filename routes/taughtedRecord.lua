@@ -1,5 +1,5 @@
-local express = NPL.load('express');
-local router = express.Router:new();
+local express = NPL.load('express')
+local router = express.Router:new()
 
 -- 我的记录-授课记录 授课详情
 router:get('/:class_id', function(req, res, next)
@@ -7,16 +7,16 @@ router:get('/:class_id', function(req, res, next)
 
 	res:render('taughted_record', {
 		classId = classId
-	});
-end);
+	})
+end)
 
 router:get('/details/:sn/:studentNo', function(req, res, next)
-	local recordSn = req.params.sn;
-	local studentNo = req.params.studentNo;
+	local recordSn = req.params.sn
+	local studentNo = req.params.studentNo
 	res:render('taughted_details', {
 		recordSn = recordSn,
 		studentNo = studentNo
-	});
-end);
+	})
+end)
 
-NPL.export(router);
+NPL.export(router)

@@ -20,9 +20,6 @@ end
 
 orders.finish = function( order )
     -- 更新订单状态， 更新用户会员到期时间
-    echo('#DEBUG: ')
-    -- {amount=2420,reallyPayAmount=2420,sn=10,orderTime="2018-05-14 10:57:26",state=0,username="keep",lessAmount=0,goodsType=1,}
-    echo(order)
     local issucc
     db.execInTrans(function(cn, returnTrans)
         local member = memberBll.findOrInsertByName( order.username )
