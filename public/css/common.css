@@ -125,6 +125,12 @@ ol {
 .container {
   margin: 0 auto;
 }
+@media (max-width: 640px) {
+  .header .nav-bar .menu > a {
+    font-size: 14px;
+    margin: 0 2.3%;
+  }
+}
 @media (max-width: 768px) {
   .header .nav-bar .menu {
     justify-content: flex-start;

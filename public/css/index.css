@@ -226,3 +226,17 @@ img {
     height: 120px;
   }
 }
+@media (max-width: 640px) {
+  .section-nav {
+    padding: 20px 0;
+    font-size: 20px;
+  }
+  .section-nav > span {
+    margin: 0 3%;
+  }
+  .section-nav > i {
+    width: 48px;
+    height: 15px;
+    background-size: contain;
+  }
+}
