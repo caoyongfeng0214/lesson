@@ -4,6 +4,7 @@ local express = NPL.load('express')
 local classroom = NPL.load('../object/classroom')
 local classBll = NPL.load('../bll/class')
 local memberBll = NPL.load('../bll/member')
+local subscribeBll = NPL.load('../bll/subscribe')
 local router = express.Router:new()
 local System = commonlib.gettable("System")
 local sitecfg = NPL.load('../confi/siteConfig')
@@ -24,15 +25,23 @@ router:post('/begin', function(req, res, next)
     local username = p.username
     local lessonPerformance = p.lessonPerformance
     local quizzNum = p.quizzNum
-    local portrait = p.portrait
     local rq = rq(p, {'lessonNo', 'lessonUrl', 'username', 'lessonTitle', 'lessonCover' }, res)
 	if(not rq) then return end
-    local member = memberBll.findOrInsertByName(username, portrait)
-    if(member.vipDay == nil or member.vipDay < 0) then
+    local member = memberBll.findOrInsertByName(username)
+    if(member.identity == nil or member.identity ~= 2) then -- 教学者身份
         -- 没有开课权限
         res:send({
             err = 102,
             msg = 'not allow.'
+        })
+        return
+    end
+    -- check is add package
+    local packageCount = subscribeBll.checkAddPackageByLessonUrl(username, lessonUrl)
+    if(packageCount == nil or packageCount == 0) then
+        res:send({
+            err = 104,
+            msg = 'plz take package.'
         })
         return
     end

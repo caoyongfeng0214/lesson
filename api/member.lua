@@ -2,28 +2,31 @@ NPL.load("(gl)script/ide/commonlib.lua")
 NPL.load("(gl)script/ide/System/os/GetUrl.lua")
 local express = NPL.load('express')
 local memberBll = NPL.load('../bll/member')
+local commonBll = NPL.load('../bll/common')
 local router = express.Router:new()
 local System = commonlib.gettable("System")
 local sitecfg = NPL.load('../confi/siteConfig')
 
 -- 验证身份
 router:get('/auth', function(req, res, next)
-    print('t ->', __rts__:GetName())
     local token = req.cookies.token
-    echo('#debug')
-    echo(token)
-    local p = req.query
-    local username = p.username
-    local portrait = p.portrait
-    local rq = rq(p, {'username'}, res)
-    if(not rq) then return end
-    local member = memberBll.findOrInsertByName(username, portrait)
-    local rs = {}
-    rs = {
-        err = 0,
-        data = member
-    }
-    res:send(rs)
+    local findMember = function(user)
+        local username = user.username
+        local portrait = user.portrait
+        local member = memberBll.findOrInsertByName(username, portrait)
+        local rs = {}
+        rs = {
+            err = 0,
+            data = member
+        }
+        res:send(rs)
+    end
+    commonBll.auth(token, findMember, function()
+        res:send({
+            err = 102,
+            msg = 'plz login.'
+        })
+    end)
 end)
 
 -- 获取我的记录

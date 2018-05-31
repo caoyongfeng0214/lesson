@@ -3,6 +3,7 @@ NPL.load("(gl)script/ide/System/os/GetUrl.lua")
 local express = NPL.load('express')
 local router = express.Router:new()
 local packageBll = NPL.load('../bll/package')
+local commonBll = NPL.load('../bll/common')
 
 router:post('/createOrUpdate', function(req, res, next)
     local p = req.body
@@ -39,6 +40,38 @@ router:post('/createOrUpdate', function(req, res, next)
         }
     end
     res:send(rs)
+end)
+
+router:get('/learnList', function(req, res, next)
+    local rs = {}
+    local p = req.query
+
+    local getList = function(user)
+        local where = {
+            ['sb.username'] = user.username
+        }
+        local limit = {
+            pageSize = p.psize,
+            pageNo = p.pno
+        }
+        local list, page = packageBll.list(where, group, order, limit)
+        if(list) then
+            rs.err = 0
+            rs.data = list
+            rs.page = page
+        else
+            rs.err = 101
+            rs.msg = 'get learn packages fail.'
+        end
+        res:send(rs)
+    end
+    local token = req.cookies.token
+    commonBll.auth(token, getList, function()
+        res:send({
+            err = 102,
+            msg = 'plz login.'
+        })
+    end)
 end)
 
 NPL.export(router)

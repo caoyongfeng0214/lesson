@@ -1,6 +1,7 @@
 local express = NPL.load('express')
 local router = express.Router:new()
 local recordBll = NPL.load('../bll/testrecord')
+local subscribeBll = NPL.load('../bll/subscribe')
 local sitecfg = NPL.load('../confi/siteConfig')
 NPL.load("(gl)script/ide/commonlib.lua")
 NPL.load("(gl)script/ide/System/os/GetUrl.lua")
@@ -23,6 +24,7 @@ router:post('/saveOrUpdate', function(req, res, next)
     local wrongCount = p.wrongCount
     local emptyCount = p.emptyCount
     local state = p.state
+   
     local rs = {}
     if( sn ) then
         -- update
@@ -43,6 +45,15 @@ router:post('/saveOrUpdate', function(req, res, next)
         end
     else
         -- save 
+         -- check is add package
+        local packageCount = subscribeBll.checkAddPackageByLessonUrl(username, lessonUrl)
+        if(packageCount == nil or packageCount == 0) then
+            res:send({
+                err = 104,
+                msg = 'plz take package.'
+            })
+            return
+        end
         local rq = rq(p, {'username', 'lessonUrl'}, res) -- 必选参数
         if(not rq) then return end
         local num, lastId = recordBll.save(p)

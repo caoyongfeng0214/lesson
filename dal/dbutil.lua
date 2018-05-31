@@ -561,7 +561,7 @@ end
 --  obj : 更新项 table(k-v) 返回结果为占位符形式 set id = ?id 
 -- return set 子句字符串
 dbutil.parsePlaceholderSet = function(obj)
-	return " set ".._parsePlaceholderSet(obj);
+	return " set "..dbutil._parsePlaceholderSet(obj);
 end
 
 dbutil._parsePlaceholderSet = function(obj)
