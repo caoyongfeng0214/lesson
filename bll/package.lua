@@ -20,11 +20,11 @@ package.createOrUpdate = function( packageVo, lessonsVo )
         num2 = package2lessonBll.del( {packageId = packageVo.id}, cn )
         local objs = {}
         for i,v in ipairs(lessonsVo) do
-            if(v.url) then
+            if(v.lessonUrl) then
                 local obj = {}
                 obj[1] = packageVo.id
-                obj[2] = v.url
-                table.insert (objs,obj);
+                obj[2] = v.lessonUrl
+                table.insert (objs,obj)
             end
         end
         num3 = package2lessonBll.addBatch( {'packageId', 'lessonUrl'}, objs, cn )
