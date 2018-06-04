@@ -88,6 +88,9 @@ app:use('/api/package', package);
 local subscribe = NPL.load('./api/subscribe');
 app:use('/api/subscribe', subscribe);
 
+local cdkey = NPL.load('./api/cdkey');
+app:use('/api/cdkey', cdkey);
+
 local router_index = NPL.load('./routes/index');
 app:use('/', router_index);
 app:use('/index', router_index);

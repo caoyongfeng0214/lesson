@@ -1,11 +1,12 @@
 local db = NPL.load('../dal/dbutil')
+local cdkeyBll = NPL.load('../bll/cdkey')
 
 local member = {}
 
 local tbl = 'member'
 
 member.get = function( where, group, order, cn )
-    local sql = 'SELECT sn, username, portrait, coin, identity, firstInFlag, vipEndTime, UNIX_TIMESTAMP(vipEndTime) vipEndUnixTime, TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member'
+    local sql = 'SELECT sn, username, portrait, coin, identity, presenter, firstInFlag, vipEndTime, UNIX_TIMESTAMP(vipEndTime) vipEndUnixTime, TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member'
     return db.detail(sql, where, group, order, cn)
 end
 
@@ -17,13 +18,58 @@ member.update = function( member, cn )
     return db.updateBySn(tbl, member, cn)
 end
 
+member.addPresenter = function( selfMember, presenterMember, cn )
+    local issucc
+    db.execInTrans(function(cn, returnTrans)
+        local num1 = nil
+        local num2 = nil
+        selfMember.presenter = presenterMember.username
+        selfMember.coin = selfMember.coin + 20
+        num1 = member.update(selfMember, cn)
+        presenterMember.coin = presenterMember.coin + 20
+        num2 = member.update(presenterMember, cn)
+        if( num1 == nil or num2 == nil ) then
+            returnTrans(false)
+        else
+            returnTrans(true)
+        end
+    end, function(issuccess, result)
+        issucc = issuccess
+    end)
+    return issucc
+end
+
+member.activateAccount = function( selfMember, cdkey, cn )
+    local issucc
+    db.execInTrans(function(cn, returnTrans)
+        local num1 = nil
+        local num2 = nil
+        -- 更新账户为教育机构账户，将 cdkey 标记为已使用
+        selfMember.identity = 2
+        num1 = member.update(selfMember, cn)
+        cdkey.user = selfMember.username
+        cdkey.state = 2
+        cdkey.useTime = os.date( "%Y-%m-%d %H:%M:%S", os.time() )
+        cdkey.key = nil
+        num2 = cdkeyBll.update(cdkey, cn)
+        if( num1 == nil or num2 == nil ) then
+            returnTrans(false)
+        else
+            returnTrans(true)
+        end
+    end, function(issuccess, result)
+        issucc = issuccess
+    end)
+    return issucc
+end
+
 member.consume = function(username, consumeCoin, cn)
     local sql = 'UPDATE member SET coin = coin - ?consumeCoin WHERE username = ?username'
     return db.execute(sql, {consumeCoin = consumeCoin, username = username}, cn)
 end
 
 member.findOrInsertByName = function( username, portrait )
-    local sql = 'SELECT sn, username, portrait, coin, identity, firstInFlag, vipEndTime, UNIX_TIMESTAMP(vipEndTime) vipEndUnixTime, TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member'
+    local sql = 'SELECT sn, username, portrait, coin, identity, presenter, firstInFlag, vipEndTime, UNIX_TIMESTAMP(vipEndTime) vipEndUnixTime, TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member'
     local memberVo = db.detail(sql, { username = username } )
     if( memberVo == nil ) then
         -- insert

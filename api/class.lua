@@ -373,7 +373,6 @@ end)
 
 -- GenUUID
 router:get('/uuid', function(req, res, next)
-    print(uuid.a)
     uuid.seed()
     res:send(uuid())
 end)

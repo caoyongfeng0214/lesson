@@ -113,6 +113,8 @@ CREATE TABLE `cdkey` (
   `createTime` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
   `useTime` datetime DEFAULT NULL COMMENT '使用时间',
   `state` tinyint(4) NOT NULL DEFAULT '1' COMMENT '1. normal 2. used 3.forbidden',
+  `user` varchar(128) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '使用者 username',
+  `userIp` varchar(128) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '使用者 IP',
   PRIMARY KEY (`sn`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
