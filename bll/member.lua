@@ -6,7 +6,7 @@ local member = {}
 local tbl = 'member'
 
 member.get = function( where, group, order, cn )
-    local sql = 'SELECT sn, username, portrait, coin, identity, presenter, firstInFlag, vipEndTime, UNIX_TIMESTAMP(vipEndTime) vipEndUnixTime, TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member'
+    local sql = 'SELECT sn, username, portrait, coin, identity, presenter, firstInFlag, codeReadLine, codeWriteLine, commands, presenter, vipEndTime, UNIX_TIMESTAMP(vipEndTime) vipEndUnixTime, TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member'
     return db.detail(sql, where, group, order, cn)
 end
 
@@ -69,7 +69,7 @@ member.consume = function(username, consumeCoin, cn)
 end
 
 member.findOrInsertByName = function( username, portrait )
-    local sql = 'SELECT sn, username, portrait, coin, identity, presenter, firstInFlag, vipEndTime, UNIX_TIMESTAMP(vipEndTime) vipEndUnixTime, TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member'
+    local sql = 'SELECT sn, username, portrait, coin, identity, presenter, firstInFlag, codeReadLine, codeWriteLine, commands, presenter, vipEndTime, UNIX_TIMESTAMP(vipEndTime) vipEndUnixTime, TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member'
     local memberVo = db.detail(sql, { username = username } )
     if( memberVo == nil ) then
         -- insert

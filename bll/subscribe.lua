@@ -24,8 +24,6 @@ subscribe.addPackage = function( subscribeVo )
         local package = packageBll.get({
             id = subscribeVo.packageId
         })
-        echo('#p')
-        echo(package)
         if( package == nil ) then
             msg = 'package not found.'
             returnTrans(false)
@@ -54,6 +52,21 @@ end
 subscribe.checkAddPackageByLessonUrl = function(username, lessonUrl, cn)
     local sql = 'SELECT COUNT(1) FROM subscribe s LEFT JOIN package p ON s.`packageId` = p.`id` LEFT JOIN package2lesson pl ON p.`id` = pl.`packageId` WHERE s.`username` = ?username AND pl.`lessonUrl` = ?lessonUrl AND state = 1'
     return db.execScalar(sql, {username = username, lessonUrl = lessonUrl}, cn)
+end
+
+-- 通过课程 URL 为学员添加后付费订阅
+subscribe.addBatchByLessonUrl = function(username, lessonUrl, cn)
+    local idList = db.queryAll('SELECT p.id FROM package p LEFT JOIN package2lesson pl ON p.`id` = pl.packageId WHERE pl.lessonUrl = ?lessonUrl', 
+        {lessonUrl = lessonUrl}, cn)
+    local objs = {}
+    for i,v in ipairs(idList) do
+        local obj = {}
+        obj[1] = v.id
+        obj[2] = username
+        obj[3] = 2
+        table.insert( objs, obj )
+    end
+    return db.addBatch(tbl, {'packageId', 'username', 'state'}, objs, cn)
 end
 
 subscribe.state = function( where, group, order, cn )

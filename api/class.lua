@@ -8,7 +8,6 @@ local subscribeBll = NPL.load('../bll/subscribe')
 local router = express.Router:new()
 local System = commonlib.gettable("System")
 local sitecfg = NPL.load('../confi/siteConfig')
-local uuid = NPL.load('uuid')
 
 local ROOM_ID_MIN = 100
 local ROOM_ID_MAX = 999
@@ -124,11 +123,6 @@ router:post('/enter', function(req, res, next)
     local rq = rq(p, {'username', 'classId', 'studentNo'}, res)
 	if(not rq) then return end
     local member = memberBll.findOrInsertByName(username, portrait)
-    -- check is add package, if not then create one
-    local packageCount = subscribeBll.checkAddPackageByLessonUrl(username, lessonUrl)
-    if(packageCount == nil or packageCount == 0) then
-        -- TODO: 为当前用户创建一个未付费订阅
-    end
     local room = classroom.getClassRoom(classId)
     if( room and room.state == 0) then -- 进行中的课堂
         if(classroom.USERs['username'] ~= nil) then
@@ -374,12 +368,6 @@ router:get('/debug', function(req, res, next)
         data = classroom
     }
     res:send(rs)
-end)
-
--- GenUUID
-router:get('/uuid', function(req, res, next)
-    uuid.seed()
-    res:send(uuid())
 end)
 
 NPL.export(router)

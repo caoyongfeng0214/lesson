@@ -3,6 +3,7 @@ NPL.load("(gl)script/ide/Json.lua")
 local express = NPL.load('express')
 local classBll = NPL.load('../bll/class')
 local recordBll = NPL.load('../bll/testrecord')
+local subscribeBll = NPL.load('../bll/subscribe')
 
 local classroom = {}
 
@@ -53,7 +54,7 @@ function classroom:enter( user )
     local stu = self.students[user.username]
     -- 教师在教室创建的时候就需要传入了。
     if( stu == nil and user.username ~= self.teacher and self.state == 0) then
-        -- TODO: 产生一个答题卡为空的 TestRecord， 并记录 TestRecordId 到学生数据中
+        -- 产生一个答题卡为空的 TestRecord， 并记录 TestRecordId 到学生数据中
         local record = {
             username = user.username,
             lessonUrl = self.lessonUrl,
@@ -115,7 +116,15 @@ function classroom:commitAnswer( user, answerSheet, totalScore, rightCount, wron
                 wrongCount = wrongCount,
                 emptyCount = emptyCount
             }
-            recordBll.update(record)
+            if(record.emptyCount and tonumber(record.emptyCount) == 0) then
+                recordBll.update(record) -- 做完才 db 操作
+                -- check is add package, if not then create one
+                local packageCount = subscribeBll.checkAddPackageByLessonUrl(username, lessonUrl)
+                if(packageCount == nil or packageCount == 0) then
+                    -- 为当前用户创建一个未付费订阅
+                    subscribeBll.addBatchByLessonUrl(user.username, self.lessonUrl)
+                end
+            end
         end
         classroom._set(obj)
         express.handler.shareData('_set', obj)

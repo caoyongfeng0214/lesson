@@ -46,7 +46,7 @@ package.createOrUpdate = function( packageVo, lessonsVo )
 end
 
 package.list = function ( where, group, order, limit, cn )
-    local sql = [[SELECT p.*, ( SELECT COUNT(1) FROM package2lesson pl WHERE p.`id` = pl.`packageId` ) AS lessonCount,
+    local sql = [[SELECT p.*, sb.state subscribeState, ( SELECT COUNT(1) FROM package2lesson pl WHERE p.`id` = pl.`packageId` ) AS lessonCount,
         ( SELECT COUNT(DISTINCT t.lessonUrl) FROM package2lesson pl LEFT JOIN testrecord t ON pl.lessonUrl = t.lessonUrl WHERE p.`id` = pl.`packageId` AND t.username = sb.`username` AND t.emptyCount = 0 ) doneCount,
         ( SELECT lessonUrl FROM package2lesson WHERE packageId = p.`id` ORDER BY `index` LIMIT 1) firstLessonUrl,
         ( SELECT IF(t.emptyCount=0, (SELECT pls.lessonUrl FROM package2lesson pls LEFT JOIN testrecord tr ON pls.lessonUrl = tr.lessonUrl WHERE pls.packageId =  p.`id` AND pls.lessonUrl <> t.lessonUrl AND (tr.emptyCount <> 0 OR tr.emptyCount IS NULL) ORDER BY (CASE WHEN pls.`index`< (SELECT `index` FROM package2lesson WHERE packageId = p.id AND lessonUrl = t.lessonUrl) THEN pls.`index` + 1000 ELSE pls.`index` END) LIMIT 1),t.lessonUrl) 
