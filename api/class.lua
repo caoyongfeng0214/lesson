@@ -117,13 +117,18 @@ end)
 router:post('/enter', function(req, res, next)
     local rs = {}
     local p = req.body
-    local username = p.username -- TODO: 更换为当前登录用户, 添加用户头像
+    local username = p.username
     local classId = p.classId..''
     local studentNo = p.studentNo
     local portrait = p.portrait
     local rq = rq(p, {'username', 'classId', 'studentNo'}, res)
 	if(not rq) then return end
     local member = memberBll.findOrInsertByName(username, portrait)
+    -- check is add package, if not then create one
+    local packageCount = subscribeBll.checkAddPackageByLessonUrl(username, lessonUrl)
+    if(packageCount == nil or packageCount == 0) then
+        -- TODO: 为当前用户创建一个未付费订阅
+    end
     local room = classroom.getClassRoom(classId)
     if( room and room.state == 0) then -- 进行中的课堂
         if(classroom.USERs['username'] ~= nil) then

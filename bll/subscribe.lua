@@ -52,7 +52,7 @@ end
 
 -- 通过课程 URL 检查是否添加对应的课程包
 subscribe.checkAddPackageByLessonUrl = function(username, lessonUrl, cn)
-    local sql = 'SELECT COUNT(1) FROM subscribe s LEFT JOIN package p ON s.`packageId` = p.`id` LEFT JOIN package2lesson pl ON p.`id` = pl.`packageId` WHERE s.`username` = ?username AND pl.`lessonUrl` = ?lessonUrl'
+    local sql = 'SELECT COUNT(1) FROM subscribe s LEFT JOIN package p ON s.`packageId` = p.`id` LEFT JOIN package2lesson pl ON p.`id` = pl.`packageId` WHERE s.`username` = ?username AND pl.`lessonUrl` = ?lessonUrl AND state = 1'
     return db.execScalar(sql, {username = username, lessonUrl = lessonUrl}, cn)
 end
 
@@ -61,8 +61,8 @@ subscribe.state = function( where, group, order, cn )
         ( SELECT COUNT(DISTINCT t.lessonUrl) FROM package2lesson pl LEFT JOIN testrecord t ON pl.lessonUrl = t.lessonUrl WHERE p.`id` = pl.`packageId` AND t.username = sb.`username` AND t.emptyCount = 0 ) doneCount,
         ( SELECT lessonUrl FROM package2lesson WHERE packageId = p.`id` ORDER BY `index` LIMIT 1) firstLessonUrl,
         CONCAT("[", (SELECT SUBSTRING_INDEX(GROUP_CONCAT(JSON_OBJECT("lessonUrl", pl.`lessonUrl`, "learnedFlag", (SELECT COUNT(1) FROM testrecord t WHERE username = sb.`username` AND lessonUrl = pl.`lessonUrl` AND emptyCount = 0) ) ),",{",3) FROM package p LEFT JOIN package2lesson pl ON p.`id` = pl.`packageId` LEFT JOIN subscribe s ON p.`id` = s.`packageId` WHERE s.username = sb.username AND s.packageId = sb.packageId ), "]" ) lessons,
-        ( SELECT IF(t.emptyCount=0, (SELECT pls.lessonUrl FROM package2lesson pls LEFT JOIN testrecord tr ON pls.lessonUrl = tr.lessonUrl WHERE pls.packageId =  p.`id` AND tr.username = sb.`username` AND pls.lessonUrl <> t.lessonUrl AND (tr.emptyCount <> 0 OR tr.emptyCount IS NULL) ORDER BY (CASE WHEN pls.`index`< (SELECT `index` FROM package2lesson WHERE packageId = p.id AND lessonUrl = t.lessonUrl) THEN pls.`index` + 1000 ELSE pls.`index` END) LIMIT 1),t.lessonUrl) 
-        FROM testrecord t WHERE lessonUrl IN (SELECT lessonUrl FROM package2lesson pls WHERE pls.packageId =  p.`id`) ORDER BY t.beginTime DESC LIMIT 1 ) nextLearnLesson
+        ( SELECT IF(t.emptyCount=0, (SELECT pls.lessonUrl FROM package2lesson pls LEFT JOIN testrecord tr ON pls.lessonUrl = tr.lessonUrl  WHERE pls.packageId =  p.`id` AND pls.lessonUrl <> t.lessonUrl AND (tr.emptyCount <> 0 OR tr.emptyCount IS NULL) ORDER BY (CASE WHEN pls.`index`< (SELECT `index` FROM package2lesson WHERE packageId = p.id AND lessonUrl = t.lessonUrl) THEN pls.`index` + 1000 ELSE pls.`index` END) LIMIT 1),t.lessonUrl) 
+        FROM testrecord t WHERE t.username = sb.username AND lessonUrl IN (SELECT lessonUrl FROM package2lesson pls WHERE pls.packageId =  p.`id`) ORDER BY t.beginTime DESC LIMIT 1 ) nextLearnLesson
         FROM package p LEFT JOIN subscribe sb ON p.`id` = sb.`packageId`]]
     return db.detail(sql, where, group, order, cn)
 end

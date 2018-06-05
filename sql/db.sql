@@ -121,7 +121,8 @@ CREATE TABLE `cdkey` (
 DROP TABLE IF EXISTS `package2lesson`;
 CREATE TABLE `package2lesson` (
   `packageId` varchar(128) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '课程包Id',
-  `lessonUrl` varchar(256) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '对应课程的Url'
+  `lessonUrl` varchar(256) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '对应课程的Url',
+  `index` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 DROP TABLE IF EXISTS `subscribe`;
@@ -131,6 +132,7 @@ CREATE TABLE `subscribe` (
   `createTime` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
   `packageId` varchar(128) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '课程包ID',
   `finished` tinyint(4) NOT NULL DEFAULT '1' COMMENT '1. 未完成 2. 已完成',
+  `state` tinyint(4) NOT NULL DEFAULT '1' COMMENT '1. normal 2. 未付费订阅（课堂学习）',
   PRIMARY KEY (`sn`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
