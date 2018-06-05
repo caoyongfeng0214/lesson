@@ -1,0 +1,194 @@
+@import 'lib';
+.learnRecordWrapper {
+    max-width:1200px;
+    height: auto;
+    margin: 0 auto;
+    background-color: #fff;
+}
+//用户信息
+.learning-record .user-info {
+    .flexAlignItems(flex-end);
+    padding: 30px 50px;
+    .portrait {
+        .borderRadius;
+        display: inline-block;
+        background-color: #eee;
+        width:60px;
+        height: 60px;
+        object-fit: cover;
+        -o-object-fit: cover;
+    }
+    //昵称 金币数
+    .user-desc{
+        .el-row{
+            .flexDirection;
+            height: 100%;            
+        }
+        margin-left: 15px;
+        strong {    
+            color: #333;
+            font-size:20px;
+        }
+        .coins{
+            position: relative;
+            .coins-title,.coins-num{
+                font-size: 16px;
+            }
+            .coins-title{
+                color: #4c4c4c;
+            }
+            .coins-num{
+                color: #ff414a;
+            }
+            .coins-num + strong{
+                font-size: 18px;
+                background-color: #409EFF;
+                color: #fff;
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+                text-align: center;
+                .borderRadius(3px);
+                margin-left: 20px;
+                cursor: pointer
+            }
+            .tooltip-how{
+                position: absolute;
+                top: 20px;
+                display: none;
+                width: 282px;
+                border: 1px solid #a0a0a0;
+                .borderRadius(2px);
+                font-size: 11px;
+                color: #101010;
+                padding: 0 10px;
+                font-family: 'MicrosoftYaHeiLight';
+            }
+        }
+        
+        
+    }
+    //code统计
+    .code-summary{
+        .el-col{
+            border-right: 1px solid #B5B5B5;
+            text-align: center;
+            .title{
+                color: #6a6a6a;
+                font-size: 14px;
+            }
+            .lines{
+                color: #333;
+                font-size: 16px;
+                font-weight: bold;
+                margin-top: 15px;
+                span{
+                    font-size: 18px;
+                    margin-right: 5px;
+                    color: #ff414a;
+                }
+            }
+        }
+        .el-col:last-child{
+            border: none
+        }
+    }
+}
+//推荐人
+.presenter{
+    padding: 5px 25px 15px;
+    background-color: rgba(64,158,254,0.1);
+    text-align: center;
+    position: relative;
+    .presenter-content{
+        color: #333;
+        font-size: 14px;
+        font-weight: bold;
+        .el-input{
+            width: 322px;
+            margin-bottom: 14px;
+            .el-input__inner{
+                border: 1px solid #409EFE;
+            }
+        }
+    }
+    .presenter-dismiss{
+        position: absolute;
+        right: 25px;
+        top: 8px;
+        font-size: 14px;
+        color: #6a6a6a;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+//课程包列表
+
+.learning-record .lesson-list {
+    padding: 70px 10px;
+    .total {
+        margin-bottom: 25px;
+        font-size:20px;
+        color: #666;
+    }
+
+    .el-row {
+        margin: 0 -9px;
+    }
+
+    .el-col {
+        padding: 0 9px 25px 9px;
+    }
+
+    .lesson-cover {
+        display: block;
+        height: 160px;
+        position: relative;
+
+        &:hover :before {
+            content: "";
+            width: 55px;
+            height: 55px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            background: url(/imgs/main/play_btn.png) no-repeat center center;
+            background-size: contain;
+        }
+
+        > div {
+            width: 100%;
+            height: 100%;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            .borderRadius(6px);
+
+        }
+    }
+
+    .title {
+        display: block;
+        margin: 12px 0;
+        font-size: 17px;
+        color: #333;
+
+        &:hover {
+            color: @themeColor;
+        }
+    }
+
+    .time, .ages {
+        margin-bottom: 10px;
+        color: #999;
+        font-size: 14px;
+        span {
+            color: #666;
+        }
+    }
+}
+
+

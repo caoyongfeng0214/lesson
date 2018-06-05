@@ -44,6 +44,7 @@ app:use(function(req, res, next)
 		local langStr = 'EN'; -- 缺省值
 		local lang  = req.cookies.language;
 		local accectLang = req["Accept-Language"];
+		accectLang = 'en-US'
 		if(lang) then
 			if(lang.value == 'en') then
 				resource = lang_en;
@@ -116,6 +117,10 @@ app:use('/buy', router_buy);
 
 local router_lesson = NPL.load('./routes/lesson');
 app:use('/lesson', router_lesson);
+
+-- 学习记录
+local router_learning_record = NPL.load('./routes/learningRecord');
+app:use('/learningRecord', router_learning_record);
 
 -- ***********************************************************************
 -- ****** 无法匹配URL的页面 ******

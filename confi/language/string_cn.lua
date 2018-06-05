@@ -9,6 +9,7 @@ local string_cn = {
     abount_lessons = '关于',
     about_us = '关于我们',
     parters = '合作伙伴',
+    learning_record = '学习记录'
 }
 
 NPL.export(string_cn);
