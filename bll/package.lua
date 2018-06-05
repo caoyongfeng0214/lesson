@@ -29,11 +29,11 @@ package.createOrUpdate = function( packageVo, lessonsVo )
                 local obj = {}
                 obj[1] = packageVo.id
                 obj[2] = v.lessonUrl
-                obj[3] = v.key -- 索引
+                obj[3] = v.sortIdx -- 索引
                 table.insert (objs,obj)
             end
         end
-        num3 = package2lessonBll.addBatch( {'packageId', 'lessonUrl', 'index'}, objs, cn )
+        num3 = package2lessonBll.addBatch( {'packageId', 'lessonUrl', '`index`'}, objs, cn )
         if( num1 == nil or num2 == nil or num3 == nil ) then
             returnTrans(false)
         else
