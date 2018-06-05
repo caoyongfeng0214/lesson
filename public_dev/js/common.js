@@ -73,3 +73,35 @@ var fmtDate = function( dateStr , fmtStr ) {
     }
     return week + ' ' + day + ', ' + month + ', ' + year;
 }
+
+/* 
+    open dialog
+
+*/
+// var openDialog = function( params ){
+//     var str = +'<div tabindex="-1" role="dialog" aria-modal="true" aria-label="提示" class="el-message-box__wrapper" style="z-index: 2081;">'
+//                     +'<div class="el-message-box el-message-box--center">'
+//                     + '<div class="el-message-box__header">'
+//                         +    '<button type="button" aria-label="Close" class="el-message-box__headerbtn">'
+//                         +       '<i class="el-message-box__close el-icon-close"></i>'
+//                         +  '</button>'
+//                     +' </div>'
+//                         +'<div class="el-message-box__content">'
+//                         + '  <div class="el-message-box__message">'
+//                         +      '<p>此操作将永久删除该文件, 是否继续?</p>'
+//                         + '</div>'
+//                     +' </div>'
+//                         +'<div class="el-message-box__btns">'
+//                         + '  <button type="button" class="el-button el-button--default el-button--small">'
+//                         +     ' <span>取消</span>'
+//                         +' </button>'
+//                         +'  <button type="button" class="el-button el-button--default el-button--small el-button--primary ">'
+//                         +     '<span>确定</span>'
+//                         +'  </button>'
+//                         +'</div>'
+//                 +' </div>'
+//                 +'</div>'
+//                 +'<div class="v-modal" tabindex="0" style="z-index: 2080;"></div>'
+//             $('.main').append(str);
+
+// }

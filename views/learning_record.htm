@@ -1,0 +1,110 @@
+{{< layout}}
+
+{{+ link}}
+<link href="/css/learning_record.css" rel="stylesheet" />
+{{/link}}
+
+{{+ content}}
+<div class="learnRecordWrapper learning-record">
+    <!-- 用户信息 -->
+    <div class="user-info el-row el-row--flex is-justify-space-between">
+        <div class="e-col">
+            <div class="el-row el-row--flex">
+                <div class="el-col">
+                    <img class="portrait" src="" alt="" />
+                </div>
+                <div class="user-desc el-col">
+                    <div class="el-row el-row--flex is-justify-space-between">
+                        <div class="username el-col">
+                            <strong>
+                                Hi, <span class="name"></span>.
+                            </strong>
+                        </div>
+                        <div class="coins el-col">
+                            <strong class="coins-title">Coins:</strong>
+                            <strong class="coins-num"></strong>
+                            <strong class="how">?</strong>
+                            <div class="tooltip-how">
+                                <p>How to earn coins:</p> 
+                                <p>1. 200 coins will be given to you as a reward when you enter our system for the first time.</p>
+                                <p>2. Each time you recommend one friend to be our user, both you and the invited could get a reward of 20 coins. It's cumulative.</p> 
+                                <p>3. You need to invest some coins to get access to those lesson packages. And after finishing the learning of each package, you will get a reward of coins.</p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="e-col el-col-12">
+            <div class="code-summary el-row el-row--flex is-justify-space-around" >
+                <div class="el-col el-col-8">
+                    <div class="codes-read">
+                        <div class="title">Codes read</div>
+                        <div class="lines"><span class="read-lines-num">20</span>lines</div>
+                    </div>
+                </div>
+                <div class="el-col el-col-8">
+                    <div class="codes-written">
+                        <div class="title">Codes written</div>
+                        <div class="lines"><span class="written-lines-num">10</span>lines</div>
+                    </div>
+                </div>
+                <div class="el-col el-col-8">
+                    <div class="commands-learned">
+                        <div class="title">Commands learned</div>
+                        <div class="lines"><span class="Commands-lines-num">10</span></div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>  
+    <!-- 推荐人 -->
+    <div class="presenter">
+        <div class="presenter-content">
+            <p>Please input the user name of your referee who recommended our system.</p>
+            <p>Both you and your inviter will get a reward of 20 coins.</p>     
+            <div class="el-input">
+                <input type="text" name="presenter-name" autocomplete="off" placeholder="Please input the user name of your referee" class="el-input__inner">
+            </div>
+            <div>
+                <button type="button" class="add-presenter el-button el-button--primary el-button--mini"><span>Submit</span></button>
+            </div>
+        </div>
+        <span class="presenter-dismiss">Dismiss</span>
+    </div>
+    <!-- 课程包列表 -->
+    <div class="lesson-list">
+        <div class="el-row">
+    
+        </div>
+    </div>
+    
+    <!-- 弹窗显示内容 -->
+    <!-- <div tabindex="-1" role="dialog" aria-modal="true" aria-label="提示" class="el-message-box__wrapper" style="z-index: 2081;">
+        <div class="el-message-box el-message-box--center">
+            <div class="el-message-box__header">
+                <button type="button" aria-label="Close" class="el-message-box__headerbtn">
+                    <i class="el-message-box__close el-icon-close"></i>
+                </button>
+            </div>
+            <div class="el-message-box__content">
+                <div class="el-message-box__message">
+                    <p>此操作将永久删除该文件, 是否继续?</p>
+                </div>
+            </div>
+            <div class="el-message-box__btns">
+                <button type="button" class="el-button el-button--default el-button--small">
+                    <span>取消</span>
+                </button>
+                <button type="button" class="el-button el-button--default el-button--small el-button--primary ">
+                    <span>确定</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="v-modal" tabindex="0" style="z-index: 2080;"></div>
+    -->
+</div>    
+<script src="/js/learning_record.js"></script>
+{{/ content}}
