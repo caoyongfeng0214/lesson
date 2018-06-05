@@ -1,5 +1,6 @@
 local db = NPL.load('../dal/dbutil')
 local cdkeyBll = NPL.load('../bll/cdkey')
+local testrecordBll = NPL.load('../bll/testrecord')
 
 local member = {}
 
@@ -66,6 +67,29 @@ end
 member.consume = function(username, consumeCoin, cn)
     local sql = 'UPDATE member SET coin = coin - ?consumeCoin WHERE username = ?username'
     return db.execute(sql, {consumeCoin = consumeCoin, username = username}, cn)
+end
+
+member.achieving = function(sn, cn)
+    local lessonVo = testrecordBll.get({sn = sn})
+    local testrecordVo = testrecordBll.get({
+        username = lessonVo.username,
+        lessonUrl = lessonVo.lessonUrl,
+        emptyCount = 0,
+        ['!sn'] = sn
+    })
+    echo('#DEBUG')
+    echo(lessonVo)
+    echo(testrecordVo)
+    if(testrecordVo == nil) then
+        local sql = 'UPDATE member SET codeReadLine = codeReadLine + ?codeReadLine, codeWriteLine = codeWriteLine + ?codeWriteLine, commands = commands + ?commands WHERE username = ?username'
+        return db.execute(sql, {
+                codeReadLine = lessonVo.codeReadLine,
+                codeWriteLine = lessonVo.codeWriteLine,
+                commands = lessonVo.commands,
+                username = lessonVo.username
+            }, cn)
+    end
+   return 0 
 end
 
 member.findOrInsertByName = function( username, portrait )

@@ -1,6 +1,7 @@
 local express = NPL.load('express')
 local router = express.Router:new()
 local recordBll = NPL.load('../bll/testrecord')
+local memberBll = NPL.load('../bll/member')
 local subscribeBll = NPL.load('../bll/subscribe')
 local sitecfg = NPL.load('../confi/siteConfig')
 NPL.load("(gl)script/ide/commonlib.lua")
@@ -24,10 +25,16 @@ router:post('/saveOrUpdate', function(req, res, next)
     local wrongCount = p.wrongCount
     local emptyCount = p.emptyCount
     local state = p.state
-   
+    local codeReadLine = p.codeReadLine
+    local codeWriteLine = p.codeWriteLine
+    local commands = p.commands
     local rs = {}
     if( sn ) then
         -- update
+        -- TODO: 答题完成即时获得成就
+        if( p.emptyCount and tonumber(p.emptyCount) == 0 ) then
+            memberBll.achieving(sn)
+        end
         p.finishTime = os.date( "%Y-%m-%d %H:%M:%S", os.time() )
         local num = recordBll.update(p)
         if(num) then

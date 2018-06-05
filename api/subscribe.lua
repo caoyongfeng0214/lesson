@@ -16,7 +16,7 @@ router:post('/add', function(req, res, next)
             packageId = packageId
         }
         local subscribeVo = subscribeBll.get(object)
-        if(subscribeVo) then
+        if(subscribeVo and subscribeVo.state == 1) then
             res:send({
                 err = 103,
                 msg = 'u have already bought this package.'
@@ -61,7 +61,8 @@ router:get('/state', function(req, res, next)
         -- 先检测购买状态，再检测学习状态
         local object = {
             username = user.username,
-            packageId = packageId
+            packageId = packageId,
+            state = 1
         }
         local subscribeVo = subscribeBll.get(object)
         if(subscribeVo) then

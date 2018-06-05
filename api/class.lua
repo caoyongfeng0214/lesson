@@ -24,7 +24,10 @@ router:post('/begin', function(req, res, next)
     local username = p.username
     local lessonPerformance = p.lessonPerformance
     local quizzNum = p.quizzNum
-    local rq = rq(p, {'lessonNo', 'lessonUrl', 'username', 'lessonTitle', 'lessonCover' }, res)
+    local codeReadLine = p.codeReadLine
+    local codeWriteLine = p.codeWriteLine
+    local commands = p.commands
+    local rq = rq(p, {'lessonNo', 'lessonUrl', 'username', 'lessonTitle', 'lessonCover', 'codeReadLine', 'codeWriteLine', 'commands'  }, res)
 	if(not rq) then return end
     local member = memberBll.findOrInsertByName(username)
     if(member.identity == nil or member.identity ~= 2) then -- 教学者身份
@@ -71,7 +74,10 @@ router:post('/begin', function(req, res, next)
         goals = goals,
         startTime = startTime,
         lessonPerformance = lessonPerformance,
-        quizzNum = tonumber(quizzNum)
+        quizzNum = tonumber(quizzNum),
+        codeReadLine = codeReadLine,
+        codeWriteLine = codeWriteLine,
+        commands = commands
     })
     room:begin({
         classId = classId,
@@ -83,7 +89,10 @@ router:post('/begin', function(req, res, next)
         goals = goals,
         startTime = startTime,
         lessonPerformance = lessonPerformance,
-        quizzNum = tonumber(quizzNum)
+        quizzNum = tonumber(quizzNum),
+        codeReadLine = codeReadLine,
+        codeWriteLine = codeWriteLine,
+        commands = commands
     })
     
     local rs = {

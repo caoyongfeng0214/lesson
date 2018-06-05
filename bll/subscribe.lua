@@ -11,7 +11,7 @@ subscribe.insert = function(object, cn)
 end
 
 subscribe.get = function( where, group, order, cn )
-    local sql = 'SELECT sn, username, createTime, packageId, finished FROM subscribe'
+    local sql = 'SELECT sn, username, createTime, packageId, finished, state FROM subscribe'
     return db.detail(sql, where, group, order, cn)
 end
 

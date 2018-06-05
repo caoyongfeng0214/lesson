@@ -64,7 +64,10 @@ function classroom:enter( user )
             lessonNo = self.lessonNo,
             classId = self.classId,
             classSn = self.classSn,
-            lessonPerformance = self.lessonPerformance
+            lessonPerformance = self.lessonPerformance,
+            codeReadLine = self.codeReadLine,
+            codeWriteLine = self.codeWriteLine,
+            commands = self.commands
         }
         local num, lastId = recordBll.save(record)
         if(lastId) then 

@@ -80,6 +80,9 @@ CREATE TABLE `testrecord` (
   `finishTime` datetime DEFAULT NULL COMMENT '完成时间',
   `state` tinyint(4) NOT NULL DEFAULT '1' COMMENT '自学状态 1.自学中 2.自学结束',
   `duration` int(11) NOT NULL DEFAULT '0' COMMENT '学习时长（分钟数）',
+  `codeReadLine` int(11) NOT NULL DEFAULT '0' COMMENT '代码阅读量',
+  `codeWriteLine` int(11) NOT NULL DEFAULT '0' COMMENT '代码书写量',
+  `commands` int(11) NOT NULL DEFAULT '0' COMMENT '学习到的命令数量',
   PRIMARY KEY (`sn`),
   UNIQUE KEY `username` (`username`,`classId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;

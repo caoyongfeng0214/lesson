@@ -4,6 +4,11 @@ local testrecord = {}
 
 local tbl = 'testrecord'
 
+testrecord.get = function( where, group, order, cn )
+    local sql  = [[SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle, lessonUrl, username, codeReadLine, codeWriteLine, commands FROM testrecord]]
+    return db.detail(sql, where, group, order, cn)
+end
+
 testrecord.save = function( testrecord, cn )
     return db.insert(tbl, testrecord, cn)
 end
@@ -25,7 +30,7 @@ testrecord.learnRecord = function( where, group, order, limit, cn )
 end
 
 testrecord.detail = function( where, group, order, limit, cn )
-    local sql = [[SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle FROM testrecord]]
+    local sql = [[SELECT sn, beginTime, totalScore, rightCount, wrongCount, emptyCount, answerSheet, finishTime, lessonNo, lessonTitle, lessonUrl, username, codeReadLine, codeWriteLine, commands FROM testrecord]]
     return db.findJoin(sql, where, group, order, limit, cn)
 end
 
