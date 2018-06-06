@@ -39,4 +39,10 @@ testrecord.detailBySn = function( where, group, order, cn )
     return db.detail(sql, where, group, order, cn)
 end
 
+testrecord.detailByLessonUrl = function( where, group, order, cn )
+    local sql = [[SELECT t.`lessonTitle`, t.`beginTime`, t.`lessonCover`, t.`goals`, t.`lessonNo`, t.username, m.`codeReadLine`, m.`codeWriteLine`, m.`commands`, m.`displayName`, m.`presenter`,  DATEDIFF(t.`beginTime`,m.`joinTime`) learnedDays
+        FROM testrecord t LEFT JOIN member m ON t.`username` = m.`username`]]
+    return db.detail(sql, where, group, order, cn)
+end
+
 NPL.export(testrecord)

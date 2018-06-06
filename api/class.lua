@@ -96,7 +96,7 @@ router:post('/begin', function(req, res, next)
         commands = commands
     })
     
-    -- TODO: 为导师生成一个 testRecord, 并达成该课程的成就
+    -- 为导师生成一个 testRecord, 并达成该课程的成就
     local num, lastId = recordBll.save({
         username = username,
         lessonUrl = lessonUrl,

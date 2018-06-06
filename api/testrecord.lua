@@ -201,6 +201,32 @@ router:get('/learnDetailBySn', function(req, res, next)
     res:send(rs)
 end)
 
+router:get('/share', function(req, res, next)
+    local rs = {}
+    local p = req.query
+    local lessonUrl = p.lessonUrl
+    local username = p.username
+    local rq = rq(p, {'lessonUrl', 'username'}, res)
+    if(not rq) then return end
+    local where = {
+        ['t.lessonUrl'] = lessonUrl,
+        ['t.username'] = username,
+        ['t.emptyCount'] = 0
+    }
+    local order = {
+        beginTime = 'DESC'
+    }
+    local data = recordBll.detailByLessonUrl(where, nil, order)
+    if(data) then
+        rs.err = 0
+        rs.data = data
+    else
+        rs.err = 101
+        rs.msg = 'get learn detail fail.'
+    end
+    res:send(rs)
+end)
+
 -- send email
 router:post('/sendEmail', function(req, res, next)
     local p = req.body
