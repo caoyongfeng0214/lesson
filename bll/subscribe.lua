@@ -10,6 +10,10 @@ subscribe.insert = function(object, cn)
     return db.insert(tbl, object, cn)
 end
 
+subscribe.upsert = function(object, cn)
+    return db.upsert(tbl, object, cn)
+end
+
 subscribe.get = function( where, group, order, cn )
     local sql = 'SELECT sn, username, createTime, packageId, finished, state FROM subscribe'
     return db.detail(sql, where, group, order, cn)
@@ -34,7 +38,8 @@ subscribe.addPackage = function( subscribeVo )
         else
             local num1 = nil
             local num2 = nil
-            num1 = subscribe.insert(subscribeVo, cn)
+            subscribeVo.state = 1
+            num1 = subscribe.upsert(subscribeVo, cn)
             num2 = memberBll.consume(member.username, package.input, cn)
             if( num1 == nil or num2 == nil ) then
                 returnTrans(false)

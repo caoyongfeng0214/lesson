@@ -64,6 +64,7 @@ member.activateAccount = function( selfMember, cdkey, cn )
     return issucc
 end
 
+-- 消耗（增加）知识币
 member.consume = function(username, consumeCoin, cn)
     local sql = 'UPDATE member SET coin = coin - ?consumeCoin WHERE username = ?username'
     return db.execute(sql, {consumeCoin = consumeCoin, username = username}, cn)
@@ -77,11 +78,41 @@ member.achieving = function(sn, cn)
         emptyCount = 0,
         ['!sn'] = sn
     })
-    echo('#DEBUG')
-    echo(lessonVo)
-    echo(testrecordVo)
+
     if(testrecordVo == nil) then
-        -- TODO: 查询用户的付费订阅课程包是否完成，完成发放知识币奖励
+        --  查询用户的订阅课程包(未付费也行)是否完成，完成发放知识币奖励, 标记为已完成 subscribe
+        --  更新符合条件的 subscribe 的状态，给用户添加相应的知识币
+        db.execInTrans(function(cn, returnTrans)
+            local num1 = nil
+            local num2 = nil
+            local querySubscribeSql = [[SELECT s.*, p.`output`
+            FROM subscribe s LEFT JOIN package p ON s.`packageId` = p.`id` LEFT JOIN package2lesson pl ON p.`id` = pl.packageId 
+            WHERE ( SELECT COUNT(1) FROM package2lesson pl WHERE p.`id` = pl.`packageId` ) = ( SELECT COUNT(DISTINCT t.lessonUrl) FROM package2lesson pl LEFT JOIN testrecord t ON pl.lessonUrl = t.lessonUrl WHERE p.`id` = pl.`packageId` AND t.username = s.`username` AND t.emptyCount = 0 )
+            AND finished = 1
+            AND  pl.lessonUrl = ?lessonUrl AND s.`username` = ?username ]]
+            local subscribeList = db.queryAll(querySubscribeSql, lessonVo)
+            if(subscribeList and #subscribeList > 0) then
+                -- 达成课程包的要求
+                local sumCoin = 0
+                local inCase = {}
+                inCase[1] = 'sn'
+                inCase[2] = {}
+                for i,v in ipairs(subscribeList) do
+                    sumCoin = sumCoin - tonumber(v.output)
+                    table.insert( inCase[2], v.sn )
+                end
+                echo(sumCoin)
+                num1 = db.updateStatusBatch('subscribe', { finished = 2 }, inCase)
+                num2 = member.consume(lessonVo.username, sumCoin )
+                if num1 == nil or num2 == nil then
+                    returnTrans(false)
+                else
+                    returnTrans(true)
+                end
+            end
+        end, function(issuccess, result)
+        
+        end)
         local sql = 'UPDATE member SET codeReadLine = codeReadLine + ?codeReadLine, codeWriteLine = codeWriteLine + ?codeWriteLine, commands = commands + ?commands WHERE username = ?username'
         return db.execute(sql, {
                 codeReadLine = lessonVo.codeReadLine,

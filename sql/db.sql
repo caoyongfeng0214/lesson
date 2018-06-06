@@ -136,7 +136,8 @@ CREATE TABLE `subscribe` (
   `packageId` varchar(128) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '课程包ID',
   `finished` tinyint(4) NOT NULL DEFAULT '1' COMMENT '1. 未完成 2. 已完成',
   `state` tinyint(4) NOT NULL DEFAULT '1' COMMENT '1. normal 2. 未付费订阅（课堂学习）',
-  PRIMARY KEY (`sn`)
+  PRIMARY KEY (`sn`),
+  UNIQUE KEY `pkg_unique_key` (`username`,`packageId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 # 序列函数

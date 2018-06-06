@@ -5,6 +5,7 @@ local classroom = NPL.load('../object/classroom')
 local classBll = NPL.load('../bll/class')
 local memberBll = NPL.load('../bll/member')
 local subscribeBll = NPL.load('../bll/subscribe')
+local recordBll = NPL.load('../bll/testrecord')
 local router = express.Router:new()
 local System = commonlib.gettable("System")
 local sitecfg = NPL.load('../confi/siteConfig')
@@ -96,6 +97,24 @@ router:post('/begin', function(req, res, next)
     })
     
     -- TODO: 为导师生成一个 testRecord, 并达成该课程的成就
+    local num, lastId = recordBll.save({
+        username = username,
+        lessonUrl = lessonUrl,
+        lessonTitle = lessonTitle,
+        lessonCover = lessonCover,
+        goals = goals,
+        lessonNo = lessonNo,
+        rightCount = quizzNum,
+        wrongCount = 0,
+        emptyCount = 0,
+        codeReadLine = codeReadLine,
+        codeWriteLine = codeWriteLine,
+        commands = commands,
+        state = 2
+    })
+    if(lastId) then
+        memberBll.achieving(lastId)
+    end
     local rs = {
         err = 0,
         data = room

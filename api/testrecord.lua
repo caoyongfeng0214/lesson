@@ -30,11 +30,6 @@ router:post('/saveOrUpdate', function(req, res, next)
     local commands = p.commands
     local rs = {}
     if( sn ) then
-        -- update
-        -- TODO: 答题完成即时获得成就
-        if( p.emptyCount and tonumber(p.emptyCount) == 0 ) then
-            memberBll.achieving(sn)
-        end
         p.finishTime = os.date( "%Y-%m-%d %H:%M:%S", os.time() )
         local num = recordBll.update(p)
         if(num) then
@@ -44,6 +39,10 @@ router:post('/saveOrUpdate', function(req, res, next)
                     recordSn = sn
                 }
             }
+            -- 答题完成即时获得成就
+            if( p.emptyCount and tonumber(p.emptyCount) == 0 ) then
+                memberBll.achieving(sn)
+            end
         else
             rs = {
                 err = 101,
