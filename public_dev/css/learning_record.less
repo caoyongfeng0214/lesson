@@ -5,6 +5,17 @@
     margin: 0 auto;
     background-color: #fff;
 }
+.open-message{
+    color: #f75858;
+    font-size: 16px;
+    font-family: 'ArialMT'
+}
+.display-none{
+    display: none;
+}
+.display-block{
+    display: block
+}
 //用户信息
 .learning-record .user-info {
     .flexAlignItems(flex-end);
@@ -53,6 +64,7 @@
                 cursor: pointer
             }
             .tooltip-how{
+                background-color: #fff;
                 position: absolute;
                 top: 20px;
                 display: none;
@@ -63,6 +75,7 @@
                 color: #101010;
                 padding: 0 10px;
                 font-family: 'MicrosoftYaHeiLight';
+                z-index: 2000
             }
         }
         
@@ -124,13 +137,26 @@
 }
 
 //课程包列表
-
+//没有数据时
+.no-data {
+    padding-top: 195px;
+    background: url(/imgs/search.png) no-repeat top center;
+    background-size: 200px;
+    font-size: 24px;
+    line-height: 30px;
+    color: #b8b8b8;
+    text-align: center;
+}
+//有数据时
 .learning-record .lesson-list {
-    padding: 70px 10px;
+    padding: 30px 92px;
     .total {
         margin-bottom: 25px;
-        font-size:20px;
-        color: #666;
+        font-size:17px;
+        color: #333;
+        font-family:'ArialMT';
+        font-weight: bold;
+        margin-left: 24px
     }
 
     .el-row {
@@ -138,7 +164,9 @@
     }
 
     .el-col {
-        padding: 0 9px 25px 9px;
+        padding: 0 25px 0;
+        position: relative;
+        height: 370px
     }
 
     .lesson-cover {
@@ -175,18 +203,63 @@
         margin: 12px 0;
         font-size: 17px;
         color: #333;
-
+        font-weight: bold;
         &:hover {
-            color: @themeColor;
+            color: #409EFE;
         }
     }
-
-    .time, .ages {
+    .time{
+        margin-top: 40px;
+        span{
+            color: #FF5C5C !important;
+            margin: 0 5px;
+        }
+    }
+    .time, .ages, .skills {
+        width: 100%;
         margin-bottom: 10px;
-        color: #999;
+        color: #818181;
         font-size: 14px;
-        span {
-            color: #666;
+    }
+    .skills,.title{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display:inline-block;
+        width: calc(100% - 20px);
+        position: absolute;
+    }
+    .progress{
+        margin-top: 60px;
+        //未完成课程包
+        .lessons-progress{
+            .displayFlex;
+            .flexJustifyContent(space-between);
+            .el-progress-bar__inner{
+                background-color: #00E200;
+            }
+            .progress-tip{
+                color: #00E200;
+                margin-top: 10px;
+                font-size: 14px;
+            }
+            .continu-btn{
+                .el-button--mini{
+                    padding: 7px 6px;
+                }
+            }
+        }
+        //已完成课程包
+        .finished{
+            text-align: center;
+            color: #00E200;
+            span{
+                vertical-align: middle;
+            }
+            .el-icon-success{
+                margin-left: 5px;
+                font-size: 22px;
+            }
         }
     }
 }

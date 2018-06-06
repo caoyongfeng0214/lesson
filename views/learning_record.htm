@@ -8,7 +8,7 @@
 <div class="learnRecordWrapper learning-record">
     <!-- 用户信息 -->
     <div class="user-info el-row el-row--flex is-justify-space-between">
-        <div class="e-col">
+        <div class="e-col el-col-12 el-col-xs-24">
             <div class="el-row el-row--flex">
                 <div class="el-col">
                     <img class="portrait" src="" alt="" />
@@ -36,7 +36,7 @@
             </div>
             
         </div>
-        <div class="e-col el-col-12">
+        <div class="e-col el-col-12 el-col-xs-24">
             <div class="code-summary el-row el-row--flex is-justify-space-around" >
                 <div class="el-col el-col-8">
                     <div class="codes-read">
@@ -75,36 +75,21 @@
     </div>
     <!-- 课程包列表 -->
     <div class="lesson-list">
-        <div class="el-row">
-    
+        <!-- 没有数据 -->
+        <div class="no-data display-none">
+            <p>You haven't selected any panckages.</p>
+            <p>Please enter Lessons to view..</p> 
+            <a href="/lesson" class="continue el-button el-button--primary el-button--medium"><span>View Lessons</span></a>                           
         </div>
-    </div>
-    
-    <!-- 弹窗显示内容 -->
-    <!-- <div tabindex="-1" role="dialog" aria-modal="true" aria-label="提示" class="el-message-box__wrapper" style="z-index: 2081;">
-        <div class="el-message-box el-message-box--center">
-            <div class="el-message-box__header">
-                <button type="button" aria-label="Close" class="el-message-box__headerbtn">
-                    <i class="el-message-box__close el-icon-close"></i>
-                </button>
-            </div>
-            <div class="el-message-box__content">
-                <div class="el-message-box__message">
-                    <p>此操作将永久删除该文件, 是否继续?</p>
-                </div>
-            </div>
-            <div class="el-message-box__btns">
-                <button type="button" class="el-button el-button--default el-button--small">
-                    <span>取消</span>
-                </button>
-                <button type="button" class="el-button el-button--default el-button--small el-button--primary ">
-                    <span>确定</span>
-                </button>
+        <!-- 有数据 -->
+        <div class="package-list display-none">
+            <div class="total">Includes: <span class="lesson-total">-</span> packages</div>
+            <div class="el-row">
+                
             </div>
         </div>
+        
     </div>
-    <div class="v-modal" tabindex="0" style="z-index: 2080;"></div>
-    -->
 </div>    
 <script src="/js/learning_record.js"></script>
 {{/ content}}
