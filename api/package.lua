@@ -54,6 +54,10 @@ router:get('/learnList', function(req, res, next)
             pageSize = p.psize,
             pageNo = p.pno
         }
+        -- 没学完的课程包显示在前面，学完的课程包显示在后面；
+        local order = {
+            ['(CASE WHEN doneCount >= lessonCount THEN 1 ELSE 0 END)'] = 'ASC'
+        }
         local list, page = packageBll.list(where, group, order, limit)
         if(list) then
             rs.err = 0

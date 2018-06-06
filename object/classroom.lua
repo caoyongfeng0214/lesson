@@ -4,6 +4,7 @@ local express = NPL.load('express')
 local classBll = NPL.load('../bll/class')
 local recordBll = NPL.load('../bll/testrecord')
 local subscribeBll = NPL.load('../bll/subscribe')
+local memberBll = NPL.load('../bll/member')
 
 local classroom = {}
 
@@ -127,6 +128,7 @@ function classroom:commitAnswer( user, answerSheet, totalScore, rightCount, wron
                     -- 为当前用户创建一个未付费订阅
                     subscribeBll.addBatchByLessonUrl(user.username, self.lessonUrl)
                 end
+                memberBll.achieving(stu.recordSn)
             end
         end
         classroom._set(obj)

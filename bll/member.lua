@@ -81,6 +81,7 @@ member.achieving = function(sn, cn)
     echo(lessonVo)
     echo(testrecordVo)
     if(testrecordVo == nil) then
+        -- TODO: 查询用户的付费订阅课程包是否完成，完成发放知识币奖励
         local sql = 'UPDATE member SET codeReadLine = codeReadLine + ?codeReadLine, codeWriteLine = codeWriteLine + ?codeWriteLine, commands = commands + ?commands WHERE username = ?username'
         return db.execute(sql, {
                 codeReadLine = lessonVo.codeReadLine,

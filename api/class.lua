@@ -95,6 +95,7 @@ router:post('/begin', function(req, res, next)
         commands = commands
     })
     
+    -- TODO: 为导师生成一个 testRecord, 并达成该课程的成就
     local rs = {
         err = 0,
         data = room
