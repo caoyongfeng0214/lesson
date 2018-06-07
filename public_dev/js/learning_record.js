@@ -46,15 +46,15 @@ $(function(){
             $('.Commands-lines-num').html( userinfo.commands );
 
             //是否存在推荐人 存在不显示推荐人模块
-            if( userinfo.presenter ){
-                $('.presenter').hide();
+            if( !userinfo.presenter ){
+                $( '.presenter' ).removeClass('display-none').addClass('display-block');
+                
             }
         }
     })
     //提交推荐人
     $('.add-presenter').on('click',function(){
         var val = $('input[name="presenter-name"]').val();
-        console.log( val );
         if( val != '' ){
             $.post("/api/member/addPresenter",{
                 presenter:val
@@ -92,7 +92,7 @@ $(function(){
         }
         
     })
-    var pno = 1,psize = 20;
+    var pno = 1,psize = 50;
     //获取当前用户学习记录
     $.get("/api/package/learnList", {
         psize: psize,
@@ -102,7 +102,9 @@ $(function(){
             if( !response.data ){
                 $( '.no-data' ).removeClass('display-none').addClass('display-block');
             }else{
-                $( '.package-list' ).removeClass('display-none').addClass('display-block');
+                $( '.no-data' ).removeClass('display-none').addClass('display-block');
+                
+                // $( '.package-list' ).removeClass('display-none').addClass('display-block');
                 //课程包数量
                 $('.lesson-total').html( response.page.totalCount );
                 //课程包列表
