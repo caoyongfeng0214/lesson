@@ -120,14 +120,14 @@ function classroom:commitAnswer( user, answerSheet, totalScore, rightCount, wron
                 wrongCount = wrongCount,
                 emptyCount = emptyCount
             }
+            -- check is add package, if not then create one
+            local packageCount = subscribeBll.checkAddPackageByLessonUrl(username, lessonUrl)
+            if(packageCount == nil or packageCount == 0) then
+                -- 为当前用户创建一个未付费订阅
+                subscribeBll.addBatchByLessonUrl(user.username, self.lessonUrl)
+            end
             if(record.emptyCount and tonumber(record.emptyCount) == 0) then
                 recordBll.update(record) -- 做完才 db 操作
-                -- check is add package, if not then create one
-                local packageCount = subscribeBll.checkAddPackageByLessonUrl(username, lessonUrl)
-                if(packageCount == nil or packageCount == 0) then
-                    -- 为当前用户创建一个未付费订阅
-                    subscribeBll.addBatchByLessonUrl(user.username, self.lessonUrl)
-                end
                 memberBll.achieving(stu.recordSn)
             end
         end

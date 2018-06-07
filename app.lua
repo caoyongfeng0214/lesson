@@ -44,7 +44,7 @@ app:use(function(req, res, next)
 		local langStr = 'EN'; -- 缺省值
 		local lang  = req.cookies.language;
 		local accectLang = req["Accept-Language"];
-		accectLang = 'en-US'
+		-- accectLang = 'en-US'
 		if(lang) then
 			if(lang.value == 'en') then
 				resource = lang_en;
