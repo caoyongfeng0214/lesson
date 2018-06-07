@@ -122,6 +122,10 @@ app:use('/lesson', router_lesson);
 local router_learning_record = NPL.load('./routes/learningRecord');
 app:use('/learningRecord', router_learning_record);
 
+-- 教师专栏
+local router_teacher_column = NPL.load('./routes/teacherColumn');
+app:use('/teacherColumn', router_teacher_column);
+
 -- ***********************************************************************
 -- ****** 无法匹配URL的页面 ******
 -- ***********************************************************************

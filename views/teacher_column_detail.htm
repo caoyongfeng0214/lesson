@@ -1,0 +1,56 @@
+{{< layout}}
+
+{{+ link}}
+<link href="/css/teacher_column.css" rel="stylesheet" />
+{{/link}}
+
+{{+ content}}
+<input hidden value="{{username}}" id="username"/>
+<div class="teacherWrapper teacher-record">
+    <!-- 用户信息 -->
+    <div class="user-info el-row el-row--flex is-justify-space-between">
+        <div class="user-desc e-col el-col-12 el-col-xs-24">
+            <div class="el-row el-row--flex">
+                <img class="portrait" src="" alt="" />
+                <strong>
+                    <span class="name"></span>.
+                </strong>
+            </div>
+        </div>
+        <div class="e-col el-col-12 el-col-xs-24">
+            <div class="teacher-summary el-row el-row--flex is-justify-space-around" >
+                <div class="el-col el-col-12">
+                    <div class="title">Attended</div>
+                    <div class="lines"><span class="attended-num"></span>classes</div>
+                </div>
+                <div class="el-col el-col-12">
+                    <div class="title">Total Teaching Time</div>
+                    <div class="lines"><span class="Total-time-hr"></span>hrs<span class="Total-time-min"></span>mins</div>
+                </div>
+            </div>
+        </div> 
+    </div> 
+    <!-- 没有数据 -->
+    
+    <div class="no-data display-none">
+        <div class="no-data-content">
+            <p>There is no teaching record yet.</p>
+            <a href="/lesson" class="continue el-button el-button--primary el-button--medium"><span>View Lessons</span></a>                           
+        </div>
+    </div>
+    
+     <!--已教课程列表  -->
+     <div class="have-taught display-none">
+        <div class="sort-btn">
+            <span class="sort-icon">
+                <i class="el-icon-caret-top active"></i>
+                <i class="el-icon-caret-bottom"></i>
+            </span>
+            <span>Click to sort by teaching time</span>
+        </div>
+        <div class="have-taught-list"></div>
+    </div>
+
+</div>    
+<script src="/js/teacher_column.js"></script>
+{{/ content}}

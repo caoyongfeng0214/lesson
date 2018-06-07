@@ -121,12 +121,12 @@ var openDialog = function( params,callback ){
     //需要取消按钮
     if( params.cancelBtn ){
         str += '<button type="button" class="cancel-btn el-button el-button--default el-button--small">'
-        + '<span>取消</span>'
+        + '<span>Cancel</span>'
         +'</button>';;
     }
             
     str += '<button type="button" class="ok-btn el-button el-button--default el-button--small el-button--primary ">'
-    +   '<span>确定</span>'
+    +   '<span>OK</span>'
     +'</button>'
     +'</div>'
     +' </div>'
