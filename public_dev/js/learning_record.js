@@ -101,10 +101,8 @@ $(function(){
         if(response.err == 0) {
             if( !response.data ){
                 $( '.no-data' ).removeClass('display-none').addClass('display-block');
-            }else{
-                $( '.no-data' ).removeClass('display-none').addClass('display-block');
-                
-                // $( '.package-list' ).removeClass('display-none').addClass('display-block');
+            }else{                
+                $( '.package-list' ).removeClass('display-none').addClass('display-block');
                 //课程包数量
                 $('.lesson-total').html( response.page.totalCount );
                 //课程包列表
