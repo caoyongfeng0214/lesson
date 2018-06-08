@@ -391,6 +391,24 @@ router:get('/lesson', function(req, res, next)
     end)
 end)
 
+
+-- 获取 package list
+router:get('/pkgs', function(req, res, next)
+    local rs = {}
+    System.os.GetUrl({
+        url = sitecfg.esApi,
+        headers={["content-type"]="application/json"},
+        postfields = '{"query": {"match_phrase_prefix": {"content": "```@LessonPackage styleID: 0 lessonPackage:"}}}' -- jsonString
+    }, function(err, msg, data)
+        if(data ~= nil) then
+            res:send(data)
+        else
+            rs = { type = 'error', err = 400, result ='forbid Fail'}
+            res:send(rs) 
+        end
+    end)
+end)
+
 -- 获取整体课堂详情（用于调试）
 router:get('/debug', function(req, res, next)
     print('t ->', __rts__:GetName())
