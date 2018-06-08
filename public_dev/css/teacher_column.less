@@ -1,0 +1,353 @@
+@import 'lib';
+.container {
+    background-color: #fff;
+}
+
+.open-message{
+    color: #f75858;
+    font-size: 16px;
+    font-family: 'ArialMT'
+}
+.display-none{
+    display: none;
+}
+.display-block{
+    display: block
+}
+//生成激活码
+.activation{
+    padding: 5px 25px 15px;
+    background-color: rgba(64,158,254,0.1);
+    text-align: center;
+    border-bottom: 1px solid #d2d2d2;
+    .activation-content{
+        color: #333;
+        font-size: 17px;
+        font-weight: bold;
+        p{
+            margin: 8px 0;
+        }
+        .notice{
+            color: #FF414A;
+        }
+        .el-input{
+            width: 322px;
+            margin-bottom: 14px;
+            .el-input__inner{
+                border: 1px solid #409EFE;
+            }
+        }
+    }
+    .activation-dismiss{
+        position: absolute;
+        right: 25px;
+        top: 8px;
+        font-size: 14px;
+        color: #6a6a6a;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.get_detail{
+    padding: 0 40px;
+}
+//可获得详情标题
+.teacher_title{
+    color: #333;
+    font-size: 20px;
+    margin: 20px 0;
+    font-family: 'ArialMT'
+}
+//可获得详情
+.user-authority>div {
+    width: 48%;
+    margin-bottom: 5px;
+    border: 1px solid #eee;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 0px 11px rgba(0, 0, 0, 0.08);
+    color: #999;
+    h3 {
+        margin: 0 0 10px;
+        font-size: 26px;
+        color: #333;
+        font-weight: 500;
+        line-height: 1
+    }
+    .head {
+        padding: 33px 10px;
+        background: rgba(247, 247, 247, 1);
+        text-align: center;
+    }
+    &.edu-ins .head {
+        background: url(/imgs/main/buy_vip_bg.png) no-repeat center center;
+        background-size: cover;
+        h3 {
+            color: #FEFFB3;
+        }
+    }
+    .body-content {
+        padding: 8px 0 40px;
+        ul {
+            padding: 0 10px 0 25px;
+        }
+        li {
+            padding-left: 30px;
+            margin-top: 20px;
+            line-height: 24px;
+            color: #818181;
+            font-size: 16px;
+            list-style: none;
+            position: relative;
+            font-family: 'Microsoft YaHei';
+            font-weight: lighter;
+            &.have {
+                color: #333;
+                &::before {
+                    content: "\E639";
+                    position: absolute;
+                    left: 0;
+                    font-size: 20px;
+                    color: #10C55B;
+                    font-family: element-icons !important;
+                    speak: none;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-variant: normal;
+                    text-transform: none;
+                    vertical-align: baseline;
+                    display: inline-block;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                }
+            }
+        }
+    }
+}
+//教师专栏列表
+.teacherWrapper {
+    max-width:1200px;
+    height: auto;
+    margin: 0 auto;
+    background-color: #fff;
+}
+//用户信息
+.teacher-record .user-info {
+    .flexAlignItems(flex-end);
+    padding: 30px 50px;
+    border-bottom: 1px solid #d2d2d2;
+    
+    //昵称 金币数
+    .user-desc{
+        .el-row--flex{
+            .flexAlignItems;
+        }
+        .portrait {
+            .borderRadius;
+            display: inline-block;
+            background-color: #eee;
+            width:60px;
+            height: 60px;
+            object-fit: cover;
+            -o-object-fit: cover;
+        }
+        strong {    
+            color: #333;
+            font-size:20px;
+            margin-left: 15px;
+        }
+        
+        
+    }
+    //code统计
+    .teacher-summary{
+        .el-col{
+            border-right: 1px solid #B5B5B5;
+            text-align: center;
+            .title{
+                color: #6a6a6a;
+                font-size: 14px;
+            }
+            .lines{
+                color: #333;
+                font-size: 16px;
+                font-weight: bold;
+                margin-top: 15px;
+                span{
+                    font-size: 18px;
+                    margin: 0 5px;
+                    color: #ff414a;
+                }
+            }
+        }
+        .el-col:last-child{
+            border: none
+        }
+    }
+}
+
+//没有数据时
+.no-data{
+    padding: 30px 92px;
+}
+.no-data-content {
+    padding-top: 195px;
+    background: url(/imgs/search.png) no-repeat top center;
+    background-size: 200px;
+    font-size: 24px;
+    line-height: 30px;
+    color: #b8b8b8;
+    text-align: center;
+}
+
+//已教课程列表
+.have-taught{
+    .sort-btn {
+        .displayFlex;
+        padding: 10px;
+        font-size:16px;
+        color: #333;
+        cursor: pointer;
+        user-select: none;
+        border-top: 1px solid #E5E5E5;
+        .sort-icon {
+            padding-right: 5px;
+            >i {
+                display: block;
+                line-height: 8px;
+                color: #CCC;
+                &.active {
+                    color: @themeColor;
+                }
+            }
+        }
+    }
+    .have-item {
+        border: 1px solid #E5E5E5;
+        margin-bottom: 20px;
+        font-family: 'Microsoft YaHei';
+        .time {
+            padding: 8px 15px;
+            color: #181818;
+            font-size: 18px;
+            border-bottom: 1px solid #E5E5E5;
+        }
+
+        .layout-box {
+            // .displayFlex;
+            // .flexAlignItems;
+            padding: 15px 20px 15px 10px;
+            .item-cover{
+                width: 250px;
+                height: 146px;
+                a{
+                    width: 100%;
+                    height: 100%;
+                    display: inline-block;
+                }
+            }
+
+            .cover {
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+            }
+
+            .content {
+                flex: 1;
+                margin: 0 20px;
+                .title,.duration,.goals{
+                    font-size: 14px;
+                    color: #333;
+                    font-weight: bold;
+                    margin: 12px 0;
+                    display: block;
+                    span,ul{
+                        font-weight: lighter;
+                    }
+                }
+                .title:hover {
+                    text-decoration: underline;
+                    color: @themeColor;
+                }
+                
+                .package-title>.title{
+                    font-size: 18px;
+                    margin: 0;
+                }
+                .goals {
+                    >ul {
+                        padding-left: 18px;
+
+                        li {
+                            margin-top: 8px;
+                            color: #333;
+                            word-break: break-all;
+                            word-wrap: break-word;
+                            white-space: pre-line;
+                        }
+                    }
+                }
+                .foot {
+                    width: 90%;
+                    .displayFlex;
+                    .flexAlignItems;
+                    .flexJustifyContent(space-between);
+                    .flexWrap(wrap);
+                    color: #111;
+
+                    .scores-info {
+                        margin: 10px 0;
+                    }
+
+                    span {
+                        margin-right:  15px;
+
+                        em {
+                           color: #FF414A;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+    .get_detail{
+        .user-authority{
+            .flexDirection;
+            &>div{
+                width: 100%;
+            }
+        }
+    }
+}
+@media (max-width: 415px){
+    .teacher-record {
+        .user-info{
+            padding: 30px 15px;
+            .flexDirection;
+            .teacher-summary{
+                margin-top: 10px;
+            }
+        }
+        .have-taught{
+            .layout-box{
+                .flexDirection;
+                .item-cover{
+                    margin: 0 auto;
+                }
+                .content{
+                    margin-top: 20px;
+                }
+            }
+        }
+    } 
+}

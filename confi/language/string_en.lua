@@ -10,6 +10,7 @@ local string_en = {
     about_us = 'About Us',
     parters = 'Partners',
     learning_record = 'LEARNING RECORD',    
+    teacher_column = 'TEACHER COLUMN',    
 }
 
 NPL.export(string_en);

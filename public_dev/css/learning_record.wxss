@@ -36,6 +36,7 @@
   -ms-align-items: flex-end;
   -o-align-items: flex-end;
   padding: 30px 50px;
+  border-bottom: 1px solid #D2D2D2;
 }
 .learning-record .user-info .portrait {
   border-radius: 50%;
@@ -139,6 +140,7 @@
   background-color: rgba(64, 158, 254, 0.1);
   text-align: center;
   position: relative;
+  border-top: 1px solid #d2d2d2;
 }
 .presenter .presenter-content {
   color: #333;
@@ -288,4 +290,28 @@
 .learning-record .lesson-list .progress .finished .el-icon-success {
   margin-left: 5px;
   font-size: 22px;
+}
+.learning-record .lesson-list .progress .start {
+  text-align: center;
+}
+@media (max-width: 670px) {
+  .learning-record .lesson-list {
+    padding: 0;
+  }
+}
+@media (max-width: 415px) {
+  .learning-record .user-info {
+    padding: 30px 15px;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+  }
+  .learning-record .user-info .code-summary {
+    margin-top: 10px;
+  }
+  .learning-record .lesson-list .el-col {
+    width: 100%;
+  }
 }

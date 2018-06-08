@@ -18,7 +18,7 @@ $(function(){
             //是否是第一次进入
             if( userinfo.firstInFlag == 1 ){
                 openDialog({
-                    width : 'max-content',
+                    width : 'auto',
                     messageClass : 'open-message',
                     message: "<p>Great to see you!</p><p>Thanks for signing up for a PAC Lesson account.</p><p>You've got a reward of 200 coins.</p> "
                 })
@@ -46,22 +46,22 @@ $(function(){
             $('.Commands-lines-num').html( userinfo.commands );
 
             //是否存在推荐人 存在不显示推荐人模块
-            if( userinfo.presenter ){
-                $('.presenter').hide();
+            if( !userinfo.presenter ){
+                $( '.presenter' ).removeClass('display-none').addClass('display-block');
+                
             }
         }
     })
     //提交推荐人
     $('.add-presenter').on('click',function(){
         var val = $('input[name="presenter-name"]').val();
-        console.log( val );
         if( val != '' ){
             $.post("/api/member/addPresenter",{
                 presenter:val
             },function(response){
                 if( response.err == 0 ){
                     openDialog({
-                        width : 'max-content',
+                        width : 'auto',
                         messageClass : 'open-message',
                         message : "Congratulations. You've got a reward of 20 coins."
                     })
@@ -71,13 +71,13 @@ $(function(){
                     $('.presenter').fadeOut(500);
                 }else if( response.err == 104 ){
                     openDialog({
-                        width : 'max-content',
+                        width : 'auto',
                         messageClass : 'open-message',
                         message : "It's not a valid account. Please check it and try again."
                     })
                 }else if( response.err == 105 ){
                     openDialog({
-                        width : 'max-content',
+                        width : 'auto',
                         messageClass : 'open-message',
                         message : "Not allow add more then two presenter. Please check it and try again."
                     })
@@ -85,14 +85,14 @@ $(function(){
             })
         }else{
             openDialog({
-                width : 'max-content',
+                width : 'auto',
                 messageClass : 'open-message',
                 message : "It's not a valid account. Please check it and try again."
             })
         }
         
     })
-    var pno = 1,psize = 20;
+    var pno = 1,psize = 50;
     //获取当前用户学习记录
     $.get("/api/package/learnList", {
         psize: psize,
@@ -102,7 +102,9 @@ $(function(){
             if( !response.data ){
                 $( '.no-data' ).removeClass('display-none').addClass('display-block');
             }else{
-                $( '.package-list' ).removeClass('display-none').addClass('display-block');
+                $( '.no-data' ).removeClass('display-none').addClass('display-block');
+                
+                // $( '.package-list' ).removeClass('display-none').addClass('display-block');
                 //课程包数量
                 $('.lesson-total').html( response.page.totalCount );
                 //课程包列表
@@ -126,8 +128,8 @@ $(function(){
                    if( !item.packageUrl.startWith("http") ){
                         item.packageUrl = keepworkHost + item.packageUrl;
                     }
-                    
-                    var str = '<div class="el-col el-col-12 el-col-xs-24 el-col-sm-8 el-col-md-8 el-col-lg-8 el-col-xl-8">'+
+                    //课程包列表
+                    var str = '<div class="el-col el-col-12 el-col-xs-12 el-col-sm-12 el-col-md-8 el-col-lg-8 el-col-xl-8">'+
                     '    <a href="' + item.packageUrl + '" target="_blank" class="lesson-cover">'+
                     '        <div style="background-image: url(' + item.cover + ');"></div>'+
                     '    </a>'+
@@ -146,27 +148,37 @@ $(function(){
                     }
 
                     if( item.doneCount >= item.lessonCount ){
+                        //当学完显示学完
                         str += '<div class="finished"><span>Finished<span><i class="el-icon-success"></i></div>'
                     }else{
-                        str += '<div class="lessons-progress">'+
-                                // '<el-progress :stroke-width="18" :text-inside="true" :percentage="lessonProgress"></el-progress>'+
-                                '<div class="el-progress el-progress--line el-progress--text-inside">'+
-                                    '<div class="el-progress-bar">'+
-                                        '<div class="el-progress-bar__outer" style="height: 10px;">'+
-                                            '<div class="el-progress-bar__inner" style="width: '+ item.lessonProgress +'%;">'+
-                                                // '<div class="el-progress-bar__innerText">'+ item.lessonProgress +'%</div>'+
-                                            '</div>'+
+                        if( item.doneCount == 0 ){
+                            //未开始学习
+                            str += '<div class="start"><a href="'+ keepworkHost + item.firstLessonUrl +'" class="el-button el-button--primary el-button--mini"><span>Start to learn<span></a></div>'
+                        }else{
+                            //进度条
+                            str += '<div class="lessons-progress">'+
+                            // '<el-progress :stroke-width="18" :text-inside="true" :percentage="lessonProgress"></el-progress>'+
+                            '<div class="el-progress el-progress--line el-progress--text-inside">'+
+                                '<div class="el-progress-bar">'+
+                                    '<div class="el-progress-bar__outer" style="height: 10px;">'+
+                                        '<div class="el-progress-bar__inner" style="width: '+ item.lessonProgress +'%;">'+
+                                            // '<div class="el-progress-bar__innerText">'+ item.lessonProgress +'%</div>'+
                                         '</div>'+
                                     '</div>'+
-                                '<div class="progress-tip">Have learned '+ item.doneCount +' lessons.</div>'+
                                 '</div>'+
-                                '<div class="continu-btn">';
-                        if(item.url == ''){
-                            str += '<button class="btn_continue continue el-button el-button--primary el-button--mini"><span>Continue</span></button>'                                    
-                        }else{
-                            str += '<a href="'+ item.url +'" class="continue el-button el-button--primary el-button--mini"><span>Continue</span></a>'                                      
+                            '<div class="progress-tip">Have learned '+ item.doneCount +' lessons.</div>'+
+                            '</div>'+
+                            '<div class="continu-btn">';
+                            if(item.url == ''){
+                                //未购买不跳转弹窗显示请先购买
+                                str += '<button class="btn_continue continue el-button el-button--primary el-button--mini"><span>Continue</span></button>'                                    
+                            }else{
+                                //继续学习
+                                str += '<a href="'+ item.url +'" class="continue el-button el-button--primary el-button--mini"><span>Continue</span></a>'                                      
+                            }
+                            str += '</div></div>'
                         }
-                        str += '</div></div>'
+                        
                     }
 
                     str += '</div></div>';
@@ -174,9 +186,10 @@ $(function(){
                     $('.lesson-list .el-row').append(str)
                     
                 }
+                //请先购买弹窗
                 $('.btn_continue').on('click',function(){
                     openDialog({
-                        width : 'max-content',
+                        width : 'auto',
                         messageClass : 'open-message',
                         message:'Please add the package first.',
                     })
