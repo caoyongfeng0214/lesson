@@ -23,11 +23,12 @@ end, {
 
 app:use(function(req, res, next)
 	-- 因为keepwork调用接口需要用到cookie，这样需要返回更具体的允许主机
-	local host = req['Origin'] or '';
+	local host = req['Origin'];
 	-- if string.find(host, 'keepwork.com') then
+	if host then
 		res:setHeader('Access-Control-Allow-Origin', host);
 		res:setHeader('Access-Control-Allow-Credentials', 'true');		
-	-- end
+	end
 	next(req, res, next);
 end);
 
@@ -61,6 +62,9 @@ app:use(function(req, res, next)
 				resource = lang_en;
 				langStr = 'EN';
 			end
+		end
+		if(req.query.__keepwork__) then
+			res.__data__.headerShow = true
 		end
 		res.__data__.string = resource;
 		res.__data__.language = langStr;

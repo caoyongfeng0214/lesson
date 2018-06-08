@@ -13,6 +13,7 @@
     {{? link}}
 </head>
 <body>
+    {{^__data__.headerShow}}
     <div class="header noprint">
         <div class="nav-bar">
             <div class="menu">
@@ -27,6 +28,7 @@
             </div>  
         </div>   
     </div>
+    {{/__data__.headerShow}}
     <div class="main">
         {{? content}}
     </div>
@@ -36,7 +38,7 @@
             if (window.parent !== window) {
                 var height = $('body').outerHeight() + 400;
                 console.log('lesson echo: ' + height)
-                window.parent.postMessage({cmd:'element_style', selector:'iframeId', style:{'height':height + 'px'}}, 'http://keepwork.com');
+                window.parent.postMessage({cmd:'element_style', selector:'iframeId', style:{'height':height + 'px'}}, 'http://localhost:8080');
             }
         // }, 1000)
 

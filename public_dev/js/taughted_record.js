@@ -319,21 +319,21 @@ var appendRecord = function(item) {
 }
 
 document.domain = 'localhost';
-// 计算页面的实际高度，iframe自适应会用到
-function calcPageHeight(doc) {
-    var cHeight = Math.max(doc.body.clientHeight, doc.documentElement.clientHeight);
-    var sHeight = Math.max(doc.body.scrollHeight, doc.documentElement.scrollHeight);
-    var height  = Math.max(cHeight, sHeight);
-    return height;
-}
-window.onload = function() {
-    var height = calcPageHeight(document);
-    var container = parent.document.getElementById('summaryContainer');
-    if(container) {
-        container.style.height = height + 100 + 'px';
-        container.contentWindow.document.getElementsByClassName("header")[0].style.display = 'none'; 
-        container.contentWindow.document.getElementsByClassName("main")[0].style.padding = "0";
-        container.contentWindow.document.getElementsByClassName("recordWrapper")[0].style.width = '1080px';
-        container.contentWindow.document.getElementsByClassName("recordWrapper")[0].style.padding = "40px 2%";
-    }
-}
+// // 计算页面的实际高度，iframe自适应会用到
+// function calcPageHeight(doc) {
+//     var cHeight = Math.max(doc.body.clientHeight, doc.documentElement.clientHeight);
+//     var sHeight = Math.max(doc.body.scrollHeight, doc.documentElement.scrollHeight);
+//     var height  = Math.max(cHeight, sHeight);
+//     return height;
+// }
+// window.onload = function() {
+//     var height = calcPageHeight(document);
+//     var container = parent.document.getElementById('summaryContainer');
+//     if(container) {
+//         container.style.height = height + 100 + 'px';
+//         container.contentWindow.document.getElementsByClassName("header")[0].style.display = 'none'; 
+//         container.contentWindow.document.getElementsByClassName("main")[0].style.padding = "0";
+//         container.contentWindow.document.getElementsByClassName("recordWrapper")[0].style.width = '1080px';
+//         container.contentWindow.document.getElementsByClassName("recordWrapper")[0].style.padding = "40px 2%";
+//     }
+// }
