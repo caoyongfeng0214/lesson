@@ -338,6 +338,9 @@ router:get('/taught', function(req, res, next)
     }
     local list, page = classBll.taughtRecord(where, nil, order, limit)
     if(list) then
+        for i,v in ipairs(list) do
+            v.pkgs = commonlib.Json.Decode(v.pkgs)
+        end
         rs.err = 0
         rs.data = list
         rs.page = page

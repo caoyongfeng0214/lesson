@@ -20,7 +20,9 @@ end
 
 -- 教学记录
 class.taughtRecord = function( where, group, order, limit, cn )
-    local sql = 'SELECT sn, classId, startTime, lessonUrl, lessonTitle, lessonNo, goals, lessonCover FROM class'
+    local sql = [[SELECT sn, classId, startTime, lessonUrl, lessonTitle, lessonNo, goals, lessonCover,
+        CONCAT("[", (SELECT  SUBSTRING_INDEX(GROUP_CONCAT(JSON_OBJECT( "pkgTitle", p.title, "pkgUrl", p.packageUrl ) ),",{",3) FROM package2lesson pl LEFT JOIN package p ON pl.packageId = p.id WHERE pl.lessonUrl = class.`lessonUrl` ), "]" ) pkgs
+        FROM class]]
     return db.findJoin(sql, where, group, order, limit, cn)
 end
 

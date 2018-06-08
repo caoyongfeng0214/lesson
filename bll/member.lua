@@ -125,7 +125,7 @@ member.achieving = function(sn, cn)
 end
 
 member.findOrInsertByName = function( username, portrait )
-    local sql = 'SELECT sn, username, portrait, coin, identity, presenter, firstInFlag, codeReadLine, codeWriteLine, commands, presenter, vipEndTime, UNIX_TIMESTAMP(vipEndTime) vipEndUnixTime, TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member'
+    local sql = 'SELECT sn, (SELECT COUNT(1) FROM class WHERE teacher = member.username) teachedCount, username, portrait, coin, identity, presenter, firstInFlag, codeReadLine, codeWriteLine, commands, presenter, vipEndTime, UNIX_TIMESTAMP(vipEndTime) vipEndUnixTime, TIMESTAMPDIFF( DAY,NOW() , vipEndTime ) vipDay FROM member'
     local memberVo = db.detail(sql, { username = username } )
     if( memberVo == nil ) then
         -- insert
