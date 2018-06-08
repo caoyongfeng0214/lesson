@@ -26,14 +26,16 @@ $(function(){
             $('.portrait').attr( 'src', userinfo.portrait );
 
             //已教课程数量
-            $('.attended-num').html( userinfo.coin);
+            $('.attended-num').html( userinfo.teachedCount);
 
-            //TODO
+            // 授课总时长
+            var teachedTime = userinfo.teachedCount * 45;
+
             //总教学时长小时
-            $('.Total-time-hr').html( userinfo.codeReadLine );
+            $('.Total-time-hr').html( Math.floor(teachedTime/60) );
 
             //总教学时长分钟
-            $('.Total-time-min').html( userinfo.codeWriteLine );
+            $('.Total-time-min').html( Math.floor(teachedTime%60) );
 
             //获取已教课程列表
             getTaughtRecordList(PAGE_SIZE, 1);            
@@ -123,14 +125,20 @@ $(function(){
                     for(var i = 0; i < response.data.length; i++) {
                         var item = response.data[i];
                         item.lessonCover = item.lessonCover.startsWith('http')?item.lessonCover:keepworkHost + item.lessonCover;
-                        haveTaughtList.append('<div class="have-item">' +
+                        
+                        var itemStr = '<div class="have-item">' +
                         '<div class="time">'+ new Date(item.startTime).format("hh:mm dd/MM/yyyy") +'</div>' +
                         '<div class="layout-box el-row el-row--flex">' +
                         '    <div class="item-cover "><a href="' + (keepworkHost + item.lessonUrl)+ '" target="_blank" class="title"><div class="cover" style="background-image: url('+ item.lessonCover +')"></div></a></div>' +
-                        '    <div class="content">' +
-                        //TODO
-                        '        <div class="package-title"><a href="' + (keepworkHost + item.lessonsUrl)+ '" target="_blank" class="title">Package: '+ item.packageTitle +'</a></div>' +
-                        '        <div class="lesson-title"><a href="' + (keepworkHost + item.lessonUrl)+ '" target="_blank" class="title">Lesson '+ item.lessonNo +'：<span>'+ item.lessonTitle +'</span></a></div>' +
+                        '    <div class="content">';
+                        if( item.pkgs ){
+                            itemStr += '<div class="package-title"><span>Package: </span>';
+                            for( var j = 0; j < item.pkgs.length;j++ ){
+                                itemStr += '<a href="' + (keepworkHost + item.pkgs[j].pkgUrl)+ '" target="_blank" class="title"> '+ item.pkgs[j].pkgTitle +'</a>'
+                            }
+                            itemStr += '</div>';
+                        }
+                        itemStr += '<div class="lesson-title"><a href="' + (keepworkHost + item.lessonUrl)+ '" target="_blank" class="title">Lesson '+ item.lessonNo +'：<span>'+ item.lessonTitle +'</span></a></div>' +
                         '        <div class="duration">Duration：<span>45mins</span></div>' +
                         '        <div class="goals">' +
                         '            <div>Lesson Goals:</div>' +
@@ -143,7 +151,11 @@ $(function(){
                         '        </div>' +
                         '    </div>' +
                         '</div>' +
-                        '</div>')
+                        '</div>'
+                        
+                        haveTaughtList.append(itemStr);
+
+                        
                     }
                 }
                 
