@@ -1,15 +1,18 @@
 @import 'lib';
-body {
-    background-color: #fff;
-}
 
 .lesson-list {
-    padding: 70px 10px;
-
+    max-width:1200px;
+    height: auto;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px 92px;
     .total {
         margin-bottom: 25px;
-        font-size:20px;
-        color: #666;
+        font-size:17px;
+        color: #333;
+        font-family:'ArialMT';
+        font-weight: bold;
+        margin-left: 24px
     }
 
     .el-row {
@@ -17,7 +20,9 @@ body {
     }
 
     .el-col {
-        padding: 0 9px 25px 9px;
+        padding: 0 25px 0;
+        position: relative;
+        margin-bottom: 28px;
     }
 
     .lesson-cover {
@@ -54,18 +59,50 @@ body {
         margin: 12px 0;
         font-size: 17px;
         color: #333;
-
+        font-weight: bold;
         &:hover {
-            color: @themeColor;
+            color: #409EFE;
         }
     }
 
-    .time, .ages {
-        margin-bottom: 10px;
-        color: #999;
-        font-size: 14px;
-        span {
-            color: #666;
+    .time{
+        margin-top: 40px;
+        span{
+            color: #FF5C5C !important;
+            margin: 0 5px;
         }
+    }
+    .time, .ages, .skills {
+        width: 100%;
+        margin-bottom: 10px;
+        color: #818181;
+        font-size: 14px;
+    }
+    .item{
+        padding: 5px;
+        border: 1px solid rgba(160, 160, 160, 0);
+        
+    }
+    .item:hover{
+        cursor: pointer;
+        border: 1px solid rgba(160, 160, 160, 1);
+        border-radius: 8px;
+        box-shadow:4px 4px 4px rgba(90,90,90,0.44);
+        .title{
+            color: #409EFE;
+        }
+    }
+    .item:after{
+        content: '';
+        margin-top: 30px;
+        display: block;
+    }
+    .skills,.title{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display:inline-block;
+        width: calc(100% - 20px);
+        position: absolute;
     }
 }

@@ -10,14 +10,26 @@ $(function(){
                 for(var i = 0; i < data.length; i++) {
                     var item  = data[i]._source
                     parseMarkDown(item);
-                    $('.el-row').append('<div class="el-col el-col-12 el-col-xs-12 el-col-sm-8 el-col-md-8 el-col-lg-6 el-col-xl-6">'+
-                        '    <a href="' + item.url + '" target="_blank" class="lesson-cover">'+
-                        '        <div style="background-image: url(' + item.cover + ');"></div>'+
-                        '    </a>'+
-                        '    <a href="' + item.url + '" target="_blank" class="title">' + item.title + '</a>'+
-                        '    <div class="time">Duration: <span>45mins</span></div>'+
-                        '    <div class="ages">Ages: <span>Suitable for all</span></div>'+
-                        '</div>')
+                    console.log( item )
+                     //年龄范围
+                     if( item.agesMax == 0 && item.agesMin == 0 ){
+                        item.ageMsg = 'Suitable for all' ;
+                    }else{
+                        item.ageMsg = item.agesMin + '-' + item.agesMax;
+                    }
+                    
+                   //课程包列表
+                   var str = '<div class="el-col el-col-12 el-col-xs-12 el-col-sm-12 el-col-md-8 el-col-lg-8 el-col-xl-8">'+
+                   '<div class="item">'+
+                   '    <a href="' + item.url + '" target="_blank" class="lesson-cover">'+
+                   '        <div style="background-image: url(' + item.cover + ');"></div>'+
+                   '    </a>'+
+                   '    <a href="' + item.url + '" target="_blank" class="title">' + item.title + '</a>'+
+                   '    <div class="time">Include: <span>'+ item.lessonCount +'</span> lessons</div>'+
+                   '    <div class="ages">Ages: <span>'+ item.ageMsg +'</span></div>'+
+                   '    <div class="skills">Skills: <span>'+ item.skills +'</span></div>'+
+                   ' </div> '
+                    $('.el-row').append(str);
                 }   
             }
         }  
