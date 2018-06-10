@@ -1,7 +1,7 @@
 $(function(){
     $.ajax({  
         type : "GET",  
-        url : "/api/class/pkgs",   
+        url : "./api/class/pkgs",   
         complete:function(response) {  
             var r = JSON.parse(response.responseText)
             $('.lesson-total').text(r.hits.total);

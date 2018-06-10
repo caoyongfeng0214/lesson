@@ -50,8 +50,6 @@ end)
 -- 获取课程包的学习与购买状态
 router:get('/state', function(req, res, next)
     local p = req.query
-    echo('#DEBUG')
-    echo(p)
     local packageId = p.packageId
     local rq = rq(p, {'packageId'}, res)
     if(not rq) then return end
