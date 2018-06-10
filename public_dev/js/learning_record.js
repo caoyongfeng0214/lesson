@@ -21,6 +21,8 @@ $(function(){
                     width : 'auto',
                     messageClass : 'open-message',
                     message: "<p>Great to see you!</p><p>Thanks for signing up for a PAC Lesson account.</p><p>You've got a reward of 200 coins.</p> "
+                }, function(){
+                    $.post("/api/member/firstIn");
                 })
             }
 

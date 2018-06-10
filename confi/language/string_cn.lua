@@ -1,6 +1,6 @@
 local string_cn = {
     home = '首页',
-    lessons = '课程中心',
+    lessons = '选课',
     buy = '购买',
     record = '我的记录',
     view_more_lessons = '查看更多课程',
@@ -9,7 +9,7 @@ local string_cn = {
     abount_lessons = '关于 Lessons',
     about_us = '关于我们',
     parters = '合作伙伴',
-    learning_record = '学习记录',
+    learning_record = '我的课程',
     teacher_column = '教师专栏',  
     home_teacher_tit = '用动画吸引你的学生吧！',
     home_teacher_content = '你曾想过在课堂上将精美的动画和游戏展示给你的学生吗？在他们玩的时候阅读源代码来学习编程。',

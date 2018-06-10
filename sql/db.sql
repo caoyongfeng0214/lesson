@@ -69,23 +69,26 @@ CREATE TABLE `testrecord` (
   `lessonTitle` varchar(256) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '课程页面标题',
   `lessonCover` varchar(256) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '课程封面地址',
   `goals` varchar(512) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '课程目标',
+  `studentNo` varchar(128) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '学号',
   `lessonNo` varchar(256) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '课程序号',
   `lessonPerformance` varchar(2048) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '内容总结',
-  `beginTime` datetime DEFAULT NULL COMMENT '开始时间',
+  `beginTime` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '开始时间',
   `answerSheet` text COLLATE utf8_unicode_ci COMMENT '答题卡 JSON 格式',
+  `quizNum` int(11) DEFAULT NULL COMMENT '题目数量',
   `totalScore` int(11) DEFAULT NULL COMMENT '总得分',
   `rightCount` int(11) DEFAULT NULL COMMENT '答对题数',
   `wrongCount` int(11) DEFAULT NULL COMMENT '答错题数',
   `emptyCount` int(11) DEFAULT NULL COMMENT '未作答题数',
   `finishTime` datetime DEFAULT NULL COMMENT '完成时间',
-  `state` tinyint(4) NOT NULL DEFAULT '1' COMMENT '自学状态 1.自学中 2.自学结束',
+  `state` tinyint(4) NOT NULL DEFAULT '1' COMMENT '自学状态 0.废弃 1.自学中 2.自学结束',
   `duration` int(11) NOT NULL DEFAULT '0' COMMENT '学习时长（分钟数）',
   `codeReadLine` int(11) NOT NULL DEFAULT '0' COMMENT '代码阅读量',
   `codeWriteLine` int(11) NOT NULL DEFAULT '0' COMMENT '代码书写量',
   `commands` int(11) NOT NULL DEFAULT '0' COMMENT '学习到的命令数量',
+  `cheatFlag` tinyint(4) NOT NULL DEFAULT '0' COMMENT '0.normal 1.作弊',
   PRIMARY KEY (`sn`),
   UNIQUE KEY `username` (`username`,`classId`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1477 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 DROP TABLE IF EXISTS `seq`;
 CREATE TABLE `seq` (

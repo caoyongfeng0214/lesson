@@ -12,6 +12,7 @@ local sitecfg = NPL.load('../confi/siteConfig')
 
 local ROOM_ID_MIN = 100
 local ROOM_ID_MAX = 999
+local ROOM_MAX_STUDENT_NUMBER = 100
 
 -- 开始上课
 router:post('/begin', function(req, res, next)
@@ -24,7 +25,7 @@ router:post('/begin', function(req, res, next)
     local goals = p.goals
     local username = p.username
     local lessonPerformance = p.lessonPerformance
-    local quizzNum = p.quizzNum
+    local quizNum = p.quizNum
     local codeReadLine = p.codeReadLine
     local codeWriteLine = p.codeWriteLine
     local commands = p.commands
@@ -75,7 +76,7 @@ router:post('/begin', function(req, res, next)
         goals = goals,
         startTime = startTime,
         lessonPerformance = lessonPerformance,
-        quizzNum = tonumber(quizzNum),
+        quizNum = tonumber(quizNum),
         codeReadLine = codeReadLine,
         codeWriteLine = codeWriteLine,
         commands = commands
@@ -90,7 +91,7 @@ router:post('/begin', function(req, res, next)
         goals = goals,
         startTime = startTime,
         lessonPerformance = lessonPerformance,
-        quizzNum = tonumber(quizzNum),
+        quizNum = tonumber(quizNum),
         codeReadLine = codeReadLine,
         codeWriteLine = codeWriteLine,
         commands = commands
@@ -104,7 +105,7 @@ router:post('/begin', function(req, res, next)
         lessonCover = lessonCover,
         goals = goals,
         lessonNo = lessonNo,
-        rightCount = quizzNum,
+        rightCount = quizNum,
         wrongCount = 0,
         emptyCount = 0,
         codeReadLine = codeReadLine,
@@ -154,6 +155,18 @@ router:post('/enter', function(req, res, next)
     local member = memberBll.findOrInsertByName(username, portrait)
     local room = classroom.getClassRoom(classId)
     if( room and room.state == 0) then -- 进行中的课堂
+        local studentNumber = 0
+        for k,v in pairs(room.students) do
+            studentNumber = studentNumber + 1
+        end
+        if(studentNumber >= ROOM_MAX_STUDENT_NUMBER) then
+            rs = {
+                err = 202,
+                msg = 'classroom full now.'
+            }
+            res:send(rs)
+            return
+        end
         if(classroom.USERs['username'] ~= nil) then
             res:send({
                 err = 0,
@@ -365,6 +378,11 @@ router:get('/detail', function(req, res, next)
     local data = classBll.detail(where)
     if(data) then
         data.summary = commonlib.Json.Decode(data.summary)
+        for i,v in ipairs(data.summary) do
+            if(v.answerSheet) then
+                v.answerSheet = commonlib.Json.Decode(v.answerSheet)
+            end
+        end
         rs.err = 0
         rs.data = data
     else

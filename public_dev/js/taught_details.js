@@ -6,7 +6,7 @@ $(function(){
 });
 
 var getRecordDetail = function() {
-    $.get("./api/record/learnDetailBySn", {
+    $.get("/api/record/learnDetailBySn", {
         sn: recordSn
     }, function(response) {
         var r = response.data;

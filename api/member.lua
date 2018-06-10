@@ -94,6 +94,24 @@ router:post('/addPresenter', function(req, res, next)
 
 end)
 
+-- firstIn
+router:post('/firstIn', function(req, res, next)
+    local firstIn = function(user)
+        memberBll.firstIn(user.username)
+        res:send({
+            err = 0,
+            msg = 'success.'
+        })
+    end 
+    local token = req.cookies.token
+    commonBll.auth(token, firstIn, function()
+        res:send({
+            err = 102,
+            msg = 'plz login.'
+        })
+    end)
+end)
+
 -- 激活账户成为教育账户
 router:post('/activate', function(req, res, next)
     local p = req.body

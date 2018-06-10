@@ -76,9 +76,18 @@
 
             <div class="item">
                 <span>Detailed :</span>
+                <div>
+                    <a href="javascript:;" id="btnChangeAll" title="Give full marks to all students." class="el-button el-button--primary el-button--small noprint">ChangeAll</a>
+                    <a href="javascript:;" id="btnChange" title="Give full marks to the selected students." class="el-button el-button--primary el-button--small noprint">Change</a>
+                </div>
                 <table class="table-wrap" cellspacing="0" border="0">
                     <thead>
                         <tr>
+                            <td style="width:5%;" class="noprint">
+                                <div class="cbx-number">
+                                    <input type="checkbox" id="cbxCheckAll" class="el-checkbox">
+                                </div>
+                            </td>
                             <td style="width:10%;">
                                 <div class="draw-user"></div>
                             </td>
@@ -115,7 +124,7 @@
                                     </span>
                                 </div>
                             </td>
-                            <td style="width:11%;">
+                            <td style="width:10%;">
                                 <div class="sort-btn sort-by-right">
                                     <span>
                                         Right
@@ -126,7 +135,7 @@
                                     </span>
                                 </div>
                             </td>
-                            <td style="width:12%;">
+                            <td style="width:10%;">
                                 <div class="sort-btn sort-by-wrong">
                                     <span>
                                        Wrong
@@ -137,7 +146,7 @@
                                     </span>
                                 </div>
                             </td>
-                            <td style="width:12%;">
+                            <td style="width:10%;">
                                 <div class="sort-btn sort-by-empty">
                                     <span>
                                         Empty

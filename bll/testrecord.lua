@@ -45,4 +45,8 @@ testrecord.detailByLessonUrl = function( where, group, order, cn )
     return db.detail(sql, where, group, order, cn)
 end
 
+testrecord.updateBath  = function(set, inCase, cn)
+    return db.updateStatusBatch(tbl, set, inCase, cn)
+end
+
 NPL.export(testrecord)
