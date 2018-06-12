@@ -52,6 +52,23 @@ local string_en = {
     packages = 'packages',
     signup = 'SIGN UP',
     login = 'LOGIN',
+    coins = 'Coins',
+    codes_read = 'Codes read',
+    codes_written = 'Codes written',
+    commands_learned = 'Commands learned',
+    lines = 'lines',
+    how_to_earn_coins = [[
+        <p>How to earn coins:</p> 
+        <p>1. 200 coins will be given to you as a reward when you enter our system for the first time.</p>
+        <p>2. Each time you recommend one friend to be our user, both you and the invited could get a reward of 20 coins. It's cumulative.</p> 
+        <p>3. You need to invest some coins to get access to those lesson packages. And after finishing the learning of each package, you will get a reward of coins.</p> 
+    ]],
+    invinter_tips = [[
+        <p>Please input the user name of your referee who recommended our system.</p>
+        <p>Both you and your inviter will get a reward of 20 coins.</p> 
+    ]],
+    invinter_dismiss = 'Dismiss',
+    invinter_submit = 'Submit',
     
 }
 

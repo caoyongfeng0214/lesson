@@ -382,6 +382,14 @@ router:get('/detail', function(req, res, next)
             if(v.answerSheet) then
                 v.answerSheet = commonlib.Json.Decode(v.answerSheet)
             end
+            if(v.portrait) then
+                if( not v.portrait:startswith('http') ) then
+                    v.portrait = sitecfg.keepworkHost .. v.portrait
+                end
+            else
+                -- 没有头像给默认头像
+                v.portrait = 'http://keepwork.com/wiki/assets/imgs/default_portrait.png?bust=1518090037'
+            end
         end
         rs.err = 0
         rs.data = data

@@ -29,7 +29,7 @@ end
 -- 教学详情
 class.detail = function( where, group, order, cn )
     local sql = [[SELECT sn, classId, startTime, lessonUrl, teacher, lessonTitle, lessonNo, goals, startTime, finishTime,
-        CONCAT("[", (SELECT GROUP_CONCAT(JSON_OBJECT( "totalScore", t.totalScore, "answerSheet", t.answerSheet, "emptyCount", t.emptyCount, 'recordSn', t.sn, 'rightCount', t.rightCount, 'studentNo', t.studentNo, 'username', t.username, 'wrongCount', t.wrongCount, 'quizNum', t.quizNum, 'cheatFlag', t.cheatFlag) ) FROM testrecord t  WHERE t.classId = class.`classId` ), "]" ) summary
+        CONCAT("[", (SELECT GROUP_CONCAT(JSON_OBJECT( "totalScore", t.totalScore, "answerSheet", t.answerSheet, "emptyCount", t.emptyCount, 'recordSn', t.sn, 'rightCount', t.rightCount, 'studentNo', t.studentNo, 'username', t.username, 'wrongCount', t.wrongCount, 'quizNum', t.quizNum, 'cheatFlag', t.cheatFlag, 'portrait', m.portrait) ) FROM testrecord t LEFT JOIN member m ON t.username = m.username WHERE t.classId = class.`classId` ), "]" ) summary
         , state, lessonCover FROM class]]
     return db.detail(sql, where, group, order, cn)
 end

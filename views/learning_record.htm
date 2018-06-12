@@ -21,14 +21,11 @@
                             </strong>
                         </div>
                         <div class="coins el-col">
-                            <strong class="coins-title">Coins:</strong>
+                            <strong class="coins-title">{{__data__.string.coins}}:</strong>
                             <strong class="coins-num"></strong>
                             <strong class="how">?</strong>
                             <div class="tooltip-how">
-                                <p>How to earn coins:</p> 
-                                <p>1. 200 coins will be given to you as a reward when you enter our system for the first time.</p>
-                                <p>2. Each time you recommend one friend to be our user, both you and the invited could get a reward of 20 coins. It's cumulative.</p> 
-                                <p>3. You need to invest some coins to get access to those lesson packages. And after finishing the learning of each package, you will get a reward of coins.</p> 
+                                {{{__data__.string.how_to_earn_coins}}}
                             </div>
                         </div>
                     </div>
@@ -40,19 +37,19 @@
             <div class="code-summary el-row el-row--flex is-justify-space-around" >
                 <div class="el-col el-col-8">
                     <div class="codes-read">
-                        <div class="title">Codes read</div>
-                        <div class="lines"><span class="read-lines-num"></span>lines</div>
+                        <div class="title">{{__data__.string.codes_read}}</div>
+                        <div class="lines"><span class="read-lines-num"></span>{{__data__.string.lines}}</div>
                     </div>
                 </div>
                 <div class="el-col el-col-8">
                     <div class="codes-written">
-                        <div class="title">Codes written</div>
-                        <div class="lines"><span class="written-lines-num"></span>lines</div>
+                        <div class="title">{{__data__.string.codes_written}}</div>
+                        <div class="lines"><span class="written-lines-num"></span>{{__data__.string.lines}}</div>
                     </div>
                 </div>
                 <div class="el-col el-col-8">
                     <div class="commands-learned">
-                        <div class="title">Commands learned</div>
+                        <div class="title">{{__data__.string.commands_learned}}</div>
                         <div class="lines"><span class="Commands-lines-num"></span></div>
                     </div>
                 </div>
@@ -62,28 +59,26 @@
     <!-- 推荐人 -->
     <div class="presenter display-none">
         <div class="presenter-content">
-            <p>Please input the user name of your referee who recommended our system.</p>
-            <p>Both you and your inviter will get a reward of 20 coins.</p>     
+            {{{__data__.string.invinter_tips}}}    
             <div class="el-input">
                 <input type="text" name="presenter-name" autocomplete="off" placeholder="Please input the user name of your referee" class="el-input__inner">
             </div>
             <div>
-                <button type="button" class="add-presenter el-button el-button--primary el-button--mini"><span>Submit</span></button>
+                <button type="button" class="add-presenter el-button el-button--primary el-button--mini"><span>{{__data__.string.invinter_submit}}</span></button>
             </div>
         </div>
-        <span class="presenter-dismiss">Dismiss</span>
+        <span class="presenter-dismiss">{{__data__.string.invinter_dismiss}}</span>
     </div>
     <!-- 课程包列表 -->
     <div class="lesson-list">
         <!-- 没有数据 -->
         <div class="no-data display-none">
-            <p>You haven't selected any packages.</p>
-            <p>Please enter Lessons to view..</p> 
-            <a href="{{__data__.baseUrl}}/lesson" class="continue el-button el-button--primary el-button--medium"><span>View Lessons</span></a>                           
+            {{{__data__.string.no_package_selected}}}
+            <a href="{{__data__.baseUrl}}/lesson" class="continue el-button el-button--primary el-button--medium"><span>{{__data__.string.view_lessons}}</span></a>                           
         </div>
         <!-- 有数据 -->
         <div class="package-list display-none">
-            <div class="total">Includes: <span class="lesson-total">-</span> packages</div>
+            <div class="total">{{__data__.string.includes}} <span class="lesson-total">-</span> {{__data__.string.packages}}</div>
             <div class="el-row">
                 
             </div>

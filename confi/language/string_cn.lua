@@ -41,6 +41,27 @@ local string_cn = {
     packages = '个课程包',
     signup = '注册',
     login = '登录',
+    coins = '知识币',
+    codes_read = '阅读代码',
+    codes_written = '书写代码',
+    commands_learned = '学习指令',
+    lines = '行',
+    how_to_earn_coins = [[
+        <p>如何获取知识币？</p> 
+        <p>1、首次登录的用户均可获得系统赠送的200知识币。</p>
+        <p>2、每邀请1位朋友成为本系统用户，双方均可获得20知识币的奖励，邀请多位朋友可累加。</p> 
+        <p>3、添加课程包会耗费一定量的知识币（在课程包mod中做设置），当用户学习完成每个课程包时，也会获得知识币奖励。</p> 
+    ]],
+    invinter_tips = [[
+        <p>请输入您的推荐人用户名。</p>
+        <p>您和您的推荐人都将获得20知识币的奖励。</p> 
+    ]],
+    invinter_dismiss = '忽略',
+    invinter_submit = '提交',
+    no_package_selected = [[
+        <p>暂未添加课程包，请进入课程中心查看！</p>
+    ]],
+    view_lessons = '查看课程'
 }
 
 NPL.export(string_cn);

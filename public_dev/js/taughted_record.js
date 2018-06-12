@@ -358,8 +358,8 @@ var getLessonTaughtedRecord = function(reload) {
 var appendRecord = function(item) {
     tblRecord.append('<tr>'+
     '    <td class="noprint"><input type="checkbox" class="cbx-item" data-sn="'+ item.recordSn +'" ></td>'+
-    '    <td>'+
-    '        <div class="user-img"><img src="https://avatars3.githubusercontent.com/u/18064049?s=460&v=4" /></div>'+
+    '    <td class="noprint">'+
+    '        <div class="user-img"><img src="' + item.portrait + '" /></div>'+
     '    </td>'+
     '    <td>' + item.username + '</td>'+
     '    <td>' + item.studentNo + '</td>'+

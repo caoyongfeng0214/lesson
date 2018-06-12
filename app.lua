@@ -38,7 +38,7 @@ app:use(express.session());
 app:use(function(req, res, next)
 	local url = req.url;
 	res.__data__ = {};
-	-- res.__data__.baseUrl = 'http://keepwork.com/lessons'; -- online
+	-- res.__data__.baseUrl = 'http://keepwork.com/lessons'; -- online env
 	if not (url:startsWith('/api/') or url:startsWith('/imgs/') or url:startsWith('/css/') or url:startsWith('/js/') or url:startsWith('/jslib/') or url:startsWith('/csslib/') or url:startsWith('/icons/')or url:startsWith('/uploads/') ) then
 		-- 初始化
 		-- 获取 Accect Language，优先 Cookie 设置， 然后 Accect Language， 最后默认 en
