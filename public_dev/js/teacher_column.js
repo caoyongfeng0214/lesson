@@ -115,7 +115,7 @@ $(function(){
             order: order
         }, function (response) {
             if(response.err == 0) {
-                if( !response.data ){
+                if( !Array.isArray(response.data) ){
                     $( '.no-data' ).removeClass('display-none').addClass('display-block');
                 }else{
                     var haveTaughtList = $('.have-taught-list');                    

@@ -41,6 +41,7 @@ app:use(function(req, res, next)
 	-- res.__data__.baseUrl = 'http://keepwork.com/lessons'; -- online env
 	if not (url:startsWith('/api/') or url:startsWith('/imgs/') or url:startsWith('/css/') or url:startsWith('/js/') or url:startsWith('/jslib/') or url:startsWith('/csslib/') or url:startsWith('/icons/')or url:startsWith('/uploads/') ) then
 		-- 初始化
+		res.__data__ = {};
 		-- 获取 Accect Language，优先 Cookie 设置， 然后 Accect Language， 最后默认 en
 		local resource = lang_en; -- 缺省值
 		local langStr = 'EN'; -- 缺省值
@@ -69,6 +70,7 @@ app:use(function(req, res, next)
 		end
 		res.__data__.string = resource;
 		res.__data__.language = langStr;
+		res.__data__.frontResource = commonlib.Json.Encode(resource.front_resource);
 	end
 	next(req, res, next);
 end);
@@ -131,8 +133,10 @@ app:use('/learningRecord', router_learning_record);
 local router_teacher_column = NPL.load('./routes/teacherColumn');
 app:use('/teacherColumn', router_teacher_column);
 
-local router_login = NPL.load('./routes/login');
-app:use('/login', router_login);
+
+-- ------ 后台管理首页 ---------------------------------------------------
+local mg_index = NPL.load('./routes/_mg');
+app:use('/_mg', mg_index);
 
 -- ***********************************************************************
 -- ****** 无法匹配URL的页面 ******

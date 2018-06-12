@@ -147,7 +147,9 @@ var openDialog = function( params,callback ){
             callback($('.open-dialog input[name="openInput"]').val());
         }else{
             // 没有输入框时的回调
-            callback();
+            if( callback && typeof(callback) === 'function' ){
+                callback();
+            }
             $('.open-dialog,.v-modal').fadeOut(500);
         }
     })

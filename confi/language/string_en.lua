@@ -69,7 +69,40 @@ local string_en = {
     ]],
     invinter_dismiss = 'Dismiss',
     invinter_submit = 'Submit',
-    
+    no_package_selected = [[
+        <p>You haven't selected any packages.</p>
+        <p>Please enter Lessons to view..</p> 
+    ]],
+    view_lessons = 'View Lessons',
+    activation_tips = [[
+        <p>You have signed up as a Private User. If you are an educator and wish to get</p>
+        <p>access to the teaching function, please input the activation code here.</p>     
+        <p class="notice">If you wish to get the activation code, please contact *******.</p>
+    ]],
+    activation_code_input_placeholder = 'Please input the activation code.',
+    activation_activate_btn_text = 'Activate',
+    educator_could_get = 'What Educational Institutions could get:',
+    private_users = 'Private Users',
+    educational_institutions = 'Educational Institutions',
+    user_features_1 = 'View content of all lessons',
+    user_features_2 = 'Learn lessons in Paracraft',
+    user_features_3 = 'Get access to the testing system',
+    user_features_4 = 'View the history record of teaching',
+    user_features_5 = 'Get access to the teaching function',
+    user_features_6 = 'Track students’ real-time performance in a class',
+    user_features_7 = 'View the summary including accuracy analysis and testing results of students after a class',
+    user_features_8 = 'Print the summary',
+    user_features_9 = 'Send the summary to your own mailbox',
+    user_features_10 = 'View the history record of teaching',
+
+    -- js en-US
+    front_resource = {
+        include = 'Include',
+        lessons  = 'lessons',
+        ages = 'Ages',
+        suitable4all = 'suitable for all',
+        skills = 'Skills',
+    }
 }
 
 NPL.export(string_en);

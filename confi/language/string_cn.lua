@@ -61,7 +61,37 @@ local string_cn = {
     no_package_selected = [[
         <p>暂未添加课程包，请进入课程中心查看！</p>
     ]],
-    view_lessons = '查看课程'
+    view_lessons = '查看课程',
+    activation_tips = [[
+        <p>您已成为本系统的个人用户。如果您是一位教育工作者，</p>
+        <p>需要使用授课功能，请在下方输入激活码：</p>     
+        <p class="notice">如需获取激活码，请联系******。</p>
+    ]],
+    activation_code_input_placeholder = '请输入激活码',
+    activation_activate_btn_text = '激活',
+    educator_could_get = '教育机构可以获得：',
+    private_users = '个人用户',
+    educational_institutions = '教育机构',
+    user_features_1 = '查看课程内容',
+    user_features_2 = '在Paracraft中学习课程',
+    user_features_3 = '使用测试系统',
+    user_features_4 = '查看历史学习记录',
+    user_features_5 = '使用授课功能：',
+    user_features_6 = '跟踪学生的实时课堂表现',
+    user_features_7 = '查看课堂总结，包括答题结果统计、准确率分析等',
+    user_features_8 = '打印课堂总结',
+    user_features_9 = '将课堂总结发送到个人邮箱',
+    user_features_10 = '查看历史授课记录',
+
+    -- js zh-CN
+    front_resource = {
+        include = '包含',
+        lessons  = '个课程',
+        ages = '年龄',
+        suitable4all = '适合所有年龄段',
+        skills = '技能',
+        
+    }
 }
 
 NPL.export(string_cn);

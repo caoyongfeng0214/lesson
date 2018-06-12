@@ -1,4 +1,5 @@
 var LESSON_API = $('#baseURL').val() || '';
+var R = JSON.parse( $('#frontResource').val() );
 $(function(){
     // 怎么样获取coins的提示
     $('.how,.tooltip-how').on('mouseover',function(){
@@ -102,9 +103,9 @@ $(function(){
         pno: pno,
     }, function (response) {
         if(response.err == 0) {
-            if( !response.data ){
+            if( !Array.isArray(response.data) ){
                 $( '.no-data' ).removeClass('display-none').addClass('display-block');
-            }else{                
+            }else{       
                 $( '.package-list' ).removeClass('display-none').addClass('display-block');
                 //课程包数量
                 $('.lesson-total').html( response.page.totalCount );
@@ -113,7 +114,7 @@ $(function(){
                     var item = response.data[i];
                     //年龄范围
                     if( item.agesMax == 0 && item.agesMin == 0 ){
-                        item.ageMsg = 'Suitable for all' ;
+                        item.ageMsg = R.suitable4all ;
                     }else{
                         item.ageMsg = item.agesMin + '-' + item.agesMax;
                     }
@@ -135,9 +136,9 @@ $(function(){
                     '        <div style="background-image: url(' + item.cover + ');"></div>'+
                     '    </a>'+
                     '    <a href="' + item.packageUrl + '" target="_blank" class="title">' + item.title + '</a>'+
-                    '    <div class="time">Include: <span>'+ item.lessonCount +'</span> lessons</div>'+
-                    '    <div class="ages">Ages: <span>'+ item.ageMsg +'</span></div>'+
-                    '    <div class="skills">Skills: <span>'+ item.skills +'</span></div>'+
+                    '    <div class="time">' + R.include + ': <span>'+ item.lessonCount +'</span> ' + R.lessons + '</div>'+
+                    '    <div class="ages">' + R.ages +': <span>'+ item.ageMsg +'</span></div>'+
+                    '    <div class="skills">' + R.skills + ': <span>'+ item.skills +'</span></div>'+
                     '    <div class="progress">'
 
                     //进度  
