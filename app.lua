@@ -130,6 +130,11 @@ app:use('/learningRecord', router_learning_record);
 local router_teacher_column = NPL.load('./routes/teacherColumn');
 app:use('/teacherColumn', router_teacher_column);
 
+
+-- ------ 后台管理首页 ---------------------------------------------------
+local mg_index = NPL.load('./routes/_mg');
+app:use('/_mg', mg_index);
+
 -- ***********************************************************************
 -- ****** 无法匹配URL的页面 ******
 -- ***********************************************************************
