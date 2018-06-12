@@ -1,11 +1,11 @@
 var recordSn = $('#recordSn').val();
-
+var LESSON_API = $('#baseURL').val() || '';
 $(function(){
     getRecordDetail();
 });
 
 var getRecordDetail = function() {
-    $.get("/api/record/learnDetailBySn", {
+    $.get(LESSON_API + "/api/record/learnDetailBySn", {
         sn: recordSn
     }, function(response) {
         var r = response.data;

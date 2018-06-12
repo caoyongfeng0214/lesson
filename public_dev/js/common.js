@@ -30,7 +30,6 @@ String.prototype.replaceAll = function(f, e) {
 }
 
 var keepworkHost = 'http://localhost:8080';
-
 /**
  * number format english eg: 1 -> 1st 2 -> 2nd
  * @param number 

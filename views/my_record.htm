@@ -1,7 +1,7 @@
 {{< layout}}
 
 {{+ link}}
-<link href="/css/record.css" rel="stylesheet" />
+<link href="{{__data__.baseUrl}}/css/record.css" rel="stylesheet" />
 {{/link}}
 
 {{+ content}}
@@ -15,9 +15,9 @@
     <div class="info">
         {{^data.haveRecordFlag}}
             <!--我的记录（空）-->
-            <p>No record has been generated.Please enter <a href="/lesson">LESSONS</a> to start learning/teaching.</p> 
+            <p>No record has been generated.Please enter <a href="{{__data__.baseUrl}}/lesson">LESSONS</a> to start learning/teaching.</p> 
             <div class="text-center">
-                <a href="/lesson" class="el-button el-button--primary">View Lessons</a>
+                <a href="{{__data__.baseUrl}}/lesson" class="el-button el-button--primary">View Lessons</a>
             </div>
         {{/data.haveRecordFlag}}
         {{#data.haveRecordFlag}}
@@ -36,7 +36,7 @@
     {{#data.haveRecordFlag}}
     <!-- 有记录 -->
     <div class="text-center">
-        <a href="/recordList/{{data.username}}" class="el-button el-button--primary">View More</a>
+        <a href="{{__data__.baseUrl}}/recordList/{{data.username}}" class="el-button el-button--primary">View More</a>
     </div>  
     {{/data.haveRecordFlag}}  
 </div>    

@@ -17,7 +17,7 @@ router:get('/', function(req, res, next)
 
 	local token = req.cookies.token
 	commonBll.auth(token, getMyRecord, function()
-		res:render('to_login',{})
+		res:render('to_login',{teacherCurrent = 'current'})
 	end)
 end)
 

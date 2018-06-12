@@ -1,3 +1,4 @@
+var LESSON_API = $('#baseURL').val() || '';
 var taughtedChart = c3.generate({
     bindto: '#taughtedChart',
     data: {
@@ -261,7 +262,7 @@ var lessonUrl;
 var snArr = [];
 var getLessonTaughtedRecord = function(reload) {
     reload = (typeof reload !== 'undefined') ?  reload : true; // reload 缺省时为 true 
-    $.get("/api/class/detail", {
+    $.get(LESSON_API + "/api/class/detail", {
         classId: classId
     }, function (response) {
         var r = response.data;

@@ -1,7 +1,8 @@
+var LESSON_API = $('#baseURL').val() || '';
 $(function(){
     $.ajax({  
         type : "GET",  
-        url : "./api/class/pkgs",   
+        url : LESSON_API + "/api/class/pkgs",   
         complete:function(response) {  
             var r = JSON.parse(response.responseText)
             $('.lesson-total').text(r.hits.total);
@@ -10,7 +11,6 @@ $(function(){
                 for(var i = 0; i < data.length; i++) {
                     var item  = data[i]._source
                     parseMarkDown(item);
-                    console.log( item )
                      //年龄范围
                      if( item.agesMax == 0 && item.agesMin == 0 ){
                         item.ageMsg = 'Suitable for all' ;
@@ -34,25 +34,35 @@ $(function(){
             }
         }  
     }); 
+    mdToJson = function(md) {
+        var result;
+        try {
+            result = jsyaml.safeLoad(md);
+        } catch (e) {
+            console.error(e);
+        }
+        return result || {};
+    }
     var parseMarkDown = function(item) {
         var contentArr = item.content.split('```');
         var lessonData;
         for(var i = 0; i < contentArr.length; i++) {
             var contentVo = contentArr[i];
             if(contentVo.startWith('@LessonPackage')) {
-                lessonData = contentVo;
+                contentVo = contentVo.replace('@LessonPackage', '');
+                lessonData = mdToJson(contentVo.trim());
                 break;
             }
         }
         if(lessonData) {
-            item.title = lessonData.split('title: ')[1].split('\n')[0].replaceAll("'","");
+            item.title = lessonData.lessonPackage.data.title;
             item.url = keepworkHost + item.url;
-            item.cover = lessonData.split('cover: ')[1].split('\n')[0];
-            item.skills = lessonData.split('skills: ')[1].split('\n')[0].replaceAll("'","");
-            item.agesMin = lessonData.split('agesMin: ')[1].split('\n')[0].replaceAll("'","");
-            item.agesMax = lessonData.split('agesMax: ')[1].split('\n')[0].replaceAll("'","");
-            item.cost = lessonData.split('cost: ')[1].split('\n')[0].replaceAll("'","");
-            item.lessonCount = lessonData.split('lessonCount: ')[1].split('\n')[0].replaceAll("'","");
+            item.cover = lessonData.lessonPackage.data.cover;
+            item.skills = lessonData.lessonPackage.data.skills;
+            item.agesMin = lessonData.lessonPackage.data.agesMin;
+            item.agesMax = lessonData.lessonPackage.data.agesMax;
+            item.cost = lessonData.lessonPackage.data.cost;
+            item.lessonCount = lessonData.lessonPackage.data.lessonCount;
            
         }
     }

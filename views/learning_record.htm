@@ -1,7 +1,7 @@
 {{< layout}}
 
 {{+ link}}
-<link href="/css/learning_record.css" rel="stylesheet" />
+<link href="{{__data__.baseUrl}}/css/learning_record.css" rel="stylesheet" />
 {{/link}}
 
 {{+ content}}
@@ -79,7 +79,7 @@
         <div class="no-data display-none">
             <p>You haven't selected any packages.</p>
             <p>Please enter Lessons to view..</p> 
-            <a href="/lesson" class="continue el-button el-button--primary el-button--medium"><span>View Lessons</span></a>                           
+            <a href="{{__data__.baseUrl}}/lesson" class="continue el-button el-button--primary el-button--medium"><span>View Lessons</span></a>                           
         </div>
         <!-- 有数据 -->
         <div class="package-list display-none">
@@ -91,5 +91,5 @@
         
     </div>
 </div>    
-<script src="/js/learning_record.js"></script>
+<script src="{{__data__.baseUrl}}/js/learning_record.js"></script>
 {{/ content}}

@@ -22,6 +22,8 @@ router:get('/auth', function(req, res, next)
         }
         res:send(rs)
     end
+    echo('#DEBUG')
+    echo(token)
     commonBll.auth(token, findMember, function()
         res:send({
             err = 102,

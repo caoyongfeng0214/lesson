@@ -1,12 +1,12 @@
 {{< layout}} 
 
 {{+ link}}
-<link href="/css/to_login.css" rel="stylesheet" />
+<link href="{{__data__.baseUrl}}/css/to_login.css" rel="stylesheet" />
 {{/link}}
 
 {{+ content}} 
 <div class="introduction-wrapper container">
-    <h3>Introduction</h3>
+    <!-- <h3>Introduction</h3>
     <div class="lesson-content">
         <ul>
         <li>
@@ -33,12 +33,31 @@
             <div>Suitable for all</div>
         </li>
         </ul>  
-    </div>
+    </div> -->
     <p class="info text-center">For more information, please</p>
         
     <div class="opt-btn text-center">
-        <button type="button" class="el-button el-button--primary is-plain">SIGN UP</button>
-        <button type="button" class="el-button el-button--primary">LOGIN</button>
+        <a type="button" href="http://keepwork.com/wiki/join" class="el-button el-button--primary is-plain">{{__data__.string.signup}}</a>
+        <button type="button" id="btnLogin" class="el-button el-button--primary">{{__data__.string.login}}</button>
     </div>
 </div>
+<script>
+    $('#btnLogin').on('click', function() {
+        var host = location.protocol + '//' + window.location.host;
+        var strWindowFeatures = 'width=800,height=500,resizable=yes';
+        var winObj = window.open(
+            keepworkHost + "/wiki/oauth?response_type=code&client_id=1000001&redirect_uri=" +
+            host  + "/login",
+            "keepwork登录", strWindowFeatures);
+        winObj.focus();
+        var loop = setInterval(function () {
+            if (winObj != null && winObj.closed) {
+                clearInterval(loop);
+                //do something
+                location.reload();
+            }
+        }, 500);
+    })
+    
+</script>
 {{/ content}}

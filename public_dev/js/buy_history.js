@@ -1,3 +1,4 @@
+var LESSON_API = $('#baseURL').val() || '';
 var username = $('#username').val(); // TODO:更换为 keepwork 当前登录用户
 
 $(function() {
@@ -6,7 +7,7 @@ $(function() {
 });
 
 var getOrderHistory = function( psize, pno ) {
-    $.get("/api/order/list", {
+    $.get(LESSON_API + "/api/order/list", {
         psize: psize,
         pno: pno,
         username: username

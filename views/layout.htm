@@ -6,23 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <title>Lesson</title>
-    <link href="/csslib/element-ui.css" rel="stylesheet" />
-    <link href="/css/common.css" rel="stylesheet" />
-    <script src="/jslib/jquery.min.js"></script>
-    <script src="/js/common.js"></script>
+    <link href="{{__data__.baseUrl}}/csslib/element-ui.css" rel="stylesheet" />
+    <link href="{{__data__.baseUrl}}/css/common.css" rel="stylesheet" />
+    <script src="{{__data__.baseUrl}}/jslib/jquery.min.js"></script>
+    <script src="{{__data__.baseUrl}}/js/common.js"></script>
     {{? link}}
 </head>
 <body>
+    <input hidden value="{{__data__.baseUrl}}" id="baseURL"/>
     {{^__data__.headerShow}}
     <div class="header noprint">
         <div class="nav-bar">
             <div class="menu">
-                <a href="/" class="{{homeCurrent}}">{{__data__.string.home}}</a>
-                <a href="/lesson" class="{{lessonCurrent}}">{{__data__.string.lessons}}</a>
+                <a href="{{__data__.baseUrl}}/" class="{{homeCurrent}}">{{__data__.string.home}}</a>
+                <a href="{{__data__.baseUrl}}/lesson" class="{{lessonCurrent}}">{{__data__.string.lessons}}</a>
                 <!-- <a href="/buy" class="{{buyCurrent}}">{{__data__.string.buy}}</a> -->
                 <!-- <a href="/myRecord" class="{{recordCurrent}}">{{__data__.string.record}}</a> -->
-                <a href="/learningRecord" class="{{learningCurrent}}">{{__data__.string.learning_record}}</a>
-                <a href="/teacherColumn" class="{{teacherCurrent}}">{{__data__.string.teacher_column}}</a>
+                <a href="{{__data__.baseUrl}}/learningRecord" class="{{learningCurrent}}">{{__data__.string.learning_record}}</a>
+                <a href="{{__data__.baseUrl}}/teacherColumn" class="{{teacherCurrent}}">{{__data__.string.teacher_column}}</a>
             </div>
             <div class="to-download">
                 <a href="http://www.paracraft.cn/download" target="_blank">Paracraft<i class="el-icon-download"></i></a>    

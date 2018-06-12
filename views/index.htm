@@ -1,13 +1,13 @@
 ﻿{{< layout}} 
 
 {{+ link}} 
-<link href="/css/index.css" rel="stylesheet" /> 
+<link href="{{__data__.baseUrl}}/css/index.css" rel="stylesheet" /> 
 {{/link}} 
 
 {{+ content}}
 <div class="banner">
     <a href="#">
-        <img src="/imgs/main/banner.jpg" alt="banner" />
+        <img src="{{__data__.baseUrl}}/imgs/main/banner.jpg" alt="banner" />
     </a>
 </div>
 
@@ -39,7 +39,7 @@
         </a>
     </div>
     <div class="text-align">
-        <a href="/lesson" class="btn">{{__data__.string.view_more_lessons}} <i class="el-icon-d-arrow-right"></i></a>
+        <a href="{{__data__.baseUrl}}/lesson" class="btn">{{__data__.string.view_more_lessons}} <i class="el-icon-d-arrow-right"></i></a>
     </div>
 </div>
 
@@ -47,7 +47,7 @@
     <div class="flex-start user-wrapper container">
         <div class="half">
             <div class="text-center">
-                <img src="/imgs/main/teacher.png" alt="teacher" />
+                <img src="{{__data__.baseUrl}}/imgs/main/teacher.png" alt="teacher" />
             </div>
             <div>
                 <div class="tit">{{__data__.string.home_teacher_tit}}</div>
@@ -59,7 +59,7 @@
         </div>
         <div class="half">
             <div class="text-center">
-                <img src="/imgs/main/student.png" alt="student" />
+                <img src="{{__data__.baseUrl}}/imgs/main/student.png" alt="student" />
             </div>
             <div>
                 <div class="tit">{{__data__.string.home_student_tit}}</div>
@@ -79,7 +79,7 @@
     <div class="flex-start flex-wrap">
         <div class="item flex-start">
             <div class="img">
-                <img src="/imgs/main/animations.png" />
+                <img src="{{__data__.baseUrl}}/imgs/main/animations.png" />
             </div>
             <div class="half">
                 <strong class="tit">{{__data__.string.home_about_lesson_tit1}}</strong>
@@ -88,7 +88,7 @@
         </div>
         <div class="item flex-start">
             <div class="img">
-                <img src="/imgs/main/how.png" />
+                <img src="{{__data__.baseUrl}}/imgs/main/how.png" />
             </div>
             <div class="half">
                 <strong class="tit">{{__data__.string.home_about_lesson_tit2}}</strong>
@@ -97,7 +97,7 @@
         </div>
         <div class="item flex-start">
             <div class="img">
-                <img src="/imgs/main/Convenientservice.png" />
+                <img src="{{__data__.baseUrl}}/imgs/main/Convenientservice.png" />
             </div>
             <div class="half">
                 <strong class="tit">{{__data__.string.home_about_lesson_tit3}}</strong>
@@ -106,7 +106,7 @@
         </div>
         <div class="item flex-start">
             <div class="img">
-                <img src="/imgs/main/FriendlyPrices.png" />
+                <img src="{{__data__.baseUrl}}/imgs/main/FriendlyPrices.png" />
             </div>
             <div class="half">
                 <strong class="tit">{{__data__.string.home_about_lesson_tit4}}</strong>

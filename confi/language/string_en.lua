@@ -48,6 +48,11 @@ local string_en = {
         <br /> Xizhi, Li
         <br /> CTO of Tatfook Network Co.
     ]],
+    includes = 'Includes: ',
+    packages = 'packages',
+    signup = 'SIGN UP',
+    login = 'LOGIN',
+    
 }
 
 NPL.export(string_en);

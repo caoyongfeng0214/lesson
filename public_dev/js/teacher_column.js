@@ -1,8 +1,9 @@
+var LESSON_API = $('#baseURL').val() || '';
 $(function(){
     var username = '';
     var PAGE_SIZE = 50;
     //获取当前用户信息
-    $.get("/api/member/auth",function(response){
+    $.get(LESSON_API + "/api/member/auth",function(response){
         if( response.err == 0 ){
             var userinfo = response.data;
 
@@ -13,7 +14,7 @@ $(function(){
                     messageClass : 'open-message',
                     message: "<p>Great to see you!</p><p>Thanks for signing up for a PAC Lesson account.</p><p>You've got a reward of 200 coins.</p> "
                 }, function(){
-                    $.post("/api/member/firstIn");
+                    $.post(LESSON_API + "/api/member/firstIn");
                 })
             }
 
@@ -66,7 +67,7 @@ $(function(){
     $('.add-activation').on('click',function(){
         var val = $('input[name="activation-code"]').val();
         if( val != '' ){
-            $.post(" /api/member/activate",{
+            $.post(LESSON_API + "/api/member/activate",{
                 key:val
             },function(response){
                 if( response.err == 0 ){
@@ -107,14 +108,13 @@ $(function(){
     // 获取教学记录
     var getTaughtRecordList = function ( psize, pno, order, reload ) {
         reload = (typeof reload !== 'undefined') ?  reload : true; // reload 缺省时为 true 
-        $.get("/api/class/taught", {
+        $.get(LESSON_API + "/api/class/taught", {
             username: username,
             psize: psize,
             pno: pno,
             order: order
         }, function (response) {
             if(response.err == 0) {
-                console.log( response )
                 if( !response.data ){
                     $( '.no-data' ).removeClass('display-none').addClass('display-block');
                 }else{

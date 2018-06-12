@@ -37,6 +37,10 @@ local string_cn = {
         <br /> 大富网络科技有限公司技术总监
         <br /> 李西峙
     ]],
+    includes = '包含 ',
+    packages = '个课程包',
+    signup = '注册',
+    login = '登录',
 }
 
 NPL.export(string_cn);
