@@ -1,3 +1,4 @@
+var LESSON_API = $('#baseURL').val() || '';
 $(function(){
     // 怎么样获取coins的提示
     $('.how,.tooltip-how').on('mouseover',function(){
@@ -11,7 +12,7 @@ $(function(){
         $('.presenter').fadeOut(500);
     })
     //获取当前用户信息
-    $.get("/api/member/auth",function(response){
+    $.get(LESSON_API + "/api/member/auth",function(response){
         if( response.err == 0 ){
             var userinfo = response.data;
 
@@ -21,6 +22,8 @@ $(function(){
                     width : 'auto',
                     messageClass : 'open-message',
                     message: "<p>Great to see you!</p><p>Thanks for signing up for a PAC Lesson account.</p><p>You've got a reward of 200 coins.</p> "
+                }, function(){
+                    $.post(LESSON_API + "/api/member/firstIn");
                 })
             }
 
@@ -94,14 +97,14 @@ $(function(){
     })
     var pno = 1,psize = 50;
     //获取当前用户学习记录
-    $.get("/api/package/learnList", {
+    $.get(LESSON_API + "/api/package/learnList", {
         psize: psize,
         pno: pno,
     }, function (response) {
         if(response.err == 0) {
-            if( !response.data ){
+            if( !Array.isArray(response.data) ){
                 $( '.no-data' ).removeClass('display-none').addClass('display-block');
-            }else{                
+            }else{       
                 $( '.package-list' ).removeClass('display-none').addClass('display-block');
                 //课程包数量
                 $('.lesson-total').html( response.page.totalCount );

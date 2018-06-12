@@ -12,6 +12,9 @@ common.auth = function ( token, successCallback, errCallback )
 			url = sitecfg.keepworkHost .. '/api/wiki/models/user/getProfile',
 			headers = { Authorization = 'Bearer '..token.value }
 		}, function(err, msg, data)
+            if(data and type(data) ~= 'table') then
+                data = commonlib.Json.Decode(data)
+            end
 			if( data and data.data and data.data.username ) then
                 if( successCallback and type(successCallback) == 'function') then
                     successCallback(data.data)

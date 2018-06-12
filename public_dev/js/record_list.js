@@ -1,8 +1,9 @@
+var LESSON_API = $('#baseURL').val() || '';
 // TODO: 切换为在 keepwork 上获取
 var username = $('#username').val();
 var PAGE_SIZE = 50;
 $(function () {
-    $.get("/api/member/statis", {
+    $.get(LESSON_API + "/api/member/statis", {
         username: username
     }, function (response) {
         var r = response.data
@@ -74,7 +75,7 @@ var getTaughtRecordList = function ( psize, pno, order, reload ) {
     reload = (typeof reload !== 'undefined') ?  reload : true; // reload 缺省时为 true 
     $(".have-taught").show();
     $(".have-learn").hide();
-    $.get("/api/class/taught", {
+    $.get(LESSON_API + "/api/class/taught", {
         username: username,
         psize: psize,
         pno: pno,
@@ -116,7 +117,7 @@ var getLearnRecordList = function ( psize, pno, order, reload ) {
     reload = (typeof reload !== 'undefined') ?  reload : true; // reload 缺省时为 true 
     $(".have-taught").hide();
     $(".have-learn").show();
-    $.get("/api/record/learn", {
+    $.get(LESSON_API + "/api/record/learn", {
         username: username,
         psize: psize,
         pno: pno,

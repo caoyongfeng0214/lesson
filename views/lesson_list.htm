@@ -1,16 +1,17 @@
 {{< layout}} 
 
 {{+ link}} 
-<link href="/css/lesson.css" rel="stylesheet" /> 
+<link href="{{__data__.baseUrl}}/css/lesson.css" rel="stylesheet" /> 
 {{/link}} 
 
 {{+ content}}
 <div class="lesson-list container">
-    <div class="total">Includes: <span class="lesson-total">-</span> packages</div>
+    <div class="total">{{__data__.string.includes}}<span class="lesson-total">-</span> {{__data__.string.packages}}</div>
 
     <div class="el-row">
         
     </div>
 </div>
-<script src="/js/lesson_list.js"></script>
+<script src="{{__data__.baseUrl}}/jslib/js-yaml.min.js"></script>
+<script src="{{__data__.baseUrl}}/js/lesson_list.js"></script>
 {{/content}}

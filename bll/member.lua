@@ -70,6 +70,11 @@ member.consume = function(username, consumeCoin, cn)
     return db.execute(sql, {consumeCoin = consumeCoin, username = username}, cn)
 end
 
+member.firstIn = function(username, cn)
+    local sql = 'UPDATE member SET firstInFlag = 2 WHERE username = ?username'
+    return db.execute(sql, {username = username}, cn)
+end
+
 member.achieving = function(sn, cn)
     local lessonVo = testrecordBll.get({sn = sn})
     local testrecordVo = testrecordBll.get({

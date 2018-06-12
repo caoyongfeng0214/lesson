@@ -30,7 +30,6 @@ String.prototype.replaceAll = function(f, e) {
 }
 
 var keepworkHost = 'http://localhost:8080';
-
 /**
  * number format english eg: 1 -> 1st 2 -> 2nd
  * @param number 
@@ -147,6 +146,8 @@ var openDialog = function( params,callback ){
         if( $('.open-dialog input[name="openInput"]').val() ){
             callback($('.open-dialog input[name="openInput"]').val());
         }else{
+            // 没有输入框时的回调
+            callback();
             $('.open-dialog,.v-modal').fadeOut(500);
         }
     })

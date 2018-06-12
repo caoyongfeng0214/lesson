@@ -68,7 +68,9 @@ function classroom:enter( user )
             lessonPerformance = self.lessonPerformance,
             codeReadLine = self.codeReadLine,
             codeWriteLine = self.codeWriteLine,
-            commands = self.commands
+            commands = self.commands,
+            quizNum = self.quizNum,
+            studentNo = user.studentNo
         }
         local num, lastId = recordBll.save(record)
         if(lastId) then 
@@ -77,10 +79,10 @@ function classroom:enter( user )
             user.totalScore = 0
             user.rightCount = 0
             user.wrongCount = 0
-            user.emptyCount = self.quizzNum
-            if(self.quizzNum) then
+            user.emptyCount = self.quizNum
+            if(self.quizNum) then
                 user.answerSheet = {}
-                for i=1, self.quizzNum do 
+                for i=1, self.quizNum do 
                     table.insert( user.answerSheet, {} )
                 end
             end

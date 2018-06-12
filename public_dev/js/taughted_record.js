@@ -1,3 +1,4 @@
+var LESSON_API = $('#baseURL').val() || '';
 var taughtedChart = c3.generate({
     bindto: '#taughtedChart',
     data: {
@@ -224,17 +225,51 @@ $(function(){
             }
         }, 500);
     });
+    // 全选、取消全选
+    $('#cbxCheckAll').on('click', function() {
+        var isChecked =$('#cbxCheckAll').prop('checked')
+        $("input[class='cbx-item']").prop("checked", isChecked ); 
+    });
+    // 子项的选中
+    $('.table-wrap').on('click', '.cbx-item', function() {
+        var length = 0;
+        $.each($('input[class="cbx-item"]:checked'),function(){
+            length++;
+        });
+        isChecked = (length === snArr.length);
+        $("#cbxCheckAll").prop("checked", isChecked ); 
+    });
+    // 改变全部
+    $('#btnChangeAll').on('click', function() {
+        console.log(snArr);
+        cheatRecords(snArr);
+    });
+
+    // 改变选中
+    $('#btnChange').on('click', function() {
+        var selectedSn = [];
+        $.each($('input[class="cbx-item"]:checked'),function(){
+            selectedSn.push( parseInt( $(this).attr('data-sn') ) ) ;
+        });
+        console.log(selectedSn);
+        cheatRecords(selectedSn);
+    });   
 });
 
 var tblRecord = $('.record-tbl');
 var summary = [];
 var lessonUrl;
-var getLessonTaughtedRecord = function() {
-    $.get("/api/class/detail", {
+var snArr = [];
+var getLessonTaughtedRecord = function(reload) {
+    reload = (typeof reload !== 'undefined') ?  reload : true; // reload 缺省时为 true 
+    $.get(LESSON_API + "/api/class/detail", {
         classId: classId
     }, function (response) {
         var r = response.data;
         if (response.err == 0) {
+            if(reload) { // 重新加载数据，否则为追加数据
+                tblRecord.html('');
+            }
             lessonUrl = r.lessonUrl;
             $('.lesson-no').text(r.lessonNo);
             $('.lesson-title').text(r.lessonTitle);
@@ -249,9 +284,9 @@ var getLessonTaughtedRecord = function() {
                 var quizzRight = []; // quizz 正确的人数
                 var quizzRate = ['Rate']; // quizz 正确率
                 var studentDiv = ['Number',0, 0, 0]; // 学生分布
-                if(r.summary[0] && r.summary[0].answerSheet) {
+                if(r.summary[0]) {
                     
-                    for(var i = 0; i < r.summary[0].answerSheet.length; i++) {
+                    for(var i = 0; i < r.summary[0].quizNum; i++) {
                         var label = 'Quiz' + (i + 1);
                         quizzLable.push(label);
                         quizzRight.push(0);
@@ -260,11 +295,21 @@ var getLessonTaughtedRecord = function() {
                 }
                 for(var i = 0; i < r.summary.length; i++) {
                     var item = r.summary[i];
-                    item.rightCount = parseInt(item.rightCount);
-                    item.wrongCount = parseInt(item.wrongCount);
+                    snArr.push(item.recordSn);
+                    item.rightCount = parseInt(item.rightCount) || 0;
+                    item.wrongCount = parseInt(item.wrongCount) || 0;
                     item.emptyCount = parseInt(item.emptyCount);
+                    if(isNaN(item.emptyCount)) {
+                        item.emptyCount = item.quizNum;
+                    }
                     item.accuracyRate = item.rightCount/(item.rightCount + item.emptyCount + item.wrongCount); // 正确率
                     item.accuracyRate = item.accuracyRate ? Number(item.accuracyRate*100).toFixed(1) : 0;
+                    if(item.cheatFlag === 1) {
+                        item.wrongCount = 0;
+                        item.emptyCount = 0;
+                        item.rightCount = item.quizNum;
+                        item.accuracyRate = 100;
+                    }
                     appendRecord(item);
                     // 解析 item.answerSheet
                     if(item.accuracyRate < 60) {
@@ -275,16 +320,25 @@ var getLessonTaughtedRecord = function() {
                         studentDiv[3] += 1;// >80
                     }
                     var sheet = item.answerSheet;
-                    for(var m = 0; m < sheet.length; m++) {
-                        var quizz = sheet[m];
-                        if(quizz.trueFlag) {
-                            quizzRight[i] += 1;
+
+                    for(var m = 0; m < item.quizNum; m++) {
+                        console.log(sheet)
+                        if(sheet) {
+                            var quizz = sheet[m];
+                            if(quizz.trueFlag || item.cheatFlag === 1) {
+                                quizzRight[m] += 1;
+                            }
+                        } else {
+                            if(item.cheatFlag === 1) {
+                                quizzRight[m] += 1;
+                            }
                         }
                     }
                 }
-                if(r.summary[0] && r.summary[0].answerSheet) {
-                    for(var i = 0; i < r.summary[0].answerSheet.length; i++) {
-                        quizzRate[i + 1] = quizzRight[i] / quizzRight.length;
+                if(r.summary[0]) {
+                    for(var i = 0; i < r.summary[0].quizNum; i++) {
+                        console.log(quizzRight)
+                        quizzRate[i + 1] = quizzRight[i] / summary.length;
                         quizzRate[i + 1] =  quizzRate[i + 1] ? Number( quizzRate[i + 1]*100).toFixed(1) : 0;
                     }
                 }
@@ -303,6 +357,7 @@ var getLessonTaughtedRecord = function() {
 
 var appendRecord = function(item) {
     tblRecord.append('<tr>'+
+    '    <td class="noprint"><input type="checkbox" class="cbx-item" data-sn="'+ item.recordSn +'" ></td>'+
     '    <td>'+
     '        <div class="user-img"><img src="https://avatars3.githubusercontent.com/u/18064049?s=460&v=4" /></div>'+
     '    </td>'+
@@ -316,6 +371,15 @@ var appendRecord = function(item) {
     '        <a class="noprint" target="_blank" href="/taughtedRecord/details/' + item.recordSn + '/' + item.studentNo + '" class="el-button el-button--primary el-button--mini">View Details</a>'+
     '    </td>'+
     '</tr>');
+}
+
+var cheatRecords = function(arr) {
+    var sn = arr.join(',');
+    $.post("/api/record/cheat", {
+        sn: sn
+    }, function(response) {
+        getLessonTaughtedRecord();
+    })
 }
 
 document.domain = 'localhost';

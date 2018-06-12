@@ -99,6 +99,27 @@ router:post('/study', function(req, res, next)
     res:send(rs)
 end)
 
+router:post('/cheat', function(req, res, next)
+    local rs = {}
+    local p = req.body
+    local sn = p.sn -- Array split with `,`
+    local rq = rq(p, {'sn'}, res)
+    if(not rq) then return end
+    local num = recordBll.updateBath({cheatFlag = 1}, {'sn', sn:split(',')} )
+    if(num == nil) then
+        rs = {
+            err = 101,
+            msg = 'cheat test record fail.'
+        }
+    else
+        rs = {
+            err = 0,
+            msg = 'cheat test record success.'
+        }
+    end
+    res:send(rs)
+end)
+
 -- Have learned 记录
 router:get('/learn', function(req, res, next)
     local rs = {}
