@@ -1,4 +1,3 @@
-var LESSON_API = $('#baseURL').val() || '';
 var taughtedChart = c3.generate({
     bindto: '#taughtedChart',
     data: {

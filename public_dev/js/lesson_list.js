@@ -1,5 +1,3 @@
-var LESSON_API = $('#baseURL').val() || '';
-var R = JSON.parse( $('#frontResource').val() );
 $(function(){
     $.ajax({  
         type : "GET",  

@@ -95,6 +95,12 @@ local string_en = {
     user_features_9 = 'Send the summary to your own mailbox',
     user_features_10 = 'View the history record of teaching',
 
+    attended = 'Attended',
+    classes = 'classes',
+    total_teaching_time = 'Total Teaching Time',
+    hours = 'hrs',
+    minutes = 'mins',
+    sort_by_teaching_time = 'Click to sort by teaching time',
     -- js en-US
     front_resource = {
         include = 'Include',
@@ -102,6 +108,20 @@ local string_en = {
         ages = 'Ages',
         suitable4all = 'suitable for all',
         skills = 'Skills',
+        continue = 'Continue',
+        start_to_learn = 'Start to learn',
+        have_learned = 'Have learned',
+        finished = 'Finished',
+        pkg = 'Package',
+        lesson = 'Lesson',
+        duration = 'Duration',
+        goals = 'Lesson Goals',
+        view_summary = 'View Summary',
+        minutes = 'mins',
+        msg_first_in = [[
+            <p>Great to see you!</p><p>Thanks for signing up for a PAC Lesson account.</p><p>You've got a reward of 200 coins.</p>
+        ]],
+        btn_ok_txt = 'OK',
     }
 }
 

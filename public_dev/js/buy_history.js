@@ -1,4 +1,4 @@
-var LESSON_API = $('#baseURL').val() || '';
+
 var username = $('#username').val(); // TODO:更换为 keepwork 当前登录用户
 
 $(function() {

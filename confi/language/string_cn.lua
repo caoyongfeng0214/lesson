@@ -83,6 +83,12 @@ local string_cn = {
     user_features_9 = '将课堂总结发送到个人邮箱',
     user_features_10 = '查看历史授课记录',
 
+    attended = '已教',
+    classes = '课堂',
+    total_teaching_time = '总教学时长',
+    hours = '小时',
+    minutes = '分钟',
+    sort_by_teaching_time = '点击按授课时间排序',
     -- js zh-CN
     front_resource = {
         include = '包含',
@@ -90,7 +96,20 @@ local string_cn = {
         ages = '年龄',
         suitable4all = '适合所有年龄段',
         skills = '技能',
-        
+        continue = '继续学习',
+        start_to_learn = '开始学习',
+        have_learned = '已学习',
+        finished = '完成！',
+        pkg = '课程包',
+        lesson = '课程',
+        duration = '时长',
+        goals = '课程目标',
+        view_summary = '查看课程总结',
+        minutes = '分钟',
+        msg_first_in = [[
+            <p>欢迎使用PAC课程系统！</p><p>您已获得200知识币的奖励。</p>
+        ]],
+        btn_ok_txt = '我知道了',
     }
 }
 

@@ -1,5 +1,3 @@
-var LESSON_API = $('#baseURL').val() || '';
-var R = JSON.parse( $('#frontResource').val() );
 $(function(){
     // 怎么样获取coins的提示
     $('.how,.tooltip-how').on('mouseover',function(){
@@ -151,11 +149,11 @@ $(function(){
 
                     if( item.doneCount >= item.lessonCount ){
                         //当学完显示学完
-                        str += '<div class="finished"><span>Finished<span><i class="el-icon-success"></i></div>'
+                        str += '<div class="finished"><span>'+ R.finished +'<span><i class="el-icon-success"></i></div>'
                     }else{
                         if( item.doneCount == 0 ){
                             //未开始学习
-                            str += '<div class="start"><a href="'+ keepworkHost + item.firstLessonUrl +'" class="el-button el-button--primary el-button--mini"><span>Start to learn<span></a></div>'
+                            str += '<div class="start"><a href="'+ keepworkHost + item.firstLessonUrl +'" class="el-button el-button--primary el-button--mini"><span>' + R.start_to_learn + '<span></a></div>'
                         }else{
                             //进度条
                             str += '<div class="lessons-progress">'+
@@ -168,7 +166,7 @@ $(function(){
                                         '</div>'+
                                     '</div>'+
                                 '</div>'+
-                            '<div class="progress-tip">Have learned '+ item.doneCount +' lessons.</div>'+
+                            '<div class="progress-tip">' + R.have_learned + ' '+ item.doneCount +' '+ R.lessons +'</div>'+
                             '</div>'+
                             '<div class="continu-btn">';
                             if(item.url == ''){
@@ -176,7 +174,7 @@ $(function(){
                                 str += '<button class="btn_continue continue el-button el-button--primary el-button--mini"><span>Continue</span></button>'                                    
                             }else{
                                 //继续学习
-                                str += '<a href="'+ item.url +'" class="continue el-button el-button--primary el-button--mini"><span>Continue</span></a>'                                      
+                                str += '<a href="'+ item.url +'" class="continue el-button el-button--primary el-button--mini"><span>' + R.continue + '</span></a>'                                      
                             }
                             str += '</div></div>'
                         }

@@ -20,12 +20,12 @@
         <div class="e-col el-col-12 el-col-xs-24">
             <div class="teacher-summary el-row el-row--flex is-justify-space-around" >
                 <div class="el-col el-col-12">
-                    <div class="title">Attended</div>
-                    <div class="lines"><span class="attended-num"></span>classes</div>
+                    <div class="title">{{__data__.string.attended}}</div>
+                    <div class="lines"><span class="attended-num"></span>{{__data__.string.classes}}</div>
                 </div>
                 <div class="el-col el-col-12">
-                    <div class="title">Total Teaching Time</div>
-                    <div class="lines"><span class="Total-time-hr"></span>hrs<span class="Total-time-min"></span>mins</div>
+                    <div class="title">{{__data__.string.total_teaching_time}}</div>
+                    <div class="lines"><span class="Total-time-hr"></span>{{__data__.string.hours}}<span class="Total-time-min"></span>{{__data__.string.minutes}}</div>
                 </div>
             </div>
         </div> 
@@ -46,7 +46,7 @@
                 <i class="el-icon-caret-top active"></i>
                 <i class="el-icon-caret-bottom"></i>
             </span>
-            <span>Click to sort by teaching time</span>
+            <span>{{__data__.string.sort_by_teaching_time}}</span>
         </div>
         <div class="have-taught-list"></div>
     </div>
