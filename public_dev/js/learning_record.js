@@ -20,7 +20,7 @@ $(function(){
                 openDialog({
                     width : 'auto',
                     messageClass : 'open-message',
-                    message: "<p>Great to see you!</p><p>Thanks for signing up for a PAC Lesson account.</p><p>You've got a reward of 200 coins.</p> "
+                    message: R.msg_first_in
                 }, function(){
                     $.post(LESSON_API + "/api/member/firstIn");
                 })
@@ -65,7 +65,7 @@ $(function(){
                     openDialog({
                         width : 'auto',
                         messageClass : 'open-message',
-                        message : "Congratulations. You've got a reward of 20 coins."
+                        message : R.msg_add_presenter
                     })
                     $('.coins-num').html( response.data.coin);
                     
@@ -75,13 +75,13 @@ $(function(){
                     openDialog({
                         width : 'auto',
                         messageClass : 'open-message',
-                        message : "It's not a valid account. Please check it and try again."
+                        message : R.msg_not_valid_account
                     })
                 }else if( response.err == 105 ){
                     openDialog({
                         width : 'auto',
                         messageClass : 'open-message',
-                        message : "Not allow add more then two presenter. Please check it and try again."
+                        message : R.msg_not_allow_two_presenter
                     })
                 }
             })
@@ -89,7 +89,7 @@ $(function(){
             openDialog({
                 width : 'auto',
                 messageClass : 'open-message',
-                message : "It's not a valid account. Please check it and try again."
+                message : R.msg_not_valid_account
             })
         }
         
@@ -191,7 +191,7 @@ $(function(){
                     openDialog({
                         width : 'auto',
                         messageClass : 'open-message',
-                        message:'Please add the package first.',
+                        message: R.msg_plz_add_pkg
                     })
                 })
                 

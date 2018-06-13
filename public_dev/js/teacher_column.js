@@ -76,21 +76,21 @@ $(function(){
                     openDialog({
                         width : 'auto',
                         messageClass : 'open-message',
-                        message : "The current account has been activated without the need for repeated activation"
+                        message : R.msg_activated_account
                     })
                 }else if( response.err == 124 ){
                     //不存在该激活码
                     openDialog({
                         width : 'auto',
                         messageClass : 'open-message',
-                        message : "Incorrect activation code. Please check it and try again."
+                        message : R.msg_incorrect_cdkey
                     })
                 }else if( response.err == 125 ){
                     // 激活码已被使用
                     openDialog({
                         width : 'auto',
                         messageClass : 'open-message',
-                        message : "The activation code already used. Please check it and try again."
+                        message : R.msg_already_used_cdkey
                     })
                 }
             })
@@ -98,7 +98,7 @@ $(function(){
             openDialog({
                 width : 'auto',
                 messageClass : 'open-message',
-                message : "Incorrect activation code. Please check it and try again."
+                message : R.msg_plz_input_cdkey
             })
         }
         

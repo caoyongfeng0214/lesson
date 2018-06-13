@@ -109,6 +109,30 @@ local string_cn = {
         msg_first_in = [[
             <p>欢迎使用PAC课程系统！</p><p>您已获得200知识币的奖励。</p>
         ]],
+        msg_add_presenter = [[
+            恭喜您获得20知识币的奖励。
+        ]],
+        msg_not_valid_account = [[
+            不是有效账号，请检查用户名后重试。
+        ]],
+        msg_not_allow_two_presenter = [[
+            您已经添加过推荐人了。
+        ]],
+        msg_plz_add_pkg = [[
+            学习本课程包的课程，需要先添加课程包。
+        ]],
+        msg_activated_account = [[
+            您的账户已激活，不需要重复激活。
+        ]],
+        msg_incorrect_cdkey = [[
+            激活码有误，请确认后重试！
+        ]],
+        msg_already_used_cdkey = [[
+            激活码已被使用，请确认后重试！
+        ]],
+        msg_plz_input_cdkey = [[
+            请输入激活码后重试！
+        ]],
         btn_ok_txt = '我知道了',
     }
 }

@@ -121,6 +121,30 @@ local string_en = {
         msg_first_in = [[
             <p>Great to see you!</p><p>Thanks for signing up for a PAC Lesson account.</p><p>You've got a reward of 200 coins.</p>
         ]],
+        msg_add_presenter = [[
+            Congratulations. You've got a reward of 20 coins.
+        ]],
+        msg_not_valid_account = [[
+            It's not a valid account. Please check it and try again.
+        ]],
+        msg_not_allow_two_presenter = [[
+            Not allow add more then two presenter. Please check it and try again.
+        ]],
+        msg_plz_add_pkg = [[
+            Please add the package first.
+        ]],
+        msg_activated_account = [[
+            The current account has been activated without the need for repeated activation
+        ]],
+        msg_incorrect_cdkey = [[
+            Incorrect activation code. Please check it and try again.
+        ]],
+        msg_already_used_cdkey = [[
+            The activation code already used. Please check it and try again.
+        ]],
+        msg_plz_input_cdkey = [[
+            Please enter an activation code.
+        ]],
         btn_ok_txt = 'OK',
     }
 }
