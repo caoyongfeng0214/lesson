@@ -382,7 +382,8 @@ var cheatRecords = function(arr) {
     })
 }
 
-document.domain = 'localhost';
+// document.domain = 'localhost';
+document.domain = '10.27.26.21'
 // // 计算页面的实际高度，iframe自适应会用到
 // function calcPageHeight(doc) {
 //     var cHeight = Math.max(doc.body.clientHeight, doc.documentElement.clientHeight);
