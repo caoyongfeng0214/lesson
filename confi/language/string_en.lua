@@ -52,7 +52,101 @@ local string_en = {
     packages = 'packages',
     signup = 'SIGN UP',
     login = 'LOGIN',
-    
+    coins = 'Coins',
+    codes_read = 'Codes read',
+    codes_written = 'Codes written',
+    commands_learned = 'Commands learned',
+    lines = 'lines',
+    how_to_earn_coins = [[
+        <p>How to earn coins:</p> 
+        <p>1. 200 coins will be given to you as a reward when you enter our system for the first time.</p>
+        <p>2. Each time you recommend one friend to be our user, both you and the invited could get a reward of 20 coins. It's cumulative.</p> 
+        <p>3. You need to invest some coins to get access to those lesson packages. And after finishing the learning of each package, you will get a reward of coins.</p> 
+    ]],
+    invinter_tips = [[
+        <p>Please input the user name of your referee who recommended our system.</p>
+        <p>Both you and your inviter will get a reward of 20 coins.</p> 
+    ]],
+    invinter_dismiss = 'Dismiss',
+    invinter_submit = 'Submit',
+    no_package_selected = [[
+        <p>You haven't selected any packages.</p>
+        <p>Please enter Lessons to view..</p> 
+    ]],
+    view_lessons = 'View Lessons',
+    activation_tips = [[
+        <p>You have signed up as a Private User. If you are an educator and wish to get</p>
+        <p>access to the teaching function, please input the activation code here.</p>     
+        <p class="notice">If you wish to get the activation code, please contact *******.</p>
+    ]],
+    activation_code_input_placeholder = 'Please input the activation code.',
+    activation_activate_btn_text = 'Activate',
+    educator_could_get = 'What Educational Institutions could get:',
+    private_users = 'Private Users',
+    educational_institutions = 'Educational Institutions',
+    user_features_1 = 'View content of all lessons',
+    user_features_2 = 'Learn lessons in Paracraft',
+    user_features_3 = 'Get access to the testing system',
+    user_features_4 = 'View the history record of teaching',
+    user_features_5 = 'Get access to the teaching function',
+    user_features_6 = 'Track students’ real-time performance in a class',
+    user_features_7 = 'View the summary including accuracy analysis and testing results of students after a class',
+    user_features_8 = 'Print the summary',
+    user_features_9 = 'Send the summary to your own mailbox',
+    user_features_10 = 'View the history record of teaching',
+
+    attended = 'Attended',
+    classes = 'classes',
+    total_teaching_time = 'Total Teaching Time',
+    hours = 'hrs',
+    minutes = 'mins',
+    sort_by_teaching_time = 'Click to sort by teaching time',
+    -- js en-US
+    front_resource = {
+        include = 'Include',
+        lessons  = 'lessons',
+        ages = 'Ages',
+        suitable4all = 'suitable for all',
+        skills = 'Skills',
+        continue = 'Continue',
+        start_to_learn = 'Start to learn',
+        have_learned = 'Have learned',
+        finished = 'Finished',
+        pkg = 'Package',
+        lesson = 'Lesson',
+        duration = 'Duration',
+        goals = 'Lesson Goals',
+        view_summary = 'View Summary',
+        minutes = 'mins',
+        msg_first_in = [[
+            <p>Great to see you!</p><p>Thanks for signing up for a PAC Lesson account.</p><p>You've got a reward of 200 coins.</p>
+        ]],
+        msg_add_presenter = [[
+            Congratulations. You've got a reward of 20 coins.
+        ]],
+        msg_not_valid_account = [[
+            It's not a valid account. Please check it and try again.
+        ]],
+        msg_not_allow_two_presenter = [[
+            Not allow add more then two presenter. Please check it and try again.
+        ]],
+        msg_plz_add_pkg = [[
+            Please add the package first.
+        ]],
+        msg_activated_account = [[
+            The current account has been activated without the need for repeated activation
+        ]],
+        msg_incorrect_cdkey = [[
+            Incorrect activation code. Please check it and try again.
+        ]],
+        msg_already_used_cdkey = [[
+            The activation code already used. Please check it and try again.
+        ]],
+        msg_plz_input_cdkey = [[
+            Please enter an activation code.
+        ]],
+        btn_ok_txt = 'OK',
+    }
 }
 
 NPL.export(string_en);

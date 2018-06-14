@@ -14,6 +14,11 @@
 </head>
 <body>
     <input hidden value="{{__data__.baseUrl}}" id="baseURL"/>
+    <input hidden value="{{__data__.frontResource}}" id="frontResource" />
+    <script>
+        var LESSON_API = $('#baseURL').val() || '';
+        var R = JSON.parse( $('#frontResource').val() );
+    </script>
     {{^__data__.headerShow}}
     <div class="header noprint">
         <div class="nav-bar">

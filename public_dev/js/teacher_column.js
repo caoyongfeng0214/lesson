@@ -1,4 +1,3 @@
-var LESSON_API = $('#baseURL').val() || '';
 $(function(){
     var username = '';
     var PAGE_SIZE = 50;
@@ -12,7 +11,7 @@ $(function(){
                 openDialog({
                     width : 'auto',
                     messageClass : 'open-message',
-                    message: "<p>Great to see you!</p><p>Thanks for signing up for a PAC Lesson account.</p><p>You've got a reward of 200 coins.</p> "
+                    message: R.msg_first_in
                 }, function(){
                     $.post(LESSON_API + "/api/member/firstIn");
                 })
@@ -77,21 +76,21 @@ $(function(){
                     openDialog({
                         width : 'auto',
                         messageClass : 'open-message',
-                        message : "The current account has been activated without the need for repeated activation"
+                        message : R.msg_activated_account
                     })
                 }else if( response.err == 124 ){
                     //不存在该激活码
                     openDialog({
                         width : 'auto',
                         messageClass : 'open-message',
-                        message : "Incorrect activation code. Please check it and try again."
+                        message : R.msg_incorrect_cdkey
                     })
                 }else if( response.err == 125 ){
                     // 激活码已被使用
                     openDialog({
                         width : 'auto',
                         messageClass : 'open-message',
-                        message : "The activation code already used. Please check it and try again."
+                        message : R.msg_already_used_cdkey
                     })
                 }
             })
@@ -99,7 +98,7 @@ $(function(){
             openDialog({
                 width : 'auto',
                 messageClass : 'open-message',
-                message : "Incorrect activation code. Please check it and try again."
+                message : R.msg_plz_input_cdkey
             })
         }
         
@@ -134,22 +133,22 @@ $(function(){
                         '    <div class="item-cover "><a href="' + (keepworkHost + item.lessonUrl)+ '" target="_blank" class="title"><div class="cover" style="background-image: url('+ item.lessonCover +')"></div></a></div>' +
                         '    <div class="content">';
                         if( item.pkgs ){
-                            itemStr += '<div class="package-title"><span>Package: </span>';
+                            itemStr += '<div class="package-title"><span>' + R.pkg + ': </span>';
                             for( var j = 0; j < item.pkgs.length;j++ ){
                                 itemStr += '<a href="' + (keepworkHost + item.pkgs[j].pkgUrl)+ '" target="_blank" class="title"> '+ item.pkgs[j].pkgTitle +'</a>'
                             }
                             itemStr += '</div>';
                         }
-                        itemStr += '<div class="lesson-title"><a href="' + (keepworkHost + item.lessonUrl)+ '" target="_blank" class="title">Lesson '+ item.lessonNo +'：<span>'+ item.lessonTitle +'</span></a></div>' +
-                        '        <div class="duration">Duration：<span>45mins</span></div>' +
+                        itemStr += '<div class="lesson-title"><a href="' + (keepworkHost + item.lessonUrl)+ '" target="_blank" class="title">'+ R.lesson +' '+ item.lessonNo +'：<span>'+ item.lessonTitle +'</span></a></div>' +
+                        '        <div class="duration">' + R.duration + '：<span>45' + R.minutes + '</span></div>' +
                         '        <div class="goals">' +
-                        '            <div>Lesson Goals:</div>' +
+                        '            <div>' + R.goals + ':</div>' +
                         '            <ul>' +
                         '                <li>'+ item.goals +'</li>' +
                         '            </ul>' +
                         '        </div>' +
                         '        <div class="foot">' +
-                        '            <a href="/taughtedRecord/' + item.classId + '" class="el-button el-button--primary el-button--mini">View Summary</a>' +
+                        '            <a href="/taughtedRecord/' + item.classId + '" class="el-button el-button--primary el-button--mini">' + R.view_summary + '</a>' +
                         '        </div>' +
                         '    </div>' +
                         '</div>' +

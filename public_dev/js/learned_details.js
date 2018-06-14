@@ -1,5 +1,4 @@
 var recordSn = $('#recordSn').val();
-var LESSON_API = $('#baseURL').val() || '';
 $(function(){
     getRecordDetail();
 });

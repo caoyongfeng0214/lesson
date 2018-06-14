@@ -1,4 +1,3 @@
-var LESSON_API = $('#baseURL').val() || '';
 // TODO: 切换为在 keepwork 上获取
 var username = $('#username').val();
 var PAGE_SIZE = 50;

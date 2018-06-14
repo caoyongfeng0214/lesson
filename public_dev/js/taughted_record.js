@@ -1,4 +1,3 @@
-var LESSON_API = $('#baseURL').val() || '';
 var taughtedChart = c3.generate({
     bindto: '#taughtedChart',
     data: {
@@ -358,8 +357,8 @@ var getLessonTaughtedRecord = function(reload) {
 var appendRecord = function(item) {
     tblRecord.append('<tr>'+
     '    <td class="noprint"><input type="checkbox" class="cbx-item" data-sn="'+ item.recordSn +'" ></td>'+
-    '    <td>'+
-    '        <div class="user-img"><img src="https://avatars3.githubusercontent.com/u/18064049?s=460&v=4" /></div>'+
+    '    <td class="noprint">'+
+    '        <div class="user-img"><img src="' + item.portrait + '" /></div>'+
     '    </td>'+
     '    <td>' + item.username + '</td>'+
     '    <td>' + item.studentNo + '</td>'+
@@ -382,7 +381,8 @@ var cheatRecords = function(arr) {
     })
 }
 
-document.domain = 'localhost';
+// document.domain = 'localhost';
+document.domain = '10.27.26.21'
 // // 计算页面的实际高度，iframe自适应会用到
 // function calcPageHeight(doc) {
 //     var cHeight = Math.max(doc.body.clientHeight, doc.documentElement.clientHeight);

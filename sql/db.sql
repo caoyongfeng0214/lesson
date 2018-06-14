@@ -164,3 +164,27 @@ DELIMITER ;
 
 # 课程序列
 INSERT INTO `seq` (`name`, `val`) VALUES ('classSeq', '100000'); 
+
+# _mg
+DROP TABLE IF EXISTS `admins`;
+CREATE TABLE `admins` (
+  `sn` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(128) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '用户名',
+  `type` int(11) DEFAULT NULL COMMENT '类型',
+  `pwd` varchar(256) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '密码',
+  `createTime` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `lastLoginTime` datetime DEFAULT NULL COMMENT '最后登录时间',
+  `lastLoginIp` varchar(128) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '最后登录IP',
+  `state` tinyint(4) NOT NULL DEFAULT '1' COMMENT '1. normal 2. disable',
+  PRIMARY KEY (`sn`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+# _mg_type
+DROP TABLE IF EXISTS `admintype`;
+CREATE TABLE `admintype` (
+  `sn` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(128) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '类型',
+  `createTime` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `state` tinyint(4) NOT NULL DEFAULT '1' COMMENT '1. normal 2. disable',
+  PRIMARY KEY (`sn`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;

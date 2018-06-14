@@ -16,14 +16,15 @@ router:get('/auth', function(req, res, next)
         local portrait = user.portrait
         local member = memberBll.findOrInsertByName(username, portrait)
         local rs = {}
+        if(member.portrait and member.portrait:startsWith('http') == false) then
+            member.portrait = sitecfg.keepworkHost .. member.portrait
+        end
         rs = {
             err = 0,
             data = member
         }
         res:send(rs)
     end
-    echo('#DEBUG')
-    echo(token)
     commonBll.auth(token, findMember, function()
         res:send({
             err = 102,

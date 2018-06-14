@@ -1,4 +1,3 @@
-var LESSON_API = $('#baseURL').val() || '';
 $(function(){
     $.ajax({  
         type : "GET",  
@@ -13,7 +12,7 @@ $(function(){
                     parseMarkDown(item);
                      //年龄范围
                      if( item.agesMax == 0 && item.agesMin == 0 ){
-                        item.ageMsg = 'Suitable for all' ;
+                        item.ageMsg = R.suitable4all ;
                     }else{
                         item.ageMsg = item.agesMin + '-' + item.agesMax;
                     }
@@ -25,9 +24,9 @@ $(function(){
                    '        <div style="background-image: url(' + item.cover + ');"></div>'+
                    '    </a>'+
                    '    <a href="' + item.url + '" target="_blank" class="title">' + item.title + '</a>'+
-                   '    <div class="time">Include: <span>'+ item.lessonCount +'</span> lessons</div>'+
-                   '    <div class="ages">Ages: <span>'+ item.ageMsg +'</span></div>'+
-                   '    <div class="skills">Skills: <span>'+ item.skills +'</span></div>'+
+                   '    <div class="time">' + R.include + ': <span>'+ item.lessonCount +'</span> ' + R.lessons + '</div>'+
+                   '    <div class="ages">' + R.ages +': <span>'+ item.ageMsg +'</span></div>'+
+                   '    <div class="skills">' + R.skills + ': <span>'+ item.skills +'</span></div>'+
                    ' </div> '
                     $('.el-row').append(str);
                 }   

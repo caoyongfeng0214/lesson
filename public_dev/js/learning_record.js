@@ -1,4 +1,3 @@
-var LESSON_API = $('#baseURL').val() || '';
 $(function(){
     // 怎么样获取coins的提示
     $('.how,.tooltip-how').on('mouseover',function(){
@@ -21,7 +20,7 @@ $(function(){
                 openDialog({
                     width : 'auto',
                     messageClass : 'open-message',
-                    message: "<p>Great to see you!</p><p>Thanks for signing up for a PAC Lesson account.</p><p>You've got a reward of 200 coins.</p> "
+                    message: R.msg_first_in
                 }, function(){
                     $.post(LESSON_API + "/api/member/firstIn");
                 })
@@ -66,7 +65,7 @@ $(function(){
                     openDialog({
                         width : 'auto',
                         messageClass : 'open-message',
-                        message : "Congratulations. You've got a reward of 20 coins."
+                        message : R.msg_add_presenter
                     })
                     $('.coins-num').html( response.data.coin);
                     
@@ -76,13 +75,13 @@ $(function(){
                     openDialog({
                         width : 'auto',
                         messageClass : 'open-message',
-                        message : "It's not a valid account. Please check it and try again."
+                        message : R.msg_not_valid_account
                     })
                 }else if( response.err == 105 ){
                     openDialog({
                         width : 'auto',
                         messageClass : 'open-message',
-                        message : "Not allow add more then two presenter. Please check it and try again."
+                        message : R.msg_not_allow_two_presenter
                     })
                 }
             })
@@ -90,7 +89,7 @@ $(function(){
             openDialog({
                 width : 'auto',
                 messageClass : 'open-message',
-                message : "It's not a valid account. Please check it and try again."
+                message : R.msg_not_valid_account
             })
         }
         
@@ -113,7 +112,7 @@ $(function(){
                     var item = response.data[i];
                     //年龄范围
                     if( item.agesMax == 0 && item.agesMin == 0 ){
-                        item.ageMsg = 'Suitable for all' ;
+                        item.ageMsg = R.suitable4all ;
                     }else{
                         item.ageMsg = item.agesMin + '-' + item.agesMax;
                     }
@@ -135,9 +134,9 @@ $(function(){
                     '        <div style="background-image: url(' + item.cover + ');"></div>'+
                     '    </a>'+
                     '    <a href="' + item.packageUrl + '" target="_blank" class="title">' + item.title + '</a>'+
-                    '    <div class="time">Include: <span>'+ item.lessonCount +'</span> lessons</div>'+
-                    '    <div class="ages">Ages: <span>'+ item.ageMsg +'</span></div>'+
-                    '    <div class="skills">Skills: <span>'+ item.skills +'</span></div>'+
+                    '    <div class="time">' + R.include + ': <span>'+ item.lessonCount +'</span> ' + R.lessons + '</div>'+
+                    '    <div class="ages">' + R.ages +': <span>'+ item.ageMsg +'</span></div>'+
+                    '    <div class="skills">' + R.skills + ': <span>'+ item.skills +'</span></div>'+
                     '    <div class="progress">'
 
                     //进度  
@@ -150,11 +149,11 @@ $(function(){
 
                     if( item.doneCount >= item.lessonCount ){
                         //当学完显示学完
-                        str += '<div class="finished"><span>Finished<span><i class="el-icon-success"></i></div>'
+                        str += '<div class="finished"><span>'+ R.finished +'<span><i class="el-icon-success"></i></div>'
                     }else{
                         if( item.doneCount == 0 ){
                             //未开始学习
-                            str += '<div class="start"><a href="'+ keepworkHost + item.firstLessonUrl +'" class="el-button el-button--primary el-button--mini"><span>Start to learn<span></a></div>'
+                            str += '<div class="start"><a href="'+ keepworkHost + item.firstLessonUrl +'" class="el-button el-button--primary el-button--mini"><span>' + R.start_to_learn + '<span></a></div>'
                         }else{
                             //进度条
                             str += '<div class="lessons-progress">'+
@@ -167,7 +166,7 @@ $(function(){
                                         '</div>'+
                                     '</div>'+
                                 '</div>'+
-                            '<div class="progress-tip">Have learned '+ item.doneCount +' lessons.</div>'+
+                            '<div class="progress-tip">' + R.have_learned + ' '+ item.doneCount +' '+ R.lessons +'</div>'+
                             '</div>'+
                             '<div class="continu-btn">';
                             if(item.url == ''){
@@ -175,7 +174,7 @@ $(function(){
                                 str += '<button class="btn_continue continue el-button el-button--primary el-button--mini"><span>Continue</span></button>'                                    
                             }else{
                                 //继续学习
-                                str += '<a href="'+ item.url +'" class="continue el-button el-button--primary el-button--mini"><span>Continue</span></a>'                                      
+                                str += '<a href="'+ item.url +'" class="continue el-button el-button--primary el-button--mini"><span>' + R.continue + '</span></a>'                                      
                             }
                             str += '</div></div>'
                         }
@@ -192,7 +191,7 @@ $(function(){
                     openDialog({
                         width : 'auto',
                         messageClass : 'open-message',
-                        message:'Please add the package first.',
+                        message: R.msg_plz_add_pkg
                     })
                 })
                 

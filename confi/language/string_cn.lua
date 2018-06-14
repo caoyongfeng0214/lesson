@@ -41,6 +41,100 @@ local string_cn = {
     packages = '个课程包',
     signup = '注册',
     login = '登录',
+    coins = '知识币',
+    codes_read = '阅读代码',
+    codes_written = '书写代码',
+    commands_learned = '学习指令',
+    lines = '行',
+    how_to_earn_coins = [[
+        <p>如何获取知识币？</p> 
+        <p>1、首次登录的用户均可获得系统赠送的200知识币。</p>
+        <p>2、每邀请1位朋友成为本系统用户，双方均可获得20知识币的奖励，邀请多位朋友可累加。</p> 
+        <p>3、添加课程包会耗费一定量的知识币（在课程包mod中做设置），当用户学习完成每个课程包时，也会获得知识币奖励。</p> 
+    ]],
+    invinter_tips = [[
+        <p>请输入您的推荐人用户名。</p>
+        <p>您和您的推荐人都将获得20知识币的奖励。</p> 
+    ]],
+    invinter_dismiss = '忽略',
+    invinter_submit = '提交',
+    no_package_selected = [[
+        <p>暂未添加课程包，请进入课程中心查看！</p>
+    ]],
+    view_lessons = '查看课程',
+    activation_tips = [[
+        <p>您已成为本系统的个人用户。如果您是一位教育工作者，</p>
+        <p>需要使用授课功能，请在下方输入激活码：</p>     
+        <p class="notice">如需获取激活码，请联系******。</p>
+    ]],
+    activation_code_input_placeholder = '请输入激活码',
+    activation_activate_btn_text = '激活',
+    educator_could_get = '教育机构可以获得：',
+    private_users = '个人用户',
+    educational_institutions = '教育机构',
+    user_features_1 = '查看课程内容',
+    user_features_2 = '在Paracraft中学习课程',
+    user_features_3 = '使用测试系统',
+    user_features_4 = '查看历史学习记录',
+    user_features_5 = '使用授课功能：',
+    user_features_6 = '跟踪学生的实时课堂表现',
+    user_features_7 = '查看课堂总结，包括答题结果统计、准确率分析等',
+    user_features_8 = '打印课堂总结',
+    user_features_9 = '将课堂总结发送到个人邮箱',
+    user_features_10 = '查看历史授课记录',
+
+    attended = '已教',
+    classes = '课堂',
+    total_teaching_time = '总教学时长',
+    hours = '小时',
+    minutes = '分钟',
+    sort_by_teaching_time = '点击按授课时间排序',
+    -- js zh-CN
+    front_resource = {
+        include = '包含',
+        lessons  = '个课程',
+        ages = '年龄',
+        suitable4all = '适合所有年龄段',
+        skills = '技能',
+        continue = '继续学习',
+        start_to_learn = '开始学习',
+        have_learned = '已学习',
+        finished = '完成！',
+        pkg = '课程包',
+        lesson = '课程',
+        duration = '时长',
+        goals = '课程目标',
+        view_summary = '查看课程总结',
+        minutes = '分钟',
+        msg_first_in = [[
+            <p>欢迎使用PAC课程系统！</p><p>您已获得200知识币的奖励。</p>
+        ]],
+        msg_add_presenter = [[
+            恭喜您获得20知识币的奖励。
+        ]],
+        msg_not_valid_account = [[
+            不是有效账号，请检查用户名后重试。
+        ]],
+        msg_not_allow_two_presenter = [[
+            您已经添加过推荐人了。
+        ]],
+        msg_plz_add_pkg = [[
+            学习本课程包的课程，需要先添加课程包。
+        ]],
+        msg_activated_account = [[
+            您的账户已激活，不需要重复激活。
+        ]],
+        msg_incorrect_cdkey = [[
+            激活码有误，请确认后重试！
+        ]],
+        msg_already_used_cdkey = [[
+            激活码已被使用，请确认后重试！
+        ]],
+        msg_plz_input_cdkey = [[
+            请输入激活码后重试！
+        ]],
+        btn_ok_txt = '我知道了',
+    }
 }
 
 NPL.export(string_cn);

@@ -29,7 +29,8 @@ String.prototype.replaceAll = function(f, e) {
     return this.replace(reg,e); 
 }
 
-var keepworkHost = 'http://localhost:8080';
+// var keepworkHost = 'http://localhost:8080';
+var keepworkHost = 'http://10.27.26.21:8080';
 /**
  * number format english eg: 1 -> 1st 2 -> 2nd
  * @param number 

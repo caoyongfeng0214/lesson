@@ -69,6 +69,7 @@ app:use(function(req, res, next)
 		end
 		res.__data__.string = resource;
 		res.__data__.language = langStr;
+		res.__data__.frontResource = commonlib.Json.Encode(resource.front_resource);
 	end
 	next(req, res, next);
 end);
@@ -96,6 +97,9 @@ app:use('/api/subscribe', subscribe);
 
 local cdkey = NPL.load('./api/cdkey');
 app:use('/api/cdkey', cdkey);
+
+local _mg_admin = NPL.load('./api/_mg_admin');
+app:use('/api/_mg/admin', _mg_admin)
 
 local router_index = NPL.load('./routes/index');
 app:use('/', router_index);

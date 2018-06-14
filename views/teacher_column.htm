@@ -10,40 +10,38 @@
     <!-- 输入激活码 -->
     <div class="activation">
         <div class="activation-content">
-            <p>You have signed up as a Private User. If you are an educator and wish to get</p>
-            <p>access to the teaching function, please input the activation code here.</p>     
-            <p class="notice">If you wish to get the activation code, please contact *******.</p>
+            {{{__data__.string.activation_tips}}}
             <div class="el-input">
-                <input type="text" name="activation-code" autocomplete="off" placeholder="Please input the activation code." class="el-input__inner">
+                <input type="text" name="activation-code" autocomplete="off" placeholder="{{__data__.string.activation_code_input_placeholder}}" class="el-input__inner">
             </div>
             <div>
-                <button type="button" class="add-activation el-button el-button--primary el-button--mini"><span>Activate</span></button>
+                <button type="button" class="add-activation el-button el-button--primary el-button--mini"><span>{{__data__.string.activation_activate_btn_text}}</span></button>
             </div>
         </div>
     </div>
     <!-- 教育机构可以获得 -->
     <div class="get_detail">
-        <div class="teacher_title"><strong>What Educational Institutions could get:</strong></div>
+        <div class="teacher_title"><strong>{{__data__.string.educator_could_get}}</strong></div>
         <div class="el-row el-row--flex is-justify-space-between user-authority">
             <!-- 个人用户 -->
             <div class="private">
                 <div class="head">
-                    <h3>Private Users</h3>
+                    <h3>{{__data__.string.private_users}}</h3>
                 </div>
                 <div class="body-content">
                     <ul>
-                    <li class="have">View content of all lessons</li>
-                    <li class="have">Learn lessons in Paracraft</li>
-                    <li class="have">Get access to the testing system</li>
-                    <li class="have">View the history record of teaching</li>
+                    <li class="have">{{__data__.string.user_features_1}}</li>
+                    <li class="have">{{__data__.string.user_features_2}}</li>
+                    <li class="have">{{__data__.string.user_features_3}}</li>
+                    <li class="have">{{__data__.string.user_features_4}}</li>
                     <li>
-                        Get access to the teaching function
+                        {{__data__.string.user_features_5}}
                         <ul>
-                        <li>Track students’ real-time performance in a class</li>
-                        <li>View the summary including accuracy analysis and testing results of students after a class</li>
-                        <li>Print the summary</li>
-                        <li>Send the summary to your own mailbox</li>
-                        <li>View the history record of teaching</li>
+                        <li>{{__data__.string.user_features_6}}</li>
+                        <li>{{__data__.string.user_features_7}}</li>
+                        <li>{{__data__.string.user_features_8}}</li>
+                        <li>{{__data__.string.user_features_9}}</li>
+                        <li>{{__data__.string.user_features_10}}</li>
                         </ul>  
                     </li>
                     
@@ -53,22 +51,22 @@
             <!-- 教育机构 -->
             <div class="edu-ins ">
                 <div class="head">
-                    <h3>Educational Institutions</h3>  
+                    <h3>{{__data__.string.educational_institutions}}</h3>  
                 </div>
                 <div class="body-content">
                     <ul>
-                        <li class="have">View content of all lessons</li>
-                        <li class="have">Learn lessons in Paracraft</li>
-                        <li class="have">Get access to the testing system</li>
-                        <li class="have">View the history record of learning</li>
+                        <li class="have">{{__data__.string.user_features_1}}</li>
+                        <li class="have">{{__data__.string.user_features_2}}</li>
+                        <li class="have">{{__data__.string.user_features_3}}</li>
+                        <li class="have">{{__data__.string.user_features_4}}</li>
                         <li class="have">
-                            Get access to the teaching function
+                            {{__data__.string.user_features_5}}
                             <ul>
-                            <li class="have">Track students’ real-time performance in a class</li>
-                            <li class="have">View the summary including accuracy analysis and testing results of students after a class</li>
-                            <li class="have">Print the summary</li>
-                            <li class="have"><span>Send the summary to your own mailbox</span></li>
-                            <li class="have">View the history record of teaching</li>
+                            <li class="have">{{__data__.string.user_features_6}}</li>
+                            <li class="have">{{__data__.string.user_features_7}}</li>
+                            <li class="have">{{__data__.string.user_features_8}}</li>
+                            <li class="have"><span>{{__data__.string.user_features_9}}</span></li>
+                            <li class="have">{{__data__.string.user_features_10}}</li>
                         </ul>  
                         </li>
                     </ul>  

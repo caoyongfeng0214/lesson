@@ -382,6 +382,14 @@ router:get('/detail', function(req, res, next)
             if(v.answerSheet) then
                 v.answerSheet = commonlib.Json.Decode(v.answerSheet)
             end
+            if(v.portrait) then
+                if( not v.portrait:startswith('http') ) then
+                    v.portrait = sitecfg.keepworkHost .. v.portrait
+                end
+            else
+                -- 没有头像给默认头像
+                v.portrait = 'http://keepwork.com/wiki/assets/imgs/default_portrait.png?bust=1518090037'
+            end
         end
         rs.err = 0
         rs.data = data
@@ -398,7 +406,7 @@ router:get('/lesson', function(req, res, next)
     System.os.GetUrl({
         url = sitecfg.esApi,
         headers={["content-type"]="application/json"},
-        postfields = '{"query": {"match_phrase_prefix": {"content": "```@Lesson styleID: 0 lesson: LessonNo:"}}}' -- jsonString
+        postfields = '{"from" : 0, "size" : 100, "query": {"match_phrase_prefix": {"content": "```@Lesson styleID: 0 lesson: LessonNo:"}}}' -- jsonString
     }, function(err, msg, data)
         if(data ~= nil) then
             res:send(data)
@@ -416,7 +424,7 @@ router:get('/pkgs', function(req, res, next)
     System.os.GetUrl({
         url = sitecfg.esApi,
         headers={["content-type"]="application/json"},
-        postfields = '{"query": {"match_phrase_prefix": {"content": "```@LessonPackage styleID: 0 lessonPackage:"}}}' -- jsonString
+        postfields = '{"from" : 0, "size" : 100, "query": {"match_phrase_prefix": {"content": "```@LessonPackage styleID: 0 lessonPackage:"}}}' -- jsonString
     }, function(err, msg, data)
         if(data ~= nil) then
             res:send(data)
