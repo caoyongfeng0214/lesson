@@ -1,0 +1,23 @@
+@import '~antd/dist/antd.css';
+
+#app,.warp,.ant-layout{
+  height: 100%;
+}
+
+.logo {
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 60px;
+}
+.logo .title{
+  padding: 0;
+  margin: 0;
+  padding-left: 70px;
+  color: #fff;
+}
+.logout{
+  color: #fff;
+}
+.logout:hover{
+  color: #e6f7ff;
+}
