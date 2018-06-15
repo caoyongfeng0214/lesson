@@ -73,7 +73,7 @@ router:post('/upsert', function(req, res, next)
         if(not rq) then return end
         p.pwd = md5(p.pwd)
     end
-    local num = adminBll.upsert(p)
+    local num, lastSn = adminBll.upsert(p)
     if(num == nil) then
         rs = {
             err = 101,
@@ -82,7 +82,8 @@ router:post('/upsert', function(req, res, next)
     else
         rs = {
             err = 0,
-            msg = 'upsert success.'
+            msg = 'upsert success.',
+            sn = lastSn
         }
     end
     res:send(rs)
@@ -99,7 +100,7 @@ router:post('/upsertType', function(req, res, next)
         local rq = rq(p, {'name'}, res)
         if(not rq) then return end
     end
-    local num = adminBll.upsertType(p)
+    local num,lastSn = adminBll.upsertType(p)
     if(num == nil) then
         rs = {
             err = 101,
@@ -108,7 +109,8 @@ router:post('/upsertType', function(req, res, next)
     else
         rs = {
             err = 0,
-            msg = 'upsert success.'
+            msg = 'upsert success.',
+            sn = lastSn
         }
     end
     res:send(rs)
