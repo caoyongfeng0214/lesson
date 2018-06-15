@@ -10,7 +10,8 @@ const Client = Axios.create({
 
 const API = {
   postUpsertType: postUpsertType,
-  getAdminTypeList: getAdminTypeList
+  getAdminTypeList: getAdminTypeList,
+  getAdminList: getAdminList
 };
 //添加类型
 async function postUpsertType(params) {
@@ -23,6 +24,13 @@ async function postUpsertType(params) {
 //获取类型列表
 async function getAdminTypeList(params) {
   const res = await Client.get("/api/_mg/admin/typeList", params);
+  return res.data;
+}
+//管理员列表
+async function getAdminList(params) {
+  const res = await Client.get("/api/_mg/admin/list", {
+    params: params
+  });
   return res.data;
 }
 

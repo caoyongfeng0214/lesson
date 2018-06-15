@@ -36,10 +36,9 @@ class App extends React.Component {
     };
   }
   async componentWillMount() {
-    const { history } = this.props;
-    this.unsubscribeFromHistory = history.listen(this.handleLocationChange);
-    this.handleLocationChange(this.props);
-    // console.log(this.props);
+    //记住跳转页面刷新
+    const hash = window.location.hash.split("/")[2];
+    this.setState({ defaultSelectedKey: [hash] });
     const state = {
       mgLogged: false
     };
@@ -57,13 +56,6 @@ class App extends React.Component {
     } catch (error) {
       this.setState(state);
     }
-  }
-  componentWillUnmount() {
-    if (this.unsubscribeFromHistory) this.unsubscribeFromHistory();
-  }
-  handleLocationChange(location) {
-    console.log(location);
-    // Do something with the location
   }
 
   render() {

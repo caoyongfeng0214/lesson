@@ -33,6 +33,14 @@ https://github.com/caoyongfeng0214/lesson
 
 8.执行`gulp init`以及`gulp`即可在本地端口访问项目（默认3000端口）
 
+9.执行`npm run dev`即可运行后台管理系统，后台管理系统的代理服务器端口是3033 可在webpack.dev.js中修改
+生产环境执行`npm run build`
+
+10.代理服务器获取接口为固定接口，修改在mg_dev文件中的API.js修改即可
+
+注意：gulp init 和 npm run dev 需要同时运行才可以进入后台管理系统
+
+
 ## 接口文档
 
 ### 1.学生 Pad 进入教室

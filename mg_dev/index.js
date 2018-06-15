@@ -1,6 +1,6 @@
 import "babel-polyfill";
 import React from "react";
 import ReactDOM from "react-dom";
-import BrowserApp from "./components/browserApp";
+import App from "./components/app";
 
-ReactDOM.render(<BrowserApp />, document.getElementById("app"));
+ReactDOM.render(<App />, document.getElementById("app"));

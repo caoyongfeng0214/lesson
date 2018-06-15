@@ -43,7 +43,7 @@ class Category extends React.Component {
       //   render: (text, record) => {
       //     return (
       //       <span>
-      //         {record.state === false ? (
+      //         {record.state === 1 ? (
       //           this.state.CategoryData.length > 1 ? (
       //             <Popconfirm
       //               title="Sure to delete?"
@@ -62,21 +62,31 @@ class Category extends React.Component {
     ];
 
     this.state = {
+      //数据
       CategoryData: [],
+      // 输入框提交时是否禁用
       nameDisabled: false,
+      //是否显示新增类别弹窗
       visible: false,
+      //弹窗提交加载中
       confirmLoading: false,
+      //输入框名称
       typeName: "",
       pageSize: 10,
       pageNo: 1,
       totalPage: 0
     };
+    //新增用户
     this.addManager = this.addManager.bind(this);
     //暂时没有
     this.onDelete = this.onDelete.bind(this);
+    //关闭新增
     this.handleUpdateCancel = this.handleUpdateCancel.bind(this);
+    //确认新增
     this.handleUpdateOk = this.handleUpdateOk.bind(this);
+    //新增类别输入框改变事件
     this.handleTypeNameChange = this.handleTypeNameChange.bind(this);
+    //监听页面改变
     this.changePage = this.changePage.bind(this);
   }
 
@@ -103,9 +113,14 @@ class Category extends React.Component {
         confirmLoading: true
       });
       const res = await API.postUpsertType({ name: this.state.typeName });
-
       if (res.err === 0) {
         const list = this.state.CategoryData;
+        list.push({
+          sn: res.sn,
+          createTime: "刚刚",
+          state: 1,
+          name: this.state.typeName
+        });
         this.setState({
           visible: false,
           confirmLoading: false,
@@ -131,6 +146,7 @@ class Category extends React.Component {
   //获取当前类别列表
   async componentWillMount() {
     const res = await API.getAdminTypeList();
+
     this.setState({
       CategoryData: res.data,
       pageSize: res.page.pageSize,
@@ -154,7 +170,6 @@ class Category extends React.Component {
       <div>
         <Title
           title="管理员类别"
-          id="3"
           titleBtn={[
             {
               type: "primary",

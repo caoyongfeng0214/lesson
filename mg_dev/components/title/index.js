@@ -31,6 +31,7 @@ class Title extends React.Component {
                     key={index}
                     type={item.type}
                     onClick={item.clickEvent}
+                    style={{ marginRight: "20px" }}
                   >
                     {item.btnTitle}
                   </Button>
