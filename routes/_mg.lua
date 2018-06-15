@@ -7,7 +7,7 @@ router:get('/', function(req, res, next)
     res:render('_mg_index');
 end);
 
--- 后台管理 - 登陆状态查询
+-- 后台管理 - 登陆状态查询（！！！用于测试，不要使用该接口）
 router:get('/checkLogin', function(req, res, next)
     local rs = {logged= true}
     res:send(rs)

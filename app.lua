@@ -77,30 +77,39 @@ end);
 -- ***********************************************************************
 -- ****** API ******
 -- ***********************************************************************
+-- 课堂接口
 local class = NPL.load('./api/class');
 app:use('/api/class', class);
 
+-- 用户接口
 local member = NPL.load('./api/member');
 app:use('/api/member', member);
 
+-- 学习记录接口
 local testrecord = NPL.load('./api/testrecord');
 app:use('/api/record', testrecord);
 
+-- 订单接口
 local orders = NPL.load('./api/orders');
 app:use('/api/order', orders);
 
+-- 课程包接口
 local package = NPL.load('./api/package');
 app:use('/api/package', package);
 
+-- 课程包订阅接口
 local subscribe = NPL.load('./api/subscribe');
 app:use('/api/subscribe', subscribe);
 
+-- 激活码接口
 local cdkey = NPL.load('./api/cdkey');
 app:use('/api/cdkey', cdkey);
 
+-- 后台管理员接口
 local _mg_admin = NPL.load('./api/_mg_admin');
 app:use('/api/_mg/admin', _mg_admin)
 
+-- 首页
 local router_index = NPL.load('./routes/index');
 app:use('/', router_index);
 app:use('/index', router_index);
@@ -121,9 +130,11 @@ app:use('/learnedRecord', router_record_learned);
 local router_record_taughted = NPL.load('./routes/taughtedRecord');
 app:use('/taughtedRecord', router_record_taughted);
 
+-- 购买
 local router_buy = NPL.load('./routes/buy');
 app:use('/buy', router_buy);
 
+-- 课程中心
 local router_lesson = NPL.load('./routes/lesson');
 app:use('/lesson', router_lesson);
 

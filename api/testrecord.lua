@@ -99,6 +99,7 @@ router:post('/study', function(req, res, next)
     res:send(rs)
 end)
 
+-- 作假学习记录（教师在课堂详情页改变学生的答题情况）
 router:post('/cheat', function(req, res, next)
     local rs = {}
     local p = req.body
@@ -120,7 +121,7 @@ router:post('/cheat', function(req, res, next)
     res:send(rs)
 end)
 
--- Have learned 记录
+-- Have learned 记录，个人学习记录
 router:get('/learn', function(req, res, next)
     local rs = {}
     local p = req.query
@@ -149,7 +150,7 @@ router:get('/learn', function(req, res, next)
     res:send(rs)
 end)
 
--- learn Detail
+-- learn Detail 学习详情
 router:get('/detail', function(req, res, next)
     local rs = {}
     local p = req.query
@@ -200,7 +201,7 @@ router:get('/detail', function(req, res, next)
     res:send(rs)
 end)
 
--- learn Detail by Sn
+-- learn Detail by Sn 通过 sn 来获取学习详情
 router:get('/learnDetailBySn', function(req, res, next)
     local rs = {}
     local p = req.query
@@ -222,6 +223,7 @@ router:get('/learnDetailBySn', function(req, res, next)
     res:send(rs)
 end)
 
+-- 获取学习详情的分享数据 LessonShare 中会使用到该接口
 router:get('/share', function(req, res, next)
     local rs = {}
     local p = req.query
@@ -248,7 +250,7 @@ router:get('/share', function(req, res, next)
     res:send(rs)
 end)
 
--- send email
+-- send email 发送邮件
 router:post('/sendEmail', function(req, res, next)
     local p = req.body
     local email = p.email

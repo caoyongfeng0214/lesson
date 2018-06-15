@@ -8,6 +8,8 @@ local memberBll = NPL.load('../bll/member')
 
 local classroom = {}
 
+-- 维护教室教学数据
+
 function classroom:new( o )
     o = o or {}
     setmetatable(o, self) -- 这里需要将 teacher 传入
@@ -23,10 +25,12 @@ classroom.classROOMs = {}
 -- 所有成员列表，包含导师信息
 classroom.USERs = {}
 
+-- 获取教室
 classroom.getClassRoom = function( classId )
     return classroom.classROOMs[classId]
 end
 
+-- 从教室中获取学员
 function classroom:getStudent( username )
     return self.students[username]
 end
@@ -172,7 +176,7 @@ function classroom:getStudentPerformance( user )
     end
 end
 
--- finish
+-- finish 结束课程
 function classroom:finish( user )
     local _class = {}
     if( self.state == 0 and user.username == self.teacher ) then
@@ -207,6 +211,7 @@ function classroom:finish( user )
     return _class
 end
 
+-- 由于系统开启了多线程，该方法用于多线程中共享对象中的数据
 classroom._set = function( obj ) 
     local _room = classroom.getClassRoom(obj.room.classId)
     local _user = obj.user
@@ -234,6 +239,7 @@ classroom._set = function( obj )
     end
 end
 
+-- 在创建对象时在多个线程中生成对应的对象
 classroom._begin = function( obj )
     if(obj and obj.classId and obj.teacher) then
         classroom.classROOMs[obj.classId] = classroom:new(obj)

@@ -38,6 +38,7 @@ router:post('/create', function(req, res, next)
     res:send(rs)
 end)
 
+-- 订单列表
 router:get('/list', function(req, res, next)
     local rs = {}
     local p = req.query

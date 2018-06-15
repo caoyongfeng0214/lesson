@@ -2,6 +2,7 @@
 
 use lesson;
 
+# lesson 用户表
 DROP TABLE IF EXISTS `member`;
 CREATE TABLE `member` (
   `sn` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '序号',
@@ -21,6 +22,7 @@ CREATE TABLE `member` (
   UNIQUE KEY `username` (`username`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+# 课堂表 记录教育者上课的记录
 DROP TABLE IF EXISTS `class`;
 CREATE TABLE `class` (
   `sn` int(11) NOT NULL AUTO_INCREMENT COMMENT '序号',
@@ -41,6 +43,7 @@ CREATE TABLE `class` (
   PRIMARY KEY (`sn`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+# 订单表 记录购买 lesson 会员
 DROP TABLE IF EXISTS `orders`;
 CREATE TABLE `orders` (
   `sn` int(11) NOT NULL AUTO_INCREMENT COMMENT '序号',
@@ -59,6 +62,7 @@ CREATE TABLE `orders` (
   PRIMARY KEY (`sn`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+# 学习记录表 记录学员自学、课堂学习
 DROP TABLE IF EXISTS `testrecord`;
 CREATE TABLE `testrecord` (
   `sn` int(11) NOT NULL AUTO_INCREMENT COMMENT '序号',
@@ -90,6 +94,7 @@ CREATE TABLE `testrecord` (
   UNIQUE KEY `username` (`username`,`classId`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1477 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+# 序列表
 DROP TABLE IF EXISTS `seq`;
 CREATE TABLE `seq` (
   `name` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '序列名',
@@ -97,6 +102,7 @@ CREATE TABLE `seq` (
   `step` tinyint(4) NOT NULL DEFAULT '1' COMMENT '步长'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+# 课程包表
 DROP TABLE IF EXISTS `package`;
 CREATE TABLE `package` (
   `id` varchar(128) COLLATE utf8_unicode_ci NOT NULL COMMENT '课程包Id',
@@ -112,6 +118,7 @@ CREATE TABLE `package` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+# 激活码表
 DROP TABLE IF EXISTS `cdkey`;
 CREATE TABLE `cdkey` (
   `sn` int(11) NOT NULL AUTO_INCREMENT COMMENT 'cdKey 序号',
@@ -124,6 +131,7 @@ CREATE TABLE `cdkey` (
   PRIMARY KEY (`sn`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+# 课程包与课程对应表
 DROP TABLE IF EXISTS `package2lesson`;
 CREATE TABLE `package2lesson` (
   `packageId` varchar(128) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '课程包Id',
@@ -131,6 +139,7 @@ CREATE TABLE `package2lesson` (
   `index` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+# 课程包的订阅表
 DROP TABLE IF EXISTS `subscribe`;
 CREATE TABLE `subscribe` (
   `sn` int(11) NOT NULL AUTO_INCREMENT COMMENT '序号',
@@ -165,7 +174,7 @@ DELIMITER ;
 # 课程序列
 INSERT INTO `seq` (`name`, `val`) VALUES ('classSeq', '100000'); 
 
-# _mg
+# _mg 后台管理员
 DROP TABLE IF EXISTS `admins`;
 CREATE TABLE `admins` (
   `sn` int(11) NOT NULL AUTO_INCREMENT,
@@ -179,7 +188,7 @@ CREATE TABLE `admins` (
   PRIMARY KEY (`sn`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-# _mg_type
+# _mg_type 后台管理员类型表
 DROP TABLE IF EXISTS `admintype`;
 CREATE TABLE `admintype` (
   `sn` int(11) NOT NULL AUTO_INCREMENT,
