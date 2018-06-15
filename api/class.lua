@@ -378,17 +378,19 @@ router:get('/detail', function(req, res, next)
     local data = classBll.detail(where)
     if(data) then
         data.summary = commonlib.Json.Decode(data.summary)
-        for i,v in ipairs(data.summary) do
-            if(v.answerSheet) then
-                v.answerSheet = commonlib.Json.Decode(v.answerSheet)
-            end
-            if(v.portrait) then
-                if( not v.portrait:startswith('http') ) then
-                    v.portrait = sitecfg.keepworkHost .. v.portrait
+        if(data.summary) then
+            for i,v in ipairs(data.summary) do
+                if(v.answerSheet) then
+                    v.answerSheet = commonlib.Json.Decode(v.answerSheet)
                 end
-            else
-                -- 没有头像给默认头像
-                v.portrait = 'http://keepwork.com/wiki/assets/imgs/default_portrait.png?bust=1518090037'
+                if(v.portrait) then
+                    if( not v.portrait:startswith('http') ) then
+                        v.portrait = sitecfg.keepworkHost .. v.portrait
+                    end
+                else
+                    -- 没有头像给默认头像
+                    v.portrait = 'http://keepwork.com/wiki/assets/imgs/default_portrait.png?bust=1518090037'
+                end
             end
         end
         rs.err = 0
