@@ -12,11 +12,11 @@ https://github.com/caoyongfeng0214/lesson
 # lesson 项目部署过程
 1. clone仓库到本地（https://github.com/caoyongfeng0214/lesson.git）
 2. 修改配置项：
-    /config/dbConfi.lua 修改数据库配置
+> /config/dbConfi.lua 修改数据库配置
     /config/siteConfig.lua 修改对应环境的 keepwork 的 HOST 以及 ES 的 api 地址
     /public/js/common.js 修改对应环境的 keepwork 的 HOST -> keepworkHost
 3. 执行 sql 脚本
-    /sql/db.sql 创建数据库与表结构
+> /sql/db.sql 创建数据库与表结构
 4. 将 /luasql.so （Linux 下）文件放在 `lesson` 项目根目录下 
-    注： Linux 下编译 `NPLRuntime` 之前需要安装 `mysql` 程序才有作用
+> 注： Linux 下编译 `NPLRuntime` 之前需要安装 `mysql` 程序才有作用
 5.  在根目录下运行 npl -d bin/www.npl 
