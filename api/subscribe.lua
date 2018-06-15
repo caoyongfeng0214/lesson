@@ -3,6 +3,7 @@ local router = express.Router:new()
 local commonBll = NPL.load('../bll/common')
 local subscribeBll = NPL.load('../bll/subscribe')
 
+-- Add 一个课程包，添加一个订阅
 router:post('/add', function(req, res, next)
     local p = req.body
     local packageId = p.packageId

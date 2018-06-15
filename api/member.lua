@@ -97,7 +97,7 @@ router:post('/addPresenter', function(req, res, next)
 
 end)
 
--- firstIn
+-- firstIn 第一次进入 lesson 系统调用
 router:post('/firstIn', function(req, res, next)
     local firstIn = function(user)
         memberBll.firstIn(user.username)

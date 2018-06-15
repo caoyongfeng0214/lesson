@@ -5,6 +5,7 @@ local router = express.Router:new()
 local packageBll = NPL.load('../bll/package')
 local commonBll = NPL.load('../bll/common')
 
+-- 创建或更新课程包
 router:post('/createOrUpdate', function(req, res, next)
     local p = req.body
     local rs = {err = 0, msg = 'create or update package success.'}
@@ -42,6 +43,7 @@ router:post('/createOrUpdate', function(req, res, next)
     res:send(rs)
 end)
 
+-- 学习记录列表
 router:get('/learnList', function(req, res, next)
     local rs = {}
     local p = req.query

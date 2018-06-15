@@ -4,7 +4,7 @@ local cdkeyBll = NPL.load('../bll/cdkey')
 local router = express.Router:new()
 local uuid = NPL.load('uuid')
 
--- GenUUID
+-- GenUUID 生成激活码
 router:post('/build', function(req, res, next)
     local p = req.body
     local number = p.number
@@ -45,6 +45,7 @@ router:post('/build', function(req, res, next)
     })
 end)
 
+-- 激活码列表
 router:get('/list', function(req, res, next)
     local rs = {}
     local p = req.query
