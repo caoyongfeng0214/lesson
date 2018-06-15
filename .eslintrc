@@ -1,0 +1,16 @@
+{
+    "extends": "react-app",
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true,
+        "jquery": true
+    },
+    "plugins": ["prettier"],
+    "rules": {
+        "prettier/prettier": "error"
+    },
+    "parserOptions": {
+        "sourceType": "module"
+    }
+}
