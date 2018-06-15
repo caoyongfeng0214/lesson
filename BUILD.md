@@ -15,6 +15,7 @@ https://github.com/caoyongfeng0214/lesson
 > /config/dbConfi.lua 修改数据库配置
     /config/siteConfig.lua 修改对应环境的 keepwork 的 HOST 以及 ES 的 api 地址
     /public/js/common.js 修改对应环境的 keepwork 的 HOST -> keepworkHost
+    /app.js 添加 res.__data__.baseUrl 来配置 `lesson` 需要放置的域
 3. 执行 sql 脚本
 > /sql/db.sql 创建数据库与表结构
 4. 将 /luasql.so （Linux 下）文件放在 `lesson` 项目根目录下 
